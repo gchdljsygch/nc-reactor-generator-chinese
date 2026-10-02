@@ -48,9 +48,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Same pin, same reason as ci.yml: the version lives here and only here,
+      # because pnpm/action-setup@v4 rejects a simultaneous `"packageManager"`
+      # field in package.json ("Multiple versions of pnpm specified").
       - uses: pnpm/action-setup@v4
         with:
-          version: 11
+          version: 11.5.1
 
       - uses: actions/setup-node@v4
         with:
