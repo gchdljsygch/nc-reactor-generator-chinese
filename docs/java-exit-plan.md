@@ -338,7 +338,14 @@ pnpm verify:full                              # 绿
 | P2 | `2c2dbdda` | ✅ 554 / 2 skipped | `--baseline` 双断言（载荷哈希 + `EXPECTED_SHA`）；手工改 JSON 字段 → exit 1；删除 3 个 PS 脚本 |
 | P3 | `b1016644` + `c79c557f` | ✅ 554 / 2 skipped | `c79c557f` 是修正提交：`versions.txt` 按计划归属 P4，P3 误删后恢复 |
 | P4 | `6faa27ea` | ✅ 554 / 2 skipped | 先建并推送 tag **`java-frozen-c79c557f`**（指向 P3 修正提交，含完整 `src/**` + `libraries/**`，可 `git checkout <tag> -- src` 取回）；删除后 `Test-Path src = False` |
-| P5 | _待填_ | _待填_ | `check:no-java` + `size:repo` 接入 `verify:full` / `ci.yml` / `release.yml`；`tools/README.md` 重写为 TS-only |
+| P5 | `e49137ca` + `d23d632e` | ✅ 554 / 2 skipped | `check:no-java` + `size:repo` 接入 `verify:full` / `ci.yml` / `release.yml`；`tools/README.md` 重写为 TS-only。`d23d632e` 是修正提交：P3 的 `git add -A` 误收了两个从未跟踪的本地文件（见下） |
+
+**执行中发现的计划外问题（都已修复）**
+
+| # | 问题 | 处置 |
+|---|---|---|
+| 1 | `versions.txt` 在 §0/§2 矩阵里归 P3，但 §P3 的命令块没列出它，P4 又要「一次性删 Java 残留」。P3 里删了之后发现 P4 tag 无法取回它 | P3 之后加修正提交 `c79c557f` 恢复它，改由 P4 删除；tag 重指到 `c79c557f`，保证能取回删除前的完整树 |
+| 2 | P3 的 `git add -A` 把两个**从未被跟踪**的本地文件收进了提交：`crash-reports/crash-Sat Aug 22 21-05-13 CST 2026.txt` 与 `nc-reactor-generator-chinese.iml` | 加修正提交 `d23d632e`：`git rm --cached` 两个文件，并把 `.gitignore` 的 `/crash-reports` 改成 `crash-reports/`——旧规则的前导斜杠让它只匹配仓库根，根下的 `crash-reports/` 目录其实**从未被忽略**，这正是 `git add -A` 能收进它的原因 |
 
 **结果对照（§0 摘要 vs 实测）**
 
@@ -355,4 +362,23 @@ pnpm verify:full                              # 绿
 > 提交号说明：P3 原本在计划里是单个提交；执行时发现 `versions.txt` 被 P3 误删（它属于 §2 矩阵
 > 的 P3 段，但计划 §P3 的命令块没有列出它，且 §7 的 P4 提交信息把「删 Java 源码与死资产」写成
 > 一次性动作），因此多了一个修正提交 `c79c557f` 把它恢复到 P4 再删。tag 也随之重指到 `c79c557f`，
-> 保证「冻结 tag 能取回删除前的完整树」。除此之外每个提交与 §7 的切分一一对应。
+> 保证「冻结 tag 能取回删除前的完整树」。P5 之后又多一个修正提交 `d23d632e`，取消跟踪两个被
+> `git add -A` 误收的本地文件。除此之外每个提交与 §7 的切分一一对应。
+>
+> **验收矩阵（§5）实测（2026-10，`d23d632e` 之后）**
+>
+> | 检查 | 命令 | 实测 |
+> |---|---|---|
+> | 全量验证 | `pnpm verify:full` | **exit 0**，554 passed / 2 skipped |
+> | 审计可复现 | `node tools/ts/port-audit.mjs --baseline docs/r1/port-audit-file-level.json` | **exit 0**，831 / 77,840 / 76,579，hash 匹配 |
+> | 无 Java 源码 | `git ls-files '*.java'` | **空** |
+> | 无 Java 二进制 | `git ls-files '*.jar'` | **空** |
+> | 无 Java 构建链 | `git ls-files 'gradle*' 'build.xml' 'build.gradle' 'nbproject/*' 'manifest.mf' '*.iml' 'versions.txt'` | **空** |
+> | 无死资产 | `Test-Path src` | **False** |
+> | 仓库体积 | `pnpm size:repo` | **357 文件 / 50.1 MB**（< 60 MB） |
+> | 配置可定位 | `git grep -n 'configurations/nuclearcraft'` | 全部指向 `datasets/configurations/…` |
+> | 历史 fixtures 不回归 | `pnpm test packages/formats` | **8 files / 282 tests passed** |
+> | 新门禁 | `pnpm check:no-java` / `pnpm size:repo` | **exit 0 / exit 0** |
+>
+> **未完成项**：`ci.yml` / `release.yml` 的远端执行结果无法在本地验证（需要 GitHub Actions），
+> 本地只能确认这两个 workflow 内所有命令在等价环境下 exit 0。首次推送后请在 Actions 页复核。
