@@ -3,6 +3,8 @@
 > 目标技术栈：**TypeScript / Web**
 > 本报告由 `tools/golden/golden.ps1`、`tools/golden/.../ElementDump`、
 > `tools/i18n/*.ps1`、`tools/audit/port-audit.ps1` 的实测输出汇总而成。
+> 这些脚本已在 java-exit-plan §P2/§P3 删除（产物已入库）；需要原文时从 git 历史取，
+> 例如 `git show 02f01a5a:tools/audit/port-audit.ps1`。
 > 所有数字来自**已冻结的 Java 版本**（工作区当前状态）。
 
 ---

@@ -39,10 +39,13 @@ jobs:
         env:
           NCPL_GOLDEN: full
 
-      # R1.0d: the port audit must stay reproducible (deterministic hash), so a
-      # silent change in the Java tree shows up as a diff instead of a surprise.
+      # R1.0d + java-exit-plan §P2/P4: the port audit must stay reproducible. CI replays the
+      # checked-in snapshot (`--baseline`) and asserts its contentSha256, so the gate keeps working
+      # after the Java tree is deleted — a missing/edited snapshot fails instead of printing
+      # `files=0`. To re-scan a tree (`git checkout java-frozen-<sha> -- src`), use `--summary`,
+      # which compares the scanned hash against the same pinned EXPECTED_SHA.
       - name: Port audit (deterministic)
-        run: node tools/ts/port-audit.mjs --summary
+        run: node tools/ts/port-audit.mjs --baseline docs/r1/port-audit-file-level.json
 
       # R2: docs/r2/fixture-coverage.md is a checked-in report. Regenerating it
       # from the manifest and the TS reader chain must be a no-op, otherwise the

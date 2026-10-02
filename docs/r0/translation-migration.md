@@ -1,6 +1,8 @@
 # R0.5 — 译文迁移与数据名/UI 文案拆分报告
 
 > 由 `tools/i18n/classify-translations.ps1` 自动生成。
+> **该脚本已在 java-exit-plan §P2 删除**（产物 `datasets/translations/**`、`lang/*.json` 已入库）；
+> 需要原文时从 git 历史取：`git show 02f01a5a:tools/i18n/classify-translations.ps1`。
 
 ## 1. 提取结果
 

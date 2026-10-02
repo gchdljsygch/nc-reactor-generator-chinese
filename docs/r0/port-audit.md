@@ -1,6 +1,8 @@
 # R0.6 — 文件级移植审计（port audit）
 
 > 由 `tools/audit/port-audit.ps1` 自动生成。分类规则见脚本头部注释。
+> **该脚本已在 java-exit-plan §P2 删除**（TS 版 `tools/ts/port-audit.mjs` 已完全取代它）；
+> 需要原文时从 git 历史取：`git show 02f01a5a:tools/audit/port-audit.ps1`。
 >
 > 这是对 `docs/rewrite-plan.md` §2.1「按包估算」的细化 —— 落到**每个文件**，
 > 以便真正能排期，也能验证那份估算。
@@ -895,6 +897,9 @@
 > 本节由 R1.0d 追加。**上文（R0.6 由 `tools/audit/port-audit.ps1` 生成的内容）保持原样不动**，
 > 作为「包级规则分类」的基线留档。本节的分类与行数由 `tools/ts/port-audit.mjs` 机械生成，
 > 完整报告见 `docs/r1/port-audit-file-level.md`，数据见 `docs/r1/port-audit-file-level.json`。
+>
+> **脚本已删除（java-exit-plan §P2）**：`tools/audit/port-audit.ps1` 不再存在；
+> 上文的表格是它的历史产物，复现请用下面的 TS 命令。
 
 复现：
 

@@ -35,18 +35,27 @@
 ## 1. 怎么复现每一个数字
 
 ```bash
-# ① 人类可读汇总（本文 §2、§3、§4、§5 的绝大多数数字来自它）
+# ① CI 实际执行的命令（java-exit-plan §P2）：重放已入库的快照，不读 src/。
+#    它校验 JSON 自身的 contentSha256 与内置 EXPECTED_SHA，两者不符即 exit 1。
+node tools/ts/port-audit.mjs --baseline docs/r1/port-audit-file-level.json
+
+# ② 人类可读汇总（本文 §2、§3、§4、§5 的绝大多数数字来自它）
 node tools/ts/port-audit.mjs --summary
 
-# ② 机器可读全量结果（本文未逐行展开的 831 行明细在这里）
+# ③ 机器可读全量结果（本文未逐行展开的 831 行明细在这里）
 node tools/ts/port-audit.mjs --json docs/r1/port-audit-file-level.json
 
-# ③ 完整报告：含 bucket×relevance 全矩阵、包组表、目录级 R0 对照、
+# ④ 完整报告：含 bucket×relevance 全矩阵、包组表、目录级 R0 对照、
 #    R0 分类转移矩阵、finding #8 逐文件复核表、逐文件清单
 node tools/ts/port-audit.mjs --report
 ```
 
 其它开关：`--src <dir>`（默认 `src`）、`--r0 <file>`（默认 `docs/r0/port-audit.md`）、`--no-r0`（跳过 R0 对照）。
+
+> `--baseline` 是 Java 树删除后唯一还能跑的形态：`--src` / `--summary` 需要一棵 `*.java` 树，
+> 删掉 `src/` 后它们只会报 `files=0`。两种口径共享同一个 `EXPECTED_SHA`，所以门禁不会因为
+> 「树没了」而静默变成空断言（java-exit-plan 风险 R-4）。
+> 想重新扫描 Java 树：`git checkout java-frozen-<sha> -- src`，再跑 `--summary`。
 
 **哈希**：脚本先算规范化 JSON（固定键序、无时间戳、无绝对路径）的 sha256，再把它写进结果的 `contentSha256`。
 本次为：
@@ -490,6 +499,9 @@ r1-infra          5,213   (Core/Main/工具类/模块注册/多块基类/对称)
 ## 7. 复现检查清单（CI 可直接用）
 
 ```bash
+# CI 门禁（= .github/workflows/ci.yml 的 "Port audit (deterministic)" 步骤）
+node tools/ts/port-audit.mjs --baseline docs/r1/port-audit-file-level.json   # 期望 contentSha256=7e36b9a5... 并打印 [port-audit] baseline ... verified
+# 重扫工作区里的 Java 树（已 checkout java-frozen-<sha> 时）
 node tools/ts/port-audit.mjs --summary                          # 期望 contentSha256=7e36b9a5...（不符即 exit 1）
 node tools/ts/port-audit.mjs --json docs/r1/port-audit-file-level.json   # 刷新快照（写完后必须同步 EXPECTED_SHA）
 node tools/ts/port-audit.mjs --report | head -75                # 期望 totals=831/77,840/76,579

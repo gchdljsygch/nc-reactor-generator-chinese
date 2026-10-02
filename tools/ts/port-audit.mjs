@@ -2,7 +2,8 @@
 // R1.0d — file-level port audit for the NC Plannerator rewrite (docs/rewrite-plan-r1-r5.md §4.1).
 //
 // PURPOSE
-//   R0.6 (tools/audit/port-audit.ps1 -> docs/r0/port-audit.md) classified the port volume with
+//   R0.6 (tools/audit/port-audit.ps1 -> docs/r0/port-audit.md; the PowerShell version was deleted in
+//   java-exit-plan §P2 and is only available from git history) classified the port volume with
 //   PACKAGE rules: the bucket came from the directory prefix, and only inside `multiblock/` was a
 //   light content heuristic applied. That leaves the "must port" line count uncertain by roughly
 //   +-30% (rewrite-plan-r1-r5.md §1.3 / risk R-8). This script re-does the classification at FILE
@@ -21,6 +22,7 @@
 //   node tools/ts/port-audit.mjs --json docs/r1/port-audit-file-level.json
 //   node tools/ts/port-audit.mjs --report            # every table used by the markdown
 //   node tools/ts/port-audit.mjs --summary --no-r0   # skip the R0 reconciliation
+//   node tools/ts/port-audit.mjs --baseline docs/r1/port-audit-file-level.json   # CI: replay the snapshot
 //
 // OPTIONS
 //   --src <dir>     source root                (default: src)
@@ -29,6 +31,7 @@
 //   --summary       print the human summary tables (same numbers as the JSON)
 //   --report        print the full report (superset of --summary)
 //   --no-r0         do not read/parse the R0 audit
+//   --baseline <f>  replay a checked-in JSON snapshot instead of scanning `--src`
 //
 // ---------------------------------------------------------------------------------------------
 // COUNTING RULE (documented, deliberately simple)
@@ -73,12 +76,17 @@
 //   order; no timestamp, hostname or absolute path is written. Re-running on the same tree prints
 //   the same `contentSha256` (sha256 of the canonical JSON payload, hash field itself excluded).
 //
-// CI GATE (java-exit-plan §P0)
+// CI GATE (java-exit-plan §P0 / §P2)
 //   `EXPECTED_SHA` below pins the frozen Java baseline. `--summary` / `--report` compare the hash of
 //   the scanned tree against it and `exit 1` on mismatch, so a silent edit to a `*.java` file fails
 //   CI instead of merely printing a new number. `--json` deliberately stays ungated: refreshing the
 //   snapshot is `--json <file>`, then bump `EXPECTED_SHA` and the totals in
 //   `docs/r0/port-audit.md` / `docs/r1/port-audit-file-level.md`.
+//
+//   `--baseline <json>` is what CI runs once the Java tree is gone (§P4): it replays the checked-in
+//   snapshot — no `--src` needed — and asserts both that the JSON is internally consistent (its own
+//   `contentSha256` must equal the hash of its payload) and that it is still the pinned baseline.
+//   That is why deleting `src/` can never turn this gate into a silent `files=0` pass (risk R-4).
 // ---------------------------------------------------------------------------------------------
 
 import { createHash } from 'node:crypto';
@@ -96,17 +104,18 @@ export const EXPECTED_SHA = '7e36b9a5c7c9de15382259418b0941b8ae6cffb47c543946889
 // Argument parsing
 // ---------------------------------------------------------------------------------------------
 function parseArgs(argv) {
-  const out = { src: 'src', r0: 'docs/r0/port-audit.md', json: null, summary: false, report: false, r0Enabled: true };
+  const out = { src: 'src', r0: 'docs/r0/port-audit.md', json: null, baseline: null, summary: false, report: false, r0Enabled: true };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === '--src') out.src = argv[++i];
     else if (a === '--r0') out.r0 = argv[++i];
     else if (a === '--json') out.json = argv[++i];
+    else if (a === '--baseline') out.baseline = argv[++i];
     else if (a === '--summary') out.summary = true;
     else if (a === '--report') out.report = true;
     else if (a === '--no-r0') out.r0Enabled = false;
     else if (a === '--help' || a === '-h') {
-      console.log(readFileSync(new URL(import.meta.url), 'utf8').split('\n').slice(0, 34).join('\n'));
+      console.log(readFileSync(new URL(import.meta.url), 'utf8').split('\n').slice(0, 36).join('\n'));
       process.exit(0);
     } else {
       console.error(`unknown argument: ${a}`);
@@ -912,8 +921,65 @@ export function renderReport(r) {
   return L.join('\n');
 }
 
+// ---------------------------------------------------------------------------------------------
+// Baseline replay (java-exit-plan §P2)
+// ---------------------------------------------------------------------------------------------
+
+/**
+ * Recompute a payload's canonical hash the same way `run()` does: stringify everything except the
+ * `contentSha256` field with the identical indentation, then sha256 it. Because `run()` appends
+ * `contentSha256` last, removing it restores the exact hashed string.
+ */
+export function payloadSha256(payload) {
+  const { contentSha256, ...rest } = payload;
+  return createHash('sha256').update(JSON.stringify(rest, null, 1)).digest('hex');
+}
+
+/** Read a checked-in snapshot and report whether its stored hash matches its own payload. */
+export function loadBaseline(file, cwd = process.cwd()) {
+  const payload = JSON.parse(readFileSync(resolve(cwd, file), 'utf8'));
+  return { payload, recomputed: payloadSha256(payload), stored: payload.contentSha256 ?? null };
+}
+
+/**
+ * `--baseline <json>`: replay a snapshot without touching `src/`.
+ * Fails when the snapshot is internally inconsistent or no longer the pinned baseline.
+ */
+function replayBaseline(args) {
+  let loaded;
+  try {
+    loaded = loadBaseline(args.baseline);
+  } catch (err) {
+    console.error(`[port-audit] cannot read baseline ${args.baseline}: ${err.message}`);
+    process.exit(1);
+  }
+  const { payload, recomputed, stored } = loaded;
+  const problems = [];
+  if (stored !== recomputed) {
+    problems.push(`the snapshot's contentSha256 (${stored}) does not match the hash of its own payload (${recomputed})`);
+    problems.push('  the JSON was edited by hand — regenerate it with:');
+    problems.push('    node tools/ts/port-audit.mjs --json docs/r1/port-audit-file-level.json');
+  }
+  if (stored !== EXPECTED_SHA) {
+    problems.push(`the snapshot is not the pinned baseline: stored ${stored}, EXPECTED_SHA ${EXPECTED_SHA}`);
+    problems.push('  if the Java tree really changed, update EXPECTED_SHA in tools/ts/port-audit.mjs deliberately');
+  }
+  if (problems.length) {
+    console.error(`[port-audit] baseline ${args.baseline} rejected:`);
+    for (const p of problems) console.error(`  ${p}`);
+    process.exit(1);
+  }
+  if (args.report) console.log(renderReport(payload));
+  else console.log(renderSummary(payload));
+  console.log(`[port-audit] baseline ${args.baseline} verified (contentSha256=${stored})`);
+}
+
 function main() {
   const args = parseArgs(process.argv.slice(2));
+  if (args.baseline) {
+    replayBaseline(args);
+    return;
+  }
   const result = run({ srcDir: args.src, r0File: args.r0Enabled ? args.r0 : null });
   if (args.json) {
     const target = resolve(process.cwd(), args.json);
