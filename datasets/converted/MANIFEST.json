@@ -1,6 +1,6 @@
 {
   "tool": "FormatGolden",
-  "root": "E:/build/nc-reactor-generator-chinese/datasets/fixtures",
+  "root": "datasets/fixtures",
   "entries": [
     {"file": "historical/aapn.ncpf", "reader": "LegacyNCPF11Reader", "ok": true, "elements": 622, "designs": 0, "fingerprint": "4f6e725be2e5e7cf219facda#628", "converted": "ncpf/historical_aapn.ncpf.ncpf.json"},
     {"file": "historical/alloy_heat_sinks.ncpf", "reader": "LegacyNCPF11Reader", "ok": true, "elements": 44, "designs": 0, "fingerprint": "5f8ec99c8649074fd5472f5f#47", "converted": "ncpf/historical_alloy_heat_sinks.ncpf.ncpf.json"},

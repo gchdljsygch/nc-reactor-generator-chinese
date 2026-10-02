@@ -1,11 +1,14 @@
 # --- Java-era local artifacts (historical) ------------------------------------
 # The Java tree was archived to `java-frozen-<sha>` and removed (java-exit-plan
 # §P3/P4), but these rules are kept for local leftovers from the frozen build:
-# settings files, loose `*.ncpf` / `*.config2` saves, emulator dumps and crash
-# dumps. The rest of the old Java-only rules (`/out`, `/build/`, `/.gradle/`,
-# `/tools/golden/build/`, `/dssl*`, `/version.version`, `/benchmark*`, `/errors`,
-# `smorebank.dat`, `special.dat`) are gone with the build chain.
-/settings.dat
+# loose `*.ncpf` / `*.config2` saves, emulator dumps and crash dumps. The rest of
+# the old Java-only rules (`/out`, `/build/`, `/.gradle/`, `/tools/golden/build/`,
+# `/dssl*`, `/version.version`, `/benchmark*`, `/errors`, `/smorebank.dat`,
+# `/special.dat`) are gone with the build chain.
+# `/settings.dat` is deliberately **not** ignored any more: the R2.11 decode test
+# reads the 547 B file the frozen app shipped (`r2.11-settings.test.ts`), so
+# ignoring it made `pnpm test` pass on a dev machine that still had the file and
+# fail on every CI checkout.
 /smorebank.dat
 /special.dat
 /*.ncpf

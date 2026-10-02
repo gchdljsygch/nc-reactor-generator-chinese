@@ -1,4 +1,6 @@
 import { readFileSync } from 'node:fs';
+import { isAbsolute, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { parseNcpfProject } from '../src/project.js';
 import { isJsonObject, type JsonObject } from '../src/json.js';
 import { countElements } from './helpers.js';
@@ -40,11 +42,42 @@ interface Manifest {
 
 export const GOLDEN_ROOT = 'datasets/converted';
 
+/**
+ * Repository root, from this file's own location (`<root>/packages/formats/test`).
+ *
+ * Every path below is resolved against it rather than against `process.cwd()`:
+ * the oracle is generated data read by tests, a CI replay (`tools/ts/r2-coverage.mjs`)
+ * and anyone running `vitest` through an editor, and none of those may depend on
+ * where the process happens to start.
+ */
+const REPO_ROOT = fileURLToPath(new URL('../../../', import.meta.url));
+
+/** A `root` written by the (now archived) generator on its own machine. */
+const FOREIGN_ROOT = /^(?:[A-Za-z]:[\\/]|[\\/]{1,2})/;
+
+/**
+ * `MANIFEST.json`'s `root` is the fixtures directory, repository-relative
+ * (`datasets/fixtures`). It is checked rather than trusted: the manifest is a
+ * frozen Java-era artifact, and a machine-local absolute root in it makes every
+ * fixture unreadable on CI while passing on the machine that produced it —
+ * `Error: ENOENT … 'E:/build/…/datasets/fixtures/historical/aapn.ncpf'`.
+ */
+function fixtureRoot(): string {
+  const { root } = manifest();
+  if (isAbsolute(root) || FOREIGN_ROOT.test(root)) {
+    throw new Error(
+      `${GOLDEN_ROOT}/MANIFEST.json has a machine-local "root" (${root}); ` +
+        'it must stay repository-relative ("datasets/fixtures")',
+    );
+  }
+  return resolve(REPO_ROOT, root);
+}
+
 let manifestCache: Manifest | null = null;
 
 export function manifest(): Manifest {
   if (manifestCache === null) {
-    manifestCache = JSON.parse(readFileSync(`${GOLDEN_ROOT}/MANIFEST.json`, 'utf8')) as Manifest;
+    manifestCache = JSON.parse(readFileSync(resolve(REPO_ROOT, GOLDEN_ROOT, 'MANIFEST.json'), 'utf8')) as Manifest;
   }
   return manifestCache;
 }
@@ -59,13 +92,13 @@ export function goldenEntry(file: string): GoldenEntry {
 export function goldenJson(file: string): JsonObject {
   const entry = goldenEntry(file);
   if (entry.converted === undefined) throw new Error(`fixture "${file}" has no conversion (${entry.error})`);
-  const parsed: unknown = JSON.parse(readFileSync(`${GOLDEN_ROOT}/${entry.converted}`, 'utf8'));
+  const parsed: unknown = JSON.parse(readFileSync(resolve(REPO_ROOT, GOLDEN_ROOT, entry.converted), 'utf8'));
   if (!isJsonObject(parsed)) throw new Error(`golden ${entry.converted} is not a JSON object`);
   return parsed;
 }
 
 export function fixturePath(file: string): string {
-  return `${manifest().root}/${file}`;
+  return resolve(fixtureRoot(), file);
 }
 
 export function fixtureBytes(file: string): Uint8Array {

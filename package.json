@@ -29,11 +29,6 @@
     "i18n:locale": "node tools/ts/make-locale.mjs",
     "i18n:locale:check": "node tools/ts/make-locale.mjs --check"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild"
-    ]
-  },
   "devDependencies": {
     "@types/node": "^22.10.2",
     "cross-env": "^7.0.3",
