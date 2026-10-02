@@ -1,0 +1,256 @@
+# 中文化覆盖率基线报告 (i18n audit baseline)
+# 采集时间: 2026-10-01 18:54
+# 方法: 从 planner/gui, planner/module, multiblock, discord 四个包提取去重英文散文串,
+#       经 SimplifiedChineseLocalizer.localize() 处理后按是否残留拉丁字母分三类。
+# 注意: "partially-translated" 中含合法的专有名词保留 (Esc/Ctrl/VR/3D/人名),
+#       需要逐条人工判定; 真正的半翻译破损见 PARTIAL 段中的中英混排条目。
+# ---------------------------------------------------------------------------
+total=1029
+untranslated=410
+partially-translated=215
+fully-translated=404
+
+===== PARTIAL (leftover English inside translated text) =====
+Benchmark Thread   ==>   Benchmark 线程
+Length of names and benchmark arrays must match!   ==>   Length of names 和 benchmark arrays must match!
+Press escape or right click to exit.   ==>   按 Esc 或右键退出。
+This is for correcting a cursor offset issue on macOS   ==>   此功能用于修正 macOS 上的光标偏移问题
+Use arrow keys or WASD to manually adjust calibration (Press control for granular adjustment)   ==>   使用方向键或 WASD 手动调整校准（按住 Ctrl 可进行微调）
+X Multiplier:    ==>   X 倍率：
+< Y Multiplier:    ==>   < Y 倍率：
+< X Offset:    ==>   < X 偏移：
+< Y Offset:    ==>   < Y 偏移：
+Made by ThizThizzyDizzy   ==>   由 ThizThizzyDizzy 制作
+Click on any configuration to navigate to its CurseForge page   ==>   单击任意配置可前往其 CurseForge 页面
+Click on any addon to navigate to its CurseForge page   ==>   单击任意附加组件可前往其 CurseForge 页面
+by Gliese 832 c   ==>   作者：Gliese 832 c
+by dtinth   ==>   作者：dtinth
+JDA (when running as discord bot)   ==>   JDA（作为 Discord 机器人运行时）
+by tomdodd4598   ==>   作者：tomdodd4598
+Legacy NCPF (Config2) format, GUI, and some more internal functionality based on SimpleLibraryPlus   ==>   旧版 NCPF（Config2）格式、界面及部分内部功能基于 SimpleLibraryPlus
+(a fork of Simplelibrary by computerneek)   ==>   （Simplelibrary 的 computerneek 分支）
+Thank you to tomdodd4598 for creating such an amazing mod   ==>   感谢 tomdodd4598 创作了如此出色的模组。
+Thank you to everyone in the eVault for helping make this planner into what it is   ==>   感谢 eVault 的每一位成员，帮助这个规划器成为今天的样子。
+Press escape to exit credits   ==>   按 Esc 退出致谢名单
+Undo (Ctrl+   ==>   撤销（Ctrl+
+Redo (Ctrl+   ==>   重做（Ctrl+
+3D View   ==>   3D 视图
+Standard editor only supports one cursor!   ==>   标准 editor only supports one cursor!
+Standard editor only supports 1 cursor!   ==>   标准 editor only supports 1 cursor!
+Delete Stage (Hold Shift)   ==>   删除阶段（按住 Shift）
+Include 3D View   ==>   包含 3D 视图
+Include Casing in 3D View   ==>   在 3D 视图中包含外壳
+Started Initialization Thread   ==>   Started Initialization 线程
+Loaded File Formats   ==>   Loaded 文件 Formats
+Preloaded Settings   ==>   Preloaded 设置
+Added Modules   ==>   Added 模块
+Loaded Settings   ==>   Loaded 设置
+Refreshed Modules   ==>   Refreshed 模块
+Failed to load NuclearCraft configuration!   ==>   失败 to load NuclearCraft configuration!
+Set MSR Textures   ==>   设置 MSR Textures
+Imposed Configuration   ==>   Imposed 配置
+Unknown location!   ==>   未知 location!
+Invalid module path!   ==>   无效 module path!
+Unknown module    ==>   未知 module 
+Unknown configuration    ==>   未知 configuration 
+Initialization Failed!   ==>   Initialization 失败!
+Initialization Thread   ==>   Initialization 线程
+Enter VR   ==>   进入 VR
+Delete Multiblock (Hold Shift)   ==>   删除多方块结构（按住 Shift）
+RECOVERY MODE ENABLED. PRESS CTRL+SHIFT+R TO DISABLE   ==>   恢复模式已启用。按 Ctrl+Shift+R 关闭
+Convert to MSR (Hold Control)   ==>   转换为熔盐堆（按住 Ctrl）
+Convert to SFR (Hold Control)   ==>   转换为固体燃料堆（按住 Ctrl）
+Save the configuration to a .ncpf file   ==>   将配置保存为 .ncpf 文件
+Show 3D View   ==>   显示 3D 视图
+Show 3D view on the Main Menu   ==>   在主菜单显示 3D 视图
+External Configuration Loader   ==>   外部 配置 Loader
+Error opening menu!   ==>   错误 opening menu!
+Label cannot be null!   ==>   Label cannot be 空值!
+Failed to load texture    ==>   失败 to load texture 
+Failed to load texture!   ==>   失败 to load texture!
+Invalid side:    ==>   无效 side: 
+Cannot create grid layout with infinite rows and columns!   ==>   Cannot create grid layout with infinite rows 和 columns!
+Delete (Shift)   ==>   删除（Shift）
+Create (Shift)   ==>   创建（Shift）
+Dropped File Loading Thread   ==>   Dropped 文件 正在加载 线程
+Failed to import file!   ==>   失败 to import file!
+Failed to delete file!   ==>   失败 to delete file!
+Failed to load file!   ==>   失败 to load file!
+Failed to read file    ==>   失败 to read file 
+Failed to save file!   ==>   失败 to save file!
+X Mirror   ==>   X 轴镜像
+Y Mirror   ==>   Y 轴镜像
+Z Mirror   ==>   Z 轴镜像
+180 X Rotational   ==>   180 度 X 轴旋转
+180 Y Rotational   ==>   180 度 Y 轴旋转
+180 Z Rotational   ==>   180 度 Z 轴旋转
+Task Dialog Thread:    ==>   Task Dialog 线程: 
+Not supported yet.   ==>   非 supported yet.
+Tried to push real null to the stack!   ==>   Tried to push real 空值 to the stack!
+DSSL Editor   ==>   DSSL 编辑器
+Invalid Blocks   ==>   无效 Blocks
+Augmente4d Breeding Blanket   ==>   Augmente4d 增殖包层
+Extreme Reactors   ==>   极致 Reactors
+New Turbine Parts   ==>   新建 涡轮机 Parts
+Thalzamar and FishingPole   ==>   Thalzamar 和 FishingPole
+Moar Heat Sinks   ==>   Moar 热量 Sinks
+Moar Fuels Compat (Moar Reactor Functionality)   ==>   Moar Fuels Compat (Moar 反应堆 Functionality)
+Moar Fuels Lite Compat (Moar Reactor Functionality)   ==>   Moar Fuels Lite Compat (Moar 反应堆 Functionality)
+Moar Fuels Ultra Lite   ==>   Moar Fuels 超 Lite
+Moar Fuels Ultra Lite Compat (Moar Reactor Functionality)   ==>   Moar Fuels 超 Lite Compat (Moar 反应堆 Functionality)
+Moar Reactor Functionality   ==>   Moar 反应堆 Functionality
+Moar Reactor Components   ==>   Moar 反应堆 Components
+Alternative Ore Processing   ==>   Alternative 矿石 Processing
+Crazy Ore Processing   ==>   Crazy 矿石 Processing
+Thorium Mixed Fuels   ==>   钍 Mixed Fuels
+Inert Matrix Fuels   ==>   Inert 矩阵 Fuels
+Alloy Heat Sinks   ==>   合金 热量 Sinks
+Spicy Heat Sinks (Stable)   ==>   Spicy 热量 Sinks (Stable)
+Spicy Heat Sinks (Unstable)   ==>   Spicy 热量 Sinks (Unstable)
+Active Moderators   ==>   已启用 Moderators
+Valid Coils   ==>   有效 Coils
+Block Recipes   ==>   方块 Recipes
+Primed Cells   ==>   已引燃 Cells
+Shows a marker on primed cells and a line to the neutron source priming them   ==>   Shows a marker on primed cells 和 a line to the neutron source priming them
+Shows a marker on primed vessels and a line to the neutron source priming them   ==>   Shows a marker on primed vessels 和 a line to the neutron source priming them
+Neutron Flux Propogation   ==>   中子 Flux Propogation
+Shows the neutron flux propogation through the reactor   ==>   Shows the neutron 通量 propogation through the reactor
+Shows the first flux propogation, before inactive cells are excluded   ==>   Shows the first 通量 propogation, before inactive cells are excluded
+Shows the final flux propogation, after inactive cells are excluded and calculation is complete   ==>   Shows the final 通量 propogation, after inactive cells are excluded 和 calculation is complete
+Shows the flux propogation after all neutron shields are closed   ==>   Shows the 通量 propogation after all neutron shields are closed
+Active Cooler Recipes   ==>   主动冷却器 Recipes
+Unknown rule type:    ==>   未知 rule type: 
+Generation Thread    ==>   Generation 线程 
+Stored Multiblocks   ==>   Stored 多方块结构
+Store Multiblock   ==>   Store 多方块结构
+Consolidate Stored Multiblocks   ==>   Consolidate Stored 多方块结构
+Stop Generation   ==>   停止 Generation
+X Mirror Symmetry   ==>   X 轴镜像 对称
+Y Mirror Symmetry   ==>   Y 轴镜像 对称
+Z Mirror Symmetry   ==>   Z 轴镜像 对称
+X 180 Degree Rotational Symmetry   ==>   X 180 Degree Rotational 对称
+Y 180 Degree Rotational Symmetry   ==>   Y 180 Degree Rotational 对称
+Z 180 Degree Rotational Symmetry   ==>   Z 180 Degree Rotational 对称
+
+===== UNTRANSLATED =====
+V4 (Lite)
+V3 stp/clc
+V3 clc
+V3 cp/clc
+Commencing test...
+V4 Lite clc
+V4 Lite cp/clc
+/sec)
+made by 
+by Cn-285
+Comic Mono
+Suggestion calculation thread
+Couldn't find variable: 
+multiblock.dims[
+multiblock2.dims[
+generator.stages[
+}.steps[
+)}.conditions[
+}.transitions[
+}.conditions[
+Adding 
+Loaded theme
+Loaded NC Config
+ coolant heater
+liquid 
+ of module 
+Could not find external configuration!
+Downloading patrons list...
+Checking for updates...
+Update Check Complete.
+Hey thiz, you forgot to add text for this tab
+S'tack
+Tried to load one file, found 
+Image is not square!
+Border Layout can only hold 5 components!
+Split Layout must always have two components!
+Split Layout can only hold two components!
+Unrecognized setting type: 
+#FFFFFF
+ (Conversion required)
+Got it
+$$LINE
+Highlights invalid blocks with a red outline
+Highlights augmented breeding blankets with a green outline
+Outlines all clusters in the reactor
+Moar Fuels
+Moar Fuels Lite
+Nuclear Oil Refining
+Nuclear Tree Factory
+Binary's Extra Stuff
+NCO Confectionery
+Nuclear Additions
+Highlights active moderators with a green outline
+Highlights valid coils with a green outline
+Shows the chosen recipe on blocks that have multiple recipes
+Shows which cells are primed
+Shows a marker on primed cells.
+Draws a line from neutron sources to the cells they are priming
+Shows a marker on primed vessels.
+Draws a line from neutron sources to the vessels they are priming
+Outlines clusters in the reactor
+Replace 
+ with 
+Rainbow factor
+Highlights blocks that are the only block of their type
+Shows the chosen recipe on active coolers
+ cooler
+ heat sink
+ heatsink
+ sink
+ neutron shield
+ shield
+ moderator
+ coolant
+ heater
+fuel 
+ reflector
+reactor 
+BlockGrid can not have negative dimensions!
+Position 
+ is not in this block grid! check contains(...) first!
+ is not in this multiblock! check contains(...) first!
+Cannot count 
+ in 
+Couldn't read file: 
+Null cannot be affected: 
+Null cannot be affected! 
+All multiblocks must be calculated before they can be compared!
+Last Update Nanos
+.conditions[
+Minimum tries
+Maximum tries
+How did this happen?
+Fill moderators to adjacent cells
+Choose condition
+Choose variable
+Variable key is missing!
+ H/t
+ fluoride
+Tried to set block recipe to 
+, but it can't have recipes!
+Tried to 
+toggle non-toggleable block: 
+Calculation overflow on step 
+! (Halted after 
+ iterations)
+Base calculations
+Shutdown Factor
+Partial Shutdown
+ input port
+ output port
+ to 
+ oxide
+ nitride
+-zirconium alloy
+Haven't added support for this yet: 
+Completeness Suggestor
+Mining Suggestor
+Mining Level
+Mining Speed
+

@@ -1,0 +1,198 @@
+[
+  {
+    "file": "asdf.ncpf",
+    "source": "asdf.ncpf",
+    "commit": "ef66e301",
+    "date": "2020-06-22",
+    "bytes": 20070
+  },
+  {
+    "file": "qwerty.ncpf",
+    "source": "qwerty.ncpf",
+    "commit": "5d11b5b2",
+    "date": "2020-06-22",
+    "bytes": 80609
+  },
+  {
+    "file": "e2e-v1.ncpf",
+    "source": "src/configurations/e2e.ncpf",
+    "commit": "2c32149f",
+    "date": "2020-07-20",
+    "bytes": 33503
+  },
+  {
+    "file": "po3-v1.ncpf",
+    "source": "src/configurations/po3.ncpf",
+    "commit": "cc6a2309",
+    "date": "2020-07-20",
+    "bytes": 33500
+  },
+  {
+    "file": "e2e-v2.ncpf",
+    "source": "src/configurations/e2e.ncpf",
+    "commit": "ccb9394c",
+    "date": "2020-09-04",
+    "bytes": 33734
+  },
+  {
+    "file": "po3-v2.ncpf",
+    "source": "src/configurations/po3.ncpf",
+    "commit": "82076cb9",
+    "date": "2020-09-04",
+    "bytes": 33674
+  },
+  {
+    "file": "e2e-v5.ncpf",
+    "source": "src/configurations/e2e.ncpf",
+    "commit": "02fdb5fd",
+    "date": "2021-04-06",
+    "bytes": 33876
+  },
+  {
+    "file": "po3-v5.ncpf",
+    "source": "src/configurations/po3.ncpf",
+    "commit": "08d8de55",
+    "date": "2021-04-06",
+    "bytes": 33816
+  },
+  {
+    "file": "fusion_test-v8.ncpf",
+    "source": "src/configurations/fusion_test.ncpf",
+    "commit": "4dec7030",
+    "date": "2020-10-17",
+    "bytes": 13167
+  },
+  {
+    "file": "aop-v10.ncpf",
+    "source": "src/configurations/addons/aop.ncpf",
+    "commit": "892946a6",
+    "date": "2025-04-18",
+    "bytes": 59836
+  },
+  {
+    "file": "thorium_mixed_fuels.ncpf",
+    "source": "src/configurations/addons/thorium_mixed_fuels.ncpf",
+    "commit": "1a09ffd6",
+    "date": "2025-04-25",
+    "bytes": 82097
+  },
+  {
+    "file": "overhaul.json",
+    "source": "overhaul.json",
+    "commit": "40209a9a",
+    "date": "2020-04-27",
+    "bytes": 795
+  },
+  {
+    "file": "quanta.ncpf",
+    "source": "src/configurations/quanta.ncpf",
+    "commit": "20a6af4c",
+    "date": "2022-07-04",
+    "bytes": 509906
+  },
+  {
+    "file": "aapn.ncpf",
+    "source": "src/configurations/aapn.ncpf",
+    "commit": "b09dfb09",
+    "date": "2021-09-05",
+    "bytes": 739109
+  },
+  {
+    "file": "moar_fuels.ncpf",
+    "source": "src/configurations/addons/moar_fuels.ncpf",
+    "commit": "522f2ace",
+    "date": "2021-07-07",
+    "bytes": 1053257
+  },
+  {
+    "file": "moar_heat_sinks.ncpf",
+    "source": "src/configurations/addons/moar_heat_sinks.ncpf",
+    "commit": "4c3d7f48",
+    "date": "2021-09-09",
+    "bytes": 335826
+  },
+  {
+    "file": "extreme_reactors.ncpf",
+    "source": "src/configurations/addons/extreme_reactors.ncpf",
+    "commit": "b4571be6",
+    "date": "2021-04-06",
+    "bytes": 7225
+  },
+  {
+    "file": "ic2.ncpf",
+    "source": "src/configurations/addons/ic2.ncpf",
+    "commit": "b4571be6",
+    "date": "2021-04-06",
+    "bytes": 26077
+  },
+  {
+    "file": "inert_matrix_fuels.ncpf",
+    "source": "src/configurations/addons/inert_matrix_fuels.ncpf",
+    "commit": "5bc397c8",
+    "date": "2021-07-12",
+    "bytes": 36567
+  },
+  {
+    "file": "alloy_heat_sinks.ncpf",
+    "source": "src/configurations/addons/alloy_heat_sinks.ncpf",
+    "commit": "1b1c6b14",
+    "date": "2021-07-18",
+    "bytes": 49375
+  },
+  {
+    "file": "spicy_heat_sinks_stable.ncpf",
+    "source": "src/configurations/addons/spicy_heat_sinks_stable.ncpf",
+    "commit": "4c3d7f48",
+    "date": "2021-09-09",
+    "bytes": 127680
+  },
+  {
+    "file": "underhaul.json",
+    "source": "underhaul.json",
+    "commit": "f3e20c03",
+    "date": "2020-05-10",
+    "bytes": 1191
+  },
+  {
+    "file": "nuclearcraft.ncpf",
+    "source": "src/configurations/nuclearcraft.ncpf",
+    "commit": "a2e000f1",
+    "date": "2022-07-04",
+    "bytes": 688965
+  },
+  {
+    "file": "e2e.ncpf",
+    "source": "src/configurations/e2e.ncpf",
+    "commit": "b4571be6",
+    "date": "2021-04-06",
+    "bytes": 220212
+  },
+  {
+    "file": "po3.ncpf",
+    "source": "src/configurations/po3.ncpf",
+    "commit": "b4571be6",
+    "date": "2021-04-06",
+    "bytes": 217103
+  },
+  {
+    "file": "fusion_test.ncpf",
+    "source": "src/configurations/fusion_test.ncpf",
+    "commit": "6105febb",
+    "date": "2021-07-17",
+    "bytes": 42475
+  },
+  {
+    "file": "trinity.ncpf",
+    "source": "src/configurations/addons/trinity.ncpf",
+    "commit": "b4571be6",
+    "date": "2021-04-06",
+    "bytes": 5102
+  },
+  {
+    "file": "qmd.ncpf",
+    "source": "src/configurations/addons/qmd.ncpf",
+    "commit": "97c9d260",
+    "date": "2023-06-23",
+    "bytes": 43748
+  }
+]

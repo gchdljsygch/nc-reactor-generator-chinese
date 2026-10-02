@@ -1,0 +1,4750 @@
+{
+  "meta": {
+    "source": "src/net/ncplanner/plannerator/planner/localization/SimplifiedChineseLocalizer.java",
+    "extractedAt": "2026-10-01T19:31:19+08:00",
+    "pairCount": 1185,
+    "note": "R0.5 migration input. These are substring-replacement pairs from the legacy render-time localiser; keys are English source strings, NOT stable message IDs. They must be re-keyed during Phase 2/3 of the rewrite."
+  },
+  "pairs": [
+    {
+      "en": "Nuclearcraft Plannerator",
+      "zh": "核工艺规划器"
+    },
+    {
+      "en": "DSSL Editor",
+      "zh": "DSSL 编辑器"
+    },
+    {
+      "en": "RECOVERY MODE ENABLED. PRESS CTRL+SHIFT+R TO DISABLE",
+      "zh": "恢复模式已启用。按 Ctrl+Shift+R 关闭"
+    },
+    {
+      "en": "Press escape to exit credits",
+      "zh": "按 Esc 退出致谢名单"
+    },
+    {
+      "en": "Open a link? (Will open in default browser)",
+      "zh": "要打开链接吗？（将在默认浏览器中打开）"
+    },
+    {
+      "en": "Would you like to save?",
+      "zh": "是否保存？"
+    },
+    {
+      "en": "Unsaved changes detected!\nSave changes?",
+      "zh": "检测到未保存的更改！\n是否保存？"
+    },
+    {
+      "en": "Delete the currently selected multiblock\nWARNING: This cannot be undone!",
+      "zh": "删除当前选中的多方块结构\n警告：此操作无法撤销！"
+    },
+    {
+      "en": "Stop editing this multiblock and return to the main menu",
+      "zh": "停止编辑此多方块结构并返回主菜单"
+    },
+    {
+      "en": "Resize the multiblock\nWARNING: This clears the edit history! (undo/redo)",
+      "zh": "调整多方块结构尺寸\n警告：这会清除编辑历史记录（撤销/重做）！"
+    },
+    {
+      "en": "Toggle 3D multiblock view\n(Rotate with arrow keys)",
+      "zh": "切换多方块结构的 3D 视图\n（使用方向键旋转）"
+    },
+    {
+      "en": "Recalculate the entire multiblock\nCtrl-click to queue multiple actions without recalculating",
+      "zh": "重新计算整个多方块结构\n按住 Ctrl 单击可将多个操作加入队列而不立即计算"
+    },
+    {
+      "en": "Convert the currently selected multiblock to an Overhaul MSR\nWARNING: All fuels will be converted to their Flouride counterparts",
+      "zh": "将当前选中的多方块结构转换为改版熔盐堆\n警告：所有燃料都会转换为对应的氟化物"
+    },
+    {
+      "en": "Convert the currently selected multiblock to an Overhaul SFR\nWARNING: All fuels will be converted to their Oxide counterparts",
+      "zh": "将当前选中的多方块结构转换为改版固体燃料堆\n警告：所有燃料都会转换为对应的氧化物"
+    },
+    {
+      "en": "Click or drop files to change ",
+      "zh": "单击或拖入文件以更换"
+    },
+    {
+      "en": " texture\nOr right click to generate a texture",
+      "zh": "纹理\n右键单击可生成纹理"
+    },
+    {
+      "en": "Import all multiblocks from a saved file",
+      "zh": "从已保存的文件导入全部多方块结构"
+    },
+    {
+      "en": "Export the selected multiblock to a file",
+      "zh": "将选中的多方块结构导出到文件"
+    },
+    {
+      "en": "Save all multiblocks to a file",
+      "zh": "将全部多方块结构保存到文件"
+    },
+    {
+      "en": "Load a file, replacing all current multiblocks",
+      "zh": "加载文件并替换当前全部多方块结构"
+    },
+    {
+      "en": "Finish editing metadata",
+      "zh": "完成编辑元数据"
+    },
+    {
+      "en": "Modify the multiblock metadata",
+      "zh": "修改多方块结构元数据"
+    },
+    {
+      "en": "Generate or improve this multiblock",
+      "zh": "生成或优化此多方块结构"
+    },
+    {
+      "en": "View a parts list for this multiblock",
+      "zh": "查看此多方块结构的部件清单"
+    },
+    {
+      "en": "Perform one step of calculation",
+      "zh": "执行一步计算"
+    },
+    {
+      "en": "Use Arrow keys to rotate preview",
+      "zh": "使用方向键旋转预览"
+    },
+    {
+      "en": "Press escape or right click to exit.",
+      "zh": "按 Esc 或右键退出。"
+    },
+    {
+      "en": "CURSOR CALIBRATION",
+      "zh": "光标校准"
+    },
+    {
+      "en": "Calibration changed! Would you like to adjust GUI scale to match?",
+      "zh": "校准已更改。是否同步调整界面缩放？"
+    },
+    {
+      "en": "No lite model exists for ",
+      "zh": "不存在轻量模型："
+    },
+    {
+      "en": "Failed to load configuration!",
+      "zh": "加载配置失败！"
+    },
+    {
+      "en": "Failed to save script!",
+      "zh": "保存脚本失败！"
+    },
+    {
+      "en": "Failed to export multiblock!",
+      "zh": "导出多方块结构失败！"
+    },
+    {
+      "en": "Failed to load last configuration: ",
+      "zh": "加载上次的配置失败："
+    },
+    {
+      "en": "Failed to load internal texture for MSR Block: ",
+      "zh": "加载熔盐堆方块的内部纹理失败："
+    },
+    {
+      "en": "File ",
+      "zh": "文件 "
+    },
+    {
+      "en": " already exists!\nOverwrite?",
+      "zh": " 已存在！\n是否覆盖？"
+    },
+    {
+      "en": "Saved as ",
+      "zh": "已保存为 "
+    },
+    {
+      "en": "Invalid filename: ",
+      "zh": "无效的文件名："
+    },
+    {
+      "en": "Multiblock does not exist!\nMultiblocks may still be loading",
+      "zh": "多方块结构不存在！\n多方块结构可能仍在加载中"
+    },
+    {
+      "en": "Open Folder",
+      "zh": "打开文件夹"
+    },
+    {
+      "en": "Save Dialog",
+      "zh": "另存为对话框"
+    },
+    {
+      "en": "Choose Benchmark",
+      "zh": "选择基准测试"
+    },
+    {
+      "en": "Benchmark not found",
+      "zh": "未找到基准测试"
+    },
+    {
+      "en": "Running Benchmark: ",
+      "zh": "正在运行基准测试："
+    },
+    {
+      "en": "Calculating Multiblock",
+      "zh": "正在计算多方块结构"
+    },
+    {
+      "en": "Calculating suggestions",
+      "zh": "正在计算建议"
+    },
+    {
+      "en": "Generating suggestions",
+      "zh": "正在生成建议"
+    },
+    {
+      "en": "Consolidating suggestions",
+      "zh": "正在合并建议"
+    },
+    {
+      "en": "Sorting suggestions",
+      "zh": "正在排序建议"
+    },
+    {
+      "en": "Pruning Suggestions",
+      "zh": "正在筛选建议"
+    },
+    {
+      "en": "Calculating Casing",
+      "zh": "正在计算外壳"
+    },
+    {
+      "en": "Calculating Heatsinks",
+      "zh": "正在计算散热器"
+    },
+    {
+      "en": "Calculating Heaters",
+      "zh": "正在计算加热器"
+    },
+    {
+      "en": "Calculating Bearing",
+      "zh": "正在计算轴承"
+    },
+    {
+      "en": "Calculating Blades",
+      "zh": "正在计算叶片"
+    },
+    {
+      "en": "Calculating Rotor",
+      "zh": "正在计算转子"
+    },
+    {
+      "en": "Calculating Coils",
+      "zh": "正在计算线圈"
+    },
+    {
+      "en": "Calculating Breeding Blankets",
+      "zh": "正在计算增殖包层"
+    },
+    {
+      "en": "Building Vessel Groups",
+      "zh": "正在构建燃料容器组"
+    },
+    {
+      "en": "Building Clusters",
+      "zh": "正在构建簇"
+    },
+    {
+      "en": "Calculating Clusters",
+      "zh": "正在计算簇"
+    },
+    {
+      "en": "Calculating Stats",
+      "zh": "正在计算统计数据"
+    },
+    {
+      "en": "Calculating Shutdown Factor",
+      "zh": "正在计算停堆系数"
+    },
+    {
+      "en": "Calculating Partial Shutdown",
+      "zh": "正在计算部分停堆"
+    },
+    {
+      "en": "Checking Casing",
+      "zh": "正在检查外壳"
+    },
+    {
+      "en": "Calculating Core",
+      "zh": "正在计算核心"
+    },
+    {
+      "en": "Calculating Coolers",
+      "zh": "正在计算冷却器"
+    },
+    {
+      "en": "Opening Neutron Shields",
+      "zh": "正在开启中子屏蔽器"
+    },
+    {
+      "en": "Closing Neutron Shields",
+      "zh": "正在关闭中子屏蔽器"
+    },
+    {
+      "en": "Resetting Neutron Shields",
+      "zh": "正在重置中子屏蔽器"
+    },
+    {
+      "en": "Propogating Neutron Flux",
+      "zh": "正在传播中子通量"
+    },
+    {
+      "en": "Re-propogating Neutron Flux",
+      "zh": "正在重新传播中子通量"
+    },
+    {
+      "en": "Performing Post-Flux Calculations",
+      "zh": "正在执行通量后计算"
+    },
+    {
+      "en": "Initializing Fuel Cells",
+      "zh": "正在初始化燃料单元"
+    },
+    {
+      "en": "Initializing Fuel Vessels",
+      "zh": "正在初始化燃料容器"
+    },
+    {
+      "en": "Initializing...",
+      "zh": "正在初始化…"
+    },
+    {
+      "en": "Resetting Metadata",
+      "zh": "正在重置元数据"
+    },
+    {
+      "en": "Adding File Readers...",
+      "zh": "正在添加文件读取器…"
+    },
+    {
+      "en": "Preloading settings...",
+      "zh": "正在预加载设置…"
+    },
+    {
+      "en": "Adding modules...",
+      "zh": "正在添加模块…"
+    },
+    {
+      "en": "Loading settings...",
+      "zh": "正在加载设置…"
+    },
+    {
+      "en": "Refreshing modules...",
+      "zh": "正在刷新模块…"
+    },
+    {
+      "en": "Initializing Nuclearcraft Configuration",
+      "zh": "正在初始化核工艺配置"
+    },
+    {
+      "en": "Adjusting MSR block textures...",
+      "zh": "正在调整熔盐堆方块纹理…"
+    },
+    {
+      "en": "Imposing Configuration...",
+      "zh": "正在应用配置…"
+    },
+    {
+      "en": "Adding Core Module",
+      "zh": "正在添加核心模块"
+    },
+    {
+      "en": "Adding Underhaul Module",
+      "zh": "正在添加旧版模块"
+    },
+    {
+      "en": "Adding Overhaul Module",
+      "zh": "正在添加改版模块"
+    },
+    {
+      "en": "Adding Fusion Test Module",
+      "zh": "正在添加聚变测试模块"
+    },
+    {
+      "en": "Adding Rainbow Factor Module",
+      "zh": "正在添加彩虹因子模块"
+    },
+    {
+      "en": "Adding Prime Fuel Module",
+      "zh": "正在添加高级燃料模块"
+    },
+    {
+      "en": "Adding Quantum Traversed Efficiency Module",
+      "zh": "正在添加量子传输效率模块"
+    },
+    {
+      "en": "Adding Additional Modules",
+      "zh": "正在添加附加模块"
+    },
+    {
+      "en": "Thank you to my patrons:",
+      "zh": "感谢以下赞助者："
+    },
+    {
+      "en": "If you enjoy this plannerator, consider supporting me on patreon or ko-fi:",
+      "zh": "如果你喜欢这个规划器，可以在 Patreon 或 Ko-fi 上支持作者："
+    },
+    {
+      "en": "Join my discord server:",
+      "zh": "加入 Discord 服务器："
+    },
+    {
+      "en": "This is for correcting a cursor offset issue on macOS",
+      "zh": "此功能用于修正 macOS 上的光标偏移问题"
+    },
+    {
+      "en": "To auto-calibrate, click the squares that appear onscreen.",
+      "zh": "要自动校准，请单击屏幕上出现的方块。"
+    },
+    {
+      "en": "Use arrow keys or WASD to manually adjust calibration (Press control for granular adjustment)",
+      "zh": "使用方向键或 WASD 手动调整校准（按住 Ctrl 可进行微调）"
+    },
+    {
+      "en": "Press Delete to reset calibration",
+      "zh": "按 Delete 重置校准"
+    },
+    {
+      "en": "NuclearCraft Planner File",
+      "zh": "核工艺规划器文件"
+    },
+    {
+      "en": "Internal Configurations",
+      "zh": "内置配置"
+    },
+    {
+      "en": "External Configurations",
+      "zh": "外部配置"
+    },
+    {
+      "en": "Current Configuration",
+      "zh": "当前配置"
+    },
+    {
+      "en": "Current Configuration: ",
+      "zh": "当前配置："
+    },
+    {
+      "en": "Load configuration from a file, replacing the current configuration\nAny existing multiblocks will be converted to the new configuration\nYou can load the following files:\nnuclearcraft.cfg in the game files\nany .ncpf configuration file",
+      "zh": "从文件加载配置并替换当前配置\n已有的多方块结构将转换为新配置\n可加载以下文件：\n游戏文件中的 nuclearcraft.cfg\n任意 .ncpf 配置文件"
+    },
+    {
+      "en": "Save the configuration to a .ncpf file",
+      "zh": "将配置保存为 .ncpf 文件"
+    },
+    {
+      "en": "Modify the current configuration",
+      "zh": "修改当前配置"
+    },
+    {
+      "en": "Remember the selected configuration, and load it on startup.\nThis will not remember changes to the configuration, you still have to save those!",
+      "zh": "记住所选配置，并在启动时加载。\n不会记住配置改动，仍需手动保存！"
+    },
+    {
+      "en": "Show 3D view on the Main Menu",
+      "zh": "在主菜单显示 3D 视图"
+    },
+    {
+      "en": "Replace the current configuration with ",
+      "zh": "使用以下配置替换当前配置："
+    },
+    {
+      "en": "\nAll multiblocks will be converted to the new configuration",
+      "zh": "\n所有多方块结构将转换为新配置"
+    },
+    {
+      "en": "Loading External Configurations...",
+      "zh": "正在加载外部配置…"
+    },
+    {
+      "en": "Loading Files",
+      "zh": "正在加载文件"
+    },
+    {
+      "en": "Failed to read external configuration ",
+      "zh": "读取外部配置失败："
+    },
+    {
+      "en": "Importing Configuration",
+      "zh": "正在导入配置"
+    },
+    {
+      "en": "Finish generation and return to the editor",
+      "zh": "完成生成并返回编辑器"
+    },
+    {
+      "en": "Finish resizing and return to the editor screen",
+      "zh": "完成调整尺寸并返回编辑器"
+    },
+    {
+      "en": "Previous stage",
+      "zh": "上一阶段"
+    },
+    {
+      "en": "Next stage",
+      "zh": "下一阶段"
+    },
+    {
+      "en": "Add a generation stage",
+      "zh": "添加生成阶段"
+    },
+    {
+      "en": "Add Thread",
+      "zh": "添加线程"
+    },
+    {
+      "en": "Remove Thread",
+      "zh": "移除线程"
+    },
+    {
+      "en": "Start/Stop generation",
+      "zh": "开始/停止生成"
+    },
+    {
+      "en": "Delete Stage (Hold Shift)",
+      "zh": "删除阶段（按住 Shift）"
+    },
+    {
+      "en": "Generator Presets",
+      "zh": "生成器预设"
+    },
+    {
+      "en": "New Preset",
+      "zh": "新建预设"
+    },
+    {
+      "en": "Load Generator Settings",
+      "zh": "加载生成器设置"
+    },
+    {
+      "en": "Save Generator Settings",
+      "zh": "保存生成器设置"
+    },
+    {
+      "en": "Finish Customizing",
+      "zh": "完成自定义"
+    },
+    {
+      "en": "Generator Parameters",
+      "zh": "生成器参数"
+    },
+    {
+      "en": "Add Parameter",
+      "zh": "添加参数"
+    },
+    {
+      "en": "Mutator Settings",
+      "zh": "变异器设置"
+    },
+    {
+      "en": "Add Mutator",
+      "zh": "添加变异器"
+    },
+    {
+      "en": "Post-Processing Mutators",
+      "zh": "后处理变异器"
+    },
+    {
+      "en": "Add Post-Processing Mutator",
+      "zh": "添加后处理变异器"
+    },
+    {
+      "en": "Stage Transitions",
+      "zh": "阶段转换"
+    },
+    {
+      "en": "Add Transition",
+      "zh": "添加转换"
+    },
+    {
+      "en": "Add Priority",
+      "zh": "添加优先级"
+    },
+    {
+      "en": "Add Condition",
+      "zh": "添加条件"
+    },
+    {
+      "en": "Reset to stage 0",
+      "zh": "重置到第 0 阶段"
+    },
+    {
+      "en": "Insert a blank layer",
+      "zh": "插入空白层"
+    },
+    {
+      "en": "Delete this layer",
+      "zh": "删除此层"
+    },
+    {
+      "en": "Add a blank row",
+      "zh": "添加空白行"
+    },
+    {
+      "en": "Add a blank column",
+      "zh": "添加空白列"
+    },
+    {
+      "en": "Delete this row",
+      "zh": "删除此行"
+    },
+    {
+      "en": "Delete this column",
+      "zh": "删除此列"
+    },
+    {
+      "en": "increase the reactor's Inner Radius",
+      "zh": "增加反应堆内半径"
+    },
+    {
+      "en": "decrease the reactor's Inner Radius",
+      "zh": "减小反应堆内半径"
+    },
+    {
+      "en": "increase the reactor's Core Size",
+      "zh": "增加反应堆核心尺寸"
+    },
+    {
+      "en": "decrease the reactor's Core Size",
+      "zh": "减小反应堆核心尺寸"
+    },
+    {
+      "en": "increase the reactor's Toroid Width",
+      "zh": "增加反应堆环宽"
+    },
+    {
+      "en": "decrease the reactor's Toroid Width",
+      "zh": "减小反应堆环宽"
+    },
+    {
+      "en": "Subtract configuration? (Convert to addon)",
+      "zh": "要相减配置吗？（转换为附加组件）"
+    },
+    {
+      "en": "Automatic Add String",
+      "zh": "自动添加字符串"
+    },
+    {
+      "en": "Change Target",
+      "zh": "更改目标"
+    },
+    {
+      "en": "Import Addon",
+      "zh": "导入附加组件"
+    },
+    {
+      "en": "Create Addon",
+      "zh": "创建附加组件"
+    },
+    {
+      "en": "Importing addons...",
+      "zh": "正在导入附加组件…"
+    },
+    {
+      "en": "Failed to import addon!",
+      "zh": "导入附加组件失败！"
+    },
+    {
+      "en": "Failed to load addon",
+      "zh": "加载附加组件失败"
+    },
+    {
+      "en": "New version available!\n(Version ",
+      "zh": "有新版本可用！\n（版本 "
+    },
+    {
+      "en": ")\nWould you like to update now?",
+      "zh": "）\n是否立即更新？"
+    },
+    {
+      "en": "Failed to update!",
+      "zh": "更新失败！"
+    },
+    {
+      "en": "Delete Multiblock (Hold Shift)",
+      "zh": "删除多方块结构（按住 Shift）"
+    },
+    {
+      "en": "Convert to MSR (Hold Control)",
+      "zh": "转换为熔盐堆（按住 Ctrl）"
+    },
+    {
+      "en": "Convert to SFR (Hold Control)",
+      "zh": "转换为固体燃料堆（按住 Ctrl）"
+    },
+    {
+      "en": "Edit Metadata",
+      "zh": "编辑元数据"
+    },
+    {
+      "en": "Block Recipe",
+      "zh": "方块配方"
+    },
+    {
+      "en": "Actual Expansion",
+      "zh": "实际膨胀率"
+    },
+    {
+      "en": "Queue Actions",
+      "zh": "操作入队"
+    },
+    {
+      "en": "Main Menu",
+      "zh": "主菜单"
+    },
+    {
+      "en": "Add Multiblock",
+      "zh": "添加多方块结构"
+    },
+    {
+      "en": "Add a new multiblock",
+      "zh": "添加新的多方块结构"
+    },
+    {
+      "en": "Multiblocks",
+      "zh": "多方块结构"
+    },
+    {
+      "en": "Multiblock",
+      "zh": "多方块结构"
+    },
+    {
+      "en": "Configurations",
+      "zh": "配置"
+    },
+    {
+      "en": "Configuration",
+      "zh": "配置"
+    },
+    {
+      "en": "Display Name",
+      "zh": "显示名称"
+    },
+    {
+      "en": "Metadata",
+      "zh": "元数据"
+    },
+    {
+      "en": "Blockstate",
+      "zh": "方块状态"
+    },
+    {
+      "en": "Placement Rules",
+      "zh": "放置规则"
+    },
+    {
+      "en": "Other Modules",
+      "zh": "其他模块"
+    },
+    {
+      "en": "Element Stack",
+      "zh": "元素堆栈"
+    },
+    {
+      "en": "Add Element Stack",
+      "zh": "添加元素堆栈"
+    },
+    {
+      "en": "Add Element",
+      "zh": "添加元素"
+    },
+    {
+      "en": "Add State",
+      "zh": "添加状态"
+    },
+    {
+      "en": "Add Rule",
+      "zh": "添加规则"
+    },
+    {
+      "en": "Delete Rule",
+      "zh": "删除规则"
+    },
+    {
+      "en": "Modify Rule",
+      "zh": "修改规则"
+    },
+    {
+      "en": "Parts List",
+      "zh": "部件清单"
+    },
+    {
+      "en": "3D View",
+      "zh": "3D 视图"
+    },
+    {
+      "en": "Zoom out",
+      "zh": "缩小"
+    },
+    {
+      "en": "Zoom in",
+      "zh": "放大"
+    },
+    {
+      "en": "Save as...",
+      "zh": "另存为…"
+    },
+    {
+      "en": "Don't Save",
+      "zh": "不保存"
+    },
+    {
+      "en": "Search",
+      "zh": "搜索"
+    },
+    {
+      "en": "Category",
+      "zh": "分类"
+    },
+    {
+      "en": "Tutorials",
+      "zh": "教程"
+    },
+    {
+      "en": "Tutorial",
+      "zh": "教程"
+    },
+    {
+      "en": "Settings",
+      "zh": "设置"
+    },
+    {
+      "en": "Addons",
+      "zh": "附加组件"
+    },
+    {
+      "en": "Addon",
+      "zh": "附加组件"
+    },
+    {
+      "en": "Version",
+      "zh": "版本"
+    },
+    {
+      "en": "Edit",
+      "zh": "编辑"
+    },
+    {
+      "en": "Create",
+      "zh": "创建"
+    },
+    {
+      "en": "Automatic",
+      "zh": "自动"
+    },
+    {
+      "en": "Target",
+      "zh": "目标"
+    },
+    {
+      "en": "String",
+      "zh": "字符串"
+    },
+    {
+      "en": "V-Sync",
+      "zh": "垂直同步"
+    },
+    {
+      "en": "Internal",
+      "zh": "内部"
+    },
+    {
+      "en": "External",
+      "zh": "外部"
+    },
+    {
+      "en": "Selected",
+      "zh": "所选"
+    },
+    {
+      "en": "Invert",
+      "zh": "反转"
+    },
+    {
+      "en": "Auto-build",
+      "zh": "自动构建"
+    },
+    {
+      "en": "Casings",
+      "zh": "外壳"
+    },
+    {
+      "en": "Remember",
+      "zh": "记住"
+    },
+    {
+      "en": "Show",
+      "zh": "显示"
+    },
+    {
+      "en": "Change",
+      "zh": "更改"
+    },
+    {
+      "en": "Generator",
+      "zh": "生成器"
+    },
+    {
+      "en": "Preset",
+      "zh": "预设"
+    },
+    {
+      "en": "Customize",
+      "zh": "自定义"
+    },
+    {
+      "en": "Parameters",
+      "zh": "参数"
+    },
+    {
+      "en": "Parameter",
+      "zh": "参数"
+    },
+    {
+      "en": "Mutators",
+      "zh": "变异器"
+    },
+    {
+      "en": "Mutator",
+      "zh": "变异器"
+    },
+    {
+      "en": "Post-Processing",
+      "zh": "后处理"
+    },
+    {
+      "en": "Priorities",
+      "zh": "优先级"
+    },
+    {
+      "en": "Priority",
+      "zh": "优先级"
+    },
+    {
+      "en": "Transitions",
+      "zh": "转换"
+    },
+    {
+      "en": "Transition",
+      "zh": "转换"
+    },
+    {
+      "en": "Conditions",
+      "zh": "条件"
+    },
+    {
+      "en": "Condition",
+      "zh": "条件"
+    },
+    {
+      "en": "Stage",
+      "zh": "阶段"
+    },
+    {
+      "en": "Thread",
+      "zh": "线程"
+    },
+    {
+      "en": "Threads",
+      "zh": "线程"
+    },
+    {
+      "en": "Start",
+      "zh": "开始"
+    },
+    {
+      "en": "Stop",
+      "zh": "停止"
+    },
+    {
+      "en": "Reset",
+      "zh": "重置"
+    },
+    {
+      "en": "Volume",
+      "zh": "体积"
+    },
+    {
+      "en": "Ideal Expansion",
+      "zh": "理想膨胀率"
+    },
+    {
+      "en": "Themes",
+      "zh": "主题"
+    },
+    {
+      "en": "Modules",
+      "zh": "模块"
+    },
+    {
+      "en": "Overlays",
+      "zh": "叠加层"
+    },
+    {
+      "en": "Symmetry",
+      "zh": "对称"
+    },
+    {
+      "en": "Resize",
+      "zh": "调整尺寸"
+    },
+    {
+      "en": "Generate",
+      "zh": "生成"
+    },
+    {
+      "en": "Recalculate",
+      "zh": "重新计算"
+    },
+    {
+      "en": "Calculate",
+      "zh": "计算"
+    },
+    {
+      "en": "Back",
+      "zh": "返回"
+    },
+    {
+      "en": "Undo",
+      "zh": "撤销"
+    },
+    {
+      "en": "Redo",
+      "zh": "重做"
+    },
+    {
+      "en": "Import",
+      "zh": "导入"
+    },
+    {
+      "en": "Export",
+      "zh": "导出"
+    },
+    {
+      "en": "Save",
+      "zh": "保存"
+    },
+    {
+      "en": "Load",
+      "zh": "加载"
+    },
+    {
+      "en": "Open",
+      "zh": "打开"
+    },
+    {
+      "en": "New",
+      "zh": "新建"
+    },
+    {
+      "en": "Exit",
+      "zh": "退出"
+    },
+    {
+      "en": "Run",
+      "zh": "运行"
+    },
+    {
+      "en": "Debug",
+      "zh": "调试"
+    },
+    {
+      "en": "Step",
+      "zh": "单步"
+    },
+    {
+      "en": "Continue",
+      "zh": "继续"
+    },
+    {
+      "en": "Halt",
+      "zh": "停止"
+    },
+    {
+      "en": "Saved",
+      "zh": "已保存"
+    },
+    {
+      "en": "Done",
+      "zh": "完成"
+    },
+    {
+      "en": "Cancel",
+      "zh": "取消"
+    },
+    {
+      "en": "Close",
+      "zh": "关闭"
+    },
+    {
+      "en": "Discard",
+      "zh": "丢弃"
+    },
+    {
+      "en": "Yes",
+      "zh": "是"
+    },
+    {
+      "en": "No",
+      "zh": "否"
+    },
+    {
+      "en": "OK",
+      "zh": "确定"
+    },
+    {
+      "en": "Filename",
+      "zh": "文件名"
+    },
+    {
+      "en": "File",
+      "zh": "文件"
+    },
+    {
+      "en": "Key",
+      "zh": "键"
+    },
+    {
+      "en": "Value",
+      "zh": "值"
+    },
+    {
+      "en": "Name",
+      "zh": "名称"
+    },
+    {
+      "en": "Author",
+      "zh": "作者"
+    },
+    {
+      "en": "Description",
+      "zh": "描述"
+    },
+    {
+      "en": "Credits",
+      "zh": "致谢"
+    },
+    {
+      "en": "Changelog",
+      "zh": "更新日志"
+    },
+    {
+      "en": "Supporters",
+      "zh": "支持者"
+    },
+    {
+      "en": "Active",
+      "zh": "已启用"
+    },
+    {
+      "en": "Inactive",
+      "zh": "未启用"
+    },
+    {
+      "en": "On",
+      "zh": "开"
+    },
+    {
+      "en": "Off",
+      "zh": "关"
+    },
+    {
+      "en": "Warning",
+      "zh": "警告"
+    },
+    {
+      "en": "Error",
+      "zh": "错误"
+    },
+    {
+      "en": "Loading",
+      "zh": "正在加载"
+    },
+    {
+      "en": "Initializing",
+      "zh": "正在初始化"
+    },
+    {
+      "en": "Failed",
+      "zh": "失败"
+    },
+    {
+      "en": "Unknown",
+      "zh": "未知"
+    },
+    {
+      "en": "Light",
+      "zh": "浅色"
+    },
+    {
+      "en": "General",
+      "zh": "通用"
+    },
+    {
+      "en": "Materials",
+      "zh": "材料"
+    },
+    {
+      "en": "Water",
+      "zh": "水"
+    },
+    {
+      "en": "Iron",
+      "zh": "铁"
+    },
+    {
+      "en": "Redstone",
+      "zh": "红石"
+    },
+    {
+      "en": "Quartz",
+      "zh": "石英"
+    },
+    {
+      "en": "Obsidian",
+      "zh": "黑曜石"
+    },
+    {
+      "en": "Gold",
+      "zh": "金"
+    },
+    {
+      "en": "Diamond",
+      "zh": "钻石"
+    },
+    {
+      "en": "Emerald",
+      "zh": "绿宝石"
+    },
+    {
+      "en": "Copper",
+      "zh": "铜"
+    },
+    {
+      "en": "Tin",
+      "zh": "锡"
+    },
+    {
+      "en": "Lead",
+      "zh": "铅"
+    },
+    {
+      "en": "Boron",
+      "zh": "硼"
+    },
+    {
+      "en": "Lithium",
+      "zh": "锂"
+    },
+    {
+      "en": "Magnesium",
+      "zh": "镁"
+    },
+    {
+      "en": "Silver",
+      "zh": "银"
+    },
+    {
+      "en": "Fluorite",
+      "zh": "萤石"
+    },
+    {
+      "en": "Graphite",
+      "zh": "石墨"
+    },
+    {
+      "en": "Helium",
+      "zh": "氦"
+    },
+    {
+      "en": "Enderium",
+      "zh": "末影合金"
+    },
+    {
+      "en": "Cryotheum",
+      "zh": "极寒之凛冰"
+    },
+    {
+      "en": "Beryllium",
+      "zh": "铍"
+    },
+    {
+      "en": "NuclearCraft Plannerator",
+      "zh": "核工艺规划器"
+    },
+    {
+      "en": "CONTAINS LOTS OF FLASHING COLORS\nCONTINUE?",
+      "zh": "包含大量闪烁颜色\n是否继续？"
+    },
+    {
+      "en": "Convert the currently selected multiblock to an Overhaul MSR\nWARNING: All fuels will be converted to their Flouride counterparts",
+      "zh": "将当前选中的多方块结构转换为改版熔盐堆\n警告：所有燃料都会转换为对应的氟化物"
+    },
+    {
+      "en": "Convert the currently selected multiblock to an Overhaul SFR\nWARNING: All fuels will be converted to their Oxide counterparts",
+      "zh": "将当前选中的多方块结构转换为改版固体燃料堆\n警告：所有燃料都会转换为对应的氧化物"
+    },
+    {
+      "en": "Configuration is Empty!",
+      "zh": "配置为空！"
+    },
+    {
+      "en": "Overhaul Fusion Configuration is incomplete!",
+      "zh": "改版聚变配置不完整！"
+    },
+    {
+      "en": "Overhaul MSR Configuration is incomplete!",
+      "zh": "改版熔盐堆配置不完整！"
+    },
+    {
+      "en": "Overhaul SFR Configuration is incomplete!",
+      "zh": "改版固体燃料堆配置不完整！"
+    },
+    {
+      "en": "Overhaul Turbine Configuration is incomplete!",
+      "zh": "改版涡轮机配置不完整！"
+    },
+    {
+      "en": "Underhaul SFR Configuration is incomplete!",
+      "zh": "旧版固体燃料堆配置不完整！"
+    },
+    {
+      "en": "Load configuration from a file, replacing the current configuration\nAny existing multiblocks will be converted to the new configuration\nYou can load the following files:\nnuclearcraft.cfg in the game files\nany .ncpf configuration file",
+      "zh": "从文件加载配置并替换当前配置\n已有的多方块结构将转换为新配置\n可加载以下文件：\n游戏文件中的 nuclearcraft.cfg\n任意 .ncpf 配置文件"
+    },
+    {
+      "en": "Remember the selected configuration, and load it on startup.\nThis will not remember changes to the configuration, you still have to save those!",
+      "zh": "记住所选配置，并在启动时加载。\n不会记住配置改动，仍需手动保存！"
+    },
+    {
+      "en": "For Axial, this is the number of axial pairs (not single blocks)",
+      "zh": "对于轴向规则，此数值为轴向配对数（而非单个方块数）"
+    },
+    {
+      "en": "increase the reactor's Lining Thickness",
+      "zh": "增加反应堆内衬厚度"
+    },
+    {
+      "en": "decrease the reactor's Lining Thickness",
+      "zh": "减小反应堆内衬厚度"
+    },
+    {
+      "en": "Include Casing in Parts List",
+      "zh": "在部件清单中包含外壳"
+    },
+    {
+      "en": "Include Casing in 3D View",
+      "zh": "在 3D 视图中包含外壳"
+    },
+    {
+      "en": "Legacy NCPF (Config2) format, GUI, and some more internal functionality based on SimpleLibraryPlus",
+      "zh": "旧版 NCPF（Config2）格式、界面及部分内部功能基于 SimpleLibraryPlus"
+    },
+    {
+      "en": "Unable to download patrons list! This list may be outdated.",
+      "zh": "无法下载赞助者名单！此名单可能不是最新版本。"
+    },
+    {
+      "en": "If you have any idea what actually causes the cursor offset, please let me know",
+      "zh": "如果你知道光标偏移的实际原因，请告诉作者。"
+    },
+    {
+      "en": "Thank you to everyone in the eVault for helping make this planner into what it is",
+      "zh": "感谢 eVault 的每一位成员，帮助这个规划器成为今天的样子。"
+    },
+    {
+      "en": "Thank you to tomdodd4598 for creating such an amazing mod",
+      "zh": "感谢 tomdodd4598 创作了如此出色的模组。"
+    },
+    {
+      "en": "Click on any configuration to navigate to its CurseForge page",
+      "zh": "单击任意配置可前往其 CurseForge 页面"
+    },
+    {
+      "en": "Click on any addon to navigate to its CurseForge page",
+      "zh": "单击任意附加组件可前往其 CurseForge 页面"
+    },
+    {
+      "en": "(a fork of Simplelibrary by computerneek)",
+      "zh": "（Simplelibrary 的 computerneek 分支）"
+    },
+    {
+      "en": "JDA (when running as discord bot)",
+      "zh": "JDA（作为 Discord 机器人运行时）"
+    },
+    {
+      "en": "by Gliese 832 c",
+      "zh": "作者：Gliese 832 c"
+    },
+    {
+      "en": "by tomdodd4598",
+      "zh": "作者：tomdodd4598"
+    },
+    {
+      "en": "by dtinth",
+      "zh": "作者：dtinth"
+    },
+    {
+      "en": "New version available!\n(Version ",
+      "zh": "有新版本可用！\n（版本 "
+    },
+    {
+      "en": ")\nWould you like to update now?",
+      "zh": "）\n是否立即更新？"
+    },
+    {
+      "en": "Unsaved changes detected!\nSave changes?",
+      "zh": "检测到未保存的更改！\n是否保存？"
+    },
+    {
+      "en": "Delete the currently selected multiblock\nWARNING: This cannot be undone!",
+      "zh": "删除当前选中的多方块结构\n警告：此操作无法撤销！"
+    },
+    {
+      "en": "Resize the multiblock\nWARNING: This clears the edit history! (undo/redo)",
+      "zh": "调整多方块结构尺寸\n警告：这会清除编辑历史记录（撤销/重做）！"
+    },
+    {
+      "en": "Toggle 3D multiblock view\n(Rotate with arrow keys)",
+      "zh": "切换多方块结构的 3D 视图\n（使用方向键旋转）"
+    },
+    {
+      "en": "Recalculate the entire multiblock\nCtrl-click to queue multiple actions without recalculating",
+      "zh": "重新计算整个多方块结构\n按住 Ctrl 单击可将多个操作加入队列而不立即计算"
+    },
+    {
+      "en": "Color (decimal; prefix with # for hex)",
+      "zh": "颜色（十进制；十六进制请加 # 前缀）"
+    },
+    {
+      "en": "Configurations (Modpacks)",
+      "zh": "配置（整合包）"
+    },
+    {
+      "en": "Addons, Mods, & Modpacks",
+      "zh": "附加组件、模组和整合包"
+    },
+    {
+      "en": "Add Global Elements",
+      "zh": "添加全局元素"
+    },
+    {
+      "en": "Add Parent ",
+      "zh": "添加父项 "
+    },
+    {
+      "en": "Choose Element Definition",
+      "zh": "选择元素定义"
+    },
+    {
+      "en": "Choose Mutator Type",
+      "zh": "选择变异器类型"
+    },
+    {
+      "en": "Choose Parameter Name",
+      "zh": "选择参数名称"
+    },
+    {
+      "en": "Choose a mutator",
+      "zh": "选择变异器"
+    },
+    {
+      "en": "Choose a parameter",
+      "zh": "选择参数"
+    },
+    {
+      "en": "Critical Error: ",
+      "zh": "严重错误："
+    },
+    {
+      "en": "Delete this generation stage",
+      "zh": "删除此生成阶段"
+    },
+    {
+      "en": "Different theme font",
+      "zh": "另类主题字体"
+    },
+    {
+      "en": "Fusion test blanket textures",
+      "zh": "聚变测试包层纹理"
+    },
+    {
+      "en": "Generate Texture",
+      "zh": "生成纹理"
+    },
+    {
+      "en": "Include 3D View",
+      "zh": "包含 3D 视图"
+    },
+    {
+      "en": "Include Casing",
+      "zh": "包含外壳"
+    },
+    {
+      "en": "Lining Thickness",
+      "zh": "内衬厚度"
+    },
+    {
+      "en": "Load this addon",
+      "zh": "加载此附加组件"
+    },
+    {
+      "en": "Modify multiblock",
+      "zh": "修改多方块结构"
+    },
+    {
+      "en": "Modify Block (Overhaul SFR)",
+      "zh": "修改方块（改版固体燃料堆）"
+    },
+    {
+      "en": "Placement Rule",
+      "zh": "放置规则"
+    },
+    {
+      "en": "Remove or Delete Addon",
+      "zh": "移除或删除附加组件"
+    },
+    {
+      "en": "System File Chooser",
+      "zh": "系统文件选择器"
+    },
+    {
+      "en": "Convert SFR <> MSR",
+      "zh": "固体燃料堆 ↔ 熔盐堆"
+    },
+    {
+      "en": "Create (Shift)",
+      "zh": "创建（Shift）"
+    },
+    {
+      "en": "Delete (Shift)",
+      "zh": "删除（Shift）"
+    },
+    {
+      "en": "Delete Stage (Hold Shift)",
+      "zh": "删除阶段（按住 Shift）"
+    },
+    {
+      "en": "Delete Multiblock (Hold Shift)",
+      "zh": "删除多方块结构（按住 Shift）"
+    },
+    {
+      "en": "Edit metadata",
+      "zh": "编辑元数据"
+    },
+    {
+      "en": "Enter VR",
+      "zh": "进入 VR"
+    },
+    {
+      "en": "Hot NaK",
+      "zh": "高温钠钾合金"
+    },
+    {
+      "en": "Inner Radius",
+      "zh": "内半径"
+    },
+    {
+      "en": "Core Size",
+      "zh": "核心尺寸"
+    },
+    {
+      "en": "Toroid Width",
+      "zh": "环宽"
+    },
+    {
+      "en": "Light, but darker",
+      "zh": "浅色（较暗）"
+    },
+    {
+      "en": "Load Anyway",
+      "zh": "仍要加载"
+    },
+    {
+      "en": "Made by ThizThizzyDizzy",
+      "zh": "由 ThizThizzyDizzy 制作"
+    },
+    {
+      "en": " made by ",
+      "zh": "，作者："
+    },
+    {
+      "en": "New version available!",
+      "zh": "有新版本可用！"
+    },
+    {
+      "en": "Set Texture",
+      "zh": "设置纹理"
+    },
+    {
+      "en": "texture\nOr right click to generate a texture",
+      "zh": "纹理\n右键单击可生成纹理"
+    },
+    {
+      "en": "Texture",
+      "zh": "纹理"
+    },
+    {
+      "en": "Amount",
+      "zh": "数量"
+    },
+    {
+      "en": "Change Theme",
+      "zh": "更换主题"
+    },
+    {
+      "en": "Configurations",
+      "zh": "配置"
+    },
+    {
+      "en": "Designs:",
+      "zh": "设计："
+    },
+    {
+      "en": "Early Concept Art",
+      "zh": "早期概念美术"
+    },
+    {
+      "en": "Hut images",
+      "zh": "小屋图像"
+    },
+    {
+      "en": "Libraries",
+      "zh": "库"
+    },
+    {
+      "en": "Legacy Name",
+      "zh": "旧名称"
+    },
+    {
+      "en": "Remove",
+      "zh": "移除"
+    },
+    {
+      "en": "Modify",
+      "zh": "修改"
+    },
+    {
+      "en": "Modify addon",
+      "zh": "修改附加组件"
+    },
+    {
+      "en": "Create",
+      "zh": "创建"
+    },
+    {
+      "en": "Choose one",
+      "zh": "选择一项"
+    },
+    {
+      "en": "Import instead?",
+      "zh": "改为导入？"
+    },
+    {
+      "en": "Standard",
+      "zh": "标准"
+    },
+    {
+      "en": "Different",
+      "zh": "另类"
+    },
+    {
+      "en": "ACTIVE",
+      "zh": "运行中"
+    },
+    {
+      "en": "IDLE",
+      "zh": "空闲"
+    },
+    {
+      "en": "Add",
+      "zh": "添加"
+    },
+    {
+      "en": "Del",
+      "zh": "删除"
+    },
+    {
+      "en": "Set",
+      "zh": "设置"
+    },
+    {
+      "en": " value: ",
+      "zh": " 值："
+    },
+    {
+      "en": "Redo (Ctrl+",
+      "zh": "重做（Ctrl+"
+    },
+    {
+      "en": "Undo (Ctrl+",
+      "zh": "撤销（Ctrl+"
+    },
+    {
+      "en": "X Mirror",
+      "zh": "X 轴镜像"
+    },
+    {
+      "en": "Y Mirror",
+      "zh": "Y 轴镜像"
+    },
+    {
+      "en": "Z Mirror",
+      "zh": "Z 轴镜像"
+    },
+    {
+      "en": "180 X Rotational",
+      "zh": "180 度 X 轴旋转"
+    },
+    {
+      "en": "180 Y Rotational",
+      "zh": "180 度 Y 轴旋转"
+    },
+    {
+      "en": "180 Z Rotational",
+      "zh": "180 度 Z 轴旋转"
+    },
+    {
+      "en": "X Multiplier: ",
+      "zh": "X 倍率："
+    },
+    {
+      "en": "Y Multiplier: ",
+      "zh": "Y 倍率："
+    },
+    {
+      "en": "X Offset: ",
+      "zh": "X 偏移："
+    },
+    {
+      "en": "Y Offset: ",
+      "zh": "Y 偏移："
+    },
+    {
+      "en": "Something has gone horribly wrong!",
+      "zh": "发生了严重错误！"
+    },
+    {
+      "en": "What's this doing here?",
+      "zh": "这是什么？"
+    },
+    {
+      "en": "A fusion reactor for Nuclearcraft: Overhauled\nTHESE DO NOT EXIST INGAME!\nThis is just a prototype, and is VERY different from what they will be in-game",
+      "zh": "核工艺：改版的聚变反应堆\n这些内容尚未在游戏内实装！\n这只是原型，与它们未来在游戏中的形态会有很大不同。"
+    },
+    {
+      "en": "Box tool (B)\nUse this tool to draw Rectangles or Cuboids of the same block\nHold CTRL to only place blocks where they are valid",
+      "zh": "方框工具（B）\n使用此工具绘制由同一种方块组成的矩形或长方体\n按住 Ctrl 仅在有效位置放置方块"
+    },
+    {
+      "en": "Copy tool\nUse this to select an area to copy\nOnce an area is selected, click to paste that selection",
+      "zh": "复制工具\n使用此工具选择要复制的区域\n选择区域后，单击即可粘贴所选内容"
+    },
+    {
+      "en": "Cut tool\nUse this to select an area to cut\nOnce an area is selected, click to paste that selection",
+      "zh": "剪切工具\n使用此工具选择要剪切的区域\n选择区域后，单击即可粘贴所选内容"
+    },
+    {
+      "en": "Changes the reactor's coolant recipe to a random one from the list of allowed recipes",
+      "zh": "将反应堆冷却剂配方更改为允许配方列表中的随机一项"
+    },
+    {
+      "en": "Changes the reactor's fuel to a random fuel from the list of allowed fuels",
+      "zh": "将反应堆燃料更改为允许燃料列表中的随机一项"
+    },
+    {
+      "en": "Changes a random block in the reactor to a random block from the list of allowed blocks",
+      "zh": "将反应堆中的随机方块替换为允许方块列表中的随机一项"
+    },
+    {
+      "en": "Adds a fuel cell at a random point in the reactor, optionally with moderator lines or other cells to ensure it can be valid",
+      "zh": "在反应堆的随机位置添加燃料单元；可选地同时添加慢化剂线或其他单元以确保其有效"
+    },
+    {
+      "en": "All the base NuclearCraft: Overhauled multiblocks",
+      "zh": "全部核工艺：改版基础多方块结构"
+    },
+    {
+      "en": "All the base NuclearCraft multiblocks",
+      "zh": "全部核工艺基础多方块结构"
+    },
+    {
+      "en": "Contains general features appliccable to all multiblocks",
+      "zh": "包含适用于全部多方块结构的通用功能"
+    },
+    {
+      "en": "Internal module for setup/testing purposes. Do not use.",
+      "zh": "用于设置和测试的内部模块，请勿使用。"
+    },
+    {
+      "en": "A testbed for future overhaul fusion reactors.",
+      "zh": "未来改版聚变反应堆的测试平台。"
+    },
+    {
+      "en": "Gives an adjusted efficiency score for overhaul SFRs based on neutron shield output",
+      "zh": "根据中子屏蔽输出为改版固体燃料堆提供调整后的效率评分"
+    },
+    {
+      "en": "Gives multiblocks a Rainbow Factor based on how many different types of coolers/heatsinks/heaters/etc. they have",
+      "zh": "根据多方块结构拥有的冷却器、散热器、加热器等类型数量赋予其彩虹因子"
+    },
+    {
+      "en": "Highlights the number of cells/vessels in a multiblock, and shows if it's a prime number",
+      "zh": "突出显示多方块结构中的单元/燃料容器数量，并显示其是否为质数"
+    },
+    {
+      "en": "Choose element for tag or oredict:\n",
+      "zh": "为标签或矿辞典选择元素：\n"
+    },
+    {
+      "en": "Cluster is not connected to a connector!",
+      "zh": "簇未连接到连接器！"
+    },
+    {
+      "en": "Cluster is not connected to the casing!",
+      "zh": "簇未连接到外壳！"
+    },
+    {
+      "en": "Cluster is heat-positive!",
+      "zh": "簇的净热量为正！"
+    },
+    {
+      "en": "Cluster is penalized for overcooling!",
+      "zh": "簇因过度冷却受到惩罚！"
+    },
+    {
+      "en": "No controller!",
+      "zh": "缺少控制器！"
+    },
+    {
+      "en": "Too many controllers!",
+      "zh": "控制器数量过多！"
+    },
+    {
+      "en": "Casing incomplete! (Missing ",
+      "zh": "外壳不完整！（缺少 "
+    },
+    {
+      "en": "Missing inlet!",
+      "zh": "缺少入口！"
+    },
+    {
+      "en": "Missing outlet!",
+      "zh": "缺少出口！"
+    },
+    {
+      "en": "Missing input vent!",
+      "zh": "缺少输入排气口！"
+    },
+    {
+      "en": "Missing output vent!",
+      "zh": "缺少输出排气口！"
+    },
+    {
+      "en": " input ports:",
+      "zh": " 个输入端口："
+    },
+    {
+      "en": " input port:",
+      "zh": " 个输入端口："
+    },
+    {
+      "en": " output ports:",
+      "zh": " 个输出端口："
+    },
+    {
+      "en": " output port:",
+      "zh": " 个输出端口："
+    },
+    {
+      "en": "Missing ",
+      "zh": "缺少 "
+    },
+    {
+      "en": "Invalid Bearing!",
+      "zh": "轴承无效！"
+    },
+    {
+      "en": "Bearing Diameter: ",
+      "zh": "轴承直径："
+    },
+    {
+      "en": "Rotor Invalid!",
+      "zh": "转子无效！"
+    },
+    {
+      "en": "Blade Suggestor",
+      "zh": "叶片建议器"
+    },
+    {
+      "en": "Heatsink Suggestor",
+      "zh": "散热器建议器"
+    },
+    {
+      "en": " similar clusters:",
+      "zh": " 个相似簇："
+    },
+    {
+      "en": " incomplete!",
+      "zh": " 不完整！"
+    },
+    {
+      "en": " mb/t of whatever ",
+      "zh": " mb/t 的 "
+    },
+    {
+      "en": " mb/t of ",
+      "zh": " mb/t 的 "
+    },
+    {
+      "en": " gets turned into",
+      "zh": "转化而成"
+    },
+    {
+      "en": "Input: ",
+      "zh": "输入："
+    },
+    {
+      "en": "Power Efficiency: ",
+      "zh": "发电效率："
+    },
+    {
+      "en": "Total Efficiency: ",
+      "zh": "总效率："
+    },
+    {
+      "en": "Rotor Efficiency: ",
+      "zh": "转子效率："
+    },
+    {
+      "en": "Coil Efficiency: ",
+      "zh": "线圈效率："
+    },
+    {
+      "en": "Throughput Efficiency: ",
+      "zh": "吞吐效率："
+    },
+    {
+      "en": "Ideality Multiplier: ",
+      "zh": "理想度倍率："
+    },
+    {
+      "en": "Total Heat: ",
+      "zh": "总热量："
+    },
+    {
+      "en": "Total Cooling: ",
+      "zh": "总冷却量："
+    },
+    {
+      "en": "Net Heat: ",
+      "zh": "净热量："
+    },
+    {
+      "en": "Overall Efficiency: ",
+      "zh": "总体效率："
+    },
+    {
+      "en": "Overall Heat Multiplier: ",
+      "zh": "总体热量倍率："
+    },
+    {
+      "en": "Sparsity Penalty Multiplier: ",
+      "zh": "稀疏惩罚倍率："
+    },
+    {
+      "en": "Shieldiness Factor: ",
+      "zh": "屏蔽因子："
+    },
+    {
+      "en": "Clusters: ",
+      "zh": "簇："
+    },
+    {
+      "en": "Total Irradiation: ",
+      "zh": "总辐照量："
+    },
+    {
+      "en": "Shutdown Factor: ",
+      "zh": "停堆系数："
+    },
+    {
+      "en": "Total Heating: ",
+      "zh": "总产热："
+    },
+    {
+      "en": "Net Heating: ",
+      "zh": "净产热："
+    },
+    {
+      "en": "Heat Multiplier: ",
+      "zh": "热量倍率："
+    },
+    {
+      "en": "Heat multiplier: ",
+      "zh": "热量倍率："
+    },
+    {
+      "en": "Cooling penalty mult: ",
+      "zh": "冷却惩罚倍率："
+    },
+    {
+      "en": "Efficiency: ",
+      "zh": "效率："
+    },
+    {
+      "en": "Total Output",
+      "zh": "总产出"
+    },
+    {
+      "en": "Total Efficiency",
+      "zh": "总效率"
+    },
+    {
+      "en": "Total Heat",
+      "zh": "总热量"
+    },
+    {
+      "en": "Total Cooling",
+      "zh": "总冷却量"
+    },
+    {
+      "en": "Net Heat",
+      "zh": "净热量"
+    },
+    {
+      "en": "Heat Multiplier",
+      "zh": "热量倍率"
+    },
+    {
+      "en": "No Fuel",
+      "zh": "没有燃料"
+    },
+    {
+      "en": "No Recipe",
+      "zh": "没有配方"
+    },
+    {
+      "en": "Fuel Cell ",
+      "zh": "燃料单元 "
+    },
+    {
+      "en": "Fuel Vessel ",
+      "zh": "燃料容器 "
+    },
+    {
+      "en": "Vessel Group ",
+      "zh": "燃料容器组 "
+    },
+    {
+      "en": "Vessel Group Primed",
+      "zh": "燃料容器组已引燃"
+    },
+    {
+      "en": "Vessels",
+      "zh": "个燃料容器"
+    },
+    {
+      "en": "Primed",
+      "zh": "已引燃"
+    },
+    {
+      "en": "Self",
+      "zh": "自身"
+    },
+    {
+      "en": "Augmented",
+      "zh": "已增强"
+    },
+    {
+      "en": "Adjacent moderator lines: ",
+      "zh": "相邻慢化剂线："
+    },
+    {
+      "en": "Open Faces: ",
+      "zh": "开放面："
+    },
+    {
+      "en": "Bunching Factor: ",
+      "zh": "聚集系数："
+    },
+    {
+      "en": "Surface Factor: ",
+      "zh": "表面积系数："
+    },
+    {
+      "en": "Heat Produced: ",
+      "zh": "产生热量："
+    },
+    {
+      "en": "Positional Efficiency: ",
+      "zh": "位置效率："
+    },
+    {
+      "en": "Total Neutron Flux: ",
+      "zh": "总中子通量："
+    },
+    {
+      "en": "Criticality Factor: ",
+      "zh": "临界系数："
+    },
+    {
+      "en": "Flux Factor: ",
+      "zh": "通量系数："
+    },
+    {
+      "en": "Efficiency Factor: ",
+      "zh": "效率系数："
+    },
+    {
+      "en": "Efficiency factor: ",
+      "zh": "效率系数："
+    },
+    {
+      "en": "Efficiency multiplier: ",
+      "zh": "效率倍率："
+    },
+    {
+      "en": "Reflectivity: ",
+      "zh": "反射率："
+    },
+    {
+      "en": "Total flux: ",
+      "zh": "总通量："
+    },
+    {
+      "en": "Total heat: ",
+      "zh": "总热量："
+    },
+    {
+      "en": "Heat per flux: ",
+      "zh": "每通量热量："
+    },
+    {
+      "en": "Irradiator flux: ",
+      "zh": "辐照器通量："
+    },
+    {
+      "en": "Efficiency bonus: ",
+      "zh": "效率加成："
+    },
+    {
+      "en": "Neutron source: ",
+      "zh": "中子源："
+    },
+    {
+      "en": "Neutron Sources: ",
+      "zh": "中子源数量："
+    },
+    {
+      "en": "Heating Blanket ",
+      "zh": "加热包层 "
+    },
+    {
+      "en": "Breeding Blanket ",
+      "zh": "增殖包层 "
+    },
+    {
+      "en": "Liquid Distributor",
+      "zh": "液体分配器"
+    },
+    {
+      "en": "Constants and Operators",
+      "zh": "常量与运算符"
+    },
+    {
+      "en": "Constant",
+      "zh": "常量"
+    },
+    {
+      "en": "Block is invalid",
+      "zh": "方块无效"
+    },
+    {
+      "en": "Block is valid",
+      "zh": "方块有效"
+    },
+    {
+      "en": "Clear Invalid Mutator",
+      "zh": "清除无效变异器"
+    },
+    {
+      "en": "Increase Lining Thickness",
+      "zh": "增加内衬厚度"
+    },
+    {
+      "en": "Decrease Lining Thickness",
+      "zh": "减小内衬厚度"
+    },
+    {
+      "en": "Increase Inner Radius",
+      "zh": "增加内半径"
+    },
+    {
+      "en": "Decrease Inner Radius",
+      "zh": "减小内半径"
+    },
+    {
+      "en": "Increase Toroid Width",
+      "zh": "增加环宽"
+    },
+    {
+      "en": "Decrease Toroid Width",
+      "zh": "减小环宽"
+    },
+    {
+      "en": "Increase Core Size",
+      "zh": "增加核心尺寸"
+    },
+    {
+      "en": "Decrease Core Size",
+      "zh": "减小核心尺寸"
+    },
+    {
+      "en": "Decrase Core Size",
+      "zh": "减小核心尺寸"
+    },
+    {
+      "en": "Delete (Hold Shift)",
+      "zh": "删除（按住 Shift）"
+    },
+    {
+      "en": "Breeding Blanket Recipe",
+      "zh": "增殖包层配方"
+    },
+    {
+      "en": "Breeding Blanket Stats",
+      "zh": "增殖包层属性"
+    },
+    {
+      "en": "Coolant Recipe Stats",
+      "zh": "冷却剂配方属性"
+    },
+    {
+      "en": "Irradiator Recipe Stats",
+      "zh": "辐照器配方属性"
+    },
+    {
+      "en": "Active Cooler Recipe",
+      "zh": "主动冷却器配方"
+    },
+    {
+      "en": "Fuel Cell",
+      "zh": "燃料单元"
+    },
+    {
+      "en": "Fuel Vessel",
+      "zh": "燃料容器"
+    },
+    {
+      "en": "Fuel Stats",
+      "zh": "燃料属性"
+    },
+    {
+      "en": "Heater Recipe",
+      "zh": "加热器配方"
+    },
+    {
+      "en": "Heater Stats",
+      "zh": "加热器属性"
+    },
+    {
+      "en": "Irradiator Recipe",
+      "zh": "辐照器配方"
+    },
+    {
+      "en": "Irradiator Stats",
+      "zh": "辐照器属性"
+    },
+    {
+      "en": "Coolant Recipe",
+      "zh": "冷却剂配方"
+    },
+    {
+      "en": "Coolant Vent",
+      "zh": "冷却剂排气口"
+    },
+    {
+      "en": "Active Cooler",
+      "zh": "主动冷却器"
+    },
+    {
+      "en": "Breeding Blanket",
+      "zh": "增殖包层"
+    },
+    {
+      "en": "Heating Blanket",
+      "zh": "加热包层"
+    },
+    {
+      "en": "Block Tag",
+      "zh": "方块标签"
+    },
+    {
+      "en": "Fluid Tag",
+      "zh": "流体标签"
+    },
+    {
+      "en": "Item Tag",
+      "zh": "物品标签"
+    },
+    {
+      "en": "Greater or Equal",
+      "zh": "大于或等于"
+    },
+    {
+      "en": "NuclearCraft: Overhauled",
+      "zh": "核工艺：改版"
+    },
+    {
+      "en": "Fusion Test Configuration",
+      "zh": "聚变测试配置"
+    },
+    {
+      "en": "Fusion Test",
+      "zh": "聚变测试"
+    },
+    {
+      "en": "Prime Fuel",
+      "zh": "质数燃料"
+    },
+    {
+      "en": "Next prime: ",
+      "zh": "下一个质数："
+    },
+    {
+      "en": "Axial pairs of ",
+      "zh": "轴向配对数："
+    },
+    {
+      "en": " at the same vertex",
+      "zh": " 位于同一顶点"
+    },
+    {
+      "en": " at the same edge",
+      "zh": " 位于同一边"
+    },
+    {
+      "en": "Requires ",
+      "zh": "需要"
+    },
+    {
+      "en": "At least ",
+      "zh": "至少 "
+    },
+    {
+      "en": "Exactly ",
+      "zh": "恰好 "
+    },
+    {
+      "en": "Between ",
+      "zh": "介于 "
+    },
+    {
+      "en": " AND ",
+      "zh": "且"
+    },
+    {
+      "en": " OR ",
+      "zh": "或"
+    },
+    {
+      "en": " Heat Sink",
+      "zh": "散热器"
+    },
+    {
+      "en": "Cell flux: ",
+      "zh": "燃料单元中子通量："
+    },
+    {
+      "en": " flux ",
+      "zh": " 通量 "
+    },
+    {
+      "en": ", Eff: ",
+      "zh": "，效率："
+    },
+    {
+      "en": "Cooling: ",
+      "zh": "冷却："
+    },
+    {
+      "en": "Durability: ",
+      "zh": "耐久度："
+    },
+    {
+      "en": "Iterations",
+      "zh": "迭代次数"
+    },
+    {
+      "en": "per second",
+      "zh": "每秒"
+    },
+    {
+      "en": "Recipe",
+      "zh": "配方"
+    },
+    {
+      "en": "Stats",
+      "zh": "属性"
+    },
+    {
+      "en": "Module",
+      "zh": "模块"
+    },
+    {
+      "en": "Block",
+      "zh": "方块"
+    },
+    {
+      "en": "Cell",
+      "zh": "单元"
+    },
+    {
+      "en": "Vessel",
+      "zh": "容器"
+    },
+    {
+      "en": "Heater",
+      "zh": "加热器"
+    },
+    {
+      "en": "Heatsink",
+      "zh": "散热器"
+    },
+    {
+      "en": "Cooler",
+      "zh": "冷却器"
+    },
+    {
+      "en": "Casing",
+      "zh": "外壳"
+    },
+    {
+      "en": "Controller",
+      "zh": "控制器"
+    },
+    {
+      "en": "Connector",
+      "zh": "连接器"
+    },
+    {
+      "en": "Conductor",
+      "zh": "导体"
+    },
+    {
+      "en": "Reflector",
+      "zh": "反射器"
+    },
+    {
+      "en": "Moderator",
+      "zh": "慢化剂"
+    },
+    {
+      "en": "Shield",
+      "zh": "屏蔽器"
+    },
+    {
+      "en": "Irradiator",
+      "zh": "辐照器"
+    },
+    {
+      "en": "Vent",
+      "zh": "排气口"
+    },
+    {
+      "en": "Port",
+      "zh": "端口"
+    },
+    {
+      "en": "Rotor",
+      "zh": "转子"
+    },
+    {
+      "en": "Blade",
+      "zh": "叶片"
+    },
+    {
+      "en": "Stator",
+      "zh": "定子"
+    },
+    {
+      "en": "Bearing",
+      "zh": "轴承"
+    },
+    {
+      "en": "Shaft",
+      "zh": "轴"
+    },
+    {
+      "en": "Coil",
+      "zh": "线圈"
+    },
+    {
+      "en": "Glass",
+      "zh": "玻璃"
+    },
+    {
+      "en": "Heating",
+      "zh": "加热"
+    },
+    {
+      "en": "Cooling",
+      "zh": "冷却"
+    },
+    {
+      "en": "Valid",
+      "zh": "有效"
+    },
+    {
+      "en": "Invalid",
+      "zh": "无效"
+    },
+    {
+      "en": "Cluster",
+      "zh": "簇"
+    },
+    {
+      "en": "Axial",
+      "zh": "轴向"
+    },
+    {
+      "en": "Depleted",
+      "zh": "贫化"
+    },
+    {
+      "en": "Enriched",
+      "zh": "浓缩"
+    },
+    {
+      "en": "Oxide",
+      "zh": "氧化物"
+    },
+    {
+      "en": "Nitride",
+      "zh": "氮化物"
+    },
+    {
+      "en": "Fluoride",
+      "zh": "氟化物"
+    },
+    {
+      "en": "Alloy",
+      "zh": "合金"
+    },
+    {
+      "en": "Uranium",
+      "zh": "铀"
+    },
+    {
+      "en": "Thorium",
+      "zh": "钍"
+    },
+    {
+      "en": "Plutonium",
+      "zh": "钚"
+    },
+    {
+      "en": "Neptunium",
+      "zh": "镎"
+    },
+    {
+      "en": "Americium",
+      "zh": "镅"
+    },
+    {
+      "en": "Curium",
+      "zh": "锔"
+    },
+    {
+      "en": "Berkelium",
+      "zh": "锫"
+    },
+    {
+      "en": "Californium",
+      "zh": "锎"
+    },
+    {
+      "en": "Bismuth",
+      "zh": "铋"
+    },
+    {
+      "en": "Zirconium",
+      "zh": "锆"
+    },
+    {
+      "en": "Manganese",
+      "zh": "锰"
+    },
+    {
+      "en": "Nickel",
+      "zh": "镍"
+    },
+    {
+      "en": "Cobalt",
+      "zh": "钴"
+    },
+    {
+      "en": "Aluminum",
+      "zh": "铝"
+    },
+    {
+      "en": "Coolant Heater Port",
+      "zh": "冷却剂加热器端口"
+    },
+    {
+      "en": "Coolant Cooler Port",
+      "zh": "冷却剂冷却器端口"
+    },
+    {
+      "en": "Coolant Heater",
+      "zh": "冷却剂加热器"
+    },
+    {
+      "en": "Coolant Cooler",
+      "zh": "冷却剂冷却器"
+    },
+    {
+      "en": "Fission Heat Sink",
+      "zh": "裂变散热器"
+    },
+    {
+      "en": "Turbine Dynamo Coil",
+      "zh": "涡轮发电线圈"
+    },
+    {
+      "en": "Turbine Rotor Blade",
+      "zh": "涡轮转子叶片"
+    },
+    {
+      "en": "Turbine Rotor Stator",
+      "zh": "涡轮转子定子"
+    },
+    {
+      "en": "Turbine Rotor Shaft",
+      "zh": "涡轮转子轴"
+    },
+    {
+      "en": "Induction Turbine Magnet",
+      "zh": "感应涡轮磁体"
+    },
+    {
+      "en": "Redstone Field Stabilizer",
+      "zh": "红石场稳定器"
+    },
+    {
+      "en": "Redstone Field Converter",
+      "zh": "红石场转换器"
+    },
+    {
+      "en": "Energy Extractor",
+      "zh": "能量提取器"
+    },
+    {
+      "en": "Fuel Pellet",
+      "zh": "燃料芯块"
+    },
+    {
+      "en": "Fuel Pebble",
+      "zh": "燃料球"
+    },
+    {
+      "en": "Fuel Bundle",
+      "zh": "燃料组件"
+    },
+    {
+      "en": "Carbon Dioxide",
+      "zh": "二氧化碳"
+    },
+    {
+      "en": "Carbon Monoxide",
+      "zh": "一氧化碳"
+    },
+    {
+      "en": "Activated Carbon",
+      "zh": "活性炭"
+    },
+    {
+      "en": "Cold Eutectic NaK-Corium Mixture",
+      "zh": "低温共晶钠钾合金-堆芯熔融物混合物"
+    },
+    {
+      "en": "Critical Exhaust Carbon Dioxide",
+      "zh": "临界排气二氧化碳"
+    },
+    {
+      "en": "Compressed Carbon Dioxide",
+      "zh": "压缩二氧化碳"
+    },
+    {
+      "en": "Actinium",
+      "zh": "锕"
+    },
+    {
+      "en": "Aluminium",
+      "zh": "铝"
+    },
+    {
+      "en": "Antimony",
+      "zh": "锑"
+    },
+    {
+      "en": "Argon",
+      "zh": "氩"
+    },
+    {
+      "en": "Arsenic",
+      "zh": "砷"
+    },
+    {
+      "en": "Barium",
+      "zh": "钡"
+    },
+    {
+      "en": "Calcium",
+      "zh": "钙"
+    },
+    {
+      "en": "Carbon",
+      "zh": "碳"
+    },
+    {
+      "en": "Cerium",
+      "zh": "铈"
+    },
+    {
+      "en": "Chromium",
+      "zh": "铬"
+    },
+    {
+      "en": "Darmstadtium",
+      "zh": "达姆施塔特"
+    },
+    {
+      "en": "Einsteinium",
+      "zh": "锿"
+    },
+    {
+      "en": "Europium",
+      "zh": "铕"
+    },
+    {
+      "en": "Fermium",
+      "zh": "镄"
+    },
+    {
+      "en": "Francium",
+      "zh": "钫"
+    },
+    {
+      "en": "Gadolinium",
+      "zh": "钆"
+    },
+    {
+      "en": "Gallium",
+      "zh": "镓"
+    },
+    {
+      "en": "Germanium",
+      "zh": "锗"
+    },
+    {
+      "en": "Hafnium",
+      "zh": "铪"
+    },
+    {
+      "en": "Holmium",
+      "zh": "钬"
+    },
+    {
+      "en": "Indium",
+      "zh": "铟"
+    },
+    {
+      "en": "Iodine",
+      "zh": "碘"
+    },
+    {
+      "en": "Iridium",
+      "zh": "铱"
+    },
+    {
+      "en": "Krypton",
+      "zh": "氪"
+    },
+    {
+      "en": "Lanthanum",
+      "zh": "镧"
+    },
+    {
+      "en": "Lawrencium",
+      "zh": "铹"
+    },
+    {
+      "en": "Lutetium",
+      "zh": "镥"
+    },
+    {
+      "en": "Mendelevium",
+      "zh": "钔"
+    },
+    {
+      "en": "Mercury",
+      "zh": "汞"
+    },
+    {
+      "en": "Molybdenum",
+      "zh": "钼"
+    },
+    {
+      "en": "Neodymium",
+      "zh": "钕"
+    },
+    {
+      "en": "Neon",
+      "zh": "氖"
+    },
+    {
+      "en": "Niobium",
+      "zh": "铌"
+    },
+    {
+      "en": "Nitrogen",
+      "zh": "氮"
+    },
+    {
+      "en": "Nobelium",
+      "zh": "锘"
+    },
+    {
+      "en": "Osmium",
+      "zh": "锇"
+    },
+    {
+      "en": "Oxygen",
+      "zh": "氧"
+    },
+    {
+      "en": "Palladium",
+      "zh": "钯"
+    },
+    {
+      "en": "Phosphorus",
+      "zh": "磷"
+    },
+    {
+      "en": "Platinum",
+      "zh": "铂"
+    },
+    {
+      "en": "Polonium",
+      "zh": "钋"
+    },
+    {
+      "en": "Potassium",
+      "zh": "钾"
+    },
+    {
+      "en": "Praseodymium",
+      "zh": "镨"
+    },
+    {
+      "en": "Promethium",
+      "zh": "钷"
+    },
+    {
+      "en": "Protactinium",
+      "zh": "镤"
+    },
+    {
+      "en": "Radium",
+      "zh": "镭"
+    },
+    {
+      "en": "Radon",
+      "zh": "氡"
+    },
+    {
+      "en": "Rhenium",
+      "zh": "铼"
+    },
+    {
+      "en": "Rhodium",
+      "zh": "铑"
+    },
+    {
+      "en": "Rubidium",
+      "zh": "铷"
+    },
+    {
+      "en": "Ruthenium",
+      "zh": "钌"
+    },
+    {
+      "en": "Samarium",
+      "zh": "钐"
+    },
+    {
+      "en": "Scandium",
+      "zh": "钪"
+    },
+    {
+      "en": "Selenium",
+      "zh": "硒"
+    },
+    {
+      "en": "Silicon",
+      "zh": "硅"
+    },
+    {
+      "en": "Sodium",
+      "zh": "钠"
+    },
+    {
+      "en": "Strontium",
+      "zh": "锶"
+    },
+    {
+      "en": "Sulfur",
+      "zh": "硫"
+    },
+    {
+      "en": "Tantalum",
+      "zh": "钽"
+    },
+    {
+      "en": "Technetium",
+      "zh": "锝"
+    },
+    {
+      "en": "Tellurium",
+      "zh": "碲"
+    },
+    {
+      "en": "Terbium",
+      "zh": "铽"
+    },
+    {
+      "en": "Thallium",
+      "zh": "铊"
+    },
+    {
+      "en": "Thulium",
+      "zh": "铥"
+    },
+    {
+      "en": "Titanium",
+      "zh": "钛"
+    },
+    {
+      "en": "Tungsten",
+      "zh": "钨"
+    },
+    {
+      "en": "Vanadium",
+      "zh": "钒"
+    },
+    {
+      "en": "Xenon",
+      "zh": "氙"
+    },
+    {
+      "en": "Ytterbium",
+      "zh": "镱"
+    },
+    {
+      "en": "Yttrium",
+      "zh": "钇"
+    },
+    {
+      "en": "Zinc",
+      "zh": "锌"
+    },
+    {
+      "en": "ACTIVE COOLER",
+      "zh": "主动冷却器"
+    },
+    {
+      "en": "COOLANT RECIPE",
+      "zh": "冷却剂配方"
+    },
+    {
+      "en": "COOLER",
+      "zh": "冷却器"
+    },
+    {
+      "en": "BLADE",
+      "zh": "叶片"
+    },
+    {
+      "en": "COIL",
+      "zh": "线圈"
+    },
+    {
+      "en": "CONNECTOR",
+      "zh": "连接器"
+    },
+    {
+      "en": "Dynamo Coil",
+      "zh": "发电线圈"
+    },
+    {
+      "en": "Field Stabilizer",
+      "zh": "场稳定器"
+    },
+    {
+      "en": "Field Converter",
+      "zh": "场转换器"
+    },
+    {
+      "en": "Fuel Pellet",
+      "zh": "燃料芯块"
+    },
+    {
+      "en": "Fuel Pebble",
+      "zh": "燃料球"
+    },
+    {
+      "en": "Fuel Bundle",
+      "zh": "燃料组件"
+    },
+    {
+      "en": "Sodium-bonded",
+      "zh": "钠键合"
+    },
+    {
+      "en": "Dioxide",
+      "zh": "二氧化物"
+    },
+    {
+      "en": "Disilicide",
+      "zh": "二硅化物"
+    },
+    {
+      "en": "Tempered",
+      "zh": "回火"
+    },
+    {
+      "en": "Dynamo",
+      "zh": "发电机"
+    },
+    {
+      "en": "Extractor",
+      "zh": "提取器"
+    },
+    {
+      "en": "Stabilizer",
+      "zh": "稳定器"
+    },
+    {
+      "en": "Converter",
+      "zh": "转换器"
+    },
+    {
+      "en": "Magnet",
+      "zh": "磁体"
+    },
+    {
+      "en": "Pellet",
+      "zh": "芯块"
+    },
+    {
+      "en": "Pebble",
+      "zh": "燃料球"
+    },
+    {
+      "en": "Bundle",
+      "zh": "组件"
+    },
+    {
+      "en": "Ingot",
+      "zh": "锭"
+    },
+    {
+      "en": "Dust",
+      "zh": "粉末"
+    },
+    {
+      "en": "Ore",
+      "zh": "矿石"
+    },
+    {
+      "en": "Sapling",
+      "zh": "树苗"
+    },
+    {
+      "en": "Acacia",
+      "zh": "金合欢"
+    },
+    {
+      "en": "Birch",
+      "zh": "白桦"
+    },
+    {
+      "en": "Dark Oak",
+      "zh": "深色橡木"
+    },
+    {
+      "en": "Cobblestone",
+      "zh": "圆石"
+    },
+    {
+      "en": "Coal",
+      "zh": "煤"
+    },
+    {
+      "en": "Brick",
+      "zh": "砖"
+    },
+    {
+      "en": "Bone",
+      "zh": "骨"
+    },
+    {
+      "en": "Cake",
+      "zh": "蛋糕"
+    },
+    {
+      "en": "Caramel",
+      "zh": "焦糖"
+    },
+    {
+      "en": "Buttermilk",
+      "zh": "酪乳"
+    },
+    {
+      "en": "Bronze",
+      "zh": "青铜"
+    },
+    {
+      "en": "Brass",
+      "zh": "黄铜"
+    },
+    {
+      "en": "Constantan",
+      "zh": "康铜"
+    },
+    {
+      "en": "Certus",
+      "zh": "赛特斯"
+    },
+    {
+      "en": "High Pressure Steam",
+      "zh": "高压蒸汽"
+    },
+    {
+      "en": "high_pressure_steam",
+      "zh": "高压蒸汽"
+    },
+    {
+      "en": "Crap Steam",
+      "zh": "劣质蒸汽"
+    },
+    {
+      "en": "Anti-Deuterium",
+      "zh": "反氘"
+    },
+    {
+      "en": "Anti-Helium",
+      "zh": "反氦"
+    },
+    {
+      "en": "Anti-Tritium",
+      "zh": "反氚"
+    },
+    {
+      "en": "Zirconium Alloy",
+      "zh": "锆合金"
+    },
+    {
+      "en": "Molybdenum Alloy",
+      "zh": "钼合金"
+    },
+    {
+      "en": "Boron Arsenide",
+      "zh": "砷化硼"
+    },
+    {
+      "en": "Carbon Arsenide",
+      "zh": "砷化碳"
+    },
+    {
+      "en": "Barium Nitrate",
+      "zh": "硝酸钡"
+    },
+    {
+      "en": "Nitrate",
+      "zh": "硝酸盐"
+    },
+    {
+      "en": "Arsenide",
+      "zh": "砷化物"
+    },
+    {
+      "en": "Aerotheum",
+      "zh": "气凝质"
+    },
+    {
+      "en": "Baratol",
+      "zh": "巴拉托炸药"
+    },
+    {
+      "en": "Billon",
+      "zh": "比隆合金"
+    },
+    {
+      "en": "Blutonium",
+      "zh": "蓝钚"
+    },
+    {
+      "en": "Caesium",
+      "zh": "铯"
+    },
+    {
+      "en": "Carobbiite",
+      "zh": "卡罗比石"
+    },
+    {
+      "en": "Corium",
+      "zh": "堆芯熔融物"
+    },
+    {
+      "en": "Cryo-stablized",
+      "zh": "低温稳定"
+    },
+    {
+      "en": "tempered",
+      "zh": "回火"
+    },
+    {
+      "en": "Basic",
+      "zh": "基础"
+    },
+    {
+      "en": "Liquid",
+      "zh": "液体"
+    },
+    {
+      "en": "Hot",
+      "zh": "高温"
+    },
+    {
+      "en": "Cold",
+      "zh": "低温"
+    },
+    {
+      "en": "Critical",
+      "zh": "临界"
+    },
+    {
+      "en": "Exhaust",
+      "zh": "排气"
+    },
+    {
+      "en": "Compressed",
+      "zh": "压缩"
+    },
+    {
+      "en": "Temperature",
+      "zh": "温度"
+    },
+    {
+      "en": "Pressure",
+      "zh": "压力"
+    },
+    {
+      "en": "Steam",
+      "zh": "蒸汽"
+    },
+    {
+      "en": "NAK",
+      "zh": "钠钾合金"
+    },
+    {
+      "en": "Eutectic",
+      "zh": "共晶"
+    },
+    {
+      "en": "Mixture",
+      "zh": "混合物"
+    },
+    {
+      "en": "TRISO",
+      "zh": "三结构各向同性燃料"
+    },
+    {
+      "en": "FLiBe",
+      "zh": "氟锂铍盐"
+    },
+    {
+      "en": "MOX",
+      "zh": "混合氧化物燃料"
+    },
+    {
+      "en": "Molten",
+      "zh": "熔融"
+    },
+    {
+      "en": "Salt",
+      "zh": "盐"
+    },
+    {
+      "en": "Solution",
+      "zh": "溶液"
+    },
+    {
+      "en": "Sink",
+      "zh": "散热器"
+    },
+    {
+      "en": "Neutron",
+      "zh": "中子"
+    },
+    {
+      "en": "Field",
+      "zh": "场"
+    },
+    {
+      "en": "Metallic",
+      "zh": "金属"
+    },
+    {
+      "en": "Pit",
+      "zh": "燃料芯块"
+    },
+    {
+      "en": "Steel",
+      "zh": "钢"
+    },
+    {
+      "en": "Source",
+      "zh": "源"
+    },
+    {
+      "en": "Lapis",
+      "zh": "青金石"
+    },
+    {
+      "en": "Glowstone",
+      "zh": "萤石"
+    },
+    {
+      "en": "Stone",
+      "zh": "石"
+    },
+    {
+      "en": "RECIPE",
+      "zh": "配方"
+    },
+    {
+      "en": "FUEL",
+      "zh": "燃料"
+    },
+    {
+      "en": "CELL",
+      "zh": "单元"
+    },
+    {
+      "en": "VESSEL",
+      "zh": "容器"
+    },
+    {
+      "en": "HEATSINK",
+      "zh": "散热器"
+    },
+    {
+      "en": "MODERATOR",
+      "zh": "慢化剂"
+    },
+    {
+      "en": "REFLECTOR",
+      "zh": "反射器"
+    },
+    {
+      "en": "SHIELD",
+      "zh": "屏蔽器"
+    },
+    {
+      "en": "IRRADIATOR",
+      "zh": "辐照器"
+    },
+    {
+      "en": "STATOR",
+      "zh": "定子"
+    },
+    {
+      "en": "Irradiated",
+      "zh": "辐照"
+    },
+    {
+      "en": "Prismarine",
+      "zh": "海晶石"
+    },
+    {
+      "en": "Purpur",
+      "zh": "紫珀"
+    },
+    {
+      "en": "Nether",
+      "zh": "下界"
+    },
+    {
+      "en": "Slime",
+      "zh": "史莱姆"
+    },
+    {
+      "en": "End",
+      "zh": "末地"
+    },
+    {
+      "en": "Energy",
+      "zh": "能量"
+    },
+    {
+      "en": "Pumpkin",
+      "zh": "南瓜"
+    },
+    {
+      "en": "Electrum",
+      "zh": "琥珀金"
+    },
+    {
+      "en": "Milk",
+      "zh": "牛奶"
+    },
+    {
+      "en": "Crystal",
+      "zh": "水晶"
+    },
+    {
+      "en": "Carbide",
+      "zh": "碳化物"
+    },
+    {
+      "en": "Fluix",
+      "zh": "福鲁伊克斯"
+    },
+    {
+      "en": "Fluxed",
+      "zh": "注能"
+    },
+    {
+      "en": "Extreme",
+      "zh": "极致"
+    },
+    {
+      "en": "Doped",
+      "zh": "掺杂"
+    },
+    {
+      "en": "Wafer",
+      "zh": "晶圆"
+    },
+    {
+      "en": "Type",
+      "zh": "类型"
+    },
+    {
+      "en": "Manager",
+      "zh": "管理器"
+    },
+    {
+      "en": "Pressurized",
+      "zh": "加压"
+    },
+    {
+      "en": "Thermoconducting",
+      "zh": "导热"
+    },
+    {
+      "en": "Tough",
+      "zh": "坚韧"
+    },
+    {
+      "en": "Hard",
+      "zh": "坚硬"
+    },
+    {
+      "en": "Diboride",
+      "zh": "二硼化物"
+    },
+    {
+      "en": "Zircaloy",
+      "zh": "锆合金"
+    },
+    {
+      "en": "Ferroboron",
+      "zh": "硼铁"
+    },
+    {
+      "en": "Rhodochrosite",
+      "zh": "菱锰矿"
+    },
+    {
+      "en": "Egg",
+      "zh": "鸡蛋"
+    },
+    {
+      "en": "Wheat",
+      "zh": "小麦"
+    },
+    {
+      "en": "Chocolate",
+      "zh": "巧克力"
+    },
+    {
+      "en": "Lumium",
+      "zh": "流明"
+    },
+    {
+      "en": "Pie",
+      "zh": "派"
+    },
+    {
+      "en": "Marshmallow",
+      "zh": "棉花糖"
+    },
+    {
+      "en": "Pancake",
+      "zh": "煎饼"
+    },
+    {
+      "en": "Sugar",
+      "zh": "糖"
+    },
+    {
+      "en": "Computer",
+      "zh": "计算机"
+    },
+    {
+      "en": "Nitinol",
+      "zh": "镍钛合金"
+    },
+    {
+      "en": "Lava",
+      "zh": "熔岩"
+    },
+    {
+      "en": "Invar",
+      "zh": "因瓦合金"
+    },
+    {
+      "en": "Lantern",
+      "zh": "灯笼"
+    },
+    {
+      "en": "Sponge",
+      "zh": "海绵"
+    },
+    {
+      "en": "Mana",
+      "zh": "魔力"
+    },
+    {
+      "en": "Petrotheum",
+      "zh": "岩浆质"
+    },
+    {
+      "en": "Glowshroom",
+      "zh": "荧光蘑菇"
+    },
+    {
+      "en": "Mysterious",
+      "zh": "神秘"
+    },
+    {
+      "en": "Mithril",
+      "zh": "秘银"
+    },
+    {
+      "en": "Flerovium",
+      "zh": "鈇"
+    },
+    {
+      "en": "Magma",
+      "zh": "岩浆"
+    },
+    {
+      "en": "Cream",
+      "zh": "奶油"
+    },
+    {
+      "en": "Pyrotheum",
+      "zh": "炽焱"
+    },
+    {
+      "en": "Ferrochrome",
+      "zh": "铬铁"
+    },
+    {
+      "en": "Elektron",
+      "zh": "电子合金"
+    },
+    {
+      "en": "Magnalium",
+      "zh": "镁铝合金"
+    },
+    {
+      "en": "Hydronalium",
+      "zh": "氢铝合金"
+    },
+    {
+      "en": "Monitor",
+      "zh": "监视器"
+    },
+    {
+      "en": "Low",
+      "zh": "低"
+    },
+    {
+      "en": "High",
+      "zh": "高"
+    },
+    {
+      "en": "Ultra",
+      "zh": "超"
+    },
+    {
+      "en": "Heavy",
+      "zh": "重"
+    },
+    {
+      "en": "Radioactive",
+      "zh": "放射性"
+    },
+    {
+      "en": "NaK",
+      "zh": "钠钾合金"
+    },
+    {
+      "en": "mixture",
+      "zh": "混合物"
+    },
+    {
+      "en": "molten",
+      "zh": "熔融"
+    },
+    {
+      "en": "bonded",
+      "zh": "键合"
+    },
+    {
+      "en": "Tritium",
+      "zh": "氚"
+    },
+    {
+      "en": "COOLANT",
+      "zh": "冷却剂"
+    },
+    {
+      "en": "HEATER",
+      "zh": "加热器"
+    },
+    {
+      "en": "Anti",
+      "zh": "反"
+    },
+    {
+      "en": "Signalum",
+      "zh": "信素"
+    },
+    {
+      "en": "Cracker",
+      "zh": "脆饼"
+    },
+    {
+      "en": "Villiaumite",
+      "zh": "氟化钠矿"
+    },
+    {
+      "en": "Rutherfordium",
+      "zh": "鑪"
+    },
+    {
+      "en": "Supercritical",
+      "zh": "超临界"
+    },
+    {
+      "en": "Syrup",
+      "zh": "糖浆"
+    },
+    {
+      "en": "Eggnog",
+      "zh": "蛋奶酒"
+    },
+    {
+      "en": "Ice",
+      "zh": "冰"
+    },
+    {
+      "en": "Sand",
+      "zh": "沙"
+    },
+    {
+      "en": "Maple",
+      "zh": "枫木"
+    },
+    {
+      "en": "Oak",
+      "zh": "橡木"
+    },
+    {
+      "en": "Potato",
+      "zh": "马铃薯"
+    },
+    {
+      "en": "Golden",
+      "zh": "金质"
+    },
+    {
+      "en": "Prometheum",
+      "zh": "普罗米修斯金属"
+    },
+    {
+      "en": "Yellorium",
+      "zh": "黄素"
+    },
+    {
+      "en": "Trinitite",
+      "zh": "三位一体矿"
+    },
+    {
+      "en": "Witherite",
+      "zh": "毒重石"
+    },
+    {
+      "en": "Magnox",
+      "zh": "镁诺克斯"
+    },
+    {
+      "en": "Ender",
+      "zh": "末影"
+    },
+    {
+      "en": "Inlet",
+      "zh": "入口"
+    },
+    {
+      "en": "Outlet",
+      "zh": "出口"
+    },
+    {
+      "en": "Preheated",
+      "zh": "预热"
+    },
+    {
+      "en": "Solid",
+      "zh": "固体"
+    },
+    {
+      "en": "Quality",
+      "zh": "品质"
+    },
+    {
+      "en": "Matrix",
+      "zh": "矩阵"
+    },
+    {
+      "en": "Transparent",
+      "zh": "透明"
+    },
+    {
+      "en": "Multiplier",
+      "zh": "倍率"
+    },
+    {
+      "en": "Gasoline",
+      "zh": "汽油"
+    },
+    {
+      "en": "Diesel",
+      "zh": "柴油"
+    },
+    {
+      "en": "Activated",
+      "zh": "活性"
+    },
+    {
+      "en": "Nugget",
+      "zh": "粒"
+    },
+    {
+      "en": "Dirt",
+      "zh": "泥土"
+    },
+    {
+      "en": "Pulverized",
+      "zh": "粉碎"
+    },
+    {
+      "en": "Superalloyed",
+      "zh": "高温合金"
+    },
+    {
+      "en": "Packed",
+      "zh": "压实"
+    },
+    {
+      "en": "covered",
+      "zh": "包覆"
+    },
+    {
+      "en": "S'more",
+      "zh": "烤棉花糖夹心饼"
+    },
+    {
+      "en": "S'More",
+      "zh": "烤棉花糖夹心饼"
+    },
+    {
+      "en": "S'meutectic",
+      "zh": "棉花糖共晶"
+    },
+    {
+      "en": "S'molten",
+      "zh": "棉花糖熔融"
+    },
+    {
+      "en": "S'moil",
+      "zh": "棉花糖油"
+    },
+    {
+      "en": "S'Mingot",
+      "zh": "棉花糖锭"
+    },
+    {
+      "en": "Th'morium",
+      "zh": "棉钍"
+    },
+    {
+      "en": "Sea Lantern",
+      "zh": "海晶灯"
+    },
+    {
+      "en": "End Stone",
+      "zh": "末地石"
+    },
+    {
+      "en": "Endstone",
+      "zh": "末地石"
+    },
+    {
+      "en": "Nether Brick",
+      "zh": "下界砖"
+    },
+    {
+      "en": "Netherbrick",
+      "zh": "下界砖"
+    },
+    {
+      "en": "Graham Cracker",
+      "zh": "全麦脆饼"
+    },
+    {
+      "en": "Synthesis Gas",
+      "zh": "合成气"
+    },
+    {
+      "en": "Fuel Oil",
+      "zh": "燃料油"
+    },
+    {
+      "en": "Anti-Hydrogen",
+      "zh": "反氢"
+    },
+    {
+      "en": "Hydride",
+      "zh": "氢化物"
+    },
+    {
+      "en": "Hydrocarbon",
+      "zh": "碳氢化合物"
+    },
+    {
+      "en": "Deuteride",
+      "zh": "氘化物"
+    },
+    {
+      "en": "Ceramic Matrix",
+      "zh": "陶瓷基体"
+    },
+    {
+      "en": "Matrix-Legierung",
+      "zh": "基质合金"
+    },
+    {
+      "en": "Elektronlegierung",
+      "zh": "电子合金"
+    },
+    {
+      "en": "Elektron60-Alloy",
+      "zh": "电子合金 60"
+    },
+    {
+      "en": "Elektron192",
+      "zh": "电子合金 192"
+    },
+    {
+      "en": "Elektron231",
+      "zh": "电子合金 231"
+    },
+    {
+      "en": "Elektron90",
+      "zh": "电子合金 90"
+    },
+    {
+      "en": "Edelstahl",
+      "zh": "不锈钢"
+    },
+    {
+      "en": "Edle",
+      "zh": "优质"
+    },
+    {
+      "en": "Copernicum",
+      "zh": "鿔"
+    },
+    {
+      "en": "HSLA Steel",
+      "zh": "高强度低合金钢"
+    },
+    {
+      "en": "Ultra Light",
+      "zh": "超轻"
+    },
+    {
+      "en": "Unwieldy",
+      "zh": "笨重"
+    },
+    {
+      "en": "Super",
+      "zh": "超级"
+    },
+    {
+      "en": "Jungle",
+      "zh": "丛林"
+    },
+    {
+      "en": "Kerosene",
+      "zh": "煤油"
+    },
+    {
+      "en": "LPG",
+      "zh": "液化石油气"
+    },
+    {
+      "en": "Schmeared",
+      "zh": "涂布"
+    },
+    {
+      "en": "Spruce",
+      "zh": "云杉"
+    },
+    {
+      "en": "Wasteland",
+      "zh": "荒地"
+    },
+    {
+      "en": "Erbium",
+      "zh": "铒"
+    },
+    {
+      "en": "Extremecake",
+      "zh": "极致蛋糕"
+    },
+    {
+      "en": "Gelid",
+      "zh": "凝胶态"
+    },
+    {
+      "en": "Lukewarm",
+      "zh": "温热"
+    },
+    {
+      "en": "Methane",
+      "zh": "甲烷"
+    },
+    {
+      "en": "Nichrome",
+      "zh": "镍铬合金"
+    },
+    {
+      "en": "Osmiridium",
+      "zh": "锇铱合金"
+    },
+    {
+      "en": "Slimy",
+      "zh": "黏液"
+    },
+    {
+      "en": "Steelcake",
+      "zh": "钢蛋糕"
+    },
+    {
+      "en": "Unfinished",
+      "zh": "未完成"
+    },
+    {
+      "en": "Well",
+      "zh": "井"
+    },
+    {
+      "en": "Earth",
+      "zh": "土"
+    },
+    {
+      "en": "Magnet",
+      "zh": "磁体"
+    },
+    {
+      "en": "SiC",
+      "zh": "碳化硅"
+    },
+    {
+      "en": "CMC",
+      "zh": "陶瓷基复合材料"
+    },
+    {
+      "en": "Bronzemagnet",
+      "zh": "青铜磁体"
+    },
+    {
+      "en": "Chromiumagnet",
+      "zh": "铬磁体"
+    },
+    {
+      "en": "Constantanmagnet",
+      "zh": "康铜磁体"
+    },
+    {
+      "en": "Ferroboronmagnet",
+      "zh": "硼铁磁体"
+    },
+    {
+      "en": "Invarmagnet",
+      "zh": "因瓦合金磁体"
+    },
+    {
+      "en": "Iridiumagnet",
+      "zh": "铱磁体"
+    },
+    {
+      "en": "Ironmagnet",
+      "zh": "铁磁体"
+    },
+    {
+      "en": "Leadmagnet",
+      "zh": "铅磁体"
+    },
+    {
+      "en": "Lithiumagnet",
+      "zh": "锂磁体"
+    },
+    {
+      "en": "Manganesemagnet",
+      "zh": "锰磁体"
+    },
+    {
+      "en": "Neodymiumagnet",
+      "zh": "钕磁体"
+    },
+    {
+      "en": "Nickelmagnet",
+      "zh": "镍磁体"
+    },
+    {
+      "en": "Osmiumagnet",
+      "zh": "锇磁体"
+    },
+    {
+      "en": "Potassiumagnet",
+      "zh": "钾磁体"
+    },
+    {
+      "en": "Samariumagnet",
+      "zh": "钐磁体"
+    },
+    {
+      "en": "Siliconcarbidemagnet",
+      "zh": "碳化硅磁体"
+    },
+    {
+      "en": "Steelmagnet",
+      "zh": "钢磁体"
+    },
+    {
+      "en": "Tinmagnet",
+      "zh": "锡磁体"
+    },
+    {
+      "en": "Tungstenmagnet",
+      "zh": "钨磁体"
+    },
+    {
+      "en": "Zincmagnet",
+      "zh": "锌磁体"
+    },
+    {
+      "en": "TODO tooltip",
+      "zh": "功能开发中"
+    },
+    {
+      "en": "Overhaul Fusion Reactor",
+      "zh": "改版聚变反应堆"
+    },
+    {
+      "en": "Fusion Reactor",
+      "zh": "聚变反应堆"
+    },
+    {
+      "en": "Overhaul Turbine",
+      "zh": "改版涡轮机"
+    },
+    {
+      "en": "Overhaul Distiller",
+      "zh": "改版蒸馏器"
+    },
+    {
+      "en": "Distiller",
+      "zh": "蒸馏器"
+    },
+    {
+      "en": "Condition",
+      "zh": "条件"
+    },
+    {
+      "en": "Operator",
+      "zh": "运算符"
+    },
+    {
+      "en": "And",
+      "zh": "且"
+    },
+    {
+      "en": "Greater",
+      "zh": "大于"
+    },
+    {
+      "en": "Equal",
+      "zh": "等于"
+    },
+    {
+      "en": "Less",
+      "zh": "小于"
+    },
+    {
+      "en": "Not",
+      "zh": "非"
+    },
+    {
+      "en": "floor",
+      "zh": "向下取整"
+    },
+    {
+      "en": "random",
+      "zh": "随机"
+    },
+    {
+      "en": "int",
+      "zh": "整数"
+    },
+    {
+      "en": "float",
+      "zh": "浮点数"
+    },
+    {
+      "en": "null",
+      "zh": "空值"
+    },
+    {
+      "en": "byte",
+      "zh": "字节"
+    },
+    {
+      "en": "short",
+      "zh": "短整数"
+    },
+    {
+      "en": "long",
+      "zh": "长整数"
+    },
+    {
+      "en": "double",
+      "zh": "双精度浮点数"
+    },
+    {
+      "en": "bool",
+      "zh": "布尔值"
+    },
+    {
+      "en": "boolean",
+      "zh": "布尔值"
+    },
+    {
+      "en": "str",
+      "zh": "字符串"
+    },
+    {
+      "en": "True",
+      "zh": "真"
+    },
+    {
+      "en": "False",
+      "zh": "假"
+    },
+    {
+      "en": "INTERNAL",
+      "zh": "内部"
+    },
+    {
+      "en": "Core",
+      "zh": "核心"
+    },
+    {
+      "en": "Overhaul SFRs are Solid-Fueled Fission reactors in NuclearCraft: Overhauled",
+      "zh": "改版固体燃料堆是核工艺：改版中的固体燃料裂变反应堆"
+    },
+    {
+      "en": "If you have blocks called \"Cooler\" instead of \"Heat Sink\", you are playing Underhaul",
+      "zh": "如果你的方块名为“冷却器”而非“散热器”，说明你使用的是旧版。"
+    },
+    {
+      "en": "Underhaul SFRs are Solid-Fueled Fission reactors in NuclearCraft",
+      "zh": "旧版固体燃料堆是核工艺中的固体燃料裂变反应堆"
+    },
+    {
+      "en": "If you have blocks called \"Heat Sink\" instead of \"Cooler\", you are playing Overhaul",
+      "zh": "如果你的方块名为“散热器”而非“冷却器”，说明你使用的是改版。"
+    },
+    {
+      "en": "Overhaul SFRs are Solid-Fueled Fission reactors in NuclearCraft: Overhauled\nIf you have blocks called \"Cooler\" instead of \"Heat Sink\", you are playing Underhaul",
+      "zh": "改版固体燃料堆是核工艺：改版中的固体燃料裂变反应堆\n如果你的方块名为“冷却器”而非“散热器”，说明你使用的是旧版。"
+    },
+    {
+      "en": "Underhaul SFRs are Solid-Fueled Fission reactors in NuclearCraft\nIf you have blocks called \"Heat Sink\" instead of \"Cooler\", you are playing Overhaul",
+      "zh": "旧版固体燃料堆是核工艺中的固体燃料裂变反应堆\n如果你的方块名为“散热器”而非“冷却器”，说明你使用的是改版。"
+    },
+    {
+      "en": "Overhaul MSRs are Molten Salt Fission reactors in NuclearCraft: Overhauled",
+      "zh": "改版熔盐堆是核工艺：改版中的熔盐裂变反应堆"
+    },
+    {
+      "en": "Overhaul Turbines are Turbines in NuclearCraft: Overhauled",
+      "zh": "改版涡轮机是核工艺：改版中的涡轮机"
+    },
+    {
+      "en": "Overhaul Distillers are Distillers in NuclearCraft: Overhauled\nWow, who could have guessed?",
+      "zh": "改版蒸馏器是核工艺：改版中的蒸馏器\n确实令人意外。"
+    },
+    {
+      "en": "Suggests adding Fuel cells to increase output",
+      "zh": "建议添加燃料单元以提高产出"
+    },
+    {
+      "en": "Suggests adding Fuel cells with moderators to increase efficiency and output",
+      "zh": "建议添加带慢化剂的燃料单元以提高效率和产出"
+    },
+    {
+      "en": "Suggests adding Fuel vessels with moderators to increase efficiency and output",
+      "zh": "建议添加带慢化剂的燃料容器以提高效率和产出"
+    },
+    {
+      "en": "Suggests adding Moderator blocks to increase efficiency",
+      "zh": "建议添加慢化剂方块以提高效率"
+    },
+    {
+      "en": "Suggests adding or replacing active coolers to cool the reactor",
+      "zh": "建议添加或替换主动冷却器以冷却反应堆"
+    },
+    {
+      "en": "Suggests adding or replacing passive coolers to cool the reactor",
+      "zh": "建议添加或替换被动冷却器以冷却反应堆"
+    },
+    {
+      "en": "Suggests adding or replacing heat sinks to cool the reactor",
+      "zh": "建议添加或替换散热器以冷却反应堆"
+    },
+    {
+      "en": "Suggests adding or replacing heaters to cool the reactor",
+      "zh": "建议添加或替换加热器以冷却反应堆"
+    },
+    {
+      "en": "Suggests adding, removing, or replacing coils for higher coil efficiency",
+      "zh": "建议添加、移除或替换线圈以提高线圈效率"
+    },
+    {
+      "en": "Suggests blades and stators for higher rotor efficiency and ideality",
+      "zh": "建议使用叶片和定子以提高转子效率与理想膨胀率"
+    },
+    {
+      "en": "Suggests changing moderator lines to increase efficiency or irradiation",
+      "zh": "建议调整慢化剂线以提高效率或辐照量"
+    },
+    {
+      "en": "Suggests changing single moderators to increase efficiency or irradiation",
+      "zh": "建议调整单个慢化剂以提高效率或辐照量"
+    },
+    {
+      "en": "Suggests adding or replacing heat sinks to increase the reactor's rainbow factor",
+      "zh": "建议添加或替换散热器以提高反应堆的彩虹因子"
+    },
+    {
+      "en": "Suggests adding or replacing passive coolers to increase the reactor's rainbow factor.",
+      "zh": "建议添加或替换被动冷却器以提高反应堆的彩虹因子。"
+    },
+    {
+      "en": "Move tool (M)\nUse this to move or copy selections\nHold Ctrl to copy selections\nHold Ctrl+Shift to copy selection, and keep the old selection",
+      "zh": "移动工具（M）\n使用此工具移动或复制选区\n按住 Ctrl 复制选区\n按住 Ctrl+Shift 复制选区并保留原选区"
+    },
+    {
+      "en": "Paste tool\nSelect a region, and press Ctrl-X or Ctrl+C to cut or copy the selection and open this tool.\nThen click any location in your reactor to paste the selection in multiple places.\nPress Escape or select a different tool when done.\nPress Ctrl+V to ready the most recently copied selection",
+      "zh": "粘贴工具\n选择区域后，按 Ctrl+X 或 Ctrl+C 剪切或复制选区，并打开此工具。\n然后单击反应堆中的任意位置，将选区粘贴到多个位置。\n完成后按 Esc 或选择其他工具。\n按 Ctrl+V 准备最近复制的选区"
+    },
+    {
+      "en": "Pencil tool (P)\nUse this tool to draw blocks one at a time\nHold CTRL to only place blocks where they are valid",
+      "zh": "铅笔工具（P）\n使用此工具逐个绘制方块\n按住 Ctrl 仅在有效位置放置方块"
+    },
+    {
+      "en": "Line tool (L)\nUse this tool to draw blocks in a line through the multiblock\nHold CTRL to only place blocks where they are valid",
+      "zh": "直线工具（L）\n使用此工具在多方块结构中沿直线绘制方块\n按住 Ctrl 仅在有效位置放置方块"
+    },
+    {
+      "en": "Select tool (S)\nUse this to select areas of the reactor\nCtrl-click to select multiple selections\nShift-click to select Groups of blocks that require each other\nAlt-click to select clusters\nEdits can only be made inside of selections (unless there are no selections)\nPress Delete to delete the selected area\nPress Escape to clear selection",
+      "zh": "选择工具（S）\n使用此工具选择反应堆区域\n按住 Ctrl 单击可选择多个选区\n按住 Shift 单击可选择相互依赖的方块组\n按住 Alt 单击可选择簇\n只能在选区内编辑（没有选区时除外）\n按删除键删除所选区域\n按 Esc 清除选区"
+    },
+    {
+      "en": "Adjacent moderator line (",
+      "zh": "相邻慢化剂线（"
+    },
+    {
+      "en": "Adjacent to fuel cell (",
+      "zh": "与燃料单元相邻（"
+    },
+    {
+      "en": "Has neutron source (",
+      "zh": "具有中子源（"
+    },
+    {
+      "en": "Neutron source path (",
+      "zh": "中子源路径（"
+    },
+    {
+      "en": "Targeted block (",
+      "zh": "目标方块（"
+    },
+    {
+      "en": "Valid moderator line (",
+      "zh": "有效慢化剂线（"
+    },
+    {
+      "en": "Missing blade",
+      "zh": "缺少叶片"
+    },
+    {
+      "en": "Missing casing",
+      "zh": "缺少外壳"
+    },
+    {
+      "en": "Invalid cluster!",
+      "zh": "无效簇！"
+    },
+    {
+      "en": "No target",
+      "zh": "无目标"
+    },
+    {
+      "en": "Unknown Rule",
+      "zh": "未知规则"
+    },
+    {
+      "en": "NCPF Element",
+      "zh": "NCPF 元素"
+    },
+    {
+      "en": "Legacy Names",
+      "zh": "旧名称"
+    },
+    {
+      "en": "Legacy Block",
+      "zh": "旧版方块"
+    },
+    {
+      "en": "Legacy Fluid",
+      "zh": "旧版流体"
+    },
+    {
+      "en": "Legacy Item",
+      "zh": "旧版物品"
+    },
+    {
+      "en": "Legacy Recipe",
+      "zh": "旧版配方"
+    },
+    {
+      "en": "Liquid Distributer",
+      "zh": "液体分配器"
+    },
+    {
+      "en": "Poloidal Electromagnet",
+      "zh": "极向电磁体"
+    },
+    {
+      "en": "Toroidal Electromagnet",
+      "zh": "环向电磁体"
+    },
+    {
+      "en": "Process Port",
+      "zh": "处理端口"
+    },
+    {
+      "en": "Recipe Ports",
+      "zh": "配方端口"
+    },
+    {
+      "en": "Reboiling Unit",
+      "zh": "再沸器"
+    },
+    {
+      "en": "Reflux Unit",
+      "zh": "回流器"
+    },
+    {
+      "en": "Reservoir Port",
+      "zh": "储液端口"
+    },
+    {
+      "en": "Sieve Assembly",
+      "zh": "筛板组件"
+    },
+    {
+      "en": "Sieve Tray",
+      "zh": "筛盘"
+    },
+    {
+      "en": "Neutron Shield",
+      "zh": "中子屏蔽器"
+    },
+    {
+      "en": "Neutron Source",
+      "zh": "中子源"
+    },
+    {
+      "en": "Power Generation: ",
+      "zh": "发电量："
+    },
+    {
+      "en": "Total output: ",
+      "zh": "总产出："
+    },
+    {
+      "en": "Prime Fuels",
+      "zh": "质数燃料"
+    },
+    {
+      "en": "Previous Prime: ",
+      "zh": "上一个质数："
+    },
+    {
+      "en": "Rainbow Score: ",
+      "zh": "彩虹评分："
+    },
+    {
+      "en": "Rainbow Factor",
+      "zh": "彩虹因子"
+    },
+    {
+      "en": "Quantum Traversed Efficiency Score",
+      "zh": "量子传输效率评分"
+    },
+    {
+      "en": "Quantum Traversed Efficiency: ",
+      "zh": "量子传输效率："
+    },
+    {
+      "en": "Random Coolant Recipe Mutator",
+      "zh": "随机冷却剂配方变异器"
+    },
+    {
+      "en": "Random Quantity Mutator",
+      "zh": "随机数量变异器"
+    },
+    {
+      "en": "Random Block Mutator",
+      "zh": "随机方块变异器"
+    },
+    {
+      "en": "Random Cell Mutator",
+      "zh": "随机单元变异器"
+    },
+    {
+      "en": "Random Fuel Mutator",
+      "zh": "随机燃料变异器"
+    },
+    {
+      "en": "Single Mutator",
+      "zh": "单次变异器"
+    },
+    {
+      "en": "Mutator Quantity",
+      "zh": "变异器数量"
+    },
+    {
+      "en": "Runs once per iteration",
+      "zh": "每次迭代运行一次"
+    },
+    {
+      "en": "Runs a random number of times per iteration\nEvenly distributed between min and max",
+      "zh": "每次迭代随机运行若干次\n在最小值和最大值之间均匀分布"
+    },
+    {
+      "en": "Replaces all invalid blocks in the reactor with air",
+      "zh": "将反应堆中的所有无效方块替换为空气"
+    },
+    {
+      "en": "Less or Equal",
+      "zh": "小于或等于"
+    },
+    {
+      "en": "Not Equal",
+      "zh": "不等于"
+    },
+    {
+      "en": "Overhaul Distiller Configuration",
+      "zh": "改版蒸馏器配置"
+    },
+    {
+      "en": "Overhaul Distiller",
+      "zh": "改版蒸馏器"
+    },
+    {
+      "en": "Overhaul Turbine",
+      "zh": "改版涡轮机"
+    },
+    {
+      "en": "Overhaul MSR",
+      "zh": "改版熔盐堆"
+    },
+    {
+      "en": "Overhaul SFR",
+      "zh": "改版固体燃料堆"
+    },
+    {
+      "en": "Underhaul SFR",
+      "zh": "旧版固体燃料堆"
+    },
+    {
+      "en": "Heat Sink",
+      "zh": "散热器"
+    },
+    {
+      "en": "Passive Cooler",
+      "zh": "被动冷却器"
+    },
+    {
+      "en": "Fuel Cell",
+      "zh": "燃料单元"
+    },
+    {
+      "en": "Fuel Vessel",
+      "zh": "燃料容器"
+    },
+    {
+      "en": "Fuels: ",
+      "zh": "燃料："
+    },
+    {
+      "en": " (Prime)",
+      "zh": "（质数）"
+    },
+    {
+      "en": "A tool from Tinker's Construct (not a multiblock)",
+      "zh": "来自匠魂的工具（不是多方块结构）"
+    },
+    {
+      "en": "Make sure all the parts are actually there",
+      "zh": "确保所有部件确实存在"
+    },
+    {
+      "en": "Maximize mining level, then mining speed",
+      "zh": "优先最大化采矿等级，再最大化采矿速度"
+    },
+    {
+      "en": "Maximize Defense and Toughness",
+      "zh": "最大化防御和韧性"
+    },
+    {
+      "en": "Maximize draw speed",
+      "zh": "最大化拉弓速度"
+    },
+    {
+      "en": "Maximize bow range",
+      "zh": "最大化弓射程"
+    },
+    {
+      "en": "Maximize damage",
+      "zh": "最大化伤害"
+    },
+    {
+      "en": "Tinker's tools, (not multiblocks)",
+      "zh": "匠魂工具（不是多方块结构）"
+    },
+    {
+      "en": "Tinker's Construct",
+      "zh": "匠魂"
+    },
+    {
+      "en": "Tinker Tool",
+      "zh": "匠魂工具"
+    },
+    {
+      "en": "Two ",
+      "zh": "两个 "
+    },
+    {
+      "en": "Three ",
+      "zh": "三个 "
+    },
+    {
+      "en": "Legacy",
+      "zh": "旧版"
+    },
+    {
+      "en": "Fluid",
+      "zh": "流体"
+    },
+    {
+      "en": "Item",
+      "zh": "物品"
+    },
+    {
+      "en": "Names",
+      "zh": "名称"
+    },
+    {
+      "en": "Target",
+      "zh": "目标"
+    },
+    {
+      "en": "Quantity",
+      "zh": "数量"
+    },
+    {
+      "en": "Random",
+      "zh": "随机"
+    },
+    {
+      "en": "Single",
+      "zh": "单次"
+    },
+    {
+      "en": "Prime",
+      "zh": "质数"
+    },
+    {
+      "en": " and ",
+      "zh": " 和 "
+    },
+    {
+      "en": "Aye",
+      "zh": "是"
+    },
+    {
+      "en": "Alright",
+      "zh": "好的"
+    },
+    {
+      "en": "Awknowledged",
+      "zh": "已知悉"
+    },
+    {
+      "en": "Skip",
+      "zh": "跳过"
+    },
+    {
+      "en": "Thanks",
+      "zh": "谢谢"
+    },
+    {
+      "en": "Yep",
+      "zh": "是"
+    },
+    {
+      "en": "Power",
+      "zh": "功率"
+    },
+    {
+      "en": "Heat",
+      "zh": "热量"
+    },
+    {
+      "en": "Efficiency",
+      "zh": "效率"
+    },
+    {
+      "en": "Output",
+      "zh": "产出"
+    },
+    {
+      "en": "Input",
+      "zh": "输入"
+    },
+    {
+      "en": "Fuel",
+      "zh": "燃料"
+    },
+    {
+      "en": "Coolant",
+      "zh": "冷却剂"
+    },
+    {
+      "en": "Reactor",
+      "zh": "反应堆"
+    },
+    {
+      "en": "Turbine",
+      "zh": "涡轮机"
+    },
+    {
+      "en": "Fusion",
+      "zh": "聚变"
+    },
+    {
+      "en": "Fission",
+      "zh": "裂变"
+    },
+    {
+      "en": "Overhaul",
+      "zh": "改版"
+    },
+    {
+      "en": "Underhaul",
+      "zh": "旧版"
+    },
+    {
+      "en": "Functions",
+      "zh": "功能"
+    },
+    {
+      "en": "Elements",
+      "zh": "元素"
+    },
+    {
+      "en": "Add ",
+      "zh": "添加 "
+    },
+    {
+      "en": "Delete ",
+      "zh": "删除 "
+    },
+    {
+      "en": "Modify ",
+      "zh": "修改 "
+    }
+  ]
+}
