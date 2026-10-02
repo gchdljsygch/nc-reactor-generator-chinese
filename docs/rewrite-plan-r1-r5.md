@@ -1,5 +1,13 @@
 # 后续重构执行计划（R1–R5）
 
+> **⚠️ 历史方案（Java 时代口径）**：本文写于 Java 树仍在仓库里的时点。
+> Java 树已在 `docs/java-exit-plan.md` **P4** 移除并归档至 tag `java-frozen-c79c557f`
+> （含 838 个 `.java`、169 个 `.jar` 与 Java 构建链）。文中作为验收依据的行数、
+> 文件数与路径都是**冻结基线口径**；`src/**`、`libraries/**`、`tools/golden/*.ps1`、
+> `tools/audit/port-audit.ps1`、`tools/i18n/*.ps1` 已不存在，`src/configurations/**`
+> 已迁到 `datasets/configurations/**`。命令示例需要先取回冻结树：
+> `git checkout java-frozen-c79c557f -- src tools/golden tools/audit tools/i18n`。
+
 > **R1 实测更正（本节由 R1 追加，正文一字未改）**
 >
 > 1. **§1.2 事实 4 / §3.1.2 的字段名有误**：Turbine **没有 `totalPower` 字段**。

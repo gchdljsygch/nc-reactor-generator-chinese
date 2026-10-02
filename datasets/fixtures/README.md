@@ -1,6 +1,9 @@
 # R0.4 — 格式兼容性回归语料（fixtures）
 
 > 由 `tools/golden/fixtures.ps1` 生成。**请勿手工编辑**这些文件。
+> **生成器已在 `docs/java-exit-plan.md` §P4 随 Java 树归档**；文件本身已入库，
+> `pnpm test` 直接读它们，不需要 Java。要重跑生成器先取回冻结树：
+> `git checkout java-frozen-c79c557f -- src tools/golden libraries nbproject build.gradle build.xml`
 >
 > 详细逐格式验证结果见 `docs/r0/fixtures.md`（Overhaul SFR）与
 > `docs/r0/fixtures-underhaul.md`（Underhaul SFR 对照）。
@@ -101,6 +104,9 @@
 写失败的 writer 不会留下 0 字节文件（`FixtureGen` 会清理）。
 
 ## 怎么用
+
+> 生成/校验命令需要冻结树与 JDK（见文首）；**日常不需要跑**——fixtures 已入库，
+> TS 侧的测试直接读文件。
 
 ```powershell
 # 重新生成（需要先跑过一次 tools/golden/golden.ps1 来编译应用类）

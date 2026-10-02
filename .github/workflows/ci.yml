@@ -57,6 +57,15 @@ jobs:
           pnpm r2:coverage
           diff -u "$RUNNER_TEMP/coverage.md" docs/r2/fixture-coverage.md
 
+      # java-exit-plan §P5: the Java tree stays archived in tag java-frozen-<sha>.
+      # Nothing may re-introduce a `*.java` / `*.jar`, and the tracked tree must stay
+      # under 60 MB — both are what the exit plan actually delivered (205.5 → ~50 MB).
+      - name: No Java in the tree (§P5)
+        run: pnpm check:no-java
+
+      - name: Tracked repository size (§P5)
+        run: pnpm size:repo
+
       # R3.8 + §11.3: no key the UI asks for may be missing from a shipped pack
       # (a key that resolves through the fallback chain is a missing translation).
       - name: App i18n coverage (§11.3)

@@ -26,8 +26,14 @@
 
 ```powershell
 pnpm install
-pnpm verify:full      # typecheck + lint + 全量测试 + i18n + 元素包 + 语言包 + 构建 + 体积 + PWA
+pnpm verify:full      # no-java + typecheck + lint + 全量测试 + i18n + 元素包 + 语言包 + 构建 + 体积 + 仓库体积 + PWA
 ```
+
+> **Java 退出已完成（`docs/java-exit-plan.md` P0–P5，2026-10）**：本文件写于 Java 树仍在
+> 仓库里的时点，文中的 Java 侧证据命令（`golden.ps1` / `format-golden.ps1` 等）现在需要先
+> 取回冻结树：`git checkout java-frozen-c79c557f -- src tools/golden libraries nbproject build.gradle build.xml`。
+> R5 的交付物（语言包、PWA、发布流水线）**全部与新仓库形态兼容**，`pnpm verify:full` 仍然全绿；
+> 新增的两道门禁是 `pnpm check:no-java` 与 `pnpm size:repo`（§P5）。
 
 ---
 

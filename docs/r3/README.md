@@ -156,6 +156,9 @@ Java 侧的问题是**把文字画进 GL**，于是需要字形图集，17 MB �
 2. **打开 → 编辑 → 保存**（R3.3）：
    `datasets/fixtures/historical/usfr-legacy-ncpf.ncpf` 拖进窗口 → 选中 `Underhaul SFR` →
    `File ▸ Save` → 用 `format-golden.ps1 -Probe` 回读写出文件，指纹应与原文件一致。
+   （该脚本已在 `docs/java-exit-plan.md` §P4 归档；要跑先
+   `git checkout java-frozen-c79c557f -- src tools/golden libraries nbproject build.gradle build.xml`。
+   TS 侧的等价口径是 `pnpm test packages/formats` 的 R2.2/R2.5 用例。）
 3. **语言与持久化**（R3.2）：Settings ▸ 简体中文 → 菜单/面板/元素名立即变中文，
    `<html lang="zh-CN">`；刷新后仍是中文。
 4. **编辑器**（R3.5）：绘制/擦除/取色/选择/填充、Ctrl+Z/Ctrl+Y、镜像勾选、

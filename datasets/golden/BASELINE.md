@@ -2,13 +2,23 @@
 
 > 计划 `docs/rewrite-plan-r1-r5.md` §11.4 要求：**每次重新生成基线都必须记录**
 > 「Java 提交号 + 种子 + 参数」。本文件是 R1 之后的权威记录。
+>
+> **⚠️ 生成器已随 Java 树归档（`docs/java-exit-plan.md` §P4）**：本文下面的
+> `pwsh -File tools/golden/golden.ps1 …` 命令需要先取回冻结树与一件 JDK：
+>
+> ```powershell
+> git checkout java-frozen-c79c557f -- src tools/golden libraries nbproject build.gradle build.xml
+> ```
+>
+> 数据集本身**已入库且不需要重新生成**——`pnpm test` 直接读
+> `datasets/golden/*.jsonl.gz`，不需要 Java、GL 或网络。
 
 ## 当前基线
 
 | 项 | 值 |
 |---|---|
 | 数据集版本 | `datasetVersion 3` |
-| 生成器 | `GoldenGen`（`tools/golden/src/net/ncplanner/plannerator/tools/GoldenGen.java`） |
+| 生成器 | `GoldenGen`（`tools/golden/src/net/ncplanner/plannerator/tools/GoldenGen.java`，见 tag `java-frozen-c79c557f`） |
 | 引擎 | `java-final`（工作区冻结源码 + D1-B 的辐照器 null guard，见 `docs/r1/d1-decision.md`） |
 | 配置 | `datasets/configurations/nuclearcraft.ncpf.json`（NuclearCraft 1.12.2-2o.9.3 / underhaul 2.19a） |
 | 种子 / 参数 | `--seed 20260101 --min-size 3 --max-size 14` |
@@ -31,6 +41,9 @@
 > 否则任何含激活加热器的用例都会抛异常 —— 见 `docs/r1/d1-decision.md` §6。
 
 ## 复现命令
+
+> 需要先取回冻结树（见文首）与一件 JDK ≥21。当前仓库已无 Java 树，
+> 这些命令**默认不需要执行**——它们只在「重新生成基线」时才用。
 
 ```powershell
 # 1) 重新编译应用源码 + harness（不要加 -SkipCompile：app classes 必须与当前 src 同步，

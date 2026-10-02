@@ -73,6 +73,14 @@ jobs:
         env:
           NCPL_GOLDEN: full
 
+      # java-exit-plan §P5: the release branch is held to the same Java-free / size
+      # contract as CI, so the exit cannot be undone by a release-only commit.
+      - name: No Java in the tree (§P5)
+        run: pnpm check:no-java
+
+      - name: Tracked repository size (§P5)
+        run: pnpm size:repo
+
       - name: Build the web app
         run: pnpm build:app
 

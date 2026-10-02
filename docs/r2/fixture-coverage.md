@@ -4,7 +4,8 @@
 >
 > 逐行对应 `docs/r0/fixture-coverage.md` 的表格字段（fixture / 命中的 reader / 同时匹配 /
 > 读入 / 元素数 / 设计数 / 结果），"Java" 一列组取 `datasets/converted/MANIFEST.json`
-> （`tools/golden/format-golden.ps1` 跑冻结版 Java reader 链的产物），"TS" 一列组是
+> （冻结版 Java reader 链跑出来的产物，采集脚本 `tools/golden/format-golden.ps1` 已在
+> java-exit-plan §P4 随 Java 树一起删除；数据本身已入库，复现见 `docs/changelog-java.md` 同级说明），"TS" 一列组是
 > `packages/formats/src/legacy/index.ts` 注册的同一条链。
 >
 > 「同时匹配」只列 TS 侧：`NCPFReader` 的 `formatMatches` 恒为 true（它靠 `read()` 返回
@@ -120,4 +121,4 @@
 | v10 | ✅ `historical/aop-v10.ncpf` | `LegacyNCPF10Reader` |
 | v11 | ✅ `historical/aapn.ncpf` | `LegacyNCPF11Reader` |
 
-> 版本分布由 `tools/golden/historical-fixtures.ps1` 对仓库 git 历史里每一条 `*.ncpf` 路径的每个 blob 探测得到：历史中存在的是 **1、2、5、8、10、11**；**3、4、6、7、9 从未被提交过**，因此这几个 reader 没有真实样本可验（`docs/rewrite-plan-r1-r5.md` §5 R2.3 已把"需要真实样本"写成前置条件）。
+> 版本分布由 `tools/golden/historical-fixtures.ps1`（已在 java-exit-plan §P4 删除）对仓库 git 历史里每一条 `*.ncpf` 路径的每个 blob 探测得到：历史中存在的是 **1、2、5、8、10、11**；**3、4、6、7、9 从未被提交过**，因此这几个 reader 没有真实样本可验（`docs/rewrite-plan-r1-r5.md` §5 R2.3 已把"需要真实样本"写成前置条件）。脚本本身仍可从 tag `java-frozen-c79c557f` 取回：`git checkout java-frozen-c79c557f -- tools/golden`。

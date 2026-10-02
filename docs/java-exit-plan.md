@@ -213,7 +213,17 @@ git push origin "java-frozen-$sha"      # 推送成功后才继续
 | Java 源码最后一次变更（`src/**/*.java`） | `4fad557f`（中文化冻结提交，也是 `contentSha256` 漂移的来源） |
 | P0 起点的 HEAD | `99335fceb22988eb5dfe33b2c55d8bd09fbba146`（`99335fce`） |
 | 冻结基线 | 831 文件 / 77,840 行；`contentSha256=7e36b9a5c7c9de15382259418b0941b8ae6cffb47c543946889c9f788beda6a4` |
-| P4 tag 名 | `java-frozen-<P3 提交的 short sha>`（P4 第一步用**当时**的 `git rev-parse --short HEAD` 命名；该提交仍含完整 `src/**`） |
+| P4 tag 名 | **`java-frozen-c79c557f`**（已推送到 `origin`；指向 P3 修正提交 `c79c557f`，是删除 Java 树之前最后一个含完整 `src/**` + `libraries/**` + 构建链的提交） |
+
+取回与核对：
+
+```powershell
+git ls-tree -r --name-only java-frozen-c79c557f -- src | Measure-Object   # 831
+git ls-tree -r --name-only java-frozen-c79c557f -- libraries | Measure-Object  # 169
+git checkout java-frozen-c79c557f -- src tools/golden tools/audit tools/i18n libraries nbproject build.gradle build.xml
+node tools/ts/port-audit.mjs --summary        # 对取回的树复现 831 / 77,840 / 7e36b9a5…
+git checkout -- .                              # 撤销取回
+```
 
 **第 2 步：删除**
 
@@ -323,9 +333,26 @@ pnpm verify:full                              # 绿
 
 | 阶段 | 提交 | `verify:full` | 备注 |
 |---|---|---|---|
-| P0 | _待填_ | _待填_ | `port-audit.mjs` 内置 `EXPECTED_SHA`；快照刷新到 831 / 77,840 / `7e36b9a5…`；门禁自测（改 1 行 Java → exit 1，改回 → exit 0）已通过 |
-| P1 | _待填_ | _待填_ | |
-| P2 | _待填_ | _待填_ | |
-| P3 | _待填_ | _待填_ | |
-| P4 | _待填_ | _待填_ | |
-| P5 | _待填_ | _待填_ | |
+| P0 | `61b75431` | ✅ 554 passed / 2 skipped | `port-audit.mjs` 内置 `EXPECTED_SHA`；快照刷新到 831 / 77,840 / `7e36b9a5…`；门禁自测（改 1 行 Java → exit 1，改回 → exit 0）已通过 |
+| P1 | `7fdebb97` | ✅ 554 / 2 skipped | `git mv src/configurations datasets/configurations`；代码 6 文件 / 10 处 + 测试 20 文件 / 68 处；`build:app` 产物哈希不变（`nuclearcraft.ncpf-C6cD-xj2.json`） |
+| P2 | `2c2dbdda` | ✅ 554 / 2 skipped | `--baseline` 双断言（载荷哈希 + `EXPECTED_SHA`）；手工改 JSON 字段 → exit 1；删除 3 个 PS 脚本 |
+| P3 | `b1016644` + `c79c557f` | ✅ 554 / 2 skipped | `c79c557f` 是修正提交：`versions.txt` 按计划归属 P4，P3 误删后恢复 |
+| P4 | `6faa27ea` | ✅ 554 / 2 skipped | 先建并推送 tag **`java-frozen-c79c557f`**（指向 P3 修正提交，含完整 `src/**` + `libraries/**`，可 `git checkout <tag> -- src` 取回）；删除后 `Test-Path src = False` |
+| P5 | _待填_ | _待填_ | `check:no-java` + `size:repo` 接入 `verify:full` / `ci.yml` / `release.yml`；`tools/README.md` 重写为 TS-only |
+
+**结果对照（§0 摘要 vs 实测）**
+
+| 指标 | 计划预期 | 实测 |
+|---|---:|---:|
+| tracked 文件 | 2,097 → ≈350 | **2,097 → 357** |
+| tracked 体积 | 205.5 → ≈50 MB | **205.5 → 50.1 MB**（−155.4 MB） |
+| `git ls-files '*.java'` | 空 | **空**（838 → 0） |
+| `git ls-files '*.jar'` | 空 | **空**（169 → 0） |
+| `Test-Path src` | `False` | **`False`** |
+| 审计可复现 | `--baseline` → 831 / 77,840 | **831 / 77,840，hash 匹配** |
+| `pnpm verify:full` | 绿 | **绿（554 passed / 2 skipped）** |
+
+> 提交号说明：P3 原本在计划里是单个提交；执行时发现 `versions.txt` 被 P3 误删（它属于 §2 矩阵
+> 的 P3 段，但计划 §P3 的命令块没有列出它，且 §7 的 P4 提交信息把「删 Java 源码与死资产」写成
+> 一次性动作），因此多了一个修正提交 `c79c557f` 把它恢复到 P4 再删。tag 也随之重指到 `c79c557f`，
+> 保证「冻结 tag 能取回删除前的完整树」。除此之外每个提交与 §7 的切分一一对应。

@@ -129,6 +129,9 @@ pnpm build:app; pnpm size     # R3 的构建体积门禁
 写出到任意临时路径 `<file>`，然后：
 
 `pwsh -File tools/golden/format-golden.ps1 -Probe <file>`（首次编译，之后 `-SkipCompile`）
+—— 该脚本已在 `docs/java-exit-plan.md` §P4 随 Java 树归档；复现前先
+`git checkout java-frozen-c79c557f -- src tools/golden libraries nbproject build.gradle build.xml`。
+下面的输出是当时的实测记录。
 
 ```
 reader    : UnderhaulHellrage2Reader
@@ -166,6 +169,13 @@ migrated settings.dat -> out.json (language zh_CN, 3 notes)
 （不需要网络），并记录 commit / 日期 / 字节数到 `datasets/fixtures/historical/MANIFEST.txt`。
 本次为 R2.3/R2.4 扩了清单：对每条 `*.ncpf` 路径的每个 blob 探测 `version` 字段后，
 把历史中存在的老版本一并抽出（v1 × 4、v2 × 2、v5 × 2、v8 × 1，另加 v10/v11 各一）。
+
+> 脚本已在 `docs/java-exit-plan.md` §P4 归档（无 JDK 后无法运行），抽取结果
+> `datasets/fixtures/historical/**` 与 `MANIFEST.txt` **已入库**，R2.3/R2.4 的测试
+> 直接读它们。注意脚本里的路径字符串（`src/configurations/…`）是**历史路径**，
+> 靠 `git show <rev>:<path>` 取 blob——即使工作区已无 `src/`，只要 git 历史完整
+> 它就仍然可用（`docs/java-exit-plan.md` §P1 明令不改这些字符串）。取回：
+> `git checkout java-frozen-c79c557f -- tools/golden`。
 
 ---
 

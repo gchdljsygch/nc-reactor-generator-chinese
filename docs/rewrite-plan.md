@@ -1,5 +1,18 @@
 # 推倒重来：NC Plannerator 重写方案
 
+> **⚠️ 历史方案（Java 时代口径）**：本文写于 Java 树仍在仓库里的时点。
+> Java 树已在 `docs/java-exit-plan.md` **P4** 移除并归档至 tag `java-frozen-c79c557f`
+> （该 tag 指向 P3 提交 `c79c557f`，含 838 个 `.java`、169 个 `.jar` 与 Java 构建链）。
+> 文中的行数、文件数、路径与命令都是**冻结基线口径**，其中：
+>
+> - `src/**`、`libraries/**`、`gradlew` / `build.gradle` / `nbproject/**` 等**已不存在**；
+> - `src/configurations/**` 已在 P1 迁到 `datasets/configurations/**`；
+> - `src/tutorials/**` → `datasets/tutorials/**`、`src/changelog.txt` → `docs/changelog-java.md`（P4）；
+> - `tools/golden/*.ps1`、`tools/audit/port-audit.ps1`、`tools/i18n/*.ps1` 已删除（P2/P4）。
+>
+> 需要复现正文的实测时，先取回冻结树：
+> `git checkout java-frozen-c79c557f -- src tools/golden tools/audit tools/i18n`。
+
 > 前置文档：`docs/refactoring-plan.md`（渐进式重构方案，本文档为其替代方案）
 > 分析基线：工作区当前状态（含未提交的本地化改动）
 > 所有数字为本次实测，采集方法见 [附录](#附录a采集方法)

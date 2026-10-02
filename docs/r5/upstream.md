@@ -105,9 +105,18 @@ bootstrap 也用 `Core.refreshModules()` → classgraph），所以 R1.3d 的「
 是在替换一份**上游刚刚重写过**的代码（`docs/rewrite-plan-r1-r5.md` §4.4 R1.3d）。
 
 > 另需注意：`docs/r0/findings.md` §13 里 R0.1「冻结 tag / 最终 Java 版发布」的状态是
-> **⏳ 待用户确认（涉及 git 写操作）**，而 `git tag` 现在仍为空 —— 所以「冻结」目前只是
+> **⏳ 待用户确认（涉及 git 写操作）**，而当时 `git tag` 为空 —— 所以当时的「冻结」只是
 > **工作区状态 + 文档记录**，不是可引用的 tag。`datasets/golden/BASELINE.md` 也这么写：
 > 引擎 = 「`java-final`（工作区冻结源码 + D1-B 的辐照器 null guard）」。
+>
+> **现已解决（`docs/java-exit-plan.md` §P4，2026-10）**：冻结 tag 已建立并推送 ——
+> **`java-frozen-c79c557f`**（指向 P3 提交 `c79c557f`，是删除 Java 树之前最后一个
+> 含完整 `src/**` + `libraries/**` + 构建链的提交）。上面便 `git show` 的这些路径
+> 现在都在这个 tag 里，本节的命令前面加一句
+> `git checkout java-frozen-c79c557f -- src libraries nbproject build.gradle build.xml tools/golden`
+> 即可原样复现；直接在仓库根跑会报 `pathspec ... did not match`，因为 `src/**` 与
+> `libraries/**` 已从工作区移除。原始 commit sha（`717d51bb` / `17a7e2ca`）不变，仍是
+> 最精确的证据锚点（tag 只是给它们加了一个稳定的名字）。
 
 ### 2.2 上游曾经发布过什么（`versions.txt`）
 
@@ -393,14 +402,18 @@ git log --oneline -n 5
 git log -1 --format="%H %ad %s" --date=short -- src
 git log -1 --format="%H %ad %s" --date=short
 git rev-list --count HEAD
-git tag                     # 空
+git tag                     # java-frozen-c79c557f（2026-10，java-exit-plan §P4 建立并推送）
 git branch -a               # * overhaul / remotes/origin/overhaul
+
+# ⚠️ 下面这些读的是 Java 树，工作区里已经没有了（§P3/P4）。
+#    先取回冻结树，否则会报 "pathspec ... did not match any file(s) known to git"：
+git checkout java-frozen-c79c557f -- src libraries nbproject build.gradle build.xml tools/golden
 git show --stat --oneline HEAD
 git show --stat --oneline 17a7e2ca
 git show 17a7e2ca -- src/net/ncplanner/plannerator/planner/module/Module.java
 git show --stat 17a7e2ca -- src nbproject build.gradle build.xml
 
-# fork 的未提交改动（分叉边界）
+# fork 的未提交改动（分叉边界）—— 需在上面的 checkout 之后跑
 git status --short
 git diff --stat
 git diff -- src/net/ncplanner/plannerator/multiblock/overhaul/fissionsfr/OverhaulSFR.java

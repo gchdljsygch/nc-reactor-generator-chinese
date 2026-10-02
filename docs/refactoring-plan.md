@@ -1,5 +1,12 @@
 # NC Plannerator 中文版 —— 项目体检与重构计划
 
+> **⚠️ 历史方案（Java 时代口径）**：本文的体检对象是冻结前的 Java 树。
+> Java 树已在 `docs/java-exit-plan.md` **P4** 移除并归档至 tag `java-frozen-c79c557f`
+> （含 838 个 `.java`、169 个 `.jar` 与 Java 构建链）。文中 `src/**`、`libraries/**`、
+> `gradlew` / `build.gradle` 等路径**已不存在**；`src/configurations/**` 已迁到
+> `datasets/configurations/**`（P1），`src/tutorials/**` → `datasets/tutorials/**`（P4）。
+> 需要复现正文的实测时：`git checkout java-frozen-c79c557f -- src tools/golden`。
+
 > 分析对象：`nc-reactor-generator-chinese`（fork of `ThizThizzyDizzy/nc-reactor-generator`，分支 `overhaul`）
 > 分析基线：工作区当前状态（含未提交的本地化改动）
 > 所有数字均为本次实测，采集方法见 [附录 B](#附录-b本次分析使用的命令)
