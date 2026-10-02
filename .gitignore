@@ -1,11 +1,11 @@
-/.idea
-/*.iml
-/out
-
-/errors
-/crash-reports
-/configurations
-/dssl
+# --- Java-era local artifacts (historical) ------------------------------------
+# The Java tree was archived to `java-frozen-<sha>` and removed (java-exit-plan
+# §P3/P4), but these rules are kept for stray local files from the frozen build:
+# `settings.dat` / `settings.json` (migrate-settings.mjs output) and loose
+# `*.ncpf` / `*.config2` saves. The rest of the old Java-only rules (`/out`,
+# `/build/`, `/.gradle/`, `/tools/golden/build/`, `/dssl*`, `/version.version`,
+# `/benchmark*`, `/errors`, `/crash-reports`, `smorebank.dat`, `special.dat`)
+# are gone with the build chain.
 /settings.dat
 /smorebank.dat
 /special.dat
@@ -13,26 +13,16 @@
 /*.ncpf.*
 /*.config2
 /*.dssl
-/*.json
 /*.png
-/version.version
-/benchmark.ncpf
-/benchmark.json
-/dssl.jar
 /patrons-list.txt
-
-/dist/
-/build/
-/.gradle/
 /*.cfg
+/.idea
 
 # --- local build / release artifacts -----------------------------------------
 # `release/` holds jpackage output (~560 MB locally) and is NOT a source artifact
 /release/
 
-# --- R0/R2/R3 tooling --------------------------------------------------------
-# javac output for tools/golden (regenerate with tools/golden/golden.ps1)
-/tools/golden/build/
+# --- R2/R3 tooling -----------------------------------------------------------
 # golden datasets are committed gzipped; the expanded form is 43 MB
 /datasets/golden/*.jsonl
 # per-run smoke output
@@ -49,10 +39,9 @@ node_modules/
 # probe scratch under the R0 fixture conversions (never referenced by tests)
 /datasets/converted/tmp/
 
-# The bare `/*.json` rule above was written for the Java app's loose root-level
-# output. It also swallows the TypeScript project's own config, so re-include
-# exactly those three files. `settings.json` (the default output of
-# tools/ts/migrate-settings.mjs) stays ignored on purpose.
+# Loose root-level JSON was the Java app's output format. Only `settings.json`
+# (the default output of tools/ts/migrate-settings.mjs) is still expected there.
+/*.json
 !/package.json
 !/tsconfig.json
 !/tsconfig.base.json

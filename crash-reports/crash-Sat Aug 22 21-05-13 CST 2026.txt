@@ -1,0 +1,75 @@
+Planner version 5.0.6
+OS: Windows 11 (amd64)
+
+Exception on main thread! (Autosave Successful) 
+java.lang.RuntimeException: Failed to download 1 library!
+ at net.ncplanner.plannerator.planner.Main.update(Main.java:280)
+ at net.ncplanner.plannerator.planner.Main.main(Main.java:86)
+
+Configurations: 0
+Addons: 0
+
+Theme: net.ncplanner.plannerator.planner.theme.StandardTheme Light
+
+GUI menu stack:
+
+Threads: 
+Rainbow Theme: TIMED_WAITING [D]
+  java.base@21.0.11/java.lang.Thread.sleep0(Native Method)
+  java.base@21.0.11/java.lang.Thread.sleep(Thread.java:509)
+  app//net.ncplanner.plannerator.planner.theme.RainbowTheme.lambda$new$1(RainbowTheme.java:24)
+  app//net.ncplanner.plannerator.planner.theme.RainbowTheme$$Lambda/0x0000020f9d0da548.run(Unknown Source)
+  java.base@21.0.11/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.11/java.lang.Thread.run(Thread.java:1583)
+Reference Handler: RUNNABLE [D]
+  java.base@21.0.11/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+  java.base@21.0.11/java.lang.ref.Reference.processPendingReferences(Reference.java:246)
+  java.base@21.0.11/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:208)
+Attach Listener: RUNNABLE [D]
+Rainbow Cracker Theme: TIMED_WAITING [D]
+  java.base@21.0.11/java.lang.Thread.sleep0(Native Method)
+  java.base@21.0.11/java.lang.Thread.sleep(Thread.java:509)
+  app//net.ncplanner.plannerator.planner.theme.RainbowTheme.lambda$new$1(RainbowTheme.java:24)
+  app//net.ncplanner.plannerator.planner.theme.RainbowTheme$$Lambda/0x0000020f9d0da548.run(Unknown Source)
+  java.base@21.0.11/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.11/java.lang.Thread.run(Thread.java:1583)
+Signal Dispatcher: RUNNABLE [D]
+Rainbow Chocolate Theme: TIMED_WAITING [D]
+  java.base@21.0.11/java.lang.Thread.sleep0(Native Method)
+  java.base@21.0.11/java.lang.Thread.sleep(Thread.java:509)
+  app//net.ncplanner.plannerator.planner.theme.RainbowTheme.lambda$new$1(RainbowTheme.java:24)
+  app//net.ncplanner.plannerator.planner.theme.RainbowTheme$$Lambda/0x0000020f9d0da548.run(Unknown Source)
+  java.base@21.0.11/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.11/java.lang.Thread.run(Thread.java:1583)
+main: RUNNABLE
+  java.base@21.0.11/java.lang.Thread.dumpThreads(Native Method)
+  java.base@21.0.11/java.lang.Thread.getAllStackTraces(Thread.java:2522)
+  app//net.ncplanner.plannerator.planner.Main.generateCrashReport(Main.java:534)
+  app//net.ncplanner.plannerator.planner.Main.main(Main.java:98)
+Rainbow Marshmallow Theme: TIMED_WAITING [D]
+  java.base@21.0.11/java.lang.Thread.sleep0(Native Method)
+  java.base@21.0.11/java.lang.Thread.sleep(Thread.java:509)
+  app//net.ncplanner.plannerator.planner.theme.RainbowTheme.lambda$new$1(RainbowTheme.java:24)
+  app//net.ncplanner.plannerator.planner.theme.RainbowTheme$$Lambda/0x0000020f9d0da548.run(Unknown Source)
+  java.base@21.0.11/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.11/java.lang.Thread.run(Thread.java:1583)
+Common-Cleaner: TIMED_WAITING [D]
+  java.base@21.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.11/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+  java.base@21.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1886)
+  java.base@21.0.11/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+  java.base@21.0.11/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+  java.base@21.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+  java.base@21.0.11/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+  java.base@21.0.11/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.11/java.lang.Thread.run(Thread.java:1583)
+  java.base@21.0.11/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:186)
+Finalizer: WAITING [D]
+  java.base@21.0.11/java.lang.Object.wait0(Native Method)
+  java.base@21.0.11/java.lang.Object.wait(Object.java:366)
+  java.base@21.0.11/java.lang.Object.wait(Object.java:339)
+  java.base@21.0.11/java.lang.ref.NativeReferenceQueue.await(NativeReferenceQueue.java:48)
+  java.base@21.0.11/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:158)
+  java.base@21.0.11/java.lang.ref.NativeReferenceQueue.remove(NativeReferenceQueue.java:89)
+  java.base@21.0.11/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:173)
+Notification Thread: RUNNABLE [D]
