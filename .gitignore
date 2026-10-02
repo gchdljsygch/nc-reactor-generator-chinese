@@ -1,11 +1,10 @@
 # --- Java-era local artifacts (historical) ------------------------------------
 # The Java tree was archived to `java-frozen-<sha>` and removed (java-exit-plan
-# §P3/P4), but these rules are kept for stray local files from the frozen build:
-# `settings.dat` / `settings.json` (migrate-settings.mjs output) and loose
-# `*.ncpf` / `*.config2` saves. The rest of the old Java-only rules (`/out`,
-# `/build/`, `/.gradle/`, `/tools/golden/build/`, `/dssl*`, `/version.version`,
-# `/benchmark*`, `/errors`, `/crash-reports`, `smorebank.dat`, `special.dat`)
-# are gone with the build chain.
+# §P3/P4), but these rules are kept for local leftovers from the frozen build:
+# settings files, loose `*.ncpf` / `*.config2` saves, emulator dumps and crash
+# dumps. The rest of the old Java-only rules (`/out`, `/build/`, `/.gradle/`,
+# `/tools/golden/build/`, `/dssl*`, `/version.version`, `/benchmark*`, `/errors`,
+# `smorebank.dat`, `special.dat`) are gone with the build chain.
 /settings.dat
 /smorebank.dat
 /special.dat
@@ -17,6 +16,14 @@
 /patrons-list.txt
 /*.cfg
 /.idea
+# Emulator / crash dumps. Without the leading slash `crash-reports/` in the old
+# rule only matched the repository root, so a tracked file below it stayed
+# "not ignored" and a `git add -A` would silently re-add it.
+crash-reports/
+/errors
+/out
+/build/
+/.gradle/
 
 # --- local build / release artifacts -----------------------------------------
 # `release/` holds jpackage output (~560 MB locally) and is NOT a source artifact
