@@ -1,0 +1,1200 @@
+{
+  "note": "Distinct display names to translate into Simplified Chinese. Output one JSON object mapping display -> zh_CN.",
+  "count": 115,
+  "names": [
+    {
+      "display": "Active Cooler",
+      "type": "legacy_block",
+      "def": "nuclearcraft:active_cooler",
+      "legacy": [
+        "Active Cooler",
+        "nuclearcraft:active_cooler",
+        "Active Cooler"
+      ]
+    },
+    {
+      "display": "Aluminum Dynamo Coil",
+      "type": "legacy_block",
+      "def": "nuclearcraft:turbine_dynamo_coil:2[type=aluminum]",
+      "legacy": [
+        "Aluminum Dynamo Coil",
+        "nuclearcraft:turbine_dynamo_coil:2[type=aluminum]",
+        "nuclearcraft:turbine_dynamo_coil:2",
+        "Aluminum Dynamo Coil"
+      ]
+    },
+    {
+      "display": "Beryllium Block",
+      "type": "legacy_block",
+      "def": "nuclearcraft:ingot_block:9[type=beryllium]",
+      "legacy": [
+        "Beryllium Block",
+        "nuclearcraft:ingot_block:9[type=beryllium]",
+        "nuclearcraft:ingot_block:9"
+      ]
+    },
+    {
+      "display": "Beryllium Dynamo Coil",
+      "type": "legacy_block",
+      "def": "nuclearcraft:turbine_dynamo_coil:1[type=beryllium]",
+      "legacy": [
+        "Beryllium Dynamo Coil",
+        "nuclearcraft:turbine_dynamo_coil:1[type=beryllium]",
+        "nuclearcraft:turbine_dynamo_coil:1",
+        "Beryllium Dynamo Coil"
+      ]
+    },
+    {
+      "display": "Casing",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_block:0[type=casing]",
+      "legacy": [
+        "Casing",
+        "nuclearcraft:fission_block:0[type=casing]",
+        "nuclearcraft:fission_block:0",
+        "Casing"
+      ]
+    },
+    {
+      "display": "Copper Cooler",
+      "type": "legacy_block",
+      "def": "nuclearcraft:cooler:13[type=copper]",
+      "legacy": [
+        "Copper Cooler",
+        "nuclearcraft:cooler:13[type=copper]",
+        "nuclearcraft:cooler:13",
+        "Copper Cooler"
+      ]
+    },
+    {
+      "display": "Copper Dynamo Coil",
+      "type": "legacy_block",
+      "def": "nuclearcraft:turbine_dynamo_coil:4[type=copper]",
+      "legacy": [
+        "Copper Dynamo Coil",
+        "nuclearcraft:turbine_dynamo_coil:4[type=copper]",
+        "nuclearcraft:turbine_dynamo_coil:4",
+        "Copper Dynamo Coil"
+      ]
+    },
+    {
+      "display": "Cryotheum Cooler",
+      "type": "legacy_block",
+      "def": "nuclearcraft:cooler:10[type=cryotheum]",
+      "legacy": [
+        "Cryotheum Cooler",
+        "nuclearcraft:cooler:10[type=cryotheum]",
+        "nuclearcraft:cooler:10",
+        "Cryotheum Cooler"
+      ]
+    },
+    {
+      "display": "Diamond Cooler",
+      "type": "legacy_block",
+      "def": "nuclearcraft:cooler:7[type=diamond]",
+      "legacy": [
+        "Diamond Cooler",
+        "nuclearcraft:cooler:7[type=diamond]",
+        "nuclearcraft:cooler:7",
+        "Diamond Cooler"
+      ]
+    },
+    {
+      "display": "Dynamo Coil Connector",
+      "type": "legacy_block",
+      "def": "nuclearcraft:turbine_coil_connector",
+      "legacy": [
+        "Dynamo Coil Connector",
+        "nuclearcraft:turbine_coil_connector",
+        "Dynamo Coil Connector"
+      ]
+    },
+    {
+      "display": "Emerald Cooler",
+      "type": "legacy_block",
+      "def": "nuclearcraft:cooler:12[type=emerald]",
+      "legacy": [
+        "Emerald Cooler",
+        "nuclearcraft:cooler:12[type=emerald]",
+        "nuclearcraft:cooler:12",
+        "Emerald Cooler"
+      ]
+    },
+    {
+      "display": "Enderium Cooler",
+      "type": "legacy_block",
+      "def": "nuclearcraft:cooler:9[type=enderium]",
+      "legacy": [
+        "Enderium Cooler",
+        "nuclearcraft:cooler:9[type=enderium]",
+        "nuclearcraft:cooler:9",
+        "Enderium Cooler"
+      ]
+    },
+    {
+      "display": "Exhaust Steam",
+      "type": "legacy_fluid",
+      "def": "exhaust_steam",
+      "legacy": [
+        "Exhaust Steam",
+        "exhaust_steam"
+      ]
+    },
+    {
+      "display": "Extreme Alloy Rotor Blade",
+      "type": "legacy_block",
+      "def": "nuclearcraft:turbine_rotor_blade_extreme",
+      "legacy": [
+        "Extreme Alloy Rotor Blade",
+        "nuclearcraft:turbine_rotor_blade_extreme",
+        "Extreme Alloy Rotor Blade"
+      ]
+    },
+    {
+      "display": "Fission Controller",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_controller_new_fixed",
+      "legacy": [
+        "Fission Controller",
+        "nuclearcraft:fission_controller_new_fixed",
+        "Fission Controller"
+      ]
+    },
+    {
+      "display": "Fluid Inlet",
+      "type": "legacy_block",
+      "def": "nuclearcraft:turbine_inlet",
+      "legacy": [
+        "Fluid Inlet",
+        "nuclearcraft:turbine_inlet",
+        "Fluid Inlet"
+      ]
+    },
+    {
+      "display": "Fluid Outlet",
+      "type": "legacy_block",
+      "def": "nuclearcraft:turbine_outlet",
+      "legacy": [
+        "Fluid Outlet",
+        "nuclearcraft:turbine_outlet",
+        "Fluid Outlet"
+      ]
+    },
+    {
+      "display": "Glowstone Cooler",
+      "type": "legacy_block",
+      "def": "nuclearcraft:cooler:5[type=glowstone]",
+      "legacy": [
+        "Glowstone Cooler",
+        "nuclearcraft:cooler:5[type=glowstone]",
+        "nuclearcraft:cooler:5",
+        "Glowstone Cooler"
+      ]
+    },
+    {
+      "display": "Gold Cooler",
+      "type": "legacy_block",
+      "def": "nuclearcraft:cooler:4[type=gold]",
+      "legacy": [
+        "Gold Cooler",
+        "nuclearcraft:cooler:4[type=gold]",
+        "nuclearcraft:cooler:4",
+        "Gold Cooler"
+      ]
+    },
+    {
+      "display": "Gold Dynamo Coil",
+      "type": "legacy_block",
+      "def": "nuclearcraft:turbine_dynamo_coil:3[type=gold]",
+      "legacy": [
+        "Gold Dynamo Coil",
+        "nuclearcraft:turbine_dynamo_coil:3[type=gold]",
+        "nuclearcraft:turbine_dynamo_coil:3",
+        "Gold Dynamo Coil"
+      ]
+    },
+    {
+      "display": "Graphite Block",
+      "type": "legacy_block",
+      "def": "nuclearcraft:ingot_block:8[type=graphite]",
+      "legacy": [
+        "Graphite Block",
+        "nuclearcraft:ingot_block:8[type=graphite]",
+        "nuclearcraft:ingot_block:8"
+      ]
+    },
+    {
+      "display": "HEA-242",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_americium:2",
+      "legacy": [
+        "HEA-242",
+        "nuclearcraft:fuel_americium:2",
+        "HEA-242"
+      ]
+    },
+    {
+      "display": "HEA-242 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_americium:3",
+      "legacy": [
+        "HEA-242 Oxide",
+        "nuclearcraft:fuel_americium:3",
+        "HEA-242 Oxide"
+      ]
+    },
+    {
+      "display": "HEB-248",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_berkelium:2",
+      "legacy": [
+        "HEB-248",
+        "nuclearcraft:fuel_berkelium:2",
+        "HEB-248"
+      ]
+    },
+    {
+      "display": "HEB-248 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_berkelium:3",
+      "legacy": [
+        "HEB-248 Oxide",
+        "nuclearcraft:fuel_berkelium:3",
+        "HEB-248 Oxide"
+      ]
+    },
+    {
+      "display": "HECf-249",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_californium:2",
+      "legacy": [
+        "HECf-249",
+        "nuclearcraft:fuel_californium:2",
+        "HECf-249"
+      ]
+    },
+    {
+      "display": "HECf-249 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_californium:3",
+      "legacy": [
+        "HECf-249 Oxide",
+        "nuclearcraft:fuel_californium:3",
+        "HECf-249 Oxide"
+      ]
+    },
+    {
+      "display": "HECf-251",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_californium:6",
+      "legacy": [
+        "HECf-251",
+        "nuclearcraft:fuel_californium:6",
+        "HECf-251"
+      ]
+    },
+    {
+      "display": "HECf-251 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_californium:7",
+      "legacy": [
+        "HECf-251 Oxide",
+        "nuclearcraft:fuel_californium:7",
+        "HECf-251 Oxide"
+      ]
+    },
+    {
+      "display": "HECm-243",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_curium:2",
+      "legacy": [
+        "HECm-243",
+        "nuclearcraft:fuel_curium:2",
+        "HECm-243"
+      ]
+    },
+    {
+      "display": "HECm-243 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_curium:3",
+      "legacy": [
+        "HECm-243 Oxide",
+        "nuclearcraft:fuel_curium:3",
+        "HECm-243 Oxide"
+      ]
+    },
+    {
+      "display": "HECm-245",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_curium:6",
+      "legacy": [
+        "HECm-245",
+        "nuclearcraft:fuel_curium:6",
+        "HECm-245"
+      ]
+    },
+    {
+      "display": "HECm-245 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_curium:7",
+      "legacy": [
+        "HECm-245 Oxide",
+        "nuclearcraft:fuel_curium:7",
+        "HECm-245 Oxide"
+      ]
+    },
+    {
+      "display": "HECm-247",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_curium:10",
+      "legacy": [
+        "HECm-247",
+        "nuclearcraft:fuel_curium:10",
+        "HECm-247"
+      ]
+    },
+    {
+      "display": "HECm-247 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_curium:11",
+      "legacy": [
+        "HECm-247 Oxide",
+        "nuclearcraft:fuel_curium:11",
+        "HECm-247 Oxide"
+      ]
+    },
+    {
+      "display": "HEN-236",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_neptunium:2",
+      "legacy": [
+        "HEN-236",
+        "nuclearcraft:fuel_neptunium:2",
+        "HEN-236"
+      ]
+    },
+    {
+      "display": "HEN-236 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_neptunium:3",
+      "legacy": [
+        "HEN-236 Oxide",
+        "nuclearcraft:fuel_neptunium:3",
+        "HEN-236 Oxide"
+      ]
+    },
+    {
+      "display": "HEP-239",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_plutonium:2",
+      "legacy": [
+        "HEP-239",
+        "nuclearcraft:fuel_plutonium:2",
+        "HEP-239"
+      ]
+    },
+    {
+      "display": "HEP-239 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_plutonium:3",
+      "legacy": [
+        "HEP-239 Oxide",
+        "nuclearcraft:fuel_plutonium:3",
+        "HEP-239 Oxide"
+      ]
+    },
+    {
+      "display": "HEP-241",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_plutonium:6",
+      "legacy": [
+        "HEP-241",
+        "nuclearcraft:fuel_plutonium:6",
+        "HEP-241"
+      ]
+    },
+    {
+      "display": "HEP-241 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_plutonium:7",
+      "legacy": [
+        "HEP-241 Oxide",
+        "nuclearcraft:fuel_plutonium:7",
+        "HEP-241 Oxide"
+      ]
+    },
+    {
+      "display": "HEU-233",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_uranium:2",
+      "legacy": [
+        "HEU-233",
+        "nuclearcraft:fuel_uranium:2",
+        "HEU-233"
+      ]
+    },
+    {
+      "display": "HEU-233 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_uranium:3",
+      "legacy": [
+        "HEU-233 Oxide",
+        "nuclearcraft:fuel_uranium:3",
+        "HEU-233 Oxide"
+      ]
+    },
+    {
+      "display": "HEU-235",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_uranium:6",
+      "legacy": [
+        "HEU-235",
+        "nuclearcraft:fuel_uranium:6",
+        "HEU-235"
+      ]
+    },
+    {
+      "display": "HEU-235 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_uranium:7",
+      "legacy": [
+        "HEU-235 Oxide",
+        "nuclearcraft:fuel_uranium:7",
+        "HEU-235 Oxide"
+      ]
+    },
+    {
+      "display": "High Pressure Steam",
+      "type": "legacy_recipe",
+      "def": "[high_pressure_steam*1]->[exhaust_steam*4]",
+      "legacy": [
+        "High Pressure Steam",
+        "[high_pressure_steam*1]->[exhaust_steam*4]",
+        "High Pressure Steam",
+        "high_pressure_steam"
+      ]
+    },
+    {
+      "display": "Iron Cooler",
+      "type": "legacy_block",
+      "def": "nuclearcraft:cooler:11[type=iron]",
+      "legacy": [
+        "Iron Cooler",
+        "nuclearcraft:cooler:11[type=iron]",
+        "nuclearcraft:cooler:11",
+        "Iron Cooler"
+      ]
+    },
+    {
+      "display": "Lapis Cooler",
+      "type": "legacy_block",
+      "def": "nuclearcraft:cooler:6[type=lapis]",
+      "legacy": [
+        "Lapis Cooler",
+        "nuclearcraft:cooler:6[type=lapis]",
+        "nuclearcraft:cooler:6",
+        "Lapis Cooler"
+      ]
+    },
+    {
+      "display": "LEA-242",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_americium:0",
+      "legacy": [
+        "LEA-242",
+        "nuclearcraft:fuel_americium:0",
+        "LEA-242"
+      ]
+    },
+    {
+      "display": "LEA-242 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_americium:1",
+      "legacy": [
+        "LEA-242 Oxide",
+        "nuclearcraft:fuel_americium:1",
+        "LEA-242 Oxide"
+      ]
+    },
+    {
+      "display": "LEB-248",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_berkelium:0",
+      "legacy": [
+        "LEB-248",
+        "nuclearcraft:fuel_berkelium:0",
+        "LEB-248"
+      ]
+    },
+    {
+      "display": "LEB-248 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_berkelium:1",
+      "legacy": [
+        "LEB-248 Oxide",
+        "nuclearcraft:fuel_berkelium:1",
+        "LEB-248 Oxide"
+      ]
+    },
+    {
+      "display": "LECf-249",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_californium:0",
+      "legacy": [
+        "LECf-249",
+        "nuclearcraft:fuel_californium:0",
+        "LECf-249"
+      ]
+    },
+    {
+      "display": "LECf-249 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_californium:1",
+      "legacy": [
+        "LECf-249 Oxide",
+        "nuclearcraft:fuel_californium:1",
+        "LECf-249 Oxide"
+      ]
+    },
+    {
+      "display": "LECf-251",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_californium:4",
+      "legacy": [
+        "LECf-251",
+        "nuclearcraft:fuel_californium:4",
+        "LECf-251"
+      ]
+    },
+    {
+      "display": "LECf-251 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_californium:5",
+      "legacy": [
+        "LECf-251 Oxide",
+        "nuclearcraft:fuel_californium:5",
+        "LECf-251 Oxide"
+      ]
+    },
+    {
+      "display": "LECm-243",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_curium:0",
+      "legacy": [
+        "LECm-243",
+        "nuclearcraft:fuel_curium:0",
+        "LECm-243"
+      ]
+    },
+    {
+      "display": "LECm-243 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_curium:1",
+      "legacy": [
+        "LECm-243 Oxide",
+        "nuclearcraft:fuel_curium:1",
+        "LECm-243 Oxide"
+      ]
+    },
+    {
+      "display": "LECm-245",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_curium:4",
+      "legacy": [
+        "LECm-245",
+        "nuclearcraft:fuel_curium:4",
+        "LECm-245"
+      ]
+    },
+    {
+      "display": "LECm-245 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_curium:5",
+      "legacy": [
+        "LECm-245 Oxide",
+        "nuclearcraft:fuel_curium:5",
+        "LECm-245 Oxide"
+      ]
+    },
+    {
+      "display": "LECm-247",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_curium:8",
+      "legacy": [
+        "LECm-247",
+        "nuclearcraft:fuel_curium:8",
+        "LECm-247"
+      ]
+    },
+    {
+      "display": "LECm-247 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_curium:9",
+      "legacy": [
+        "LECm-247 Oxide",
+        "nuclearcraft:fuel_curium:9",
+        "LECm-247 Oxide"
+      ]
+    },
+    {
+      "display": "LEN-236",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_neptunium:0",
+      "legacy": [
+        "LEN-236",
+        "nuclearcraft:fuel_neptunium:0",
+        "LEN-236"
+      ]
+    },
+    {
+      "display": "LEN-236 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_neptunium:1",
+      "legacy": [
+        "LEN-236 Oxide",
+        "nuclearcraft:fuel_neptunium:1",
+        "LEN-236 Oxide"
+      ]
+    },
+    {
+      "display": "LEP-239",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_plutonium:0",
+      "legacy": [
+        "LEP-239",
+        "nuclearcraft:fuel_plutonium:0",
+        "LEP-239"
+      ]
+    },
+    {
+      "display": "LEP-239 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_plutonium:1",
+      "legacy": [
+        "LEP-239 Oxide",
+        "nuclearcraft:fuel_plutonium:1",
+        "LEP-239 Oxide"
+      ]
+    },
+    {
+      "display": "LEP-241",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_plutonium:4",
+      "legacy": [
+        "LEP-241",
+        "nuclearcraft:fuel_plutonium:4",
+        "LEP-241"
+      ]
+    },
+    {
+      "display": "LEP-241 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_plutonium:5",
+      "legacy": [
+        "LEP-241 Oxide",
+        "nuclearcraft:fuel_plutonium:5",
+        "LEP-241 Oxide"
+      ]
+    },
+    {
+      "display": "LEU-233",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_uranium:0",
+      "legacy": [
+        "LEU-233",
+        "nuclearcraft:fuel_uranium:0",
+        "LEU-233"
+      ]
+    },
+    {
+      "display": "LEU-233 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_uranium:1",
+      "legacy": [
+        "LEU-233 Oxide",
+        "nuclearcraft:fuel_uranium:1",
+        "LEU-233 Oxide"
+      ]
+    },
+    {
+      "display": "LEU-235",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_uranium:4",
+      "legacy": [
+        "LEU-235",
+        "nuclearcraft:fuel_uranium:4",
+        "LEU-235"
+      ]
+    },
+    {
+      "display": "LEU-235 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_uranium:5",
+      "legacy": [
+        "LEU-235 Oxide",
+        "nuclearcraft:fuel_uranium:5",
+        "LEU-235 Oxide"
+      ]
+    },
+    {
+      "display": "Liquid Helium",
+      "type": "legacy_fluid",
+      "def": "liquidhelium",
+      "legacy": [
+        "Liquid Helium",
+        "liquidhelium",
+        "Liquid Helium",
+        "Active Helium"
+      ]
+    },
+    {
+      "display": "Liquid Helium Cooler",
+      "type": "legacy_block",
+      "def": "nuclearcraft:cooler:8[type=helium]",
+      "legacy": [
+        "Liquid Helium Cooler",
+        "nuclearcraft:cooler:8[type=helium]",
+        "nuclearcraft:cooler:8",
+        "Liquid Helium Cooler",
+        "Helium Cooler"
+      ]
+    },
+    {
+      "display": "Low Pressure Steam",
+      "type": "legacy_recipe",
+      "def": "[low_pressure_steam*1]->[low_quality_steam*2]",
+      "legacy": [
+        "Low Pressure Steam",
+        "[low_pressure_steam*1]->[low_quality_steam*2]",
+        "Low Pressure Steam",
+        "low_pressure_steam"
+      ]
+    },
+    {
+      "display": "Low Quality Steam",
+      "type": "legacy_fluid",
+      "def": "low_quality_steam",
+      "legacy": [
+        "Low Quality Steam",
+        "low_quality_steam"
+      ]
+    },
+    {
+      "display": "Magnesium Cooler",
+      "type": "legacy_block",
+      "def": "nuclearcraft:cooler:15[type=magnesium]",
+      "legacy": [
+        "Magnesium Cooler",
+        "nuclearcraft:cooler:15[type=magnesium]",
+        "nuclearcraft:cooler:15",
+        "Magnesium Cooler"
+      ]
+    },
+    {
+      "display": "Magnesium Dynamo Coil",
+      "type": "legacy_block",
+      "def": "nuclearcraft:turbine_dynamo_coil:0[type=magnesium]",
+      "legacy": [
+        "Magnesium Dynamo Coil",
+        "nuclearcraft:turbine_dynamo_coil:0[type=magnesium]",
+        "nuclearcraft:turbine_dynamo_coil:0",
+        "Magnesium Dynamo Coil"
+      ]
+    },
+    {
+      "display": "Moderator",
+      "type": "oredict",
+      "def": "blockFissionModerator",
+      "legacy": [
+        "Moderator",
+        "blockFissionModerator",
+        "Moderator",
+        "Graphite",
+        "nuclearcraft:ingot_block:8",
+        "Beryllium",
+        "nuclearcraft:ingot_block:9"
+      ]
+    },
+    {
+      "display": "Molten Copper",
+      "type": "legacy_fluid",
+      "def": "copper",
+      "legacy": [
+        "Molten Copper",
+        "copper",
+        "Molten Copper",
+        "Active Copper"
+      ]
+    },
+    {
+      "display": "Molten Cryotheum",
+      "type": "legacy_fluid",
+      "def": "cryotheum",
+      "legacy": [
+        "Molten Cryotheum",
+        "cryotheum",
+        "Gelid Cryotheum",
+        "Active Cryotheum"
+      ]
+    },
+    {
+      "display": "Molten Diamond",
+      "type": "legacy_fluid",
+      "def": "diamond",
+      "legacy": [
+        "Molten Diamond",
+        "diamond",
+        "Molten Diamond",
+        "Active Diamond"
+      ]
+    },
+    {
+      "display": "Molten Emerald",
+      "type": "legacy_fluid",
+      "def": "emerald",
+      "legacy": [
+        "Molten Emerald",
+        "emerald",
+        "Molten Emerald",
+        "Active Emerald"
+      ]
+    },
+    {
+      "display": "Molten Ender",
+      "type": "legacy_fluid",
+      "def": "ender",
+      "legacy": [
+        "Molten Ender",
+        "ender",
+        "Resonant Ender",
+        "Active Enderium"
+      ]
+    },
+    {
+      "display": "Molten Glowstone",
+      "type": "legacy_fluid",
+      "def": "glowstone",
+      "legacy": [
+        "Molten Glowstone",
+        "glowstone",
+        "Energized Glowstone",
+        "Active Glowstone"
+      ]
+    },
+    {
+      "display": "Molten Gold",
+      "type": "legacy_fluid",
+      "def": "gold",
+      "legacy": [
+        "Molten Gold",
+        "gold",
+        "Molten Gold",
+        "Active Gold"
+      ]
+    },
+    {
+      "display": "Molten Iron",
+      "type": "legacy_fluid",
+      "def": "iron",
+      "legacy": [
+        "Molten Iron",
+        "iron",
+        "Molten Iron",
+        "Active Iron"
+      ]
+    },
+    {
+      "display": "Molten Lapis",
+      "type": "legacy_fluid",
+      "def": "lapis",
+      "legacy": [
+        "Molten Lapis",
+        "lapis",
+        "Molten Lapis",
+        "Active Lapis"
+      ]
+    },
+    {
+      "display": "Molten Magnesium",
+      "type": "legacy_fluid",
+      "def": "magnesium",
+      "legacy": [
+        "Molten Magnesium",
+        "magnesium",
+        "Molten Magnesium",
+        "Active Magnesium"
+      ]
+    },
+    {
+      "display": "Molten Quartz",
+      "type": "legacy_fluid",
+      "def": "quartz",
+      "legacy": [
+        "Molten Quartz",
+        "quartz",
+        "Molten Quartz",
+        "Active Quartz"
+      ]
+    },
+    {
+      "display": "Molten Redstone",
+      "type": "legacy_fluid",
+      "def": "redstone",
+      "legacy": [
+        "Molten Redstone",
+        "redstone",
+        "Destabilized Redstone",
+        "Active Redstone"
+      ]
+    },
+    {
+      "display": "Molten Tin",
+      "type": "legacy_fluid",
+      "def": "tin",
+      "legacy": [
+        "Molten Tin",
+        "tin",
+        "Molten Tin",
+        "Active Tin"
+      ]
+    },
+    {
+      "display": "MOX-239",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_mox:0",
+      "legacy": [
+        "MOX-239",
+        "nuclearcraft:fuel_mox:0",
+        "MOX-239"
+      ]
+    },
+    {
+      "display": "MOX-241",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_mox:1",
+      "legacy": [
+        "MOX-241",
+        "nuclearcraft:fuel_mox:1",
+        "MOX-241"
+      ]
+    },
+    {
+      "display": "Quartz Cooler",
+      "type": "legacy_block",
+      "def": "nuclearcraft:cooler:3[type=quartz]",
+      "legacy": [
+        "Quartz Cooler",
+        "nuclearcraft:cooler:3[type=quartz]",
+        "nuclearcraft:cooler:3",
+        "Quartz Cooler"
+      ]
+    },
+    {
+      "display": "Reactor Cell",
+      "type": "legacy_block",
+      "def": "nuclearcraft:cell_block",
+      "legacy": [
+        "Reactor Cell",
+        "nuclearcraft:cell_block",
+        "Reactor Cell",
+        "Fuel Cell"
+      ]
+    },
+    {
+      "display": "Redstone Cooler",
+      "type": "legacy_block",
+      "def": "nuclearcraft:cooler:2[type=redstone]",
+      "legacy": [
+        "Redstone Cooler",
+        "nuclearcraft:cooler:2[type=redstone]",
+        "nuclearcraft:cooler:2",
+        "Redstone Cooler"
+      ]
+    },
+    {
+      "display": "Rotor Bearing",
+      "type": "legacy_block",
+      "def": "nuclearcraft:turbine_rotor_bearing",
+      "legacy": [
+        "Rotor Bearing",
+        "nuclearcraft:turbine_rotor_bearing",
+        "Rotor Bearing"
+      ]
+    },
+    {
+      "display": "Rotor Shaft",
+      "type": "legacy_block",
+      "def": "nuclearcraft:turbine_rotor_shaft",
+      "legacy": [
+        "Rotor Shaft",
+        "nuclearcraft:turbine_rotor_shaft",
+        "Rotor Shaft"
+      ]
+    },
+    {
+      "display": "Rotor Stator",
+      "type": "legacy_block",
+      "def": "nuclearcraft:turbine_rotor_stator",
+      "legacy": [
+        "Rotor Stator",
+        "nuclearcraft:turbine_rotor_stator",
+        "Rotor Stator"
+      ]
+    },
+    {
+      "display": "SiC-SiC CMC Rotor Blade",
+      "type": "legacy_block",
+      "def": "nuclearcraft:turbine_rotor_blade_sic_sic_cmc",
+      "legacy": [
+        "SiC-SiC CMC Rotor Blade",
+        "nuclearcraft:turbine_rotor_blade_sic_sic_cmc",
+        "SiC-SiC CMC Rotor Blade"
+      ]
+    },
+    {
+      "display": "Silver Dynamo Coil",
+      "type": "legacy_block",
+      "def": "nuclearcraft:turbine_dynamo_coil:5[type=silver]",
+      "legacy": [
+        "Silver Dynamo Coil",
+        "nuclearcraft:turbine_dynamo_coil:5[type=silver]",
+        "nuclearcraft:turbine_dynamo_coil:5",
+        "Silver Dynamo Coil"
+      ]
+    },
+    {
+      "display": "Steam",
+      "type": "legacy_recipe",
+      "def": "[steam*1]->[low_quality_steam*2]",
+      "legacy": [
+        "Steam",
+        "[steam*1]->[low_quality_steam*2]",
+        "Steam",
+        "steam"
+      ]
+    },
+    {
+      "display": "Steel Rotor Blade",
+      "type": "legacy_block",
+      "def": "nuclearcraft:turbine_rotor_blade_steel",
+      "legacy": [
+        "Steel Rotor Blade",
+        "nuclearcraft:turbine_rotor_blade_steel",
+        "Steel Rotor Blade"
+      ]
+    },
+    {
+      "display": "TBU",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_thorium:0",
+      "legacy": [
+        "TBU",
+        "nuclearcraft:fuel_thorium:0",
+        "TBU"
+      ]
+    },
+    {
+      "display": "TBU Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_thorium:1",
+      "legacy": [
+        "TBU Oxide",
+        "nuclearcraft:fuel_thorium:1",
+        "TBU Oxide"
+      ]
+    },
+    {
+      "display": "Tin Cooler",
+      "type": "legacy_block",
+      "def": "nuclearcraft:cooler:14[type=tin]",
+      "legacy": [
+        "Tin Cooler",
+        "nuclearcraft:cooler:14[type=tin]",
+        "nuclearcraft:cooler:14",
+        "Tin Cooler"
+      ]
+    },
+    {
+      "display": "Transparent Casing",
+      "type": "legacy_block",
+      "def": "nuclearcraft:reactor_casing_transparent",
+      "legacy": [
+        "Transparent Casing",
+        "nuclearcraft:reactor_casing_transparent",
+        "Transparent Casing"
+      ]
+    },
+    {
+      "display": "Turbine Casing",
+      "type": "legacy_block",
+      "def": "nuclearcraft:turbine_casing",
+      "legacy": [
+        "Turbine Casing",
+        "nuclearcraft:turbine_casing",
+        "Turbine Casing"
+      ]
+    },
+    {
+      "display": "Turbine Computer Port",
+      "type": "legacy_block",
+      "def": "nuclearcraft:turbine_computer_port",
+      "legacy": [
+        "Turbine Computer Port",
+        "nuclearcraft:turbine_computer_port",
+        "Turbine Computer Port"
+      ]
+    },
+    {
+      "display": "Turbine Controller",
+      "type": "legacy_block",
+      "def": "nuclearcraft:turbine_controller",
+      "legacy": [
+        "Turbine Controller",
+        "nuclearcraft:turbine_controller",
+        "Turbine Controller"
+      ]
+    },
+    {
+      "display": "Turbine Glass",
+      "type": "legacy_block",
+      "def": "nuclearcraft:turbine_glass",
+      "legacy": [
+        "Turbine Glass",
+        "nuclearcraft:turbine_glass",
+        "Turbine Glass"
+      ]
+    },
+    {
+      "display": "Turbine Redstone Port",
+      "type": "legacy_block",
+      "def": "nuclearcraft:turbine_redstone_port",
+      "legacy": [
+        "Turbine Redstone Port",
+        "nuclearcraft:turbine_redstone_port",
+        "Turbine Redstone Port"
+      ]
+    },
+    {
+      "display": "Water",
+      "type": "legacy_fluid",
+      "def": "water",
+      "legacy": [
+        "Water",
+        "water",
+        "Water",
+        "Active Water"
+      ]
+    },
+    {
+      "display": "Water Cooler",
+      "type": "legacy_block",
+      "def": "nuclearcraft:cooler:1[type=water]",
+      "legacy": [
+        "Water Cooler",
+        "nuclearcraft:cooler:1[type=water]",
+        "nuclearcraft:cooler:1",
+        "Water Cooler"
+      ]
+    }
+  ]
+}

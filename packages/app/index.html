@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NC Plannerator</title>
+    <!--
+      R5.3 — PWA wiring. `theme-color` is `--bg` of the dark theme; the icon and
+      manifest links are relative so the same `dist/` works at a domain root and
+      under a GitHub Pages project path (`/<repo>/`), which is why the app is
+      built with `--base=./` (see `docs/r5/release.md`).
+    -->
+    <meta name="theme-color" content="#14161b" />
+    <link rel="icon" href="./icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./src/styles/theme.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <!--
+      R5.3 — the service worker is registered from its own entry chunk instead of
+      from `src/main.ts` (owned by another workstream): `installOfflineSupport()`
+      is a no-op outside a production build and never throws.
+    -->
+    <script type="module">
+      import { installOfflineSupport } from './src/pwa.ts';
+      installOfflineSupport();
+    </script>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

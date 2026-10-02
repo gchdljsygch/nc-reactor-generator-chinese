@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="NC Plannerator">
+  <!--
+    R5.3 — the vector app icon, hand-authored and dependency-free.
+
+    It is the same picture as `icon-192.png` / `icon-512.png`, which are produced
+    by `node tools/ts/make-icons.mjs`: a 3x3 reactor block grid on the dark theme
+    background, casing in `--casing`, the centre block in `--accent`
+    (packages/app/src/styles/theme.css). Geometry = the generator's constants:
+    inset 19 %, gap 3.1 %, block (= 512 - 2*19 % - 2*3.1 %) / 3 = 95.23 px,
+    corner radius 2.3 % = 11.8 px. Keep the two in sync.
+  -->
+  <rect width="512" height="512" fill="#14161b"/>
+  <g fill="#3a3f4b">
+    <rect x="97.28" y="97.28" width="95.23" height="95.23" rx="11.78"/>
+    <rect x="208.38" y="97.28" width="95.23" height="95.23" rx="11.78"/>
+    <rect x="319.49" y="97.28" width="95.23" height="95.23" rx="11.78"/>
+    <rect x="97.28" y="208.38" width="95.23" height="95.23" rx="11.78"/>
+    <rect x="319.49" y="208.38" width="95.23" height="95.23" rx="11.78"/>
+    <rect x="97.28" y="319.49" width="95.23" height="95.23" rx="11.78"/>
+    <rect x="208.38" y="319.49" width="95.23" height="95.23" rx="11.78"/>
+    <rect x="319.49" y="319.49" width="95.23" height="95.23" rx="11.78"/>
+  </g>
+  <rect x="208.38" y="208.38" width="95.23" height="95.23" rx="11.78" fill="#7fd1ff"/>
+</svg>

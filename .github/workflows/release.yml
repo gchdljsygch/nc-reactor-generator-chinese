@@ -1,0 +1,127 @@
+name: Release (GitHub Pages)
+
+# R5.5 — the release pipeline: a **static site** deploy, no server.
+#
+# Plan §8 R5.5: "CI → 静态站点 + 可选桌面壳". The desktop shell is *not* implemented
+# (R3/D3 chose "Web + PWA, desktop shell later"); see docs/r5/release.md for that
+# honest status. What this workflow ships is the PWA itself.
+#
+# ONE-TIME MANUAL REPOSITORY SETTING, required before the first run:
+#
+#   Settings ▸ Pages ▸ Build and deployment ▸ Source = **GitHub Actions**
+#
+# The "Deploy to GitHub Pages" job fails with `Get Pages site failed` / HTTP 404
+# until that is set. Nothing in the repository can set it for you.
+#
+# Why the site is built with `--base=./` (see `pnpm build:app`): a *project* Pages
+# site is served from https://<user>.github.io/<repo>/, so root-absolute URLs
+# (`/assets/…`, `/sw.js`) would 404. Relative URLs work at the domain root and under
+# a project path, which is also why the manifest, the icons and the service worker
+# registration in `index.html` / `src/pwa.ts` are all relative.
+#
+# Action majors match `.github/workflows/ci.yml` (checkout/pnpm/setup-node) and the
+# current GitHub Pages deployment trio; bump them deliberately, not incidentally.
+#
+# The default branch of this fork is `overhaul` (origin/HEAD). Push there, or use
+# "Run workflow" in the Actions tab (`workflow_dispatch`).
+
+on:
+  push:
+    branches: [overhaul]
+  workflow_dispatch:
+
+# Least privilege at the top level; the deploy job below adds what Pages needs.
+permissions:
+  contents: read
+
+# One Pages deployment at a time. Never cancel a deploy that is already running:
+# a half-published site is worse than a slightly stale one.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Verify and build the static site
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      # `--frozen-lockfile` is the same guarantee CI makes: the lockfile must be
+      # valid, and no dependency may sneak in with a release.
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Lint (dependency direction + bare strings)
+        run: pnpm lint
+
+      - name: Tests + golden datasets
+        run: pnpm test
+        env:
+          NCPL_GOLDEN: full
+
+      - name: Build the web app
+        run: pnpm build:app
+
+      # Plan §11.3: static assets (datasets excluded) must stay under 15 MB.
+      - name: Build size budget (§11.3)
+        run: pnpm size
+
+      # R5.3: the built directory must still contain the offline contract (worker
+      # verbatim, manifest members, icons, relative URLs, a live registration
+      # branch). See docs/r5/offline.md §2.
+      - name: PWA build gate (R5.3)
+        run: pnpm pwa:check
+
+      - name: Upload the built site (workflow artifact)
+        uses: actions/upload-artifact@v4
+        with:
+          name: nc-plannerator-web
+          path: packages/app/dist
+          if-no-files-found: error
+          retention-days: 14
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    # Pages deployment needs exactly these two, and only this job needs them.
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Download the built site
+        uses: actions/download-artifact@v4
+        with:
+          name: nc-plannerator-web
+          path: packages/app/dist
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      # `upload-pages-artifact` packs the directory as the special `github-pages`
+      # artifact; it is *not* a Jekyll build, so no `.nojekyll` trick is needed.
+      - name: Upload the Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: packages/app/dist
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

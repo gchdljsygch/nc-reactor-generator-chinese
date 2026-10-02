@@ -1,0 +1,1107 @@
+{
+  "note": "Distinct display names to translate into Simplified Chinese. Output one JSON object mapping display -> zh_CN.",
+  "count": 107,
+  "names": [
+    {
+      "display": "Aluminum Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater2:6[type=aluminum]",
+      "legacy": [
+        "Aluminum Coolant Heater",
+        "nuclearcraft:salt_fission_heater2:6[type=aluminum]",
+        "nuclearcraft:salt_fission_heater2:6",
+        "Aluminum Coolant Heater"
+      ]
+    },
+    {
+      "display": "Aluminum Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:6[active=false,type=aluminum]",
+      "legacy": [
+        "Aluminum Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:6[active=false,type=aluminum]",
+        "nuclearcraft:fission_heater_port2:6",
+        "Aluminum Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:6[active=false]"
+      ]
+    },
+    {
+      "display": "Aluminum Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:6[active=true,type=aluminum]",
+      "legacy": [
+        "Aluminum Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:6[active=true,type=aluminum]",
+        "nuclearcraft:fission_heater_port2:6",
+        "Aluminum Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:6[active=true]"
+      ]
+    },
+    {
+      "display": "Arsenic Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater2:11[type=arsenic]",
+      "legacy": [
+        "Arsenic Coolant Heater",
+        "nuclearcraft:salt_fission_heater2:11[type=arsenic]",
+        "nuclearcraft:salt_fission_heater2:11",
+        "Arsenic Coolant Heater"
+      ]
+    },
+    {
+      "display": "Arsenic Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:11[active=false,type=arsenic]",
+      "legacy": [
+        "Arsenic Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:11[active=false,type=arsenic]",
+        "nuclearcraft:fission_heater_port2:11",
+        "Arsenic Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:11[active=false]"
+      ]
+    },
+    {
+      "display": "Arsenic Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:11[active=true,type=arsenic]",
+      "legacy": [
+        "Arsenic Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:11[active=true,type=arsenic]",
+        "nuclearcraft:fission_heater_port2:11",
+        "Arsenic Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:11[active=true]"
+      ]
+    },
+    {
+      "display": "Beryllium Block",
+      "type": "legacy_block",
+      "def": "nuclearcraft:ingot_block:9[type=beryllium]",
+      "legacy": [
+        "Beryllium Block",
+        "nuclearcraft:ingot_block:9[type=beryllium]",
+        "nuclearcraft:ingot_block:9"
+      ]
+    },
+    {
+      "display": "Beryllium Moderator",
+      "type": "oredict",
+      "def": "blockBeryllium",
+      "legacy": [
+        "Beryllium Moderator",
+        "blockBeryllium",
+        "Beryllium Moderator",
+        "nuclearcraft:ingot_block:9"
+      ]
+    },
+    {
+      "display": "Beryllium-Carbon Reflector",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_reflector:0[type=beryllium_carbon]",
+      "legacy": [
+        "Beryllium-Carbon Reflector",
+        "nuclearcraft:fission_reflector:0[type=beryllium_carbon]",
+        "nuclearcraft:fission_reflector:0",
+        "Beryllium-Carbon Reflector"
+      ]
+    },
+    {
+      "display": "Bismuth Dust",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fission_dust:0",
+      "legacy": [
+        "Bismuth Dust",
+        "nuclearcraft:fission_dust:0"
+      ]
+    },
+    {
+      "display": "Boron Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater2:2[type=boron]",
+      "legacy": [
+        "Boron Coolant Heater",
+        "nuclearcraft:salt_fission_heater2:2[type=boron]",
+        "nuclearcraft:salt_fission_heater2:2",
+        "Boron Coolant Heater"
+      ]
+    },
+    {
+      "display": "Boron Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:2[active=false,type=boron]",
+      "legacy": [
+        "Boron Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:2[active=false,type=boron]",
+        "nuclearcraft:fission_heater_port2:2",
+        "Boron Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:2[active=false]"
+      ]
+    },
+    {
+      "display": "Boron Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:2[active=true,type=boron]",
+      "legacy": [
+        "Boron Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:2[active=true,type=boron]",
+        "nuclearcraft:fission_heater_port2:2",
+        "Boron Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:2[active=true]"
+      ]
+    },
+    {
+      "display": "Boron-Silver Neutron Shield",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_shield:0[active=false,type=boron_silver]",
+      "legacy": [
+        "Boron-Silver Neutron Shield",
+        "nuclearcraft:fission_shield:0[active=false,type=boron_silver]",
+        "nuclearcraft:fission_shield:0",
+        "Boron-Silver Neutron Shield",
+        "nuclearcraft:fission_shield:0[active=false]"
+      ]
+    },
+    {
+      "display": "Carobbiite Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater2:10[type=carobbiite]",
+      "legacy": [
+        "Carobbiite Coolant Heater",
+        "nuclearcraft:salt_fission_heater2:10[type=carobbiite]",
+        "nuclearcraft:salt_fission_heater2:10",
+        "Carobbiite Coolant Heater"
+      ]
+    },
+    {
+      "display": "Carobbiite Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:10[active=false,type=carobbiite]",
+      "legacy": [
+        "Carobbiite Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:10[active=false,type=carobbiite]",
+        "nuclearcraft:fission_heater_port2:10",
+        "Carobbiite Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:10[active=false]"
+      ]
+    },
+    {
+      "display": "Carobbiite Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:10[active=true,type=carobbiite]",
+      "legacy": [
+        "Carobbiite Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:10[active=true,type=carobbiite]",
+        "nuclearcraft:fission_heater_port2:10",
+        "Carobbiite Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:10[active=true]"
+      ]
+    },
+    {
+      "display": "Cf-252 Neutron Source",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_source:2[type=californium]",
+      "legacy": [
+        "Cf-252 Neutron Source",
+        "nuclearcraft:fission_source:2[type=californium]",
+        "nuclearcraft:fission_source:2",
+        "Cf-252 Neutron Source"
+      ]
+    },
+    {
+      "display": "Conductor",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_conductor",
+      "legacy": [
+        "Conductor",
+        "nuclearcraft:fission_conductor",
+        "Conductor"
+      ]
+    },
+    {
+      "display": "Copper Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater:15[type=copper]",
+      "legacy": [
+        "Copper Coolant Heater",
+        "nuclearcraft:salt_fission_heater:15[type=copper]",
+        "nuclearcraft:salt_fission_heater:15",
+        "Copper Coolant Heater"
+      ]
+    },
+    {
+      "display": "Copper Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:15[active=false,type=copper]",
+      "legacy": [
+        "Copper Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:15[active=false,type=copper]",
+        "nuclearcraft:fission_heater_port:15",
+        "Copper Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:15[active=false]"
+      ]
+    },
+    {
+      "display": "Copper Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:15[active=true,type=copper]",
+      "legacy": [
+        "Copper Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:15[active=true,type=copper]",
+        "nuclearcraft:fission_heater_port:15",
+        "Copper Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:15[active=true]"
+      ]
+    },
+    {
+      "display": "Cryotheum Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater2:15[type=cryotheum]",
+      "legacy": [
+        "Cryotheum Coolant Heater",
+        "nuclearcraft:salt_fission_heater2:15[type=cryotheum]",
+        "nuclearcraft:salt_fission_heater2:15",
+        "Cryotheum Coolant Heater"
+      ]
+    },
+    {
+      "display": "Cryotheum Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:15[active=false,type=cryotheum]",
+      "legacy": [
+        "Cryotheum Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:15[active=false,type=cryotheum]",
+        "nuclearcraft:fission_heater_port2:15",
+        "Cryotheum Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:15[active=false]"
+      ]
+    },
+    {
+      "display": "Cryotheum Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:15[active=true,type=cryotheum]",
+      "legacy": [
+        "Cryotheum Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:15[active=true,type=cryotheum]",
+        "nuclearcraft:fission_heater_port2:15",
+        "Cryotheum Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:15[active=true]"
+      ]
+    },
+    {
+      "display": "Depleted HEA-242 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_hea_242_fluoride_flibe",
+      "legacy": [
+        "Depleted HEA-242 Fluoride",
+        "depleted_hea_242_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted HEB-248 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_heb_248_fluoride_flibe",
+      "legacy": [
+        "Depleted HEB-248 Fluoride",
+        "depleted_heb_248_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted HECf-249 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_hecf_249_fluoride_flibe",
+      "legacy": [
+        "Depleted HECf-249 Fluoride",
+        "depleted_hecf_249_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted HECf-251 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_hecf_251_fluoride_flibe",
+      "legacy": [
+        "Depleted HECf-251 Fluoride",
+        "depleted_hecf_251_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted HECm-243 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_hecm_243_fluoride_flibe",
+      "legacy": [
+        "Depleted HECm-243 Fluoride",
+        "depleted_hecm_243_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted HECm-245 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_hecm_245_fluoride_flibe",
+      "legacy": [
+        "Depleted HECm-245 Fluoride",
+        "depleted_hecm_245_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted HECm-247 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_hecm_247_fluoride_flibe",
+      "legacy": [
+        "Depleted HECm-247 Fluoride",
+        "depleted_hecm_247_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted HEN-236 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_hen_236_fluoride_flibe",
+      "legacy": [
+        "Depleted HEN-236 Fluoride",
+        "depleted_hen_236_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted HEP-239 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_hep_239_fluoride_flibe",
+      "legacy": [
+        "Depleted HEP-239 Fluoride",
+        "depleted_hep_239_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted HEP-241 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_hep_241_fluoride_flibe",
+      "legacy": [
+        "Depleted HEP-241 Fluoride",
+        "depleted_hep_241_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted HEU-233 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_heu_233_fluoride_flibe",
+      "legacy": [
+        "Depleted HEU-233 Fluoride",
+        "depleted_heu_233_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted HEU-235 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_heu_235_fluoride_flibe",
+      "legacy": [
+        "Depleted HEU-235 Fluoride",
+        "depleted_heu_235_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted LEA-242 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_lea_242_fluoride_flibe",
+      "legacy": [
+        "Depleted LEA-242 Fluoride",
+        "depleted_lea_242_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted LEB-248 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_leb_248_fluoride_flibe",
+      "legacy": [
+        "Depleted LEB-248 Fluoride",
+        "depleted_leb_248_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted LECf-249 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_lecf_249_fluoride_flibe",
+      "legacy": [
+        "Depleted LECf-249 Fluoride",
+        "depleted_lecf_249_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted LECf-251 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_lecf_251_fluoride_flibe",
+      "legacy": [
+        "Depleted LECf-251 Fluoride",
+        "depleted_lecf_251_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted LECm-243 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_lecm_243_fluoride_flibe",
+      "legacy": [
+        "Depleted LECm-243 Fluoride",
+        "depleted_lecm_243_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted LECm-245 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_lecm_245_fluoride_flibe",
+      "legacy": [
+        "Depleted LECm-245 Fluoride",
+        "depleted_lecm_245_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted LECm-247 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_lecm_247_fluoride_flibe",
+      "legacy": [
+        "Depleted LECm-247 Fluoride",
+        "depleted_lecm_247_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted LEN-236 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_len_236_fluoride_flibe",
+      "legacy": [
+        "Depleted LEN-236 Fluoride",
+        "depleted_len_236_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted LEP-239 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_lep_239_fluoride_flibe",
+      "legacy": [
+        "Depleted LEP-239 Fluoride",
+        "depleted_lep_239_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted LEP-241 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_lep_241_fluoride_flibe",
+      "legacy": [
+        "Depleted LEP-241 Fluoride",
+        "depleted_lep_241_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted LEU-233 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_leu_233_fluoride_flibe",
+      "legacy": [
+        "Depleted LEU-233 Fluoride",
+        "depleted_leu_233_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted LEU-235 Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_leu_235_fluoride_flibe",
+      "legacy": [
+        "Depleted LEU-235 Fluoride",
+        "depleted_leu_235_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted MF4-239",
+      "type": "legacy_fluid",
+      "def": "depleted_mix_239_fluoride_flibe",
+      "legacy": [
+        "Depleted MF4-239",
+        "depleted_mix_239_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted MF4-241",
+      "type": "legacy_fluid",
+      "def": "depleted_mix_241_fluoride_flibe",
+      "legacy": [
+        "Depleted MF4-241",
+        "depleted_mix_241_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Depleted TBU Fluoride",
+      "type": "legacy_fluid",
+      "def": "depleted_tbu_fluoride_flibe",
+      "legacy": [
+        "Depleted TBU Fluoride",
+        "depleted_tbu_fluoride_flibe"
+      ]
+    },
+    {
+      "display": "Diamond Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater:13[type=diamond]",
+      "legacy": [
+        "Diamond Coolant Heater",
+        "nuclearcraft:salt_fission_heater:13[type=diamond]",
+        "nuclearcraft:salt_fission_heater:13",
+        "Diamond Coolant Heater"
+      ]
+    },
+    {
+      "display": "Diamond Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:13[active=false,type=diamond]",
+      "legacy": [
+        "Diamond Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:13[active=false,type=diamond]",
+        "nuclearcraft:fission_heater_port:13",
+        "Diamond Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:13[active=false]"
+      ]
+    },
+    {
+      "display": "Diamond Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:13[active=true,type=diamond]",
+      "legacy": [
+        "Diamond Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:13[active=true,type=diamond]",
+        "nuclearcraft:fission_heater_port:13",
+        "Diamond Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:13[active=true]"
+      ]
+    },
+    {
+      "display": "Emerald Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater:14[type=emerald]",
+      "legacy": [
+        "Emerald Coolant Heater",
+        "nuclearcraft:salt_fission_heater:14[type=emerald]",
+        "nuclearcraft:salt_fission_heater:14",
+        "Emerald Coolant Heater"
+      ]
+    },
+    {
+      "display": "Emerald Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:14[active=false,type=emerald]",
+      "legacy": [
+        "Emerald Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:14[active=false,type=emerald]",
+        "nuclearcraft:fission_heater_port:14",
+        "Emerald Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:14[active=false]"
+      ]
+    },
+    {
+      "display": "Emerald Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:14[active=true,type=emerald]",
+      "legacy": [
+        "Emerald Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:14[active=true,type=emerald]",
+        "nuclearcraft:fission_heater_port:14",
+        "Emerald Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:14[active=true]"
+      ]
+    },
+    {
+      "display": "End Stone Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater:11[type=end_stone]",
+      "legacy": [
+        "End Stone Coolant Heater",
+        "nuclearcraft:salt_fission_heater:11[type=end_stone]",
+        "nuclearcraft:salt_fission_heater:11",
+        "End Stone Coolant Heater"
+      ]
+    },
+    {
+      "display": "End Stone Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:11[active=false,type=end_stone]",
+      "legacy": [
+        "End Stone Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:11[active=false,type=end_stone]",
+        "nuclearcraft:fission_heater_port:11",
+        "End Stone Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:11[active=false]"
+      ]
+    },
+    {
+      "display": "End Stone Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:11[active=true,type=end_stone]",
+      "legacy": [
+        "End Stone Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:11[active=true,type=end_stone]",
+        "nuclearcraft:fission_heater_port:11",
+        "End Stone Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:11[active=true]"
+      ]
+    },
+    {
+      "display": "Enderium Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater2:14[type=enderium]",
+      "legacy": [
+        "Enderium Coolant Heater",
+        "nuclearcraft:salt_fission_heater2:14[type=enderium]",
+        "nuclearcraft:salt_fission_heater2:14",
+        "Enderium Coolant Heater"
+      ]
+    },
+    {
+      "display": "Enderium Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:14[active=false,type=enderium]",
+      "legacy": [
+        "Enderium Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:14[active=false,type=enderium]",
+        "nuclearcraft:fission_heater_port2:14",
+        "Enderium Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:14[active=false]"
+      ]
+    },
+    {
+      "display": "Enderium Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:14[active=true,type=enderium]",
+      "legacy": [
+        "Enderium Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:14[active=true,type=enderium]",
+        "nuclearcraft:fission_heater_port2:14",
+        "Enderium Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:14[active=true]"
+      ]
+    },
+    {
+      "display": "Fission Computer Port",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_computer_port",
+      "legacy": [
+        "Fission Computer Port",
+        "nuclearcraft:fission_computer_port",
+        "Fission Computer Port"
+      ]
+    },
+    {
+      "display": "Fission Monitor",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_monitor",
+      "legacy": [
+        "Fission Monitor",
+        "nuclearcraft:fission_monitor",
+        "Fission Monitor"
+      ]
+    },
+    {
+      "display": "Fission Shield Manager",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_shield_manager",
+      "legacy": [
+        "Fission Shield Manager",
+        "nuclearcraft:fission_shield_manager",
+        "Fission Shield Manager"
+      ]
+    },
+    {
+      "display": "Fission Source Manager",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_source_manager",
+      "legacy": [
+        "Fission Source Manager",
+        "nuclearcraft:fission_source_manager",
+        "Fission Source Manager"
+      ]
+    },
+    {
+      "display": "Fluorite Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater2:8[type=fluorite]",
+      "legacy": [
+        "Fluorite Coolant Heater",
+        "nuclearcraft:salt_fission_heater2:8[type=fluorite]",
+        "nuclearcraft:salt_fission_heater2:8",
+        "Fluorite Coolant Heater"
+      ]
+    },
+    {
+      "display": "Fluorite Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:8[active=false,type=fluorite]",
+      "legacy": [
+        "Fluorite Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:8[active=false,type=fluorite]",
+        "nuclearcraft:fission_heater_port2:8",
+        "Fluorite Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:8[active=false]"
+      ]
+    },
+    {
+      "display": "Fluorite Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:8[active=true,type=fluorite]",
+      "legacy": [
+        "Fluorite Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:8[active=true,type=fluorite]",
+        "nuclearcraft:fission_heater_port2:8",
+        "Fluorite Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:8[active=true]"
+      ]
+    },
+    {
+      "display": "Fuel Vessel",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_vessel",
+      "legacy": [
+        "Fuel Vessel",
+        "nuclearcraft:salt_fission_vessel",
+        "Fuel Vessel"
+      ]
+    },
+    {
+      "display": "Fuel Vessel Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_vessel_port[active=false]",
+      "legacy": [
+        "Fuel Vessel Port (Input)",
+        "nuclearcraft:fission_vessel_port[active=false]",
+        "Fuel Vessel Port (Input)"
+      ]
+    },
+    {
+      "display": "Fuel Vessel Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_vessel_port[active=true]",
+      "legacy": [
+        "Fuel Vessel Port (Output)",
+        "nuclearcraft:fission_vessel_port[active=true]",
+        "Fuel Vessel Port (Output)"
+      ]
+    },
+    {
+      "display": "Glowstone Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater:6[type=glowstone]",
+      "legacy": [
+        "Glowstone Coolant Heater",
+        "nuclearcraft:salt_fission_heater:6[type=glowstone]",
+        "nuclearcraft:salt_fission_heater:6",
+        "Glowstone Coolant Heater"
+      ]
+    },
+    {
+      "display": "Glowstone Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:6[active=false,type=glowstone]",
+      "legacy": [
+        "Glowstone Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:6[active=false,type=glowstone]",
+        "nuclearcraft:fission_heater_port:6",
+        "Glowstone Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:6[active=false]"
+      ]
+    },
+    {
+      "display": "Glowstone Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:6[active=true,type=glowstone]",
+      "legacy": [
+        "Glowstone Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:6[active=true,type=glowstone]",
+        "nuclearcraft:fission_heater_port:6",
+        "Glowstone Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:6[active=true]"
+      ]
+    },
+    {
+      "display": "Gold Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater:8[type=gold]",
+      "legacy": [
+        "Gold Coolant Heater",
+        "nuclearcraft:salt_fission_heater:8[type=gold]",
+        "nuclearcraft:salt_fission_heater:8",
+        "Gold Coolant Heater"
+      ]
+    },
+    {
+      "display": "Gold Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:8[active=false,type=gold]",
+      "legacy": [
+        "Gold Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:8[active=false,type=gold]",
+        "nuclearcraft:fission_heater_port:8",
+        "Gold Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:8[active=false]"
+      ]
+    },
+    {
+      "display": "Gold Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:8[active=true,type=gold]",
+      "legacy": [
+        "Gold Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:8[active=true,type=gold]",
+        "nuclearcraft:fission_heater_port:8",
+        "Gold Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:8[active=true]"
+      ]
+    },
+    {
+      "display": "Graphite Block",
+      "type": "legacy_block",
+      "def": "nuclearcraft:ingot_block:8[type=graphite]",
+      "legacy": [
+        "Graphite Block",
+        "nuclearcraft:ingot_block:8[type=graphite]",
+        "nuclearcraft:ingot_block:8"
+      ]
+    },
+    {
+      "display": "Graphite Moderator",
+      "type": "oredict",
+      "def": "blockGraphite",
+      "legacy": [
+        "Graphite Moderator",
+        "blockGraphite",
+        "Graphite Moderator",
+        "nuclearcraft:ingot_block:8"
+      ]
+    },
+    {
+      "display": "HEA-242 Fluoride",
+      "type": "legacy_fluid",
+      "def": "hea_242_fluoride_flibe",
+      "legacy": [
+        "HEA-242 Fluoride",
+        "hea_242_fluoride_flibe",
+        "HEA-242 Fluoride"
+      ]
+    },
+    {
+      "display": "Heavy Water Moderator",
+      "type": "legacy_block",
+      "def": "nuclearcraft:heavy_water_moderator",
+      "legacy": [
+        "Heavy Water Moderator",
+        "nuclearcraft:heavy_water_moderator",
+        "Heavy Water Moderator"
+      ]
+    },
+    {
+      "display": "HEB-248 Fluoride",
+      "type": "legacy_fluid",
+      "def": "heb_248_fluoride_flibe",
+      "legacy": [
+        "HEB-248 Fluoride",
+        "heb_248_fluoride_flibe",
+        "HEB-248 Fluoride"
+      ]
+    },
+    {
+      "display": "HECf-249 Fluoride",
+      "type": "legacy_fluid",
+      "def": "hecf_249_fluoride_flibe",
+      "legacy": [
+        "HECf-249 Fluoride",
+        "hecf_249_fluoride_flibe",
+        "HECf-249 Fluoride"
+      ]
+    },
+    {
+      "display": "HECf-251 Fluoride",
+      "type": "legacy_fluid",
+      "def": "hecf_251_fluoride_flibe",
+      "legacy": [
+        "HECf-251 Fluoride",
+        "hecf_251_fluoride_flibe",
+        "HECf-251 Fluoride"
+      ]
+    },
+    {
+      "display": "HECm-243 Fluoride",
+      "type": "legacy_fluid",
+      "def": "hecm_243_fluoride_flibe",
+      "legacy": [
+        "HECm-243 Fluoride",
+        "hecm_243_fluoride_flibe",
+        "HECm-243 Fluoride"
+      ]
+    },
+    {
+      "display": "HECm-245 Fluoride",
+      "type": "legacy_fluid",
+      "def": "hecm_245_fluoride_flibe",
+      "legacy": [
+        "HECm-245 Fluoride",
+        "hecm_245_fluoride_flibe",
+        "HECm-245 Fluoride"
+      ]
+    },
+    {
+      "display": "HECm-247 Fluoride",
+      "type": "legacy_fluid",
+      "def": "hecm_247_fluoride_flibe",
+      "legacy": [
+        "HECm-247 Fluoride",
+        "hecm_247_fluoride_flibe",
+        "HECm-247 Fluoride"
+      ]
+    },
+    {
+      "display": "HEN-236 Fluoride",
+      "type": "legacy_fluid",
+      "def": "hen_236_fluoride_flibe",
+      "legacy": [
+        "HEN-236 Fluoride",
+        "hen_236_fluoride_flibe",
+        "HEN-236 Fluoride"
+      ]
+    },
+    {
+      "display": "HEP-239 Fluoride",
+      "type": "legacy_fluid",
+      "def": "hep_239_fluoride_flibe",
+      "legacy": [
+        "HEP-239 Fluoride",
+        "hep_239_fluoride_flibe",
+        "HEP-239 Fluoride"
+      ]
+    },
+    {
+      "display": "HEP-241 Fluoride",
+      "type": "legacy_fluid",
+      "def": "hep_241_fluoride_flibe",
+      "legacy": [
+        "HEP-241 Fluoride",
+        "hep_241_fluoride_flibe",
+        "HEP-241 Fluoride"
+      ]
+    },
+    {
+      "display": "HEU-233 Fluoride",
+      "type": "legacy_fluid",
+      "def": "heu_233_fluoride_flibe",
+      "legacy": [
+        "HEU-233 Fluoride",
+        "heu_233_fluoride_flibe",
+        "HEU-233 Fluoride"
+      ]
+    },
+    {
+      "display": "HEU-235 Fluoride",
+      "type": "legacy_fluid",
+      "def": "heu_235_fluoride_flibe",
+      "legacy": [
+        "HEU-235 Fluoride",
+        "heu_235_fluoride_flibe",
+        "HEU-235 Fluoride"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK Alloy",
+      "type": "legacy_fluid",
+      "def": "nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK Alloy",
+        "nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Aluminum Mixture",
+      "type": "legacy_fluid",
+      "def": "aluminum_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Aluminum Mixture",
+        "aluminum_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Arsenic Mixture",
+      "type": "legacy_fluid",
+      "def": "arsenic_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Arsenic Mixture",
+        "arsenic_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Boron Mixture",
+      "type": "legacy_fluid",
+      "def": "boron_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Boron Mixture",
+        "boron_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Carobbiite Mixture",
+      "type": "legacy_fluid",
+      "def": "carobbiite_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Carobbiite Mixture",
+        "carobbiite_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Copper Mixture",
+      "type": "legacy_fluid",
+      "def": "copper_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Copper Mixture",
+        "copper_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Cryotheum Mixture",
+      "type": "legacy_fluid",
+      "def": "cryotheum_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Cryotheum Mixture",
+        "cryotheum_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Diamond Mixture",
+      "type": "legacy_fluid",
+      "def": "diamond_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Diamond Mixture",
+        "diamond_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Emerald Mixture",
+      "type": "legacy_fluid",
+      "def": "emerald_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Emerald Mixture",
+        "emerald_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-End Stone Mixture",
+      "type": "legacy_fluid",
+      "def": "end_stone_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-End Stone Mixture",
+        "end_stone_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Enderium Mixture",
+      "type": "legacy_fluid",
+      "def": "enderium_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Enderium Mixture",
+        "enderium_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Fluorite Mixture",
+      "type": "legacy_fluid",
+      "def": "fluorite_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Fluorite Mixture",
+        "fluorite_nak_hot"
+      ]
+    }
+  ]
+}

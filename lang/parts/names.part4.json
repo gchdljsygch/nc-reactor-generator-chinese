@@ -1,0 +1,1148 @@
+{
+  "note": "Distinct display names to translate into Simplified Chinese. Output one JSON object mapping display -> zh_CN.",
+  "count": 107,
+  "names": [
+    {
+      "display": "Hot Eutectic NaK-Glowstone Mixture",
+      "type": "legacy_fluid",
+      "def": "glowstone_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Glowstone Mixture",
+        "glowstone_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Gold Mixture",
+      "type": "legacy_fluid",
+      "def": "gold_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Gold Mixture",
+        "gold_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Helium Mixture",
+      "type": "legacy_fluid",
+      "def": "liquid_helium_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Helium Mixture",
+        "liquid_helium_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Iron Mixture",
+      "type": "legacy_fluid",
+      "def": "iron_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Iron Mixture",
+        "iron_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Lapis Mixture",
+      "type": "legacy_fluid",
+      "def": "lapis_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Lapis Mixture",
+        "lapis_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Lead Mixture",
+      "type": "legacy_fluid",
+      "def": "lead_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Lead Mixture",
+        "lead_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Lithium Mixture",
+      "type": "legacy_fluid",
+      "def": "lithium_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Lithium Mixture",
+        "lithium_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Magnesium Mixture",
+      "type": "legacy_fluid",
+      "def": "magnesium_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Magnesium Mixture",
+        "magnesium_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Manganese Mixture",
+      "type": "legacy_fluid",
+      "def": "manganese_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Manganese Mixture",
+        "manganese_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Nether Brick Mixture",
+      "type": "legacy_fluid",
+      "def": "nether_brick_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Nether Brick Mixture",
+        "nether_brick_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Nitrogen Mixture",
+      "type": "legacy_fluid",
+      "def": "liquid_nitrogen_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Nitrogen Mixture",
+        "liquid_nitrogen_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Obsidian Mixture",
+      "type": "legacy_fluid",
+      "def": "obsidian_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Obsidian Mixture",
+        "obsidian_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Prismarine Mixture",
+      "type": "legacy_fluid",
+      "def": "prismarine_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Prismarine Mixture",
+        "prismarine_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Purpur Mixture",
+      "type": "legacy_fluid",
+      "def": "purpur_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Purpur Mixture",
+        "purpur_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Quartz Mixture",
+      "type": "legacy_fluid",
+      "def": "quartz_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Quartz Mixture",
+        "quartz_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Redstone Mixture",
+      "type": "legacy_fluid",
+      "def": "redstone_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Redstone Mixture",
+        "redstone_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Silver Mixture",
+      "type": "legacy_fluid",
+      "def": "silver_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Silver Mixture",
+        "silver_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Slime Mixture",
+      "type": "legacy_fluid",
+      "def": "slime_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Slime Mixture",
+        "slime_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Tin Mixture",
+      "type": "legacy_fluid",
+      "def": "tin_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Tin Mixture",
+        "tin_nak_hot"
+      ]
+    },
+    {
+      "display": "Hot Eutectic NaK-Villiaumite Mixture",
+      "type": "legacy_fluid",
+      "def": "villiaumite_nak_hot",
+      "legacy": [
+        "Hot Eutectic NaK-Villiaumite Mixture",
+        "villiaumite_nak_hot"
+      ]
+    },
+    {
+      "display": "Iron Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater:1[type=iron]",
+      "legacy": [
+        "Iron Coolant Heater",
+        "nuclearcraft:salt_fission_heater:1[type=iron]",
+        "nuclearcraft:salt_fission_heater:1",
+        "Iron Coolant Heater"
+      ]
+    },
+    {
+      "display": "Iron Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:1[active=false,type=iron]",
+      "legacy": [
+        "Iron Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:1[active=false,type=iron]",
+        "nuclearcraft:fission_heater_port:1",
+        "Iron Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:1[active=false]"
+      ]
+    },
+    {
+      "display": "Iron Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:1[active=true,type=iron]",
+      "legacy": [
+        "Iron Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:1[active=true,type=iron]",
+        "nuclearcraft:fission_heater_port:1",
+        "Iron Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:1[active=true]"
+      ]
+    },
+    {
+      "display": "Lapis Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater:7[type=lapis]",
+      "legacy": [
+        "Lapis Coolant Heater",
+        "nuclearcraft:salt_fission_heater:7[type=lapis]",
+        "nuclearcraft:salt_fission_heater:7",
+        "Lapis Coolant Heater"
+      ]
+    },
+    {
+      "display": "Lapis Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:7[active=false,type=lapis]",
+      "legacy": [
+        "Lapis Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:7[active=false,type=lapis]",
+        "nuclearcraft:fission_heater_port:7",
+        "Lapis Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:7[active=false]"
+      ]
+    },
+    {
+      "display": "Lapis Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:7[active=true,type=lapis]",
+      "legacy": [
+        "Lapis Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:7[active=true,type=lapis]",
+        "nuclearcraft:fission_heater_port:7",
+        "Lapis Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:7[active=true]"
+      ]
+    },
+    {
+      "display": "LEA-242 Fluoride",
+      "type": "legacy_fluid",
+      "def": "lea_242_fluoride_flibe",
+      "legacy": [
+        "LEA-242 Fluoride",
+        "lea_242_fluoride_flibe",
+        "LEA-242 Fluoride"
+      ]
+    },
+    {
+      "display": "Lead Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater2:1[type=lead]",
+      "legacy": [
+        "Lead Coolant Heater",
+        "nuclearcraft:salt_fission_heater2:1[type=lead]",
+        "nuclearcraft:salt_fission_heater2:1",
+        "Lead Coolant Heater"
+      ]
+    },
+    {
+      "display": "Lead Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:1[active=false,type=lead]",
+      "legacy": [
+        "Lead Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:1[active=false,type=lead]",
+        "nuclearcraft:fission_heater_port2:1",
+        "Lead Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:1[active=false]"
+      ]
+    },
+    {
+      "display": "Lead Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:1[active=true,type=lead]",
+      "legacy": [
+        "Lead Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:1[active=true,type=lead]",
+        "nuclearcraft:fission_heater_port2:1",
+        "Lead Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:1[active=true]"
+      ]
+    },
+    {
+      "display": "Lead-Steel Reflector",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_reflector:1[type=lead_steel]",
+      "legacy": [
+        "Lead-Steel Reflector",
+        "nuclearcraft:fission_reflector:1[type=lead_steel]",
+        "nuclearcraft:fission_reflector:1",
+        "Lead-Steel Reflector"
+      ]
+    },
+    {
+      "display": "LEB-248 Fluoride",
+      "type": "legacy_fluid",
+      "def": "leb_248_fluoride_flibe",
+      "legacy": [
+        "LEB-248 Fluoride",
+        "leb_248_fluoride_flibe",
+        "LEB-248 Fluoride"
+      ]
+    },
+    {
+      "display": "LECf-249 Fluoride",
+      "type": "legacy_fluid",
+      "def": "lecf_249_fluoride_flibe",
+      "legacy": [
+        "LECf-249 Fluoride",
+        "lecf_249_fluoride_flibe",
+        "LECf-249 Fluoride"
+      ]
+    },
+    {
+      "display": "LECf-251 Fluoride",
+      "type": "legacy_fluid",
+      "def": "lecf_251_fluoride_flibe",
+      "legacy": [
+        "LECf-251 Fluoride",
+        "lecf_251_fluoride_flibe",
+        "LECf-251 Fluoride"
+      ]
+    },
+    {
+      "display": "LECm-243 Fluoride",
+      "type": "legacy_fluid",
+      "def": "lecm_243_fluoride_flibe",
+      "legacy": [
+        "LECm-243 Fluoride",
+        "lecm_243_fluoride_flibe",
+        "LECm-243 Fluoride"
+      ]
+    },
+    {
+      "display": "LECm-245 Fluoride",
+      "type": "legacy_fluid",
+      "def": "lecm_245_fluoride_flibe",
+      "legacy": [
+        "LECm-245 Fluoride",
+        "lecm_245_fluoride_flibe",
+        "LECm-245 Fluoride"
+      ]
+    },
+    {
+      "display": "LECm-247 Fluoride",
+      "type": "legacy_fluid",
+      "def": "lecm_247_fluoride_flibe",
+      "legacy": [
+        "LECm-247 Fluoride",
+        "lecm_247_fluoride_flibe",
+        "LECm-247 Fluoride"
+      ]
+    },
+    {
+      "display": "LEN-236 Fluoride",
+      "type": "legacy_fluid",
+      "def": "len_236_fluoride_flibe",
+      "legacy": [
+        "LEN-236 Fluoride",
+        "len_236_fluoride_flibe",
+        "LEN-236 Fluoride"
+      ]
+    },
+    {
+      "display": "LEP-239 Fluoride",
+      "type": "legacy_fluid",
+      "def": "lep_239_fluoride_flibe",
+      "legacy": [
+        "LEP-239 Fluoride",
+        "lep_239_fluoride_flibe",
+        "LEP-239 Fluoride"
+      ]
+    },
+    {
+      "display": "LEP-241 Fluoride",
+      "type": "legacy_fluid",
+      "def": "lep_241_fluoride_flibe",
+      "legacy": [
+        "LEP-241 Fluoride",
+        "lep_241_fluoride_flibe",
+        "LEP-241 Fluoride"
+      ]
+    },
+    {
+      "display": "LEU-233 Fluoride",
+      "type": "legacy_fluid",
+      "def": "leu_233_fluoride_flibe",
+      "legacy": [
+        "LEU-233 Fluoride",
+        "leu_233_fluoride_flibe",
+        "LEU-233 Fluoride"
+      ]
+    },
+    {
+      "display": "LEU-235 Fluoride",
+      "type": "legacy_fluid",
+      "def": "leu_235_fluoride_flibe",
+      "legacy": [
+        "LEU-235 Fluoride",
+        "leu_235_fluoride_flibe",
+        "LEU-235 Fluoride"
+      ]
+    },
+    {
+      "display": "Liquid Helium Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater2:13[type=liquid_helium]",
+      "legacy": [
+        "Liquid Helium Coolant Heater",
+        "nuclearcraft:salt_fission_heater2:13[type=liquid_helium]",
+        "nuclearcraft:salt_fission_heater2:13",
+        "Liquid Helium Coolant Heater"
+      ]
+    },
+    {
+      "display": "Liquid Helium Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:13[active=false,type=liquid_helium]",
+      "legacy": [
+        "Liquid Helium Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:13[active=false,type=liquid_helium]",
+        "nuclearcraft:fission_heater_port2:13",
+        "Liquid Helium Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:13[active=false]"
+      ]
+    },
+    {
+      "display": "Liquid Helium Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:13[active=true,type=liquid_helium]",
+      "legacy": [
+        "Liquid Helium Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:13[active=true,type=liquid_helium]",
+        "nuclearcraft:fission_heater_port2:13",
+        "Liquid Helium Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:13[active=true]"
+      ]
+    },
+    {
+      "display": "Liquid Nitrogen Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater2:12[type=liquid_nitrogen]",
+      "legacy": [
+        "Liquid Nitrogen Coolant Heater",
+        "nuclearcraft:salt_fission_heater2:12[type=liquid_nitrogen]",
+        "nuclearcraft:salt_fission_heater2:12",
+        "Liquid Nitrogen Coolant Heater"
+      ]
+    },
+    {
+      "display": "Liquid Nitrogen Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:12[active=false,type=liquid_nitrogen]",
+      "legacy": [
+        "Liquid Nitrogen Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:12[active=false,type=liquid_nitrogen]",
+        "nuclearcraft:fission_heater_port2:12",
+        "Liquid Nitrogen Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:12[active=false]"
+      ]
+    },
+    {
+      "display": "Liquid Nitrogen Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:12[active=true,type=liquid_nitrogen]",
+      "legacy": [
+        "Liquid Nitrogen Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:12[active=true,type=liquid_nitrogen]",
+        "nuclearcraft:fission_heater_port2:12",
+        "Liquid Nitrogen Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:12[active=true]"
+      ]
+    },
+    {
+      "display": "Lithium Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater2:3[type=lithium]",
+      "legacy": [
+        "Lithium Coolant Heater",
+        "nuclearcraft:salt_fission_heater2:3[type=lithium]",
+        "nuclearcraft:salt_fission_heater2:3",
+        "Lithium Coolant Heater"
+      ]
+    },
+    {
+      "display": "Lithium Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:3[active=false,type=lithium]",
+      "legacy": [
+        "Lithium Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:3[active=false,type=lithium]",
+        "nuclearcraft:fission_heater_port2:3",
+        "Lithium Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:3[active=false]"
+      ]
+    },
+    {
+      "display": "Lithium Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:3[active=true,type=lithium]",
+      "legacy": [
+        "Lithium Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:3[active=true,type=lithium]",
+        "nuclearcraft:fission_heater_port2:3",
+        "Lithium Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:3[active=true]"
+      ]
+    },
+    {
+      "display": "Magnesium Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater2:4[type=magnesium]",
+      "legacy": [
+        "Magnesium Coolant Heater",
+        "nuclearcraft:salt_fission_heater2:4[type=magnesium]",
+        "nuclearcraft:salt_fission_heater2:4",
+        "Magnesium Coolant Heater"
+      ]
+    },
+    {
+      "display": "Magnesium Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:4[active=false,type=magnesium]",
+      "legacy": [
+        "Magnesium Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:4[active=false,type=magnesium]",
+        "nuclearcraft:fission_heater_port2:4",
+        "Magnesium Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:4[active=false]"
+      ]
+    },
+    {
+      "display": "Magnesium Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:4[active=true,type=magnesium]",
+      "legacy": [
+        "Magnesium Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:4[active=true,type=magnesium]",
+        "nuclearcraft:fission_heater_port2:4",
+        "Magnesium Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:4[active=true]"
+      ]
+    },
+    {
+      "display": "Manganese Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater2:5[type=manganese]",
+      "legacy": [
+        "Manganese Coolant Heater",
+        "nuclearcraft:salt_fission_heater2:5[type=manganese]",
+        "nuclearcraft:salt_fission_heater2:5",
+        "Manganese Coolant Heater"
+      ]
+    },
+    {
+      "display": "Manganese Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:5[active=false,type=manganese]",
+      "legacy": [
+        "Manganese Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:5[active=false,type=manganese]",
+        "nuclearcraft:fission_heater_port2:5",
+        "Manganese Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:5[active=false]"
+      ]
+    },
+    {
+      "display": "Manganese Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:5[active=true,type=manganese]",
+      "legacy": [
+        "Manganese Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:5[active=true,type=manganese]",
+        "nuclearcraft:fission_heater_port2:5",
+        "Manganese Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:5[active=true]"
+      ]
+    },
+    {
+      "display": "MF4-239",
+      "type": "legacy_fluid",
+      "def": "mix_239_fluoride_flibe",
+      "legacy": [
+        "MF4-239",
+        "mix_239_fluoride_flibe",
+        "MF4-239"
+      ]
+    },
+    {
+      "display": "MF4-241",
+      "type": "legacy_fluid",
+      "def": "mix_241_fluoride_flibe",
+      "legacy": [
+        "MF4-241",
+        "mix_241_fluoride_flibe",
+        "MF4-241"
+      ]
+    },
+    {
+      "display": "Molten Salt Fission Controller",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_controller",
+      "legacy": [
+        "Molten Salt Fission Controller",
+        "nuclearcraft:salt_fission_controller",
+        "Molten Salt Fission Controller"
+      ]
+    },
+    {
+      "display": "Nether Brick Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater:5[type=nether_brick]",
+      "legacy": [
+        "Nether Brick Coolant Heater",
+        "nuclearcraft:salt_fission_heater:5[type=nether_brick]",
+        "nuclearcraft:salt_fission_heater:5",
+        "Nether Brick Coolant Heater"
+      ]
+    },
+    {
+      "display": "Nether Brick Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:5[active=false,type=nether_brick]",
+      "legacy": [
+        "Nether Brick Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:5[active=false,type=nether_brick]",
+        "nuclearcraft:fission_heater_port:5",
+        "Nether Brick Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:5[active=false]"
+      ]
+    },
+    {
+      "display": "Nether Brick Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:5[active=true,type=nether_brick]",
+      "legacy": [
+        "Nether Brick Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:5[active=true,type=nether_brick]",
+        "nuclearcraft:fission_heater_port:5",
+        "Nether Brick Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:5[active=true]"
+      ]
+    },
+    {
+      "display": "Neutron Irradiator",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_irradiator",
+      "legacy": [
+        "Neutron Irradiator",
+        "nuclearcraft:fission_irradiator",
+        "Neutron Irradiator"
+      ]
+    },
+    {
+      "display": "Neutron Irradiator Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_irradiator_port[active=false]",
+      "legacy": [
+        "Neutron Irradiator Port (Input)",
+        "nuclearcraft:fission_irradiator_port[active=false]",
+        "Neutron Irradiator Port (Input)"
+      ]
+    },
+    {
+      "display": "Neutron Irradiator Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_irradiator_port[active=true]",
+      "legacy": [
+        "Neutron Irradiator Port (Output)",
+        "nuclearcraft:fission_irradiator_port[active=true]",
+        "Neutron Irradiator Port (Output)"
+      ]
+    },
+    {
+      "display": "Obsidian Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater:4[type=obsidian]",
+      "legacy": [
+        "Obsidian Coolant Heater",
+        "nuclearcraft:salt_fission_heater:4[type=obsidian]",
+        "nuclearcraft:salt_fission_heater:4",
+        "Obsidian Coolant Heater"
+      ]
+    },
+    {
+      "display": "Obsidian Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:4[active=false,type=obsidian]",
+      "legacy": [
+        "Obsidian Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:4[active=false,type=obsidian]",
+        "nuclearcraft:fission_heater_port:4",
+        "Obsidian Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:4[active=false]"
+      ]
+    },
+    {
+      "display": "Obsidian Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:4[active=true,type=obsidian]",
+      "legacy": [
+        "Obsidian Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:4[active=true,type=obsidian]",
+        "nuclearcraft:fission_heater_port:4",
+        "Obsidian Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:4[active=true]"
+      ]
+    },
+    {
+      "display": "Po-Be Neutron Source",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_source:1[type=polonium_beryllium]",
+      "legacy": [
+        "Po-Be Neutron Source",
+        "nuclearcraft:fission_source:1[type=polonium_beryllium]",
+        "nuclearcraft:fission_source:1",
+        "Po-Be Neutron Source"
+      ]
+    },
+    {
+      "display": "Polonium Dust",
+      "type": "oredict",
+      "def": "dustPolonium",
+      "legacy": [
+        "Polonium Dust",
+        "dustPolonium"
+      ]
+    },
+    {
+      "display": "Prismarine Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater:9[type=prismarine]",
+      "legacy": [
+        "Prismarine Coolant Heater",
+        "nuclearcraft:salt_fission_heater:9[type=prismarine]",
+        "nuclearcraft:salt_fission_heater:9",
+        "Prismarine Coolant Heater"
+      ]
+    },
+    {
+      "display": "Prismarine Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:9[active=false,type=prismarine]",
+      "legacy": [
+        "Prismarine Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:9[active=false,type=prismarine]",
+        "nuclearcraft:fission_heater_port:9",
+        "Prismarine Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:9[active=false]"
+      ]
+    },
+    {
+      "display": "Prismarine Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:9[active=true,type=prismarine]",
+      "legacy": [
+        "Prismarine Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:9[active=true,type=prismarine]",
+        "nuclearcraft:fission_heater_port:9",
+        "Prismarine Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:9[active=true]"
+      ]
+    },
+    {
+      "display": "Protactinium-233 Dust",
+      "type": "oredict",
+      "def": "dustProtactinium233",
+      "legacy": [
+        "Protactinium-233 Dust",
+        "dustProtactinium233"
+      ]
+    },
+    {
+      "display": "Protactinium-Enriched Thorium Dust",
+      "type": "oredict",
+      "def": "dustTBP",
+      "legacy": [
+        "Protactinium-Enriched Thorium Dust",
+        "dustTBP"
+      ]
+    },
+    {
+      "display": "Purpur Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater:12[type=purpur]",
+      "legacy": [
+        "Purpur Coolant Heater",
+        "nuclearcraft:salt_fission_heater:12[type=purpur]",
+        "nuclearcraft:salt_fission_heater:12",
+        "Purpur Coolant Heater"
+      ]
+    },
+    {
+      "display": "Purpur Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:12[active=false,type=purpur]",
+      "legacy": [
+        "Purpur Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:12[active=false,type=purpur]",
+        "nuclearcraft:fission_heater_port:12",
+        "Purpur Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:12[active=false]"
+      ]
+    },
+    {
+      "display": "Purpur Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:12[active=true,type=purpur]",
+      "legacy": [
+        "Purpur Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:12[active=true,type=purpur]",
+        "nuclearcraft:fission_heater_port:12",
+        "Purpur Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:12[active=true]"
+      ]
+    },
+    {
+      "display": "Quartz Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater:3[type=quartz]",
+      "legacy": [
+        "Quartz Coolant Heater",
+        "nuclearcraft:salt_fission_heater:3[type=quartz]",
+        "nuclearcraft:salt_fission_heater:3",
+        "Quartz Coolant Heater"
+      ]
+    },
+    {
+      "display": "Quartz Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:3[active=false,type=quartz]",
+      "legacy": [
+        "Quartz Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:3[active=false,type=quartz]",
+        "nuclearcraft:fission_heater_port:3",
+        "Quartz Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:3[active=false]"
+      ]
+    },
+    {
+      "display": "Quartz Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:3[active=true,type=quartz]",
+      "legacy": [
+        "Quartz Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:3[active=true,type=quartz]",
+        "nuclearcraft:fission_heater_port:3",
+        "Quartz Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:3[active=true]"
+      ]
+    },
+    {
+      "display": "Ra-Be Neutron Source",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_source:0[type=radium_beryllium]",
+      "legacy": [
+        "Ra-Be Neutron Source",
+        "nuclearcraft:fission_source:0[type=radium_beryllium]",
+        "nuclearcraft:fission_source:0",
+        "Ra-Be Neutron Source"
+      ]
+    },
+    {
+      "display": "Reactor Casing",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_casing",
+      "legacy": [
+        "Reactor Casing",
+        "nuclearcraft:fission_casing",
+        "Reactor Casing"
+      ]
+    },
+    {
+      "display": "Reactor Glass",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_glass",
+      "legacy": [
+        "Reactor Glass",
+        "nuclearcraft:fission_glass",
+        "Reactor Glass"
+      ]
+    },
+    {
+      "display": "Redstone Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater:2[type=redstone]",
+      "legacy": [
+        "Redstone Coolant Heater",
+        "nuclearcraft:salt_fission_heater:2[type=redstone]",
+        "nuclearcraft:salt_fission_heater:2",
+        "Redstone Coolant Heater"
+      ]
+    },
+    {
+      "display": "Redstone Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:2[active=false,type=redstone]",
+      "legacy": [
+        "Redstone Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:2[active=false,type=redstone]",
+        "nuclearcraft:fission_heater_port:2",
+        "Redstone Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:2[active=false]"
+      ]
+    },
+    {
+      "display": "Redstone Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:2[active=true,type=redstone]",
+      "legacy": [
+        "Redstone Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:2[active=true,type=redstone]",
+        "nuclearcraft:fission_heater_port:2",
+        "Redstone Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:2[active=true]"
+      ]
+    },
+    {
+      "display": "Silver Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater2:7[type=silver]",
+      "legacy": [
+        "Silver Coolant Heater",
+        "nuclearcraft:salt_fission_heater2:7[type=silver]",
+        "nuclearcraft:salt_fission_heater2:7",
+        "Silver Coolant Heater"
+      ]
+    },
+    {
+      "display": "Silver Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:7[active=false,type=silver]",
+      "legacy": [
+        "Silver Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:7[active=false,type=silver]",
+        "nuclearcraft:fission_heater_port2:7",
+        "Silver Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:7[active=false]"
+      ]
+    },
+    {
+      "display": "Silver Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:7[active=true,type=silver]",
+      "legacy": [
+        "Silver Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:7[active=true,type=silver]",
+        "nuclearcraft:fission_heater_port2:7",
+        "Silver Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:7[active=true]"
+      ]
+    },
+    {
+      "display": "Slime Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater:10[type=slime]",
+      "legacy": [
+        "Slime Coolant Heater",
+        "nuclearcraft:salt_fission_heater:10[type=slime]",
+        "nuclearcraft:salt_fission_heater:10",
+        "Slime Coolant Heater"
+      ]
+    },
+    {
+      "display": "Slime Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:10[active=false,type=slime]",
+      "legacy": [
+        "Slime Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:10[active=false,type=slime]",
+        "nuclearcraft:fission_heater_port:10",
+        "Slime Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:10[active=false]"
+      ]
+    },
+    {
+      "display": "Slime Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:10[active=true,type=slime]",
+      "legacy": [
+        "Slime Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:10[active=true,type=slime]",
+        "nuclearcraft:fission_heater_port:10",
+        "Slime Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:10[active=true]"
+      ]
+    },
+    {
+      "display": "Standard Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater:0[type=standard]",
+      "legacy": [
+        "Standard Coolant Heater",
+        "nuclearcraft:salt_fission_heater:0[type=standard]",
+        "nuclearcraft:salt_fission_heater:0",
+        "Standard Coolant Heater"
+      ]
+    },
+    {
+      "display": "Standard Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:0[active=false,type=standard]",
+      "legacy": [
+        "Standard Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:0[active=false,type=standard]",
+        "nuclearcraft:fission_heater_port:0",
+        "Standard Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port:0[active=false]"
+      ]
+    },
+    {
+      "display": "Standard Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port:0[active=true,type=standard]",
+      "legacy": [
+        "Standard Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:0[active=true,type=standard]",
+        "nuclearcraft:fission_heater_port:0",
+        "Standard Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port:0[active=true]"
+      ]
+    },
+    {
+      "display": "TBU Fluoride",
+      "type": "legacy_fluid",
+      "def": "tbu_fluoride_flibe",
+      "legacy": [
+        "TBU Fluoride",
+        "tbu_fluoride_flibe",
+        "TBU Fluoride"
+      ]
+    },
+    {
+      "display": "Thorium Dust",
+      "type": "legacy_item",
+      "def": "nuclearcraft:dust:3",
+      "legacy": [
+        "Thorium Dust",
+        "nuclearcraft:dust:3"
+      ]
+    },
+    {
+      "display": "Thorium Ingot",
+      "type": "legacy_item",
+      "def": "nuclearcraft:ingot:3",
+      "legacy": [
+        "Thorium Ingot",
+        "nuclearcraft:ingot:3"
+      ]
+    },
+    {
+      "display": "Tin Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater2:0[type=tin]",
+      "legacy": [
+        "Tin Coolant Heater",
+        "nuclearcraft:salt_fission_heater2:0[type=tin]",
+        "nuclearcraft:salt_fission_heater2:0",
+        "Tin Coolant Heater"
+      ]
+    },
+    {
+      "display": "Tin Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:0[active=false,type=tin]",
+      "legacy": [
+        "Tin Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:0[active=false,type=tin]",
+        "nuclearcraft:fission_heater_port2:0",
+        "Tin Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:0[active=false]"
+      ]
+    },
+    {
+      "display": "Tin Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:0[active=true,type=tin]",
+      "legacy": [
+        "Tin Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:0[active=true,type=tin]",
+        "nuclearcraft:fission_heater_port2:0",
+        "Tin Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:0[active=true]"
+      ]
+    },
+    {
+      "display": "Uranium-235",
+      "type": "oredict",
+      "def": "ingotUranium235",
+      "legacy": [
+        "Uranium-235",
+        "ingotUranium235"
+      ]
+    },
+    {
+      "display": "Villiaumite Coolant Heater",
+      "type": "legacy_block",
+      "def": "nuclearcraft:salt_fission_heater2:9[type=villiaumite]",
+      "legacy": [
+        "Villiaumite Coolant Heater",
+        "nuclearcraft:salt_fission_heater2:9[type=villiaumite]",
+        "nuclearcraft:salt_fission_heater2:9",
+        "Villiaumite Coolant Heater"
+      ]
+    },
+    {
+      "display": "Villiaumite Coolant Heater Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:9[active=false,type=villiaumite]",
+      "legacy": [
+        "Villiaumite Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:9[active=false,type=villiaumite]",
+        "nuclearcraft:fission_heater_port2:9",
+        "Villiaumite Coolant Heater Port (Input)",
+        "nuclearcraft:fission_heater_port2:9[active=false]"
+      ]
+    },
+    {
+      "display": "Villiaumite Coolant Heater Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_heater_port2:9[active=true,type=villiaumite]",
+      "legacy": [
+        "Villiaumite Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:9[active=true,type=villiaumite]",
+        "nuclearcraft:fission_heater_port2:9",
+        "Villiaumite Coolant Heater Port (Output)",
+        "nuclearcraft:fission_heater_port2:9[active=true]"
+      ]
+    }
+  ]
+}

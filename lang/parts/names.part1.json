@@ -1,0 +1,1096 @@
+{
+  "note": "Distinct display names to translate into Simplified Chinese. Output one JSON object mapping display -> zh_CN.",
+  "count": 115,
+  "names": [
+    {
+      "display": "Aluminum Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink2:6[type=aluminum]",
+      "legacy": [
+        "Aluminum Heat Sink",
+        "nuclearcraft:solid_fission_sink2:6[type=aluminum]",
+        "nuclearcraft:solid_fission_sink2:6",
+        "Aluminum Heat Sink"
+      ]
+    },
+    {
+      "display": "Arsenic Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink2:11[type=arsenic]",
+      "legacy": [
+        "Arsenic Heat Sink",
+        "nuclearcraft:solid_fission_sink2:11[type=arsenic]",
+        "nuclearcraft:solid_fission_sink2:11",
+        "Arsenic Heat Sink"
+      ]
+    },
+    {
+      "display": "Beryllium Block",
+      "type": "legacy_block",
+      "def": "nuclearcraft:ingot_block:9[type=beryllium]",
+      "legacy": [
+        "Beryllium Block",
+        "nuclearcraft:ingot_block:9[type=beryllium]",
+        "nuclearcraft:ingot_block:9"
+      ]
+    },
+    {
+      "display": "Beryllium Moderator",
+      "type": "oredict",
+      "def": "blockBeryllium",
+      "legacy": [
+        "Beryllium Moderator",
+        "blockBeryllium",
+        "Beryllium Moderator",
+        "nuclearcraft:ingot_block:9"
+      ]
+    },
+    {
+      "display": "Beryllium-Carbon Reflector",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_reflector:0[type=beryllium_carbon]",
+      "legacy": [
+        "Beryllium-Carbon Reflector",
+        "nuclearcraft:fission_reflector:0[type=beryllium_carbon]",
+        "nuclearcraft:fission_reflector:0",
+        "Beryllium-Carbon Reflector"
+      ]
+    },
+    {
+      "display": "Bismuth Dust",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fission_dust:0",
+      "legacy": [
+        "Bismuth Dust",
+        "nuclearcraft:fission_dust:0"
+      ]
+    },
+    {
+      "display": "Boron Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink2:2[type=boron]",
+      "legacy": [
+        "Boron Heat Sink",
+        "nuclearcraft:solid_fission_sink2:2[type=boron]",
+        "nuclearcraft:solid_fission_sink2:2",
+        "Boron Heat Sink"
+      ]
+    },
+    {
+      "display": "Boron-Silver Neutron Shield",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_shield:0[active=false,type=boron_silver]",
+      "legacy": [
+        "Boron-Silver Neutron Shield",
+        "nuclearcraft:fission_shield:0[active=false,type=boron_silver]",
+        "nuclearcraft:fission_shield:0",
+        "Boron-Silver Neutron Shield",
+        "nuclearcraft:fission_shield:0[active=false]"
+      ]
+    },
+    {
+      "display": "Carobbiite Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink2:10[type=carobbiite]",
+      "legacy": [
+        "Carobbiite Heat Sink",
+        "nuclearcraft:solid_fission_sink2:10[type=carobbiite]",
+        "nuclearcraft:solid_fission_sink2:10",
+        "Carobbiite Heat Sink"
+      ]
+    },
+    {
+      "display": "Cf-252 Neutron Source",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_source:2[type=californium]",
+      "legacy": [
+        "Cf-252 Neutron Source",
+        "nuclearcraft:fission_source:2[type=californium]",
+        "nuclearcraft:fission_source:2",
+        "Cf-252 Neutron Source"
+      ]
+    },
+    {
+      "display": "Conductor",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_conductor",
+      "legacy": [
+        "Conductor",
+        "nuclearcraft:fission_conductor",
+        "Conductor"
+      ]
+    },
+    {
+      "display": "Copper Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink:15[type=copper]",
+      "legacy": [
+        "Copper Heat Sink",
+        "nuclearcraft:solid_fission_sink:15[type=copper]",
+        "nuclearcraft:solid_fission_sink:15",
+        "Copper Heat Sink"
+      ]
+    },
+    {
+      "display": "Cryotheum Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink2:15[type=cryotheum]",
+      "legacy": [
+        "Cryotheum Heat Sink",
+        "nuclearcraft:solid_fission_sink2:15[type=cryotheum]",
+        "nuclearcraft:solid_fission_sink2:15",
+        "Cryotheum Heat Sink"
+      ]
+    },
+    {
+      "display": "Depleted HEA-242 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedHEA242Nitride",
+      "legacy": [
+        "Depleted HEA-242 Nitride",
+        "ingotDepletedHEA242Nitride"
+      ]
+    },
+    {
+      "display": "Depleted HEA-242 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedHEA242Oxide",
+      "legacy": [
+        "Depleted HEA-242 Oxide",
+        "ingotDepletedHEA242Oxide"
+      ]
+    },
+    {
+      "display": "Depleted HEA-242-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedHEA242ZA",
+      "legacy": [
+        "Depleted HEA-242-Zirconium Alloy",
+        "ingotDepletedHEA242ZA"
+      ]
+    },
+    {
+      "display": "Depleted HEB-248 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedHEB248Nitride",
+      "legacy": [
+        "Depleted HEB-248 Nitride",
+        "ingotDepletedHEB248Nitride"
+      ]
+    },
+    {
+      "display": "Depleted HEB-248 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedHEB248Oxide",
+      "legacy": [
+        "Depleted HEB-248 Oxide",
+        "ingotDepletedHEB248Oxide"
+      ]
+    },
+    {
+      "display": "Depleted HEB-248-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedHEB248ZA",
+      "legacy": [
+        "Depleted HEB-248-Zirconium Alloy",
+        "ingotDepletedHEB248ZA"
+      ]
+    },
+    {
+      "display": "Depleted HECf-249 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedHECf249Nitride",
+      "legacy": [
+        "Depleted HECf-249 Nitride",
+        "ingotDepletedHECf249Nitride"
+      ]
+    },
+    {
+      "display": "Depleted HECf-249 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedHECf249Oxide",
+      "legacy": [
+        "Depleted HECf-249 Oxide",
+        "ingotDepletedHECf249Oxide"
+      ]
+    },
+    {
+      "display": "Depleted HECf-249-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedHECf249ZA",
+      "legacy": [
+        "Depleted HECf-249-Zirconium Alloy",
+        "ingotDepletedHECf249ZA"
+      ]
+    },
+    {
+      "display": "Depleted HECf-251 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedHECf251Nitride",
+      "legacy": [
+        "Depleted HECf-251 Nitride",
+        "ingotDepletedHECf251Nitride"
+      ]
+    },
+    {
+      "display": "Depleted HECf-251 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedHECf251Oxide",
+      "legacy": [
+        "Depleted HECf-251 Oxide",
+        "ingotDepletedHECf251Oxide"
+      ]
+    },
+    {
+      "display": "Depleted HECf-251-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedHECf251ZA",
+      "legacy": [
+        "Depleted HECf-251-Zirconium Alloy",
+        "ingotDepletedHECf251ZA"
+      ]
+    },
+    {
+      "display": "Depleted HECm-243 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedHECm243Nitride",
+      "legacy": [
+        "Depleted HECm-243 Nitride",
+        "ingotDepletedHECm243Nitride"
+      ]
+    },
+    {
+      "display": "Depleted HECm-243 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedHECm243Oxide",
+      "legacy": [
+        "Depleted HECm-243 Oxide",
+        "ingotDepletedHECm243Oxide"
+      ]
+    },
+    {
+      "display": "Depleted HECm-243-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedHECm243ZA",
+      "legacy": [
+        "Depleted HECm-243-Zirconium Alloy",
+        "ingotDepletedHECm243ZA"
+      ]
+    },
+    {
+      "display": "Depleted HECm-245 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedHECm245Nitride",
+      "legacy": [
+        "Depleted HECm-245 Nitride",
+        "ingotDepletedHECm245Nitride"
+      ]
+    },
+    {
+      "display": "Depleted HECm-245 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedHECm245Oxide",
+      "legacy": [
+        "Depleted HECm-245 Oxide",
+        "ingotDepletedHECm245Oxide"
+      ]
+    },
+    {
+      "display": "Depleted HECm-245-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedHECm245ZA",
+      "legacy": [
+        "Depleted HECm-245-Zirconium Alloy",
+        "ingotDepletedHECm245ZA"
+      ]
+    },
+    {
+      "display": "Depleted HECm-247 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedHECm247Nitride",
+      "legacy": [
+        "Depleted HECm-247 Nitride",
+        "ingotDepletedHECm247Nitride"
+      ]
+    },
+    {
+      "display": "Depleted HECm-247 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedHECm247Oxide",
+      "legacy": [
+        "Depleted HECm-247 Oxide",
+        "ingotDepletedHECm247Oxide"
+      ]
+    },
+    {
+      "display": "Depleted HECm-247-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedHECm247ZA",
+      "legacy": [
+        "Depleted HECm-247-Zirconium Alloy",
+        "ingotDepletedHECm247ZA"
+      ]
+    },
+    {
+      "display": "Depleted HEN-236 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedHEN236Nitride",
+      "legacy": [
+        "Depleted HEN-236 Nitride",
+        "ingotDepletedHEN236Nitride"
+      ]
+    },
+    {
+      "display": "Depleted HEN-236 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedHEN236Oxide",
+      "legacy": [
+        "Depleted HEN-236 Oxide",
+        "ingotDepletedHEN236Oxide"
+      ]
+    },
+    {
+      "display": "Depleted HEN-236-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedHEN236ZA",
+      "legacy": [
+        "Depleted HEN-236-Zirconium Alloy",
+        "ingotDepletedHEN236ZA"
+      ]
+    },
+    {
+      "display": "Depleted HEP-239 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedHEP239Nitride",
+      "legacy": [
+        "Depleted HEP-239 Nitride",
+        "ingotDepletedHEP239Nitride"
+      ]
+    },
+    {
+      "display": "Depleted HEP-239 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedHEP239Oxide",
+      "legacy": [
+        "Depleted HEP-239 Oxide",
+        "ingotDepletedHEP239Oxide"
+      ]
+    },
+    {
+      "display": "Depleted HEP-239-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedHEP239ZA",
+      "legacy": [
+        "Depleted HEP-239-Zirconium Alloy",
+        "ingotDepletedHEP239ZA"
+      ]
+    },
+    {
+      "display": "Depleted HEP-241 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedHEP241Nitride",
+      "legacy": [
+        "Depleted HEP-241 Nitride",
+        "ingotDepletedHEP241Nitride"
+      ]
+    },
+    {
+      "display": "Depleted HEP-241 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedHEP241Oxide",
+      "legacy": [
+        "Depleted HEP-241 Oxide",
+        "ingotDepletedHEP241Oxide"
+      ]
+    },
+    {
+      "display": "Depleted HEP-241-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedHEP241ZA",
+      "legacy": [
+        "Depleted HEP-241-Zirconium Alloy",
+        "ingotDepletedHEP241ZA"
+      ]
+    },
+    {
+      "display": "Depleted HEU-233 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedHEU233Nitride",
+      "legacy": [
+        "Depleted HEU-233 Nitride",
+        "ingotDepletedHEU233Nitride"
+      ]
+    },
+    {
+      "display": "Depleted HEU-233 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedHEU233Oxide",
+      "legacy": [
+        "Depleted HEU-233 Oxide",
+        "ingotDepletedHEU233Oxide"
+      ]
+    },
+    {
+      "display": "Depleted HEU-233-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedHEU233ZA",
+      "legacy": [
+        "Depleted HEU-233-Zirconium Alloy",
+        "ingotDepletedHEU233ZA"
+      ]
+    },
+    {
+      "display": "Depleted HEU-235 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedHEU235Nitride",
+      "legacy": [
+        "Depleted HEU-235 Nitride",
+        "ingotDepletedHEU235Nitride"
+      ]
+    },
+    {
+      "display": "Depleted HEU-235 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedHEU235Oxide",
+      "legacy": [
+        "Depleted HEU-235 Oxide",
+        "ingotDepletedHEU235Oxide"
+      ]
+    },
+    {
+      "display": "Depleted HEU-235-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedHEU235ZA",
+      "legacy": [
+        "Depleted HEU-235-Zirconium Alloy",
+        "ingotDepletedHEU235ZA"
+      ]
+    },
+    {
+      "display": "Depleted LEA-242 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedLEA242Nitride",
+      "legacy": [
+        "Depleted LEA-242 Nitride",
+        "ingotDepletedLEA242Nitride"
+      ]
+    },
+    {
+      "display": "Depleted LEA-242 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedLEA242Oxide",
+      "legacy": [
+        "Depleted LEA-242 Oxide",
+        "ingotDepletedLEA242Oxide"
+      ]
+    },
+    {
+      "display": "Depleted LEA-242-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedLEA242ZA",
+      "legacy": [
+        "Depleted LEA-242-Zirconium Alloy",
+        "ingotDepletedLEA242ZA"
+      ]
+    },
+    {
+      "display": "Depleted LEB-248 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedLEB248Nitride",
+      "legacy": [
+        "Depleted LEB-248 Nitride",
+        "ingotDepletedLEB248Nitride"
+      ]
+    },
+    {
+      "display": "Depleted LEB-248 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedLEB248Oxide",
+      "legacy": [
+        "Depleted LEB-248 Oxide",
+        "ingotDepletedLEB248Oxide"
+      ]
+    },
+    {
+      "display": "Depleted LEB-248-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedLEB248ZA",
+      "legacy": [
+        "Depleted LEB-248-Zirconium Alloy",
+        "ingotDepletedLEB248ZA"
+      ]
+    },
+    {
+      "display": "Depleted LECf-249 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedLECf249Nitride",
+      "legacy": [
+        "Depleted LECf-249 Nitride",
+        "ingotDepletedLECf249Nitride"
+      ]
+    },
+    {
+      "display": "Depleted LECf-249 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedLECf249Oxide",
+      "legacy": [
+        "Depleted LECf-249 Oxide",
+        "ingotDepletedLECf249Oxide"
+      ]
+    },
+    {
+      "display": "Depleted LECf-249-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedLECf249ZA",
+      "legacy": [
+        "Depleted LECf-249-Zirconium Alloy",
+        "ingotDepletedLECf249ZA"
+      ]
+    },
+    {
+      "display": "Depleted LECf-251 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedLECf251Nitride",
+      "legacy": [
+        "Depleted LECf-251 Nitride",
+        "ingotDepletedLECf251Nitride"
+      ]
+    },
+    {
+      "display": "Depleted LECf-251 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedLECf251Oxide",
+      "legacy": [
+        "Depleted LECf-251 Oxide",
+        "ingotDepletedLECf251Oxide"
+      ]
+    },
+    {
+      "display": "Depleted LECf-251-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedLECf251ZA",
+      "legacy": [
+        "Depleted LECf-251-Zirconium Alloy",
+        "ingotDepletedLECf251ZA"
+      ]
+    },
+    {
+      "display": "Depleted LECm-243 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedLECm243Nitride",
+      "legacy": [
+        "Depleted LECm-243 Nitride",
+        "ingotDepletedLECm243Nitride"
+      ]
+    },
+    {
+      "display": "Depleted LECm-243 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedLECm243Oxide",
+      "legacy": [
+        "Depleted LECm-243 Oxide",
+        "ingotDepletedLECm243Oxide"
+      ]
+    },
+    {
+      "display": "Depleted LECm-243-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedLECm243ZA",
+      "legacy": [
+        "Depleted LECm-243-Zirconium Alloy",
+        "ingotDepletedLECm243ZA"
+      ]
+    },
+    {
+      "display": "Depleted LECm-245 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedLECm245Nitride",
+      "legacy": [
+        "Depleted LECm-245 Nitride",
+        "ingotDepletedLECm245Nitride"
+      ]
+    },
+    {
+      "display": "Depleted LECm-245 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedLECm245Oxide",
+      "legacy": [
+        "Depleted LECm-245 Oxide",
+        "ingotDepletedLECm245Oxide"
+      ]
+    },
+    {
+      "display": "Depleted LECm-245-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedLECm245ZA",
+      "legacy": [
+        "Depleted LECm-245-Zirconium Alloy",
+        "ingotDepletedLECm245ZA"
+      ]
+    },
+    {
+      "display": "Depleted LECm-247 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedLECm247Nitride",
+      "legacy": [
+        "Depleted LECm-247 Nitride",
+        "ingotDepletedLECm247Nitride"
+      ]
+    },
+    {
+      "display": "Depleted LECm-247 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedLECm247Oxide",
+      "legacy": [
+        "Depleted LECm-247 Oxide",
+        "ingotDepletedLECm247Oxide"
+      ]
+    },
+    {
+      "display": "Depleted LECm-247-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedLECm247ZA",
+      "legacy": [
+        "Depleted LECm-247-Zirconium Alloy",
+        "ingotDepletedLECm247ZA"
+      ]
+    },
+    {
+      "display": "Depleted LEN-236 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedLEN236Nitride",
+      "legacy": [
+        "Depleted LEN-236 Nitride",
+        "ingotDepletedLEN236Nitride"
+      ]
+    },
+    {
+      "display": "Depleted LEN-236 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedLEN236Oxide",
+      "legacy": [
+        "Depleted LEN-236 Oxide",
+        "ingotDepletedLEN236Oxide"
+      ]
+    },
+    {
+      "display": "Depleted LEN-236-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedLEN236ZA",
+      "legacy": [
+        "Depleted LEN-236-Zirconium Alloy",
+        "ingotDepletedLEN236ZA"
+      ]
+    },
+    {
+      "display": "Depleted LEP-239 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedLEP239Nitride",
+      "legacy": [
+        "Depleted LEP-239 Nitride",
+        "ingotDepletedLEP239Nitride"
+      ]
+    },
+    {
+      "display": "Depleted LEP-239 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedLEP239Oxide",
+      "legacy": [
+        "Depleted LEP-239 Oxide",
+        "ingotDepletedLEP239Oxide"
+      ]
+    },
+    {
+      "display": "Depleted LEP-239-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedLEP239ZA",
+      "legacy": [
+        "Depleted LEP-239-Zirconium Alloy",
+        "ingotDepletedLEP239ZA"
+      ]
+    },
+    {
+      "display": "Depleted LEP-241 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedLEP241Nitride",
+      "legacy": [
+        "Depleted LEP-241 Nitride",
+        "ingotDepletedLEP241Nitride"
+      ]
+    },
+    {
+      "display": "Depleted LEP-241 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedLEP241Oxide",
+      "legacy": [
+        "Depleted LEP-241 Oxide",
+        "ingotDepletedLEP241Oxide"
+      ]
+    },
+    {
+      "display": "Depleted LEP-241-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedLEP241ZA",
+      "legacy": [
+        "Depleted LEP-241-Zirconium Alloy",
+        "ingotDepletedLEP241ZA"
+      ]
+    },
+    {
+      "display": "Depleted LEU-233 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedLEU233Nitride",
+      "legacy": [
+        "Depleted LEU-233 Nitride",
+        "ingotDepletedLEU233Nitride"
+      ]
+    },
+    {
+      "display": "Depleted LEU-233 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedLEU233Oxide",
+      "legacy": [
+        "Depleted LEU-233 Oxide",
+        "ingotDepletedLEU233Oxide"
+      ]
+    },
+    {
+      "display": "Depleted LEU-233-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedLEU233ZA",
+      "legacy": [
+        "Depleted LEU-233-Zirconium Alloy",
+        "ingotDepletedLEU233ZA"
+      ]
+    },
+    {
+      "display": "Depleted LEU-235 Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedLEU235Nitride",
+      "legacy": [
+        "Depleted LEU-235 Nitride",
+        "ingotDepletedLEU235Nitride"
+      ]
+    },
+    {
+      "display": "Depleted LEU-235 Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedLEU235Oxide",
+      "legacy": [
+        "Depleted LEU-235 Oxide",
+        "ingotDepletedLEU235Oxide"
+      ]
+    },
+    {
+      "display": "Depleted LEU-235-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedLEU235ZA",
+      "legacy": [
+        "Depleted LEU-235-Zirconium Alloy",
+        "ingotDepletedLEU235ZA"
+      ]
+    },
+    {
+      "display": "Depleted MNI-239",
+      "type": "oredict",
+      "def": "ingotDepletedMIX239Nitride",
+      "legacy": [
+        "Depleted MNI-239",
+        "ingotDepletedMIX239Nitride"
+      ]
+    },
+    {
+      "display": "Depleted MNI-241",
+      "type": "oredict",
+      "def": "ingotDepletedMIX241Nitride",
+      "legacy": [
+        "Depleted MNI-241",
+        "ingotDepletedMIX241Nitride"
+      ]
+    },
+    {
+      "display": "Depleted MOX-239",
+      "type": "oredict",
+      "def": "ingotDepletedMIX239Oxide",
+      "legacy": [
+        "Depleted MOX-239",
+        "ingotDepletedMIX239Oxide"
+      ]
+    },
+    {
+      "display": "Depleted MOX-241",
+      "type": "oredict",
+      "def": "ingotDepletedMIX241Oxide",
+      "legacy": [
+        "Depleted MOX-241",
+        "ingotDepletedMIX241Oxide"
+      ]
+    },
+    {
+      "display": "Depleted MZA-239",
+      "type": "oredict",
+      "def": "ingotDepletedMIX239ZA",
+      "legacy": [
+        "Depleted MZA-239",
+        "ingotDepletedMIX239ZA"
+      ]
+    },
+    {
+      "display": "Depleted MZA-241",
+      "type": "oredict",
+      "def": "ingotDepletedMIX241ZA",
+      "legacy": [
+        "Depleted MZA-241",
+        "ingotDepletedMIX241ZA"
+      ]
+    },
+    {
+      "display": "Depleted TBU Nitride",
+      "type": "oredict",
+      "def": "ingotDepletedTBUNitride",
+      "legacy": [
+        "Depleted TBU Nitride",
+        "ingotDepletedTBUNitride"
+      ]
+    },
+    {
+      "display": "Depleted TBU Oxide",
+      "type": "oredict",
+      "def": "ingotDepletedTBUOxide",
+      "legacy": [
+        "Depleted TBU Oxide",
+        "ingotDepletedTBUOxide"
+      ]
+    },
+    {
+      "display": "Depleted TBU-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotDepletedTBUZA",
+      "legacy": [
+        "Depleted TBU-Zirconium Alloy",
+        "ingotDepletedTBUZA"
+      ]
+    },
+    {
+      "display": "Diamond Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink:13[type=diamond]",
+      "legacy": [
+        "Diamond Heat Sink",
+        "nuclearcraft:solid_fission_sink:13[type=diamond]",
+        "nuclearcraft:solid_fission_sink:13",
+        "Diamond Heat Sink"
+      ]
+    },
+    {
+      "display": "Emerald Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink:14[type=emerald]",
+      "legacy": [
+        "Emerald Heat Sink",
+        "nuclearcraft:solid_fission_sink:14[type=emerald]",
+        "nuclearcraft:solid_fission_sink:14",
+        "Emerald Heat Sink"
+      ]
+    },
+    {
+      "display": "End Stone Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink:11[type=end_stone]",
+      "legacy": [
+        "End Stone Heat Sink",
+        "nuclearcraft:solid_fission_sink:11[type=end_stone]",
+        "nuclearcraft:solid_fission_sink:11",
+        "End Stone Heat Sink"
+      ]
+    },
+    {
+      "display": "Enderium Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink2:14[type=enderium]",
+      "legacy": [
+        "Enderium Heat Sink",
+        "nuclearcraft:solid_fission_sink2:14[type=enderium]",
+        "nuclearcraft:solid_fission_sink2:14",
+        "Enderium Heat Sink"
+      ]
+    },
+    {
+      "display": "Fission Computer Port",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_computer_port",
+      "legacy": [
+        "Fission Computer Port",
+        "nuclearcraft:fission_computer_port",
+        "Fission Computer Port"
+      ]
+    },
+    {
+      "display": "Fission Monitor",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_monitor",
+      "legacy": [
+        "Fission Monitor",
+        "nuclearcraft:fission_monitor",
+        "Fission Monitor"
+      ]
+    },
+    {
+      "display": "Fission Shield Manager",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_shield_manager",
+      "legacy": [
+        "Fission Shield Manager",
+        "nuclearcraft:fission_shield_manager",
+        "Fission Shield Manager"
+      ]
+    },
+    {
+      "display": "Fission Source Manager",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_source_manager",
+      "legacy": [
+        "Fission Source Manager",
+        "nuclearcraft:fission_source_manager",
+        "Fission Source Manager"
+      ]
+    },
+    {
+      "display": "Fluorite Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink2:8[type=fluorite]",
+      "legacy": [
+        "Fluorite Heat Sink",
+        "nuclearcraft:solid_fission_sink2:8[type=fluorite]",
+        "nuclearcraft:solid_fission_sink2:8",
+        "Fluorite Heat Sink"
+      ]
+    },
+    {
+      "display": "Fuel Cell",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_cell",
+      "legacy": [
+        "Fuel Cell",
+        "nuclearcraft:solid_fission_cell",
+        "Fuel Cell"
+      ]
+    },
+    {
+      "display": "Fuel Cell Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_cell_port[active=false]",
+      "legacy": [
+        "Fuel Cell Port (Input)",
+        "nuclearcraft:fission_cell_port[active=false]",
+        "Fuel Cell Port (Input)"
+      ]
+    },
+    {
+      "display": "Fuel Cell Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_cell_port[active=true]",
+      "legacy": [
+        "Fuel Cell Port (Output)",
+        "nuclearcraft:fission_cell_port[active=true]",
+        "Fuel Cell Port (Output)"
+      ]
+    },
+    {
+      "display": "Glowstone Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink:6[type=glowstone]",
+      "legacy": [
+        "Glowstone Heat Sink",
+        "nuclearcraft:solid_fission_sink:6[type=glowstone]",
+        "nuclearcraft:solid_fission_sink:6",
+        "Glowstone Heat Sink"
+      ]
+    },
+    {
+      "display": "Gold Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink:8[type=gold]",
+      "legacy": [
+        "Gold Heat Sink",
+        "nuclearcraft:solid_fission_sink:8[type=gold]",
+        "nuclearcraft:solid_fission_sink:8",
+        "Gold Heat Sink"
+      ]
+    },
+    {
+      "display": "Graphite Block",
+      "type": "legacy_block",
+      "def": "nuclearcraft:ingot_block:8[type=graphite]",
+      "legacy": [
+        "Graphite Block",
+        "nuclearcraft:ingot_block:8[type=graphite]",
+        "nuclearcraft:ingot_block:8"
+      ]
+    },
+    {
+      "display": "Graphite Moderator",
+      "type": "oredict",
+      "def": "blockGraphite",
+      "legacy": [
+        "Graphite Moderator",
+        "blockGraphite",
+        "Graphite Moderator",
+        "nuclearcraft:ingot_block:8"
+      ]
+    },
+    {
+      "display": "HEA-242 Nitride",
+      "type": "oredict",
+      "def": "ingotHEA242Nitride",
+      "legacy": [
+        "HEA-242 Nitride",
+        "ingotHEA242Nitride",
+        "HEA-242 Nitride",
+        "nuclearcraft:fuel_americium:6"
+      ]
+    },
+    {
+      "display": "HEA-242 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_americium:3",
+      "legacy": [
+        "HEA-242 Oxide",
+        "nuclearcraft:fuel_americium:3",
+        "HEA-242 Oxide"
+      ]
+    },
+    {
+      "display": "HEA-242-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotHEA242ZA",
+      "legacy": [
+        "HEA-242-Zirconium Alloy",
+        "ingotHEA242ZA",
+        "HEA-242-Zirconium Alloy",
+        "nuclearcraft:fuel_americium:7"
+      ]
+    },
+    {
+      "display": "Heavy Water Moderator",
+      "type": "legacy_block",
+      "def": "nuclearcraft:heavy_water_moderator",
+      "legacy": [
+        "Heavy Water Moderator",
+        "nuclearcraft:heavy_water_moderator",
+        "Heavy Water Moderator"
+      ]
+    },
+    {
+      "display": "HEB-248 Nitride",
+      "type": "oredict",
+      "def": "ingotHEB248Nitride",
+      "legacy": [
+        "HEB-248 Nitride",
+        "ingotHEB248Nitride",
+        "HEB-248 Nitride",
+        "nuclearcraft:fuel_berkelium:6"
+      ]
+    }
+  ]
+}

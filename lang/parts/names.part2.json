@@ -1,0 +1,1237 @@
+{
+  "note": "Distinct display names to translate into Simplified Chinese. Output one JSON object mapping display -> zh_CN.",
+  "count": 116,
+  "names": [
+    {
+      "display": "HEB-248 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_berkelium:3",
+      "legacy": [
+        "HEB-248 Oxide",
+        "nuclearcraft:fuel_berkelium:3",
+        "HEB-248 Oxide"
+      ]
+    },
+    {
+      "display": "HEB-248-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotHEB248ZA",
+      "legacy": [
+        "HEB-248-Zirconium Alloy",
+        "ingotHEB248ZA",
+        "HEB-248-Zirconium Alloy",
+        "nuclearcraft:fuel_berkelium:7"
+      ]
+    },
+    {
+      "display": "HECf-249 Nitride",
+      "type": "oredict",
+      "def": "ingotHECf249Nitride",
+      "legacy": [
+        "HECf-249 Nitride",
+        "ingotHECf249Nitride",
+        "HECf-249 Nitride",
+        "nuclearcraft:fuel_californium:6"
+      ]
+    },
+    {
+      "display": "HECf-249 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_californium:3",
+      "legacy": [
+        "HECf-249 Oxide",
+        "nuclearcraft:fuel_californium:3",
+        "HECf-249 Oxide"
+      ]
+    },
+    {
+      "display": "HECf-249-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotHECf249ZA",
+      "legacy": [
+        "HECf-249-Zirconium Alloy",
+        "ingotHECf249ZA",
+        "HECf-249-Zirconium Alloy",
+        "nuclearcraft:fuel_californium:7"
+      ]
+    },
+    {
+      "display": "HECf-251 Nitride",
+      "type": "oredict",
+      "def": "ingotHECf251Nitride",
+      "legacy": [
+        "HECf-251 Nitride",
+        "ingotHECf251Nitride",
+        "HECf-251 Nitride",
+        "nuclearcraft:fuel_californium:14"
+      ]
+    },
+    {
+      "display": "HECf-251 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_californium:7",
+      "legacy": [
+        "HECf-251 Oxide",
+        "nuclearcraft:fuel_californium:7",
+        "HECf-251 Oxide"
+      ]
+    },
+    {
+      "display": "HECf-251-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotHECf251ZA",
+      "legacy": [
+        "HECf-251-Zirconium Alloy",
+        "ingotHECf251ZA",
+        "HECf-251-Zirconium Alloy",
+        "nuclearcraft:fuel_californium:15"
+      ]
+    },
+    {
+      "display": "HECm-243 Nitride",
+      "type": "oredict",
+      "def": "ingotHECm243Nitride",
+      "legacy": [
+        "HECm-243 Nitride",
+        "ingotHECm243Nitride",
+        "HECm-243 Nitride",
+        "nuclearcraft:fuel_curium:6"
+      ]
+    },
+    {
+      "display": "HECm-243 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_curium:3",
+      "legacy": [
+        "HECm-243 Oxide",
+        "nuclearcraft:fuel_curium:3",
+        "HECm-243 Oxide"
+      ]
+    },
+    {
+      "display": "HECm-243-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotHECm243ZA",
+      "legacy": [
+        "HECm-243-Zirconium Alloy",
+        "ingotHECm243ZA",
+        "HECm-243-Zirconium Alloy",
+        "nuclearcraft:fuel_curium:7"
+      ]
+    },
+    {
+      "display": "HECm-245 Nitride",
+      "type": "oredict",
+      "def": "ingotHECm245Nitride",
+      "legacy": [
+        "HECm-245 Nitride",
+        "ingotHECm245Nitride",
+        "HECm-245 Nitride",
+        "nuclearcraft:fuel_curium:14"
+      ]
+    },
+    {
+      "display": "HECm-245 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_curium:7",
+      "legacy": [
+        "HECm-245 Oxide",
+        "nuclearcraft:fuel_curium:7",
+        "HECm-245 Oxide"
+      ]
+    },
+    {
+      "display": "HECm-245-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotHECm245ZA",
+      "legacy": [
+        "HECm-245-Zirconium Alloy",
+        "ingotHECm245ZA",
+        "HECm-245-Zirconium Alloy",
+        "nuclearcraft:fuel_curium:15"
+      ]
+    },
+    {
+      "display": "HECm-247 Nitride",
+      "type": "oredict",
+      "def": "ingotHECm247Nitride",
+      "legacy": [
+        "HECm-247 Nitride",
+        "ingotHECm247Nitride",
+        "HECm-247 Nitride",
+        "nuclearcraft:fuel_curium:22"
+      ]
+    },
+    {
+      "display": "HECm-247 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_curium:11",
+      "legacy": [
+        "HECm-247 Oxide",
+        "nuclearcraft:fuel_curium:11",
+        "HECm-247 Oxide"
+      ]
+    },
+    {
+      "display": "HECm-247-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotHECm247ZA",
+      "legacy": [
+        "HECm-247-Zirconium Alloy",
+        "ingotHECm247ZA",
+        "HECm-247-Zirconium Alloy",
+        "nuclearcraft:fuel_curium:23"
+      ]
+    },
+    {
+      "display": "HEN-236 Nitride",
+      "type": "oredict",
+      "def": "ingotHEN236Nitride",
+      "legacy": [
+        "HEN-236 Nitride",
+        "ingotHEN236Nitride",
+        "HEN-236 Nitride",
+        "nuclearcraft:fuel_neptunium:6"
+      ]
+    },
+    {
+      "display": "HEN-236 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_neptunium:3",
+      "legacy": [
+        "HEN-236 Oxide",
+        "nuclearcraft:fuel_neptunium:3",
+        "HEN-236 Oxide"
+      ]
+    },
+    {
+      "display": "HEN-236-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotHEN236ZA",
+      "legacy": [
+        "HEN-236-Zirconium Alloy",
+        "ingotHEN236ZA",
+        "HEN-236-Zirconium Alloy",
+        "nuclearcraft:fuel_neptunium:7"
+      ]
+    },
+    {
+      "display": "HEP-239 Nitride",
+      "type": "oredict",
+      "def": "ingotHEP239Nitride",
+      "legacy": [
+        "HEP-239 Nitride",
+        "ingotHEP239Nitride",
+        "HEP-239 Nitride",
+        "nuclearcraft:fuel_plutonium:6"
+      ]
+    },
+    {
+      "display": "HEP-239 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_plutonium:3",
+      "legacy": [
+        "HEP-239 Oxide",
+        "nuclearcraft:fuel_plutonium:3",
+        "HEP-239 Oxide"
+      ]
+    },
+    {
+      "display": "HEP-239-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotHEP239ZA",
+      "legacy": [
+        "HEP-239-Zirconium Alloy",
+        "ingotHEP239ZA",
+        "HEP-239-Zirconium Alloy",
+        "nuclearcraft:fuel_plutonium:7"
+      ]
+    },
+    {
+      "display": "HEP-241 Nitride",
+      "type": "oredict",
+      "def": "ingotHEP241Nitride",
+      "legacy": [
+        "HEP-241 Nitride",
+        "ingotHEP241Nitride",
+        "HEP-241 Nitride",
+        "nuclearcraft:fuel_plutonium:14"
+      ]
+    },
+    {
+      "display": "HEP-241 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_plutonium:7",
+      "legacy": [
+        "HEP-241 Oxide",
+        "nuclearcraft:fuel_plutonium:7",
+        "HEP-241 Oxide"
+      ]
+    },
+    {
+      "display": "HEP-241-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotHEP241ZA",
+      "legacy": [
+        "HEP-241-Zirconium Alloy",
+        "ingotHEP241ZA",
+        "HEP-241-Zirconium Alloy",
+        "nuclearcraft:fuel_plutonium:15"
+      ]
+    },
+    {
+      "display": "HEU-233 Nitride",
+      "type": "oredict",
+      "def": "ingotHEU233Nitride",
+      "legacy": [
+        "HEU-233 Nitride",
+        "ingotHEU233Nitride",
+        "HEU-233 Nitride",
+        "nuclearcraft:fuel_uranium:6"
+      ]
+    },
+    {
+      "display": "HEU-233 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_uranium:3",
+      "legacy": [
+        "HEU-233 Oxide",
+        "nuclearcraft:fuel_uranium:3",
+        "HEU-233 Oxide"
+      ]
+    },
+    {
+      "display": "HEU-233-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotHEU233ZA",
+      "legacy": [
+        "HEU-233-Zirconium Alloy",
+        "ingotHEU233ZA",
+        "HEU-233-Zirconium Alloy",
+        "nuclearcraft:fuel_uranium:7"
+      ]
+    },
+    {
+      "display": "HEU-235 Nitride",
+      "type": "oredict",
+      "def": "ingotHEU235Nitride",
+      "legacy": [
+        "HEU-235 Nitride",
+        "ingotHEU235Nitride",
+        "HEU-235 Nitride",
+        "nuclearcraft:fuel_uranium:14"
+      ]
+    },
+    {
+      "display": "HEU-235 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_uranium:7",
+      "legacy": [
+        "HEU-235 Oxide",
+        "nuclearcraft:fuel_uranium:7",
+        "HEU-235 Oxide"
+      ]
+    },
+    {
+      "display": "HEU-235-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotHEU235ZA",
+      "legacy": [
+        "HEU-235-Zirconium Alloy",
+        "ingotHEU235ZA",
+        "HEU-235-Zirconium Alloy",
+        "nuclearcraft:fuel_uranium:15"
+      ]
+    },
+    {
+      "display": "High Pressure Steam",
+      "type": "legacy_recipe",
+      "def": "[high_pressure_steam*1]->[exhaust_steam*4]",
+      "legacy": [
+        "High Pressure Steam",
+        "[high_pressure_steam*1]->[exhaust_steam*4]",
+        "High Pressure Steam",
+        "high_pressure_steam"
+      ]
+    },
+    {
+      "display": "Iron Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink:1[type=iron]",
+      "legacy": [
+        "Iron Heat Sink",
+        "nuclearcraft:solid_fission_sink:1[type=iron]",
+        "nuclearcraft:solid_fission_sink:1",
+        "Iron Heat Sink"
+      ]
+    },
+    {
+      "display": "Lapis Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink:7[type=lapis]",
+      "legacy": [
+        "Lapis Heat Sink",
+        "nuclearcraft:solid_fission_sink:7[type=lapis]",
+        "nuclearcraft:solid_fission_sink:7",
+        "Lapis Heat Sink"
+      ]
+    },
+    {
+      "display": "LEA-242 Nitride",
+      "type": "oredict",
+      "def": "ingotLEA242Nitride",
+      "legacy": [
+        "LEA-242 Nitride",
+        "ingotLEA242Nitride",
+        "LEA-242 Nitride",
+        "nuclearcraft:fuel_americium:2"
+      ]
+    },
+    {
+      "display": "LEA-242 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_americium:1",
+      "legacy": [
+        "LEA-242 Oxide",
+        "nuclearcraft:fuel_americium:1",
+        "LEA-242 Oxide"
+      ]
+    },
+    {
+      "display": "LEA-242-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotLEA242ZA",
+      "legacy": [
+        "LEA-242-Zirconium Alloy",
+        "ingotLEA242ZA",
+        "LEA-242-Zirconium Alloy",
+        "nuclearcraft:fuel_americium:3"
+      ]
+    },
+    {
+      "display": "Lead Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink2:1[type=lead]",
+      "legacy": [
+        "Lead Heat Sink",
+        "nuclearcraft:solid_fission_sink2:1[type=lead]",
+        "nuclearcraft:solid_fission_sink2:1",
+        "Lead Heat Sink"
+      ]
+    },
+    {
+      "display": "Lead-Steel Reflector",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_reflector:1[type=lead_steel]",
+      "legacy": [
+        "Lead-Steel Reflector",
+        "nuclearcraft:fission_reflector:1[type=lead_steel]",
+        "nuclearcraft:fission_reflector:1",
+        "Lead-Steel Reflector"
+      ]
+    },
+    {
+      "display": "LEB-248 Nitride",
+      "type": "oredict",
+      "def": "ingotLEB248Nitride",
+      "legacy": [
+        "LEB-248 Nitride",
+        "ingotLEB248Nitride",
+        "LEB-248 Nitride",
+        "nuclearcraft:fuel_berkelium:2"
+      ]
+    },
+    {
+      "display": "LEB-248 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_berkelium:1",
+      "legacy": [
+        "LEB-248 Oxide",
+        "nuclearcraft:fuel_berkelium:1",
+        "LEB-248 Oxide"
+      ]
+    },
+    {
+      "display": "LEB-248-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotLEB248ZA",
+      "legacy": [
+        "LEB-248-Zirconium Alloy",
+        "ingotLEB248ZA",
+        "LEB-248-Zirconium Alloy",
+        "nuclearcraft:fuel_berkelium:3"
+      ]
+    },
+    {
+      "display": "LECf-249 Nitride",
+      "type": "oredict",
+      "def": "ingotLECf249Nitride",
+      "legacy": [
+        "LECf-249 Nitride",
+        "ingotLECf249Nitride",
+        "LECf-249 Nitride",
+        "nuclearcraft:fuel_californium:2"
+      ]
+    },
+    {
+      "display": "LECf-249 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_californium:1",
+      "legacy": [
+        "LECf-249 Oxide",
+        "nuclearcraft:fuel_californium:1",
+        "LECf-249 Oxide"
+      ]
+    },
+    {
+      "display": "LECf-249-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotLECf249ZA",
+      "legacy": [
+        "LECf-249-Zirconium Alloy",
+        "ingotLECf249ZA",
+        "LECf-249-Zirconium Alloy",
+        "nuclearcraft:fuel_californium:3"
+      ]
+    },
+    {
+      "display": "LECf-251 Nitride",
+      "type": "oredict",
+      "def": "ingotLECf251Nitride",
+      "legacy": [
+        "LECf-251 Nitride",
+        "ingotLECf251Nitride",
+        "LECf-251 Nitride",
+        "nuclearcraft:fuel_californium:10"
+      ]
+    },
+    {
+      "display": "LECf-251 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_californium:5",
+      "legacy": [
+        "LECf-251 Oxide",
+        "nuclearcraft:fuel_californium:5",
+        "LECf-251 Oxide"
+      ]
+    },
+    {
+      "display": "LECf-251-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotLECf251ZA",
+      "legacy": [
+        "LECf-251-Zirconium Alloy",
+        "ingotLECf251ZA",
+        "LECf-251-Zirconium Alloy",
+        "nuclearcraft:fuel_californium:11"
+      ]
+    },
+    {
+      "display": "LECm-243 Nitride",
+      "type": "oredict",
+      "def": "ingotLECm243Nitride",
+      "legacy": [
+        "LECm-243 Nitride",
+        "ingotLECm243Nitride",
+        "LECm-243 Nitride",
+        "nuclearcraft:fuel_curium:2"
+      ]
+    },
+    {
+      "display": "LECm-243 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_curium:1",
+      "legacy": [
+        "LECm-243 Oxide",
+        "nuclearcraft:fuel_curium:1",
+        "LECm-243 Oxide"
+      ]
+    },
+    {
+      "display": "LECm-243-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotLECm243ZA",
+      "legacy": [
+        "LECm-243-Zirconium Alloy",
+        "ingotLECm243ZA",
+        "LECm-243-Zirconium Alloy",
+        "nuclearcraft:fuel_curium:3"
+      ]
+    },
+    {
+      "display": "LECm-245 Nitride",
+      "type": "oredict",
+      "def": "ingotLECm245Nitride",
+      "legacy": [
+        "LECm-245 Nitride",
+        "ingotLECm245Nitride",
+        "LECm-245 Nitride",
+        "nuclearcraft:fuel_curium:10"
+      ]
+    },
+    {
+      "display": "LECm-245 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_curium:5",
+      "legacy": [
+        "LECm-245 Oxide",
+        "nuclearcraft:fuel_curium:5",
+        "LECm-245 Oxide"
+      ]
+    },
+    {
+      "display": "LECm-245-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotLECm245ZA",
+      "legacy": [
+        "LECm-245-Zirconium Alloy",
+        "ingotLECm245ZA",
+        "LECm-245-Zirconium Alloy",
+        "nuclearcraft:fuel_curium:11"
+      ]
+    },
+    {
+      "display": "LECm-247 Nitride",
+      "type": "oredict",
+      "def": "ingotLECm247Nitride",
+      "legacy": [
+        "LECm-247 Nitride",
+        "ingotLECm247Nitride",
+        "LECm-247 Nitride",
+        "nuclearcraft:fuel_curium:18"
+      ]
+    },
+    {
+      "display": "LECm-247 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_curium:9",
+      "legacy": [
+        "LECm-247 Oxide",
+        "nuclearcraft:fuel_curium:9",
+        "LECm-247 Oxide"
+      ]
+    },
+    {
+      "display": "LECm-247-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotLECm247ZA",
+      "legacy": [
+        "LECm-247-Zirconium Alloy",
+        "ingotLECm247ZA",
+        "LECm-247-Zirconium Alloy",
+        "nuclearcraft:fuel_curium:19"
+      ]
+    },
+    {
+      "display": "LEN-236 Nitride",
+      "type": "oredict",
+      "def": "ingotLEN236Nitride",
+      "legacy": [
+        "LEN-236 Nitride",
+        "ingotLEN236Nitride",
+        "LEN-236 Nitride",
+        "nuclearcraft:fuel_neptunium:2"
+      ]
+    },
+    {
+      "display": "LEN-236 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_neptunium:1",
+      "legacy": [
+        "LEN-236 Oxide",
+        "nuclearcraft:fuel_neptunium:1",
+        "LEN-236 Oxide"
+      ]
+    },
+    {
+      "display": "LEN-236-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotLEN236ZA",
+      "legacy": [
+        "LEN-236-Zirconium Alloy",
+        "ingotLEN236ZA",
+        "LEN-236-Zirconium Alloy",
+        "nuclearcraft:fuel_neptunium:3"
+      ]
+    },
+    {
+      "display": "LEP-239 Nitride",
+      "type": "oredict",
+      "def": "ingotLEP239Nitride",
+      "legacy": [
+        "LEP-239 Nitride",
+        "ingotLEP239Nitride",
+        "LEP-239 Nitride",
+        "nuclearcraft:fuel_plutonium:2"
+      ]
+    },
+    {
+      "display": "LEP-239 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_plutonium:1",
+      "legacy": [
+        "LEP-239 Oxide",
+        "nuclearcraft:fuel_plutonium:1",
+        "LEP-239 Oxide"
+      ]
+    },
+    {
+      "display": "LEP-239-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotLEP239ZA",
+      "legacy": [
+        "LEP-239-Zirconium Alloy",
+        "ingotLEP239ZA",
+        "LEP-239-Zirconium Alloy",
+        "nuclearcraft:fuel_plutonium:3"
+      ]
+    },
+    {
+      "display": "LEP-241 Nitride",
+      "type": "oredict",
+      "def": "ingotLEP241Nitride",
+      "legacy": [
+        "LEP-241 Nitride",
+        "ingotLEP241Nitride",
+        "LEP-241 Nitride",
+        "nuclearcraft:fuel_plutonium:10"
+      ]
+    },
+    {
+      "display": "LEP-241 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_plutonium:5",
+      "legacy": [
+        "LEP-241 Oxide",
+        "nuclearcraft:fuel_plutonium:5",
+        "LEP-241 Oxide"
+      ]
+    },
+    {
+      "display": "LEP-241-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotLEP241ZA",
+      "legacy": [
+        "LEP-241-Zirconium Alloy",
+        "ingotLEP241ZA",
+        "LEP-241-Zirconium Alloy",
+        "nuclearcraft:fuel_plutonium:11"
+      ]
+    },
+    {
+      "display": "LEU-233 Nitride",
+      "type": "oredict",
+      "def": "ingotLEU233Nitride",
+      "legacy": [
+        "LEU-233 Nitride",
+        "ingotLEU233Nitride",
+        "LEU-233 Nitride",
+        "nuclearcraft:fuel_uranium:2"
+      ]
+    },
+    {
+      "display": "LEU-233 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_uranium:1",
+      "legacy": [
+        "LEU-233 Oxide",
+        "nuclearcraft:fuel_uranium:1",
+        "LEU-233 Oxide"
+      ]
+    },
+    {
+      "display": "LEU-233-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotLEU233ZA",
+      "legacy": [
+        "LEU-233-Zirconium Alloy",
+        "ingotLEU233ZA",
+        "LEU-233-Zirconium Alloy",
+        "nuclearcraft:fuel_uranium:3"
+      ]
+    },
+    {
+      "display": "LEU-235 Nitride",
+      "type": "oredict",
+      "def": "ingotLEU235Nitride",
+      "legacy": [
+        "LEU-235 Nitride",
+        "ingotLEU235Nitride",
+        "LEU-235 Nitride",
+        "nuclearcraft:fuel_uranium:10"
+      ]
+    },
+    {
+      "display": "LEU-235 Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_uranium:5",
+      "legacy": [
+        "LEU-235 Oxide",
+        "nuclearcraft:fuel_uranium:5",
+        "LEU-235 Oxide"
+      ]
+    },
+    {
+      "display": "LEU-235-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotLEU235ZA",
+      "legacy": [
+        "LEU-235-Zirconium Alloy",
+        "ingotLEU235ZA",
+        "LEU-235-Zirconium Alloy",
+        "nuclearcraft:fuel_uranium:11"
+      ]
+    },
+    {
+      "display": "Liquid Helium Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink2:13[type=liquid_helium]",
+      "legacy": [
+        "Liquid Helium Heat Sink",
+        "nuclearcraft:solid_fission_sink2:13[type=liquid_helium]",
+        "nuclearcraft:solid_fission_sink2:13",
+        "Liquid Helium Heat Sink"
+      ]
+    },
+    {
+      "display": "Liquid Nitrogen Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink2:12[type=liquid_nitrogen]",
+      "legacy": [
+        "Liquid Nitrogen Heat Sink",
+        "nuclearcraft:solid_fission_sink2:12[type=liquid_nitrogen]",
+        "nuclearcraft:solid_fission_sink2:12",
+        "Liquid Nitrogen Heat Sink"
+      ]
+    },
+    {
+      "display": "Lithium Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink2:3[type=lithium]",
+      "legacy": [
+        "Lithium Heat Sink",
+        "nuclearcraft:solid_fission_sink2:3[type=lithium]",
+        "nuclearcraft:solid_fission_sink2:3",
+        "Lithium Heat Sink"
+      ]
+    },
+    {
+      "display": "Magnesium Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink2:4[type=magnesium]",
+      "legacy": [
+        "Magnesium Heat Sink",
+        "nuclearcraft:solid_fission_sink2:4[type=magnesium]",
+        "nuclearcraft:solid_fission_sink2:4",
+        "Magnesium Heat Sink"
+      ]
+    },
+    {
+      "display": "Manganese Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink2:5[type=manganese]",
+      "legacy": [
+        "Manganese Heat Sink",
+        "nuclearcraft:solid_fission_sink2:5[type=manganese]",
+        "nuclearcraft:solid_fission_sink2:5",
+        "Manganese Heat Sink"
+      ]
+    },
+    {
+      "display": "MNI-239",
+      "type": "oredict",
+      "def": "ingotMIX239Nitride",
+      "legacy": [
+        "MNI-239",
+        "ingotMIX239Nitride",
+        "MNI-239",
+        "nuclearcraft:fuel_mixed:2"
+      ]
+    },
+    {
+      "display": "MNI-241",
+      "type": "oredict",
+      "def": "ingotMIX241Nitride",
+      "legacy": [
+        "MNI-241",
+        "ingotMIX241Nitride",
+        "MNI-241",
+        "nuclearcraft:fuel_mixed:6"
+      ]
+    },
+    {
+      "display": "MOX-239",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_mox:0",
+      "legacy": [
+        "MOX-239",
+        "nuclearcraft:fuel_mox:0",
+        "MOX-239"
+      ]
+    },
+    {
+      "display": "MOX-241",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_mox:1",
+      "legacy": [
+        "MOX-241",
+        "nuclearcraft:fuel_mox:1",
+        "MOX-241"
+      ]
+    },
+    {
+      "display": "MZA-239",
+      "type": "oredict",
+      "def": "ingotMIX239ZA",
+      "legacy": [
+        "MZA-239",
+        "ingotMIX239ZA",
+        "MZA-239",
+        "nuclearcraft:fuel_mixed:3"
+      ]
+    },
+    {
+      "display": "MZA-241",
+      "type": "oredict",
+      "def": "ingotMIX241ZA",
+      "legacy": [
+        "MZA-241",
+        "ingotMIX241ZA",
+        "MZA-241",
+        "nuclearcraft:fuel_mixed:7"
+      ]
+    },
+    {
+      "display": "Nether Brick Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink:5[type=nether_brick]",
+      "legacy": [
+        "Nether Brick Heat Sink",
+        "nuclearcraft:solid_fission_sink:5[type=nether_brick]",
+        "nuclearcraft:solid_fission_sink:5",
+        "Nether Brick Heat Sink"
+      ]
+    },
+    {
+      "display": "Neutron Irradiator",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_irradiator",
+      "legacy": [
+        "Neutron Irradiator",
+        "nuclearcraft:fission_irradiator",
+        "Neutron Irradiator"
+      ]
+    },
+    {
+      "display": "Neutron Irradiator Port (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_irradiator_port[active=false]",
+      "legacy": [
+        "Neutron Irradiator Port (Input)",
+        "nuclearcraft:fission_irradiator_port[active=false]",
+        "Neutron Irradiator Port (Input)"
+      ]
+    },
+    {
+      "display": "Neutron Irradiator Port (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_irradiator_port[active=true]",
+      "legacy": [
+        "Neutron Irradiator Port (Output)",
+        "nuclearcraft:fission_irradiator_port[active=true]",
+        "Neutron Irradiator Port (Output)"
+      ]
+    },
+    {
+      "display": "Obsidian Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink:4[type=obsidian]",
+      "legacy": [
+        "Obsidian Heat Sink",
+        "nuclearcraft:solid_fission_sink:4[type=obsidian]",
+        "nuclearcraft:solid_fission_sink:4",
+        "Obsidian Heat Sink"
+      ]
+    },
+    {
+      "display": "Po-Be Neutron Source",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_source:1[type=polonium_beryllium]",
+      "legacy": [
+        "Po-Be Neutron Source",
+        "nuclearcraft:fission_source:1[type=polonium_beryllium]",
+        "nuclearcraft:fission_source:1",
+        "Po-Be Neutron Source"
+      ]
+    },
+    {
+      "display": "Polonium Dust",
+      "type": "oredict",
+      "def": "dustPolonium",
+      "legacy": [
+        "Polonium Dust",
+        "dustPolonium"
+      ]
+    },
+    {
+      "display": "Preheated Water",
+      "type": "legacy_recipe",
+      "def": "[preheated_water*1]->[high_pressure_steam*1]",
+      "legacy": [
+        "Preheated Water",
+        "[preheated_water*1]->[high_pressure_steam*1]",
+        "Preheated Water",
+        "Preheated Water to High Pressure Steam",
+        "preheated_water"
+      ]
+    },
+    {
+      "display": "Prismarine Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink:9[type=prismarine]",
+      "legacy": [
+        "Prismarine Heat Sink",
+        "nuclearcraft:solid_fission_sink:9[type=prismarine]",
+        "nuclearcraft:solid_fission_sink:9",
+        "Prismarine Heat Sink"
+      ]
+    },
+    {
+      "display": "Protactinium-233 Dust",
+      "type": "oredict",
+      "def": "dustProtactinium233",
+      "legacy": [
+        "Protactinium-233 Dust",
+        "dustProtactinium233"
+      ]
+    },
+    {
+      "display": "Protactinium-Enriched Thorium Dust",
+      "type": "oredict",
+      "def": "dustTBP",
+      "legacy": [
+        "Protactinium-Enriched Thorium Dust",
+        "dustTBP"
+      ]
+    },
+    {
+      "display": "Purpur Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink:12[type=purpur]",
+      "legacy": [
+        "Purpur Heat Sink",
+        "nuclearcraft:solid_fission_sink:12[type=purpur]",
+        "nuclearcraft:solid_fission_sink:12",
+        "Purpur Heat Sink"
+      ]
+    },
+    {
+      "display": "Quartz Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink:3[type=quartz]",
+      "legacy": [
+        "Quartz Heat Sink",
+        "nuclearcraft:solid_fission_sink:3[type=quartz]",
+        "nuclearcraft:solid_fission_sink:3",
+        "Quartz Heat Sink"
+      ]
+    },
+    {
+      "display": "Ra-Be Neutron Source",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_source:0[type=radium_beryllium]",
+      "legacy": [
+        "Ra-Be Neutron Source",
+        "nuclearcraft:fission_source:0[type=radium_beryllium]",
+        "nuclearcraft:fission_source:0",
+        "Ra-Be Neutron Source"
+      ]
+    },
+    {
+      "display": "Reactor Casing",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_casing",
+      "legacy": [
+        "Reactor Casing",
+        "nuclearcraft:fission_casing",
+        "Reactor Casing"
+      ]
+    },
+    {
+      "display": "Reactor Glass",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_glass",
+      "legacy": [
+        "Reactor Glass",
+        "nuclearcraft:fission_glass",
+        "Reactor Glass"
+      ]
+    },
+    {
+      "display": "Redstone Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink:2[type=redstone]",
+      "legacy": [
+        "Redstone Heat Sink",
+        "nuclearcraft:solid_fission_sink:2[type=redstone]",
+        "nuclearcraft:solid_fission_sink:2",
+        "Redstone Heat Sink"
+      ]
+    },
+    {
+      "display": "Silver Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink2:7[type=silver]",
+      "legacy": [
+        "Silver Heat Sink",
+        "nuclearcraft:solid_fission_sink2:7[type=silver]",
+        "nuclearcraft:solid_fission_sink2:7",
+        "Silver Heat Sink"
+      ]
+    },
+    {
+      "display": "Slime Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink:10[type=slime]",
+      "legacy": [
+        "Slime Heat Sink",
+        "nuclearcraft:solid_fission_sink:10[type=slime]",
+        "nuclearcraft:solid_fission_sink:10",
+        "Slime Heat Sink"
+      ]
+    },
+    {
+      "display": "Solid Fission Controller",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_controller",
+      "legacy": [
+        "Solid Fission Controller",
+        "nuclearcraft:solid_fission_controller",
+        "Solid Fission Controller"
+      ]
+    },
+    {
+      "display": "TBU Nitride",
+      "type": "oredict",
+      "def": "ingotTBUNitride",
+      "legacy": [
+        "TBU Nitride",
+        "ingotTBUNitride",
+        "TBU Nitride",
+        "nuclearcraft:fuel_thorium:2"
+      ]
+    },
+    {
+      "display": "TBU Oxide",
+      "type": "legacy_item",
+      "def": "nuclearcraft:fuel_thorium:1",
+      "legacy": [
+        "TBU Oxide",
+        "nuclearcraft:fuel_thorium:1",
+        "TBU Oxide"
+      ]
+    },
+    {
+      "display": "TBU-Zirconium Alloy",
+      "type": "oredict",
+      "def": "ingotTBUZA",
+      "legacy": [
+        "TBU-Zirconium Alloy",
+        "ingotTBUZA",
+        "TBU-Zirconium Alloy",
+        "nuclearcraft:fuel_thorium:3"
+      ]
+    },
+    {
+      "display": "Thorium Dust",
+      "type": "legacy_item",
+      "def": "nuclearcraft:dust:3",
+      "legacy": [
+        "Thorium Dust",
+        "nuclearcraft:dust:3"
+      ]
+    },
+    {
+      "display": "Thorium Ingot",
+      "type": "legacy_item",
+      "def": "nuclearcraft:ingot:3",
+      "legacy": [
+        "Thorium Ingot",
+        "nuclearcraft:ingot:3"
+      ]
+    },
+    {
+      "display": "Tin Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink2:0[type=tin]",
+      "legacy": [
+        "Tin Heat Sink",
+        "nuclearcraft:solid_fission_sink2:0[type=tin]",
+        "nuclearcraft:solid_fission_sink2:0",
+        "Tin Heat Sink"
+      ]
+    },
+    {
+      "display": "Uranium-235",
+      "type": "oredict",
+      "def": "ingotUranium235",
+      "legacy": [
+        "Uranium-235",
+        "ingotUranium235"
+      ]
+    },
+    {
+      "display": "Vent (Input)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_vent[active=false]",
+      "legacy": [
+        "Vent (Input)",
+        "nuclearcraft:fission_vent[active=false]",
+        "Vent (Input)"
+      ]
+    },
+    {
+      "display": "Vent (Output)",
+      "type": "legacy_block",
+      "def": "nuclearcraft:fission_vent[active=true]",
+      "legacy": [
+        "Vent (Output)",
+        "nuclearcraft:fission_vent[active=true]",
+        "Vent (Output)"
+      ]
+    },
+    {
+      "display": "Villiaumite Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink2:9[type=villiaumite]",
+      "legacy": [
+        "Villiaumite Heat Sink",
+        "nuclearcraft:solid_fission_sink2:9[type=villiaumite]",
+        "nuclearcraft:solid_fission_sink2:9",
+        "Villiaumite Heat Sink"
+      ]
+    },
+    {
+      "display": "Water",
+      "type": "legacy_fluid",
+      "def": "water",
+      "legacy": [
+        "Water",
+        "water",
+        "Water",
+        "Active Water"
+      ]
+    },
+    {
+      "display": "Water Heat Sink",
+      "type": "legacy_block",
+      "def": "nuclearcraft:solid_fission_sink:0[type=water]",
+      "legacy": [
+        "Water Heat Sink",
+        "nuclearcraft:solid_fission_sink:0[type=water]",
+        "nuclearcraft:solid_fission_sink:0",
+        "Water Heat Sink"
+      ]
+    }
+  ]
+}
