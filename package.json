@@ -1,0 +1,42 @@
+{
+  "name": "nc-plannerator-ts",
+  "private": true,
+  "version": "0.0.0-r1",
+  "description": "NC Plannerator rewrite (R1: skeleton + single physics kernel). See docs/rewrite-plan-r1-r5.md",
+  "type": "module",
+  "packageManager": "pnpm@11.5.1",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:golden": "cross-env NCPL_GOLDEN=full vitest run packages/kernel",
+    "test:sample": "cross-env NCPL_GOLDEN=sample vitest run packages/kernel",
+    "lint": "node tools/ts/lint.mjs",
+    "verify": "pnpm typecheck && pnpm lint && cross-env NCPL_GOLDEN=full vitest run",
+    "all": "pnpm typecheck && pnpm lint && pnpm test",
+    "build:app": "vite build --config packages/app/vite.config.ts --base=./",
+    "icons": "node tools/ts/make-icons.mjs",
+    "size": "node tools/ts/size-check.mjs",
+    "pwa:check": "node tools/ts/pwa-build-check.mjs",
+    "i18n:audit": "node tools/ts/i18n-audit-app.mjs",
+    "i18n:elements": "node tools/ts/elements-pack.mjs",
+    "i18n:elements:check": "node tools/ts/elements-pack.mjs --check",
+    "r2:coverage": "node --experimental-transform-types tools/ts/r2-coverage.mjs",
+    "verify:full": "pnpm verify && pnpm i18n:audit && pnpm i18n:elements:check && pnpm i18n:locale:check && pnpm build:app && pnpm size && pnpm pwa:check",
+    "i18n:locale": "node tools/ts/make-locale.mjs",
+    "i18n:locale:check": "node tools/ts/make-locale.mjs --check"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

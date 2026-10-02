@@ -23,4 +23,36 @@
 
 /dist/
 /build/
+/.gradle/
 /*.cfg
+
+# --- local build / release artifacts -----------------------------------------
+# `release/` holds jpackage output (~560 MB locally) and is NOT a source artifact
+/release/
+
+# --- R0/R2/R3 tooling --------------------------------------------------------
+# javac output for tools/golden (regenerate with tools/golden/golden.ps1)
+/tools/golden/build/
+# golden datasets are committed gzipped; the expanded form is 43 MB
+/datasets/golden/*.jsonl
+# per-run smoke output
+/tools/**/out/
+# R3: the Vite build is a generated artifact (regenerate with `pnpm build:app`)
+/packages/*/dist/
+# scratch space for verification probes (blob extractions, Java `-Probe` inputs)
+/.tmp-r2/
+
+# --- R1+ TypeScript toolchain -------------------------------------------------
+# pnpm store; `pnpm install` recreates it from the committed pnpm-lock.yaml.
+# No leading slash: pnpm also creates per-package links (packages/*/node_modules).
+node_modules/
+# probe scratch under the R0 fixture conversions (never referenced by tests)
+/datasets/converted/tmp/
+
+# The bare `/*.json` rule above was written for the Java app's loose root-level
+# output. It also swallows the TypeScript project's own config, so re-include
+# exactly those three files. `settings.json` (the default output of
+# tools/ts/migrate-settings.mjs) stays ignored on purpose.
+!/package.json
+!/tsconfig.json
+!/tsconfig.base.json

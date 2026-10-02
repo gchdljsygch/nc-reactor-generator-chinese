@@ -1,0 +1,68 @@
+name: CI
+
+# R1 iron law: the golden datasets are the acceptance test, and they must run on
+# every change. They need no Java and no GL — the datasets and the shipped
+# configuration are both in the repository.
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Lint (dependency direction + bare strings)
+        run: pnpm lint
+
+      - name: Unit tests + golden datasets (full)
+        run: pnpm test
+        env:
+          NCPL_GOLDEN: full
+
+      # R1.0d: the port audit must stay reproducible (deterministic hash), so a
+      # silent change in the Java tree shows up as a diff instead of a surprise.
+      - name: Port audit (deterministic)
+        run: node tools/ts/port-audit.mjs --summary
+
+      # R2: docs/r2/fixture-coverage.md is a checked-in report. Regenerating it
+      # from the manifest and the TS reader chain must be a no-op, otherwise the
+      # table has drifted from the code it claims to describe. (Compared against a
+      # copy rather than `git diff`, so the check works regardless of index state.)
+      - name: R2 fixture coverage table is up to date
+        run: |
+          cp docs/r2/fixture-coverage.md "$RUNNER_TEMP/coverage.md"
+          pnpm r2:coverage
+          diff -u "$RUNNER_TEMP/coverage.md" docs/r2/fixture-coverage.md
+
+      # R3.8 + §11.3: no key the UI asks for may be missing from a shipped pack
+      # (a key that resolves through the fallback chain is a missing translation).
+      - name: App i18n coverage (§11.3)
+        run: pnpm i18n:audit
+
+      # R3.1 + plan §11.3: the app must build, and its static assets (minus the
+      # inlined configuration datasets) must stay under 15 MB.
+      - name: Build the web app
+        run: pnpm build:app
+
+      - name: Build size budget (§11.3)
+        run: pnpm size

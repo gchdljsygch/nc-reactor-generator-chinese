@@ -1,0 +1,7 @@
+packages:
+  - 'packages/*'
+
+# esbuild (vitest's bundler) ships a platform binary through an install script;
+# pnpm 11 requires an explicit allow/deny entry for such dependencies.
+allowBuilds:
+  esbuild: true
