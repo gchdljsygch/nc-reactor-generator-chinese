@@ -163,6 +163,10 @@ migrated settings.dat -> out.json (language zh_CN, 3 notes)
 `settings.dat`（547 B，随仓库）是真实文件；迁移逻辑在 `legacy/settings.ts`，CLI 只做 I/O，
 两条路径共用同一份实现（"不静默丢字段"由 `test/r2.11-settings.test.ts` 断言）。
 
+> 这份文件**必须是真的入库文件**，不能只是「开发机上还在」：`.gitignore` 曾以 `/settings.dat`
+> 忽略它，于是 r2.11 的 9 个用例在本地绿、在任何 CI 检出上 `ENOENT`（`docs/java-exit-plan.md`
+> §9.2）。`1f0656fa` 把它恢复入库并删掉了那条规则。
+
 ### 3.5 fixture 的来源与可再生产
 
 `tools/golden/historical-fixtures.ps1` 从**本仓库自己的 git 历史**里抽取真实历史文件

@@ -186,6 +186,7 @@ git rm gradlew gradlew.bat gradle.properties settings.gradle build.gradle build.
 ```
 
 `.gitignore` 清理（Java 专条）：`/out`、`/build/`、`/.gradle/`、`/tools/golden/build/`、`/dssl.jar`、`/dssl`、`/configurations`、`/version.version`、`/benchmark.ncpf`、`/benchmark.json`、`/errors`、`/crash-reports`、`/*.config2`、`/*.dssl`、`settings.dat`、`smorebank.dat`、`special.dat`。
+（`settings.dat` 这条后来被撤销：R2.11 的解码测试要读冻结版随附的那份，见 §9.2 与 `docs/r2/README.md` §3.4。）
 **保留**：`/release/`、`node_modules/`、`/datasets/golden/*.jsonl`、`!/package.json` 等 TS 例外、`/*.ncpf`（Web 版仍会导入用户 `.ncpf`？——若确认不需要则一并删）。
 
 **验收**：`git ls-files '*.jar'` = 0；`pnpm verify:full` 绿；tracked 体积 −104.4 MB。
@@ -412,3 +413,87 @@ port audit / r2:coverage / i18n / build / size）在此之前都是空转，
 > 门禁与 P5 加的两道门禁，只有在这次修复之后才第一次真正生效。推送 `e4554022` 后
 > 必须在 Actions 页确认 `verify` 与 `Verify and build the static site` 两个 job 全绿，
 > 才能说本计划的 CI 验收完成。
+
+### 9.2 CI 第二次真实运行（`5b3a7263`）：78 个失败全是 ENOENT
+
+`e4554022` 之后两个 workflow 都推进到了**第 8 步 `pnpm test`** 并再次失败，
+日志（`logs_100182036366.zip` / `logs_100182036433.zip`，与上一轮同样放在 `docs/`）：
+
+```
+Test Files  4 failed | 30 passed | 2 skipped (36)
+     Tests  78 failed | 412 passed | 2 skipped (492)
+```
+
+**78 个失败里没有一个是断言失败**，全部是 `Error: ENOENT`（另有 2 个文件在收集阶段就抛错、
+0 test，所以日志里共 80 条 `FAIL`）。两类「只在开发机上成立」的隐藏依赖——只有 CI
+第一次真正执行测试套件才会暴露：
+
+| # | 日志表现 | 根因 | 影响面 |
+|---|---|---|---|
+| 1 | `ENOENT: … open 'E:/build/nc-reactor-generator-chinese/datasets/fixtures/…'` | `datasets/converted/MANIFEST.json` 的 `root` 是生成器（`format-golden.ps1`，已随 Java 树归档）写下的**开发机绝对路径**。fixtures 本身入库在 `datasets/fixtures/`，但测试按 manifest 的 `root` 去读，等于要求 `E:\build\…` 存在 | r2.2 的 69 项（19 个 fixture 的 golden 三连 + 6 个「Java 也读不了」文件的 `reads`/`picks` 各一）+ r2.3 / r2.5 两个文件的收集阶段 |
+| 2 | `ENOENT: … open 'settings.dat'` | r2.11 的 9 个用例要读仓库根的 `settings.dat`，而 `.gitignore` 的 `/settings.dat` 使它从未入库——`docs/r2/README.md` §3.4 却写着「547 B，随仓库」 | r2.11 全部 9 项 |
+
+两者在开发机上都「绿」：`E:\build\nc-reactor-generator-chinese` 恰好就是写进 manifest 的
+那个路径，`settings.dat` 恰好还躺在工作区里。于是 `pnpm verify:full`（554 passed）与 CI
+的结论可以完全相反——**本地绿不能作为 CI 绿的证据**。
+
+修复 `1f0656fa`：
+
+- `MANIFEST.json` 的 `root` 改为仓库相对路径 `datasets/fixtures`；
+- `packages/formats/test/legacyGoldens.ts` 把 manifest 与转换产物的读取改为以**仓库根**
+  （由该文件自身位置推出）解析，不再依赖 `process.cwd()`；对仍是机器绝对路径的 `root`
+  直接抛出 `… has a machine-local "root" …`，让同类问题下次以一行可读错误而不是 70 行
+  ENOENT 出现（已实测：把 `root` 改回绝对路径，报错即为该提示）；
+- `settings.dat` 恢复入库，并删掉 `.gitignore` 里那一条（`smorebank.dat` / `special.dat`
+  等其它 Java 时代的本地文件规则保留）；
+- 顺带删掉 `package.json` 里 pnpm 11 已不再读取的 `pnpm.onlyBuiltDependencies`
+  （`allowBuilds` 已在 `pnpm-workspace.yaml`），它让每次运行多打 8 行 `[WARN]`。
+
+### 9.3 顺着 CI 往下走暴露的第三个失败点：`pnpm build:app` 找不到 `vite`
+
+修完测试后按 `ci.yml` / `release.yml` 的顺序继续往下跑，`Build the web app` 必然失败。
+`build:app` 是 `vite build --config packages/app/vite.config.ts --base=./`，而 vite
+**从来不是声明的依赖**，只由 `vitest` 传递带入：开发机的 `node_modules/.bin/vite` 是更早
+一次安装留下的，而 pnpm 11.5.1（CI 里 pin 的版本）的全新 `pnpm install --frozen-lockfile`
+只给**直接依赖**建 bin，于是在干净检出上直接 `'vite' is not recognized`，`size` 与
+`pwa:check` 也因为没有 `packages/app/dist` 跟着失败。
+
+修复 `b7b3a2fc`：把 vite 声明为根 devDependency，取锁文件里已有的 `5.4.21`（与 vitest
+用的同一份，不引入新版本）；`packages/app/vite.config.ts` 顶部那段「vite 不是声明的依赖、
+只有 `.bin/vite` shim」的说明同步改写。**CI 前两次都在第 8 步就红了，这两个 workflow 的
+`Build the web app` 从未真正执行过**——所以它是「修完 fixture 路径之后」的下一个必然失败点，
+而不是新增的回归。
+
+### 9.4 这一轮的验证方式：干净 worktree 里把 CI 重放一遍
+
+§9.2 已经证明「开发机绿」不算数，所以这次用 `git worktree add --detach HEAD` 造一份
+**只含入库文件**的检出，在其中 `pnpm install --frozen-lockfile` 后按 `ci.yml` +
+`release.yml` + `verify:full` 的顺序逐条重放（HEAD = `b7b3a2fc`）：
+
+| 步骤 | 结果 |
+|---|---|
+| `pnpm install --frozen-lockfile` | exit 0（devDependencies 里多出显式 `vite 5.4.21`）|
+| `pnpm typecheck` / `pnpm lint` | exit 0 / `lint passed` |
+| `NCPL_GOLDEN=full vitest run` | **554 passed / 2 skipped**（与开发机一致）|
+| `port-audit --baseline` | exit 0，`contentSha256=7e36b9a5…beda6a4` 匹配 |
+| `pnpm r2:coverage` + `git diff` | exit 0，`fixture-coverage.md` 无漂移（36 fixtures / TS ok 36 / agree 21/21）|
+| `pnpm check:no-java` / `pnpm size:repo` | exit 0 / 360 文件 50.2 MB（< 60 MB）|
+| `pnpm i18n:audit` | exit 0 |
+| `pnpm build:app` | exit 0，`✓ built in 968ms` |
+| `pnpm size` | exit 0，assets 1.79 MB（< 15 MB）|
+| `pnpm pwa:check` | exit 0，18/18 checks passed |
+
+两个附带结论：
+
+- **cwd 无关性已建立**：从 `C:\` 运行 `tools/ts/r2-coverage.mjs`（绝对输出路径）产出的表与
+  仓库里那份**逐字节相同**，说明 fixture / manifest 的解析只依赖仓库根，与工作目录无关。
+- `pnpm i18n:elements:check` 与 `pnpm i18n:locale:check` 在 Windows 检出上会**假失败**：
+  两个工具把自己生成的文本与磁盘上的 `lang/*.json` 逐字节比较，而本仓库没有
+  `.gitattributes` 且 `core.autocrlf=true`，检出即 CRLF。把这 8 个文件改成 LF 后两个检查
+  立刻 OK（`732 条` / `148 keys`）。这两个检查不在 `ci.yml` / `release.yml` 里，Linux 检出
+  也是 LF，所以不影响 CI；要消掉这个坑，加一行 `.gitattributes`（`lang/*.json text eol=lf`）
+  即可，本轮未改。
+
+> **结论与后续**：`1f0656fa` + `b7b3a2fc` 之后，两个 workflow 的每一步在干净检出上都是
+> exit 0；仍须在 Actions 页确认 `verify` 与 `Verify and build the static site` 两个 job
+> 全绿，才能把 §9.1 末尾那条「CI 验收」真正划掉。
