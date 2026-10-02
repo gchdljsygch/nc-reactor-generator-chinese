@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "locale": "zh_CN",
+    "draft": true,
+    "note": "DRAFT. Keyed by <config>/<cfgType>/<type>|<definition.toString()> — language independent. Namespacing by config+cfgType is REQUIRED: a bare type|definition collides with conflicting display names (see docs/r0/translation-migration.md).",
+    "identityFormat": "<config>/<cfgType>/<definition.type>|<definition.toString()>",
+    "source": "datasets/ncpf-elements.jsonl + legacy-translations.json",
+    "count": 26
+  },
+  "elements": {
+    "NuclearCraft/Underhaul SFR Configuration/legacy_fluid|water": "水",
+    "NuclearCraft/Overhaul SFR Configuration/legacy_recipe|[water*1]->[high_pressure_steam*4]": "水",
+    "NuclearCraft/Underhaul SFR Configuration/legacy_fluid|iron": "铁",
+    "NuclearCraft/Underhaul SFR Configuration/legacy_fluid|redstone": "红石",
+    "NuclearCraft/Underhaul SFR Configuration/legacy_fluid|quartz": "石英",
+    "NuclearCraft/Underhaul SFR Configuration/legacy_fluid|gold": "金",
+    "NuclearCraft/Underhaul SFR Configuration/legacy_fluid|diamond": "钻石",
+    "NuclearCraft/Underhaul SFR Configuration/legacy_fluid|emerald": "绿宝石",
+    "NuclearCraft/Underhaul SFR Configuration/legacy_fluid|copper": "铜",
+    "NuclearCraft/Underhaul SFR Configuration/legacy_fluid|tin": "锡",
+    "NuclearCraft/Underhaul SFR Configuration/legacy_fluid|magnesium": "镁",
+    "NuclearCraft/Underhaul SFR Configuration/oredict|blockFissionModerator": "石墨",
+    "NuclearCraft/Underhaul SFR Configuration/legacy_fluid|cryotheum": "极寒之凛冰",
+    "NuclearCraft/Underhaul SFR Configuration/legacy_block|nuclearcraft:cell_block": "燃料单元 ",
+    "NuclearCraft/Overhaul SFR Configuration/legacy_block|nuclearcraft:solid_fission_cell": "燃料单元 ",
+    "NuclearCraft/Overhaul MSR Configuration/legacy_block|nuclearcraft:salt_fission_vessel": "燃料容器 ",
+    "NuclearCraft/Underhaul SFR Configuration/legacy_block|nuclearcraft:active_cooler": "主动冷却器",
+    "NuclearCraft/Underhaul SFR Configuration/legacy_block|nuclearcraft:fission_block:0[type=casing]": "外壳",
+    "NuclearCraft/Overhaul MSR Configuration/legacy_block|nuclearcraft:fission_conductor": "导体",
+    "NuclearCraft/Overhaul SFR Configuration/legacy_block|nuclearcraft:fission_conductor": "导体",
+    "NuclearCraft/Overhaul Turbine Configuration/legacy_recipe|[high_pressure_steam*1]->[exhaust_steam*4]": "高压蒸汽",
+    "NuclearCraft/Overhaul SFR Configuration/legacy_fluid|high_pressure_steam": "高压蒸汽",
+    "NuclearCraft/Overhaul Turbine Configuration/legacy_recipe|[steam*1]->[low_quality_steam*2]": "蒸汽",
+    "NuclearCraft/Underhaul SFR Configuration/legacy_fluid|lapis": "青金石",
+    "NuclearCraft/Underhaul SFR Configuration/legacy_fluid|glowstone": "萤石",
+    "NuclearCraft/Underhaul SFR Configuration/legacy_fluid|ender": "末影"
+  }
+}

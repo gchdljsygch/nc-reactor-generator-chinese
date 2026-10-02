@@ -1,0 +1,4684 @@
+{
+  "meta": {
+    "locale": "zh_CN",
+    "name": "简体中文",
+    "version": "0.2.0-r1.2f",
+    "base": "en_US",
+    "status": "migrated-draft",
+    "generatedBy": "tools/ts/migrate-legacy-translations.mjs",
+    "source": "datasets/translations/legacy-translations.json + lang/zh_CN.messages.draft.json",
+    "counts": {
+      "legacyPairs": 1185,
+      "draftMessageEntries": 1101,
+      "autoClassified": 283,
+      "needsReview": 818,
+      "total": 1101,
+      "elementEntries": 26,
+      "duplicateLegacyKeys": 53,
+      "whitespaceNormalized": 3
+    },
+    "note": "DRAFT. Keys are provisional: the prefix comes from a heuristic and the slug from the legacy English sentence. Confirm both during the R3.8 key extraction. Entries that could not be re-keyed are kept in \"needsReview\" so that nothing is silently dropped; \"sources\" maps every key back to its legacy English string for review and diffing."
+  },
+  "messages": {
+    "config.addons.mods.modpacks": "附加组件、模组和整合包",
+    "config.click.on.any.addon.to.navigate.to.its.curseforge.page": "单击任意附加组件可前往其 CurseForge 页面",
+    "config.click.on.any.configuration.to.navigate.to.its.curseforge.page": "单击任意配置可前往其 CurseForge 页面",
+    "config.fusion.test.configuration": "聚变测试配置",
+    "config.internal.module.for.setup.testing.purposes.do.not.use": "用于设置和测试的内部模块，请勿使用。",
+    "config.load.configuration.from.a.file.replacing.the.current.configuration.any": "从文件加载配置并替换当前配置\n已有的多方块结构将转换为新配置\n可加载以下文件：\n游戏文件中的 nuclearcraft.cfg\n任意 .ncpf 配置文件",
+    "config.modify.the.current.configuration": "修改当前配置",
+    "config.overhaul.distiller.configuration": "改版蒸馏器配置",
+    "config.remember.the.selected.configuration.and.load.it.on.startup.this": "记住所选配置，并在启动时加载。\n不会记住配置改动，仍需手动保存！",
+    "config.save.the.configuration.to.a.ncpf.file": "将配置保存为 .ncpf 文件",
+    "config.subtract.configuration.convert.to.addon": "要相减配置吗？（转换为附加组件）",
+    "dialog.calibration.changed.would.you.like.to.adjust.gui.scale.to": "校准已更改。是否同步调整界面缩放？",
+    "dialog.contains.lots.of.flashing.colors.continue": "包含大量闪烁颜色\n是否继续？",
+    "dialog.import.instead": "改为导入？",
+    "dialog.unsaved.changes.detected.save.changes": "检测到未保存的更改！\n是否保存？",
+    "dialog.what.s.this.doing.here": "这是什么？",
+    "dialog.would.you.like.to.save": "是否保存？",
+    "error.benchmark.not.found": "未找到基准测试",
+    "error.block.is.invalid": "方块无效",
+    "error.clear.invalid.mutator": "清除无效变异器",
+    "error.cluster.is.heat.positive": "簇的净热量为正！",
+    "error.cluster.is.not.connected.to.a.connector": "簇未连接到连接器！",
+    "error.cluster.is.not.connected.to.the.casing": "簇未连接到外壳！",
+    "error.cluster.is.penalized.for.overcooling": "簇因过度冷却受到惩罚！",
+    "error.configuration.is.empty": "配置为空！",
+    "error.delete.the.currently.selected.multiblock.warning.this.cannot.be.undone": "删除当前选中的多方块结构\n警告：此操作无法撤销！",
+    "error.failed.to.export.multiblock": "导出多方块结构失败！",
+    "error.failed.to.import.addon": "导入附加组件失败！",
+    "error.failed.to.load.addon": "加载附加组件失败",
+    "error.failed.to.load.configuration": "加载配置失败！",
+    "error.failed.to.save.script": "保存脚本失败！",
+    "error.failed.to.update": "更新失败！",
+    "error.invalid.bearing": "轴承无效！",
+    "error.invalid.cluster": "无效簇！",
+    "error.missing.blade": "缺少叶片",
+    "error.missing.casing": "缺少外壳",
+    "error.missing.inlet": "缺少入口！",
+    "error.missing.input.vent": "缺少输入排气口！",
+    "error.missing.outlet": "缺少出口！",
+    "error.missing.output.vent": "缺少输出排气口！",
+    "error.multiblock.does.not.exist.multiblocks.may.still.be.loading": "多方块结构不存在！\n多方块结构可能仍在加载中",
+    "error.new.version.available": "有新版本可用！",
+    "error.no.controller": "缺少控制器！",
+    "error.overhaul.fusion.configuration.is.incomplete": "改版聚变配置不完整！",
+    "error.overhaul.msr.configuration.is.incomplete": "改版熔盐堆配置不完整！",
+    "error.overhaul.sfr.configuration.is.incomplete": "改版固体燃料堆配置不完整！",
+    "error.overhaul.turbine.configuration.is.incomplete": "改版涡轮机配置不完整！",
+    "error.replaces.all.invalid.blocks.in.the.reactor.with.air": "将反应堆中的所有无效方块替换为空气",
+    "error.rotor.invalid": "转子无效！",
+    "error.something.has.gone.horribly.wrong": "发生了严重错误！",
+    "error.too.many.controllers": "控制器数量过多！",
+    "error.unable.to.download.patrons.list.this.list.may.be.outdated": "无法下载赞助者名单！此名单可能不是最新版本。",
+    "error.underhaul.sfr.configuration.is.incomplete": "旧版固体燃料堆配置不完整！",
+    "error.unknown.rule": "未知规则",
+    "menu.add": "添加",
+    "menu.add.a.blank.column": "添加空白列",
+    "menu.add.a.blank.row": "添加空白行",
+    "menu.add.a.generation.stage": "添加生成阶段",
+    "menu.add.a.new.multiblock": "添加新的多方块结构",
+    "menu.add.condition": "添加条件",
+    "menu.add.element": "添加元素",
+    "menu.add.element.stack": "添加元素堆栈",
+    "menu.add.global.elements": "添加全局元素",
+    "menu.add.multiblock": "添加多方块结构",
+    "menu.add.mutator": "添加变异器",
+    "menu.add.parameter": "添加参数",
+    "menu.add.post.processing.mutator": "添加后处理变异器",
+    "menu.add.priority": "添加优先级",
+    "menu.add.rule": "添加规则",
+    "menu.add.state": "添加状态",
+    "menu.add.thread": "添加线程",
+    "menu.add.transition": "添加转换",
+    "menu.back": "返回",
+    "menu.cancel": "取消",
+    "menu.choose.a.mutator": "选择变异器",
+    "menu.choose.a.parameter": "选择参数",
+    "menu.choose.benchmark": "选择基准测试",
+    "menu.choose.element.definition": "选择元素定义",
+    "menu.choose.mutator.type": "选择变异器类型",
+    "menu.choose.one": "选择一项",
+    "menu.choose.parameter.name": "选择参数名称",
+    "menu.close": "关闭",
+    "menu.continue": "继续",
+    "menu.convert.sfr.msr": "固体燃料堆 ↔ 熔盐堆",
+    "menu.convert.to.msr.hold.control": "转换为熔盐堆（按住 Ctrl）",
+    "menu.convert.to.sfr.hold.control": "转换为固体燃料堆（按住 Ctrl）",
+    "menu.create": "创建",
+    "menu.create.addon": "创建附加组件",
+    "menu.create.shift": "创建（Shift）",
+    "menu.decrease.core.size": "减小核心尺寸",
+    "menu.decrease.inner.radius": "减小内半径",
+    "menu.decrease.lining.thickness": "减小内衬厚度",
+    "menu.decrease.the.reactor.s.core.size": "减小反应堆核心尺寸",
+    "menu.decrease.the.reactor.s.inner.radius": "减小反应堆内半径",
+    "menu.decrease.the.reactor.s.lining.thickness": "减小反应堆内衬厚度",
+    "menu.decrease.the.reactor.s.toroid.width": "减小反应堆环宽",
+    "menu.decrease.toroid.width": "减小环宽",
+    "menu.delete.hold.shift": "删除（按住 Shift）",
+    "menu.delete.multiblock.hold.shift": "删除多方块结构（按住 Shift）",
+    "menu.delete.rule": "删除规则",
+    "menu.delete.shift": "删除（Shift）",
+    "menu.delete.stage.hold.shift": "删除阶段（按住 Shift）",
+    "menu.delete.this.column": "删除此列",
+    "menu.delete.this.generation.stage": "删除此生成阶段",
+    "menu.delete.this.layer": "删除此层",
+    "menu.delete.this.row": "删除此行",
+    "menu.done": "完成",
+    "menu.edit": "编辑",
+    "menu.edit.metadata": "编辑元数据",
+    "menu.enter.vr": "进入 VR",
+    "menu.exit": "退出",
+    "menu.export": "导出",
+    "menu.finish.customizing": "完成自定义",
+    "menu.finish.editing.metadata": "完成编辑元数据",
+    "menu.generate.or.improve.this.multiblock": "生成或优化此多方块结构",
+    "menu.generate.texture": "生成纹理",
+    "menu.import": "导入",
+    "menu.import.addon": "导入附加组件",
+    "menu.include.3d.view": "包含 3D 视图",
+    "menu.include.casing": "包含外壳",
+    "menu.include.casing.in.3d.view": "在 3D 视图中包含外壳",
+    "menu.include.casing.in.parts.list": "在部件清单中包含外壳",
+    "menu.increase.core.size": "增加核心尺寸",
+    "menu.increase.inner.radius": "增加内半径",
+    "menu.increase.lining.thickness": "增加内衬厚度",
+    "menu.increase.the.reactor.s.core.size": "增加反应堆核心尺寸",
+    "menu.increase.the.reactor.s.inner.radius": "增加反应堆内半径",
+    "menu.increase.the.reactor.s.lining.thickness": "增加反应堆内衬厚度",
+    "menu.increase.the.reactor.s.toroid.width": "增加反应堆环宽",
+    "menu.increase.toroid.width": "增加环宽",
+    "menu.load": "加载",
+    "menu.load.anyway": "仍要加载",
+    "menu.load.generator.settings": "加载生成器设置",
+    "menu.load.this.addon": "加载此附加组件",
+    "menu.maximize.bow.range": "最大化弓射程",
+    "menu.maximize.damage": "最大化伤害",
+    "menu.maximize.defense.and.toughness": "最大化防御和韧性",
+    "menu.maximize.draw.speed": "最大化拉弓速度",
+    "menu.new": "新建",
+    "menu.new.preset": "新建预设",
+    "menu.next.stage": "下一阶段",
+    "menu.no": "否",
+    "menu.no.fuel": "没有燃料",
+    "menu.no.recipe": "没有配方",
+    "menu.no.target": "无目标",
+    "menu.ok": "确定",
+    "menu.open": "打开",
+    "menu.open.folder": "打开文件夹",
+    "menu.press.delete.to.reset.calibration": "按 Delete 重置校准",
+    "menu.press.escape.to.exit.credits": "按 Esc 退出致谢名单",
+    "menu.previous.stage": "上一阶段",
+    "menu.redo": "重做",
+    "menu.redo.ctrl": "重做（Ctrl+",
+    "menu.remove": "移除",
+    "menu.remove.or.delete.addon": "移除或删除附加组件",
+    "menu.remove.thread": "移除线程",
+    "menu.reset": "重置",
+    "menu.reset.to.stage.0": "重置到第 0 阶段",
+    "menu.run": "运行",
+    "menu.save": "保存",
+    "menu.save.dialog": "另存为对话框",
+    "menu.save.generator.settings": "保存生成器设置",
+    "menu.search": "搜索",
+    "menu.set.texture": "设置纹理",
+    "menu.settings": "设置",
+    "menu.show": "显示",
+    "menu.start.stop.generation": "开始/停止生成",
+    "menu.stop": "停止",
+    "menu.undo": "撤销",
+    "menu.undo.ctrl": "撤销（Ctrl+",
+    "menu.yes": "是",
+    "menu.zoom.in": "放大",
+    "menu.zoom.out": "缩小",
+    "overlay.if.you.have.any.idea.what.actually.causes.the.cursor": "如果你知道光标偏移的实际原因，请告诉作者。",
+    "overlay.this.is.for.correcting.a.cursor.offset.issue.on.macos": "此功能用于修正 macOS 上的光标偏移问题",
+    "overlay.use.arrow.keys.or.wasd.to.manually.adjust.calibration.press": "使用方向键或 WASD 手动调整校准（按住 Ctrl 可进行微调）",
+    "overlay.use.arrow.keys.to.rotate.preview": "使用方向键旋转预览",
+    "progress.adding.additional.modules": "正在添加附加模块",
+    "progress.adding.core.module": "正在添加核心模块",
+    "progress.adding.file.readers": "正在添加文件读取器…",
+    "progress.adding.fusion.test.module": "正在添加聚变测试模块",
+    "progress.adding.modules": "正在添加模块…",
+    "progress.adding.overhaul.module": "正在添加改版模块",
+    "progress.adding.prime.fuel.module": "正在添加高级燃料模块",
+    "progress.adding.quantum.traversed.efficiency.module": "正在添加量子传输效率模块",
+    "progress.adding.rainbow.factor.module": "正在添加彩虹因子模块",
+    "progress.adding.underhaul.module": "正在添加旧版模块",
+    "progress.building.clusters": "正在构建簇",
+    "progress.building.vessel.groups": "正在构建燃料容器组",
+    "progress.calculating.bearing": "正在计算轴承",
+    "progress.calculating.blades": "正在计算叶片",
+    "progress.calculating.breeding.blankets": "正在计算增殖包层",
+    "progress.calculating.casing": "正在计算外壳",
+    "progress.calculating.clusters": "正在计算簇",
+    "progress.calculating.coils": "正在计算线圈",
+    "progress.calculating.coolers": "正在计算冷却器",
+    "progress.calculating.core": "正在计算核心",
+    "progress.calculating.heaters": "正在计算加热器",
+    "progress.calculating.heatsinks": "正在计算散热器",
+    "progress.calculating.multiblock": "正在计算多方块结构",
+    "progress.calculating.partial.shutdown": "正在计算部分停堆",
+    "progress.calculating.rotor": "正在计算转子",
+    "progress.calculating.shutdown.factor": "正在计算停堆系数",
+    "progress.calculating.stats": "正在计算统计数据",
+    "progress.calculating.suggestions": "正在计算建议",
+    "progress.checking.casing": "正在检查外壳",
+    "progress.closing.neutron.shields": "正在关闭中子屏蔽器",
+    "progress.generating.suggestions": "正在生成建议",
+    "progress.importing.addons": "正在导入附加组件…",
+    "progress.importing.configuration": "正在导入配置",
+    "progress.imposing.configuration": "正在应用配置…",
+    "progress.initializing": "正在初始化…",
+    "progress.initializing.fuel.cells": "正在初始化燃料单元",
+    "progress.initializing.fuel.vessels": "正在初始化燃料容器",
+    "progress.initializing.nuclearcraft.configuration": "正在初始化核工艺配置",
+    "progress.loading.external.configurations": "正在加载外部配置…",
+    "progress.loading.files": "正在加载文件",
+    "progress.loading.settings": "正在加载设置…",
+    "progress.opening.neutron.shields": "正在开启中子屏蔽器",
+    "progress.refreshing.modules": "正在刷新模块…",
+    "progress.resetting.metadata": "正在重置元数据",
+    "progress.resetting.neutron.shields": "正在重置中子屏蔽器",
+    "progress.sorting.suggestions": "正在排序建议",
+    "theme.different.theme.font": "另类主题字体",
+    "tooltip.a.fusion.reactor.for.nuclearcraft.overhauled.these.do.not.exist": "核工艺：改版的聚变反应堆\n这些内容尚未在游戏内实装！\n这只是原型，与它们未来在游戏中的形态会有很大不同。",
+    "tooltip.a.testbed.for.future.overhaul.fusion.reactors": "未来改版聚变反应堆的测试平台。",
+    "tooltip.a.tool.from.tinker.s.construct.not.a.multiblock": "来自匠魂的工具（不是多方块结构）",
+    "tooltip.adds.a.fuel.cell.at.a.random.point.in.the": "在反应堆的随机位置添加燃料单元；可选地同时添加慢化剂线或其他单元以确保其有效",
+    "tooltip.box.tool.b.use.this.tool.to.draw.rectangles.or": "方框工具（B）\n使用此工具绘制由同一种方块组成的矩形或长方体\n按住 Ctrl 仅在有效位置放置方块",
+    "tooltip.changes.a.random.block.in.the.reactor.to.a.random": "将反应堆中的随机方块替换为允许方块列表中的随机一项",
+    "tooltip.changes.the.reactor.s.coolant.recipe.to.a.random.one": "将反应堆冷却剂配方更改为允许配方列表中的随机一项",
+    "tooltip.changes.the.reactor.s.fuel.to.a.random.fuel.from": "将反应堆燃料更改为允许燃料列表中的随机一项",
+    "tooltip.convert.the.currently.selected.multiblock.to.an.overhaul.msr.warning": "将当前选中的多方块结构转换为改版熔盐堆\n警告：所有燃料都会转换为对应的氟化物",
+    "tooltip.convert.the.currently.selected.multiblock.to.an.overhaul.sfr.warning": "将当前选中的多方块结构转换为改版固体燃料堆\n警告：所有燃料都会转换为对应的氧化物",
+    "tooltip.copy.tool.use.this.to.select.an.area.to.copy": "复制工具\n使用此工具选择要复制的区域\n选择区域后，单击即可粘贴所选内容",
+    "tooltip.cut.tool.use.this.to.select.an.area.to.cut": "剪切工具\n使用此工具选择要剪切的区域\n选择区域后，单击即可粘贴所选内容",
+    "tooltip.finish.resizing.and.return.to.the.editor.screen": "完成调整尺寸并返回编辑器",
+    "tooltip.for.axial.this.is.the.number.of.axial.pairs.not": "对于轴向规则，此数值为轴向配对数（而非单个方块数）",
+    "tooltip.gives.an.adjusted.efficiency.score.for.overhaul.sfrs.based.on": "根据中子屏蔽输出为改版固体燃料堆提供调整后的效率评分",
+    "tooltip.gives.multiblocks.a.rainbow.factor.based.on.how.many.different": "根据多方块结构拥有的冷却器、散热器、加热器等类型数量赋予其彩虹因子",
+    "tooltip.highlights.the.number.of.cells.vessels.in.a.multiblock.and": "突出显示多方块结构中的单元/燃料容器数量，并显示其是否为质数",
+    "tooltip.if.you.enjoy.this.plannerator.consider.supporting.me.on.patreon": "如果你喜欢这个规划器，可以在 Patreon 或 Ko-fi 上支持作者：",
+    "tooltip.if.you.have.blocks.called.cooler.instead.of.heat.sink": "如果你的方块名为“冷却器”而非“散热器”，说明你使用的是旧版。",
+    "tooltip.if.you.have.blocks.called.heat.sink.instead.of.cooler": "如果你的方块名为“散热器”而非“冷却器”，说明你使用的是改版。",
+    "tooltip.legacy.ncpf.config2.format.gui.and.some.more.internal.functionality": "旧版 NCPF（Config2）格式、界面及部分内部功能基于 SimpleLibraryPlus",
+    "tooltip.line.tool.l.use.this.tool.to.draw.blocks.in": "直线工具（L）\n使用此工具在多方块结构中沿直线绘制方块\n按住 Ctrl 仅在有效位置放置方块",
+    "tooltip.load.a.file.replacing.all.current.multiblocks": "加载文件并替换当前全部多方块结构",
+    "tooltip.make.sure.all.the.parts.are.actually.there": "确保所有部件确实存在",
+    "tooltip.maximize.mining.level.then.mining.speed": "优先最大化采矿等级，再最大化采矿速度",
+    "tooltip.move.tool.m.use.this.to.move.or.copy.selections": "移动工具（M）\n使用此工具移动或复制选区\n按住 Ctrl 复制选区\n按住 Ctrl+Shift 复制选区并保留原选区",
+    "tooltip.open.a.link.will.open.in.default.browser": "要打开链接吗？（将在默认浏览器中打开）",
+    "tooltip.overhaul.distillers.are.distillers.in.nuclearcraft.overhauled.wow.who.could": "改版蒸馏器是核工艺：改版中的蒸馏器\n确实令人意外。",
+    "tooltip.overhaul.msrs.are.molten.salt.fission.reactors.in.nuclearcraft.overhauled": "改版熔盐堆是核工艺：改版中的熔盐裂变反应堆",
+    "tooltip.overhaul.sfrs.are.solid.fueled.fission.reactors.in.nuclearcraft.overhauled": "改版固体燃料堆是核工艺：改版中的固体燃料裂变反应堆",
+    "tooltip.overhaul.sfrs.are.solid.fueled.fission.reactors.in.nuclearcraft.overhauled-2": "改版固体燃料堆是核工艺：改版中的固体燃料裂变反应堆\n如果你的方块名为“冷却器”而非“散热器”，说明你使用的是旧版。",
+    "tooltip.paste.tool.select.a.region.and.press.ctrl.x.or": "粘贴工具\n选择区域后，按 Ctrl+X 或 Ctrl+C 剪切或复制选区，并打开此工具。\n然后单击反应堆中的任意位置，将选区粘贴到多个位置。\n完成后按 Esc 或选择其他工具。\n按 Ctrl+V 准备最近复制的选区",
+    "tooltip.pencil.tool.p.use.this.tool.to.draw.blocks.one": "铅笔工具（P）\n使用此工具逐个绘制方块\n按住 Ctrl 仅在有效位置放置方块",
+    "tooltip.press.escape.or.right.click.to.exit": "按 Esc 或右键退出。",
+    "tooltip.recalculate.the.entire.multiblock.ctrl.click.to.queue.multiple.actions": "重新计算整个多方块结构\n按住 Ctrl 单击可将多个操作加入队列而不立即计算",
+    "tooltip.recovery.mode.enabled.press.ctrl.shift.r.to.disable": "恢复模式已启用。按 Ctrl+Shift+R 关闭",
+    "tooltip.resize.the.multiblock.warning.this.clears.the.edit.history.undo": "调整多方块结构尺寸\n警告：这会清除编辑历史记录（撤销/重做）！",
+    "tooltip.runs.a.random.number.of.times.per.iteration.evenly.distributed": "每次迭代随机运行若干次\n在最小值和最大值之间均匀分布",
+    "tooltip.select.tool.s.use.this.to.select.areas.of.the": "选择工具（S）\n使用此工具选择反应堆区域\n按住 Ctrl 单击可选择多个选区\n按住 Shift 单击可选择相互依赖的方块组\n按住 Alt 单击可选择簇\n只能在选区内编辑（没有选区时除外）\n按删除键删除所选区域\n按 Esc 清除选区",
+    "tooltip.stop.editing.this.multiblock.and.return.to.the.main.menu": "停止编辑此多方块结构并返回主菜单",
+    "tooltip.suggests.adding.fuel.cells.with.moderators.to.increase.efficiency.and": "建议添加带慢化剂的燃料单元以提高效率和产出",
+    "tooltip.suggests.adding.fuel.vessels.with.moderators.to.increase.efficiency.and": "建议添加带慢化剂的燃料容器以提高效率和产出",
+    "tooltip.suggests.adding.or.replacing.active.coolers.to.cool.the.reactor": "建议添加或替换主动冷却器以冷却反应堆",
+    "tooltip.suggests.adding.or.replacing.heat.sinks.to.cool.the.reactor": "建议添加或替换散热器以冷却反应堆",
+    "tooltip.suggests.adding.or.replacing.heat.sinks.to.increase.the.reactor": "建议添加或替换散热器以提高反应堆的彩虹因子",
+    "tooltip.suggests.adding.or.replacing.heaters.to.cool.the.reactor": "建议添加或替换加热器以冷却反应堆",
+    "tooltip.suggests.adding.or.replacing.passive.coolers.to.cool.the.reactor": "建议添加或替换被动冷却器以冷却反应堆",
+    "tooltip.suggests.adding.or.replacing.passive.coolers.to.increase.the.reactor": "建议添加或替换被动冷却器以提高反应堆的彩虹因子。",
+    "tooltip.suggests.adding.removing.or.replacing.coils.for.higher.coil.efficiency": "建议添加、移除或替换线圈以提高线圈效率",
+    "tooltip.suggests.blades.and.stators.for.higher.rotor.efficiency.and.ideality": "建议使用叶片和定子以提高转子效率与理想膨胀率",
+    "tooltip.suggests.changing.moderator.lines.to.increase.efficiency.or.irradiation": "建议调整慢化剂线以提高效率或辐照量",
+    "tooltip.suggests.changing.single.moderators.to.increase.efficiency.or.irradiation": "建议调整单个慢化剂以提高效率或辐照量",
+    "tooltip.texture.or.right.click.to.generate.a.texture": "纹理\n右键单击可生成纹理",
+    "tooltip.thank.you.to.everyone.in.the.evault.for.helping.make": "感谢 eVault 的每一位成员，帮助这个规划器成为今天的样子。",
+    "tooltip.thank.you.to.tomdodd4598.for.creating.such.an.amazing.mod": "感谢 tomdodd4598 创作了如此出色的模组。",
+    "tooltip.to.auto.calibrate.click.the.squares.that.appear.onscreen": "要自动校准，请单击屏幕上出现的方块。",
+    "tooltip.toggle.3d.multiblock.view.rotate.with.arrow.keys": "切换多方块结构的 3D 视图\n（使用方向键旋转）",
+    "tooltip.underhaul.sfrs.are.solid.fueled.fission.reactors.in.nuclearcraft": "旧版固体燃料堆是核工艺中的固体燃料裂变反应堆",
+    "tooltip.underhaul.sfrs.are.solid.fueled.fission.reactors.in.nuclearcraft.if": "旧版固体燃料堆是核工艺中的固体燃料裂变反应堆\n如果你的方块名为“散热器”而非“冷却器”，说明你使用的是改版。"
+  },
+  "sources": {
+    "config.addons.mods.modpacks": "Addons, Mods, & Modpacks",
+    "config.click.on.any.addon.to.navigate.to.its.curseforge.page": "Click on any addon to navigate to its CurseForge page",
+    "config.click.on.any.configuration.to.navigate.to.its.curseforge.page": "Click on any configuration to navigate to its CurseForge page",
+    "config.fusion.test.configuration": "Fusion Test Configuration",
+    "config.internal.module.for.setup.testing.purposes.do.not.use": "Internal module for setup/testing purposes. Do not use.",
+    "config.load.configuration.from.a.file.replacing.the.current.configuration.any": "Load configuration from a file, replacing the current configuration\nAny existing multiblocks will be converted to the new configuration\nYou can load the following files:\nnuclearcraft.cfg in the game files\nany .ncpf configuration file",
+    "config.modify.the.current.configuration": "Modify the current configuration",
+    "config.overhaul.distiller.configuration": "Overhaul Distiller Configuration",
+    "config.remember.the.selected.configuration.and.load.it.on.startup.this": "Remember the selected configuration, and load it on startup.\nThis will not remember changes to the configuration, you still have to save those!",
+    "config.save.the.configuration.to.a.ncpf.file": "Save the configuration to a .ncpf file",
+    "config.subtract.configuration.convert.to.addon": "Subtract configuration? (Convert to addon)",
+    "dialog.calibration.changed.would.you.like.to.adjust.gui.scale.to": "Calibration changed! Would you like to adjust GUI scale to match?",
+    "dialog.contains.lots.of.flashing.colors.continue": "CONTAINS LOTS OF FLASHING COLORS\nCONTINUE?",
+    "dialog.import.instead": "Import instead?",
+    "dialog.unsaved.changes.detected.save.changes": "Unsaved changes detected!\nSave changes?",
+    "dialog.what.s.this.doing.here": "What's this doing here?",
+    "dialog.would.you.like.to.save": "Would you like to save?",
+    "error.benchmark.not.found": "Benchmark not found",
+    "error.block.is.invalid": "Block is invalid",
+    "error.clear.invalid.mutator": "Clear Invalid Mutator",
+    "error.cluster.is.heat.positive": "Cluster is heat-positive!",
+    "error.cluster.is.not.connected.to.a.connector": "Cluster is not connected to a connector!",
+    "error.cluster.is.not.connected.to.the.casing": "Cluster is not connected to the casing!",
+    "error.cluster.is.penalized.for.overcooling": "Cluster is penalized for overcooling!",
+    "error.configuration.is.empty": "Configuration is Empty!",
+    "error.delete.the.currently.selected.multiblock.warning.this.cannot.be.undone": "Delete the currently selected multiblock\nWARNING: This cannot be undone!",
+    "error.failed.to.export.multiblock": "Failed to export multiblock!",
+    "error.failed.to.import.addon": "Failed to import addon!",
+    "error.failed.to.load.addon": "Failed to load addon",
+    "error.failed.to.load.configuration": "Failed to load configuration!",
+    "error.failed.to.save.script": "Failed to save script!",
+    "error.failed.to.update": "Failed to update!",
+    "error.invalid.bearing": "Invalid Bearing!",
+    "error.invalid.cluster": "Invalid cluster!",
+    "error.missing.blade": "Missing blade",
+    "error.missing.casing": "Missing casing",
+    "error.missing.inlet": "Missing inlet!",
+    "error.missing.input.vent": "Missing input vent!",
+    "error.missing.outlet": "Missing outlet!",
+    "error.missing.output.vent": "Missing output vent!",
+    "error.multiblock.does.not.exist.multiblocks.may.still.be.loading": "Multiblock does not exist!\nMultiblocks may still be loading",
+    "error.new.version.available": "New version available!",
+    "error.no.controller": "No controller!",
+    "error.overhaul.fusion.configuration.is.incomplete": "Overhaul Fusion Configuration is incomplete!",
+    "error.overhaul.msr.configuration.is.incomplete": "Overhaul MSR Configuration is incomplete!",
+    "error.overhaul.sfr.configuration.is.incomplete": "Overhaul SFR Configuration is incomplete!",
+    "error.overhaul.turbine.configuration.is.incomplete": "Overhaul Turbine Configuration is incomplete!",
+    "error.replaces.all.invalid.blocks.in.the.reactor.with.air": "Replaces all invalid blocks in the reactor with air",
+    "error.rotor.invalid": "Rotor Invalid!",
+    "error.something.has.gone.horribly.wrong": "Something has gone horribly wrong!",
+    "error.too.many.controllers": "Too many controllers!",
+    "error.unable.to.download.patrons.list.this.list.may.be.outdated": "Unable to download patrons list! This list may be outdated.",
+    "error.underhaul.sfr.configuration.is.incomplete": "Underhaul SFR Configuration is incomplete!",
+    "error.unknown.rule": "Unknown Rule",
+    "menu.add": "Add",
+    "menu.add.a.blank.column": "Add a blank column",
+    "menu.add.a.blank.row": "Add a blank row",
+    "menu.add.a.generation.stage": "Add a generation stage",
+    "menu.add.a.new.multiblock": "Add a new multiblock",
+    "menu.add.condition": "Add Condition",
+    "menu.add.element": "Add Element",
+    "menu.add.element.stack": "Add Element Stack",
+    "menu.add.global.elements": "Add Global Elements",
+    "menu.add.multiblock": "Add Multiblock",
+    "menu.add.mutator": "Add Mutator",
+    "menu.add.parameter": "Add Parameter",
+    "menu.add.post.processing.mutator": "Add Post-Processing Mutator",
+    "menu.add.priority": "Add Priority",
+    "menu.add.rule": "Add Rule",
+    "menu.add.state": "Add State",
+    "menu.add.thread": "Add Thread",
+    "menu.add.transition": "Add Transition",
+    "menu.back": "Back",
+    "menu.cancel": "Cancel",
+    "menu.choose.a.mutator": "Choose a mutator",
+    "menu.choose.a.parameter": "Choose a parameter",
+    "menu.choose.benchmark": "Choose Benchmark",
+    "menu.choose.element.definition": "Choose Element Definition",
+    "menu.choose.mutator.type": "Choose Mutator Type",
+    "menu.choose.one": "Choose one",
+    "menu.choose.parameter.name": "Choose Parameter Name",
+    "menu.close": "Close",
+    "menu.continue": "Continue",
+    "menu.convert.sfr.msr": "Convert SFR <> MSR",
+    "menu.convert.to.msr.hold.control": "Convert to MSR (Hold Control)",
+    "menu.convert.to.sfr.hold.control": "Convert to SFR (Hold Control)",
+    "menu.create": "Create",
+    "menu.create.addon": "Create Addon",
+    "menu.create.shift": "Create (Shift)",
+    "menu.decrease.core.size": "Decrease Core Size",
+    "menu.decrease.inner.radius": "Decrease Inner Radius",
+    "menu.decrease.lining.thickness": "Decrease Lining Thickness",
+    "menu.decrease.the.reactor.s.core.size": "decrease the reactor's Core Size",
+    "menu.decrease.the.reactor.s.inner.radius": "decrease the reactor's Inner Radius",
+    "menu.decrease.the.reactor.s.lining.thickness": "decrease the reactor's Lining Thickness",
+    "menu.decrease.the.reactor.s.toroid.width": "decrease the reactor's Toroid Width",
+    "menu.decrease.toroid.width": "Decrease Toroid Width",
+    "menu.delete.hold.shift": "Delete (Hold Shift)",
+    "menu.delete.multiblock.hold.shift": "Delete Multiblock (Hold Shift)",
+    "menu.delete.rule": "Delete Rule",
+    "menu.delete.shift": "Delete (Shift)",
+    "menu.delete.stage.hold.shift": "Delete Stage (Hold Shift)",
+    "menu.delete.this.column": "Delete this column",
+    "menu.delete.this.generation.stage": "Delete this generation stage",
+    "menu.delete.this.layer": "Delete this layer",
+    "menu.delete.this.row": "Delete this row",
+    "menu.done": "Done",
+    "menu.edit": "Edit",
+    "menu.edit.metadata": "Edit Metadata",
+    "menu.enter.vr": "Enter VR",
+    "menu.exit": "Exit",
+    "menu.export": "Export",
+    "menu.finish.customizing": "Finish Customizing",
+    "menu.finish.editing.metadata": "Finish editing metadata",
+    "menu.generate.or.improve.this.multiblock": "Generate or improve this multiblock",
+    "menu.generate.texture": "Generate Texture",
+    "menu.import": "Import",
+    "menu.import.addon": "Import Addon",
+    "menu.include.3d.view": "Include 3D View",
+    "menu.include.casing": "Include Casing",
+    "menu.include.casing.in.3d.view": "Include Casing in 3D View",
+    "menu.include.casing.in.parts.list": "Include Casing in Parts List",
+    "menu.increase.core.size": "Increase Core Size",
+    "menu.increase.inner.radius": "Increase Inner Radius",
+    "menu.increase.lining.thickness": "Increase Lining Thickness",
+    "menu.increase.the.reactor.s.core.size": "increase the reactor's Core Size",
+    "menu.increase.the.reactor.s.inner.radius": "increase the reactor's Inner Radius",
+    "menu.increase.the.reactor.s.lining.thickness": "increase the reactor's Lining Thickness",
+    "menu.increase.the.reactor.s.toroid.width": "increase the reactor's Toroid Width",
+    "menu.increase.toroid.width": "Increase Toroid Width",
+    "menu.load": "Load",
+    "menu.load.anyway": "Load Anyway",
+    "menu.load.generator.settings": "Load Generator Settings",
+    "menu.load.this.addon": "Load this addon",
+    "menu.maximize.bow.range": "Maximize bow range",
+    "menu.maximize.damage": "Maximize damage",
+    "menu.maximize.defense.and.toughness": "Maximize Defense and Toughness",
+    "menu.maximize.draw.speed": "Maximize draw speed",
+    "menu.new": "New",
+    "menu.new.preset": "New Preset",
+    "menu.next.stage": "Next stage",
+    "menu.no": "No",
+    "menu.no.fuel": "No Fuel",
+    "menu.no.recipe": "No Recipe",
+    "menu.no.target": "No target",
+    "menu.ok": "OK",
+    "menu.open": "Open",
+    "menu.open.folder": "Open Folder",
+    "menu.press.delete.to.reset.calibration": "Press Delete to reset calibration",
+    "menu.press.escape.to.exit.credits": "Press escape to exit credits",
+    "menu.previous.stage": "Previous stage",
+    "menu.redo": "Redo",
+    "menu.redo.ctrl": "Redo (Ctrl+",
+    "menu.remove": "Remove",
+    "menu.remove.or.delete.addon": "Remove or Delete Addon",
+    "menu.remove.thread": "Remove Thread",
+    "menu.reset": "Reset",
+    "menu.reset.to.stage.0": "Reset to stage 0",
+    "menu.run": "Run",
+    "menu.save": "Save",
+    "menu.save.dialog": "Save Dialog",
+    "menu.save.generator.settings": "Save Generator Settings",
+    "menu.search": "Search",
+    "menu.set.texture": "Set Texture",
+    "menu.settings": "Settings",
+    "menu.show": "Show",
+    "menu.start.stop.generation": "Start/Stop generation",
+    "menu.stop": "Stop",
+    "menu.undo": "Undo",
+    "menu.undo.ctrl": "Undo (Ctrl+",
+    "menu.yes": "Yes",
+    "menu.zoom.in": "Zoom in",
+    "menu.zoom.out": "Zoom out",
+    "overlay.if.you.have.any.idea.what.actually.causes.the.cursor": "If you have any idea what actually causes the cursor offset, please let me know",
+    "overlay.this.is.for.correcting.a.cursor.offset.issue.on.macos": "This is for correcting a cursor offset issue on macOS",
+    "overlay.use.arrow.keys.or.wasd.to.manually.adjust.calibration.press": "Use arrow keys or WASD to manually adjust calibration (Press control for granular adjustment)",
+    "overlay.use.arrow.keys.to.rotate.preview": "Use Arrow keys to rotate preview",
+    "progress.adding.additional.modules": "Adding Additional Modules",
+    "progress.adding.core.module": "Adding Core Module",
+    "progress.adding.file.readers": "Adding File Readers...",
+    "progress.adding.fusion.test.module": "Adding Fusion Test Module",
+    "progress.adding.modules": "Adding modules...",
+    "progress.adding.overhaul.module": "Adding Overhaul Module",
+    "progress.adding.prime.fuel.module": "Adding Prime Fuel Module",
+    "progress.adding.quantum.traversed.efficiency.module": "Adding Quantum Traversed Efficiency Module",
+    "progress.adding.rainbow.factor.module": "Adding Rainbow Factor Module",
+    "progress.adding.underhaul.module": "Adding Underhaul Module",
+    "progress.building.clusters": "Building Clusters",
+    "progress.building.vessel.groups": "Building Vessel Groups",
+    "progress.calculating.bearing": "Calculating Bearing",
+    "progress.calculating.blades": "Calculating Blades",
+    "progress.calculating.breeding.blankets": "Calculating Breeding Blankets",
+    "progress.calculating.casing": "Calculating Casing",
+    "progress.calculating.clusters": "Calculating Clusters",
+    "progress.calculating.coils": "Calculating Coils",
+    "progress.calculating.coolers": "Calculating Coolers",
+    "progress.calculating.core": "Calculating Core",
+    "progress.calculating.heaters": "Calculating Heaters",
+    "progress.calculating.heatsinks": "Calculating Heatsinks",
+    "progress.calculating.multiblock": "Calculating Multiblock",
+    "progress.calculating.partial.shutdown": "Calculating Partial Shutdown",
+    "progress.calculating.rotor": "Calculating Rotor",
+    "progress.calculating.shutdown.factor": "Calculating Shutdown Factor",
+    "progress.calculating.stats": "Calculating Stats",
+    "progress.calculating.suggestions": "Calculating suggestions",
+    "progress.checking.casing": "Checking Casing",
+    "progress.closing.neutron.shields": "Closing Neutron Shields",
+    "progress.generating.suggestions": "Generating suggestions",
+    "progress.importing.addons": "Importing addons...",
+    "progress.importing.configuration": "Importing Configuration",
+    "progress.imposing.configuration": "Imposing Configuration...",
+    "progress.initializing": "Initializing...",
+    "progress.initializing.fuel.cells": "Initializing Fuel Cells",
+    "progress.initializing.fuel.vessels": "Initializing Fuel Vessels",
+    "progress.initializing.nuclearcraft.configuration": "Initializing Nuclearcraft Configuration",
+    "progress.loading.external.configurations": "Loading External Configurations...",
+    "progress.loading.files": "Loading Files",
+    "progress.loading.settings": "Loading settings...",
+    "progress.opening.neutron.shields": "Opening Neutron Shields",
+    "progress.refreshing.modules": "Refreshing modules...",
+    "progress.resetting.metadata": "Resetting Metadata",
+    "progress.resetting.neutron.shields": "Resetting Neutron Shields",
+    "progress.sorting.suggestions": "Sorting suggestions",
+    "theme.different.theme.font": "Different theme font",
+    "tooltip.a.fusion.reactor.for.nuclearcraft.overhauled.these.do.not.exist": "A fusion reactor for Nuclearcraft: Overhauled\nTHESE DO NOT EXIST INGAME!\nThis is just a prototype, and is VERY different from what they will be in-game",
+    "tooltip.a.testbed.for.future.overhaul.fusion.reactors": "A testbed for future overhaul fusion reactors.",
+    "tooltip.a.tool.from.tinker.s.construct.not.a.multiblock": "A tool from Tinker's Construct (not a multiblock)",
+    "tooltip.adds.a.fuel.cell.at.a.random.point.in.the": "Adds a fuel cell at a random point in the reactor, optionally with moderator lines or other cells to ensure it can be valid",
+    "tooltip.box.tool.b.use.this.tool.to.draw.rectangles.or": "Box tool (B)\nUse this tool to draw Rectangles or Cuboids of the same block\nHold CTRL to only place blocks where they are valid",
+    "tooltip.changes.a.random.block.in.the.reactor.to.a.random": "Changes a random block in the reactor to a random block from the list of allowed blocks",
+    "tooltip.changes.the.reactor.s.coolant.recipe.to.a.random.one": "Changes the reactor's coolant recipe to a random one from the list of allowed recipes",
+    "tooltip.changes.the.reactor.s.fuel.to.a.random.fuel.from": "Changes the reactor's fuel to a random fuel from the list of allowed fuels",
+    "tooltip.convert.the.currently.selected.multiblock.to.an.overhaul.msr.warning": "Convert the currently selected multiblock to an Overhaul MSR\nWARNING: All fuels will be converted to their Flouride counterparts",
+    "tooltip.convert.the.currently.selected.multiblock.to.an.overhaul.sfr.warning": "Convert the currently selected multiblock to an Overhaul SFR\nWARNING: All fuels will be converted to their Oxide counterparts",
+    "tooltip.copy.tool.use.this.to.select.an.area.to.copy": "Copy tool\nUse this to select an area to copy\nOnce an area is selected, click to paste that selection",
+    "tooltip.cut.tool.use.this.to.select.an.area.to.cut": "Cut tool\nUse this to select an area to cut\nOnce an area is selected, click to paste that selection",
+    "tooltip.finish.resizing.and.return.to.the.editor.screen": "Finish resizing and return to the editor screen",
+    "tooltip.for.axial.this.is.the.number.of.axial.pairs.not": "For Axial, this is the number of axial pairs (not single blocks)",
+    "tooltip.gives.an.adjusted.efficiency.score.for.overhaul.sfrs.based.on": "Gives an adjusted efficiency score for overhaul SFRs based on neutron shield output",
+    "tooltip.gives.multiblocks.a.rainbow.factor.based.on.how.many.different": "Gives multiblocks a Rainbow Factor based on how many different types of coolers/heatsinks/heaters/etc. they have",
+    "tooltip.highlights.the.number.of.cells.vessels.in.a.multiblock.and": "Highlights the number of cells/vessels in a multiblock, and shows if it's a prime number",
+    "tooltip.if.you.enjoy.this.plannerator.consider.supporting.me.on.patreon": "If you enjoy this plannerator, consider supporting me on patreon or ko-fi:",
+    "tooltip.if.you.have.blocks.called.cooler.instead.of.heat.sink": "If you have blocks called \"Cooler\" instead of \"Heat Sink\", you are playing Underhaul",
+    "tooltip.if.you.have.blocks.called.heat.sink.instead.of.cooler": "If you have blocks called \"Heat Sink\" instead of \"Cooler\", you are playing Overhaul",
+    "tooltip.legacy.ncpf.config2.format.gui.and.some.more.internal.functionality": "Legacy NCPF (Config2) format, GUI, and some more internal functionality based on SimpleLibraryPlus",
+    "tooltip.line.tool.l.use.this.tool.to.draw.blocks.in": "Line tool (L)\nUse this tool to draw blocks in a line through the multiblock\nHold CTRL to only place blocks where they are valid",
+    "tooltip.load.a.file.replacing.all.current.multiblocks": "Load a file, replacing all current multiblocks",
+    "tooltip.make.sure.all.the.parts.are.actually.there": "Make sure all the parts are actually there",
+    "tooltip.maximize.mining.level.then.mining.speed": "Maximize mining level, then mining speed",
+    "tooltip.move.tool.m.use.this.to.move.or.copy.selections": "Move tool (M)\nUse this to move or copy selections\nHold Ctrl to copy selections\nHold Ctrl+Shift to copy selection, and keep the old selection",
+    "tooltip.open.a.link.will.open.in.default.browser": "Open a link? (Will open in default browser)",
+    "tooltip.overhaul.distillers.are.distillers.in.nuclearcraft.overhauled.wow.who.could": "Overhaul Distillers are Distillers in NuclearCraft: Overhauled\nWow, who could have guessed?",
+    "tooltip.overhaul.msrs.are.molten.salt.fission.reactors.in.nuclearcraft.overhauled": "Overhaul MSRs are Molten Salt Fission reactors in NuclearCraft: Overhauled",
+    "tooltip.overhaul.sfrs.are.solid.fueled.fission.reactors.in.nuclearcraft.overhauled": "Overhaul SFRs are Solid-Fueled Fission reactors in NuclearCraft: Overhauled",
+    "tooltip.overhaul.sfrs.are.solid.fueled.fission.reactors.in.nuclearcraft.overhauled-2": "Overhaul SFRs are Solid-Fueled Fission reactors in NuclearCraft: Overhauled\nIf you have blocks called \"Cooler\" instead of \"Heat Sink\", you are playing Underhaul",
+    "tooltip.paste.tool.select.a.region.and.press.ctrl.x.or": "Paste tool\nSelect a region, and press Ctrl-X or Ctrl+C to cut or copy the selection and open this tool.\nThen click any location in your reactor to paste the selection in multiple places.\nPress Escape or select a different tool when done.\nPress Ctrl+V to ready the most recently copied selection",
+    "tooltip.pencil.tool.p.use.this.tool.to.draw.blocks.one": "Pencil tool (P)\nUse this tool to draw blocks one at a time\nHold CTRL to only place blocks where they are valid",
+    "tooltip.press.escape.or.right.click.to.exit": "Press escape or right click to exit.",
+    "tooltip.recalculate.the.entire.multiblock.ctrl.click.to.queue.multiple.actions": "Recalculate the entire multiblock\nCtrl-click to queue multiple actions without recalculating",
+    "tooltip.recovery.mode.enabled.press.ctrl.shift.r.to.disable": "RECOVERY MODE ENABLED. PRESS CTRL+SHIFT+R TO DISABLE",
+    "tooltip.resize.the.multiblock.warning.this.clears.the.edit.history.undo": "Resize the multiblock\nWARNING: This clears the edit history! (undo/redo)",
+    "tooltip.runs.a.random.number.of.times.per.iteration.evenly.distributed": "Runs a random number of times per iteration\nEvenly distributed between min and max",
+    "tooltip.select.tool.s.use.this.to.select.areas.of.the": "Select tool (S)\nUse this to select areas of the reactor\nCtrl-click to select multiple selections\nShift-click to select Groups of blocks that require each other\nAlt-click to select clusters\nEdits can only be made inside of selections (unless there are no selections)\nPress Delete to delete the selected area\nPress Escape to clear selection",
+    "tooltip.stop.editing.this.multiblock.and.return.to.the.main.menu": "Stop editing this multiblock and return to the main menu",
+    "tooltip.suggests.adding.fuel.cells.with.moderators.to.increase.efficiency.and": "Suggests adding Fuel cells with moderators to increase efficiency and output",
+    "tooltip.suggests.adding.fuel.vessels.with.moderators.to.increase.efficiency.and": "Suggests adding Fuel vessels with moderators to increase efficiency and output",
+    "tooltip.suggests.adding.or.replacing.active.coolers.to.cool.the.reactor": "Suggests adding or replacing active coolers to cool the reactor",
+    "tooltip.suggests.adding.or.replacing.heat.sinks.to.cool.the.reactor": "Suggests adding or replacing heat sinks to cool the reactor",
+    "tooltip.suggests.adding.or.replacing.heat.sinks.to.increase.the.reactor": "Suggests adding or replacing heat sinks to increase the reactor's rainbow factor",
+    "tooltip.suggests.adding.or.replacing.heaters.to.cool.the.reactor": "Suggests adding or replacing heaters to cool the reactor",
+    "tooltip.suggests.adding.or.replacing.passive.coolers.to.cool.the.reactor": "Suggests adding or replacing passive coolers to cool the reactor",
+    "tooltip.suggests.adding.or.replacing.passive.coolers.to.increase.the.reactor": "Suggests adding or replacing passive coolers to increase the reactor's rainbow factor.",
+    "tooltip.suggests.adding.removing.or.replacing.coils.for.higher.coil.efficiency": "Suggests adding, removing, or replacing coils for higher coil efficiency",
+    "tooltip.suggests.blades.and.stators.for.higher.rotor.efficiency.and.ideality": "Suggests blades and stators for higher rotor efficiency and ideality",
+    "tooltip.suggests.changing.moderator.lines.to.increase.efficiency.or.irradiation": "Suggests changing moderator lines to increase efficiency or irradiation",
+    "tooltip.suggests.changing.single.moderators.to.increase.efficiency.or.irradiation": "Suggests changing single moderators to increase efficiency or irradiation",
+    "tooltip.texture.or.right.click.to.generate.a.texture": "texture\nOr right click to generate a texture",
+    "tooltip.thank.you.to.everyone.in.the.evault.for.helping.make": "Thank you to everyone in the eVault for helping make this planner into what it is",
+    "tooltip.thank.you.to.tomdodd4598.for.creating.such.an.amazing.mod": "Thank you to tomdodd4598 for creating such an amazing mod",
+    "tooltip.to.auto.calibrate.click.the.squares.that.appear.onscreen": "To auto-calibrate, click the squares that appear onscreen.",
+    "tooltip.toggle.3d.multiblock.view.rotate.with.arrow.keys": "Toggle 3D multiblock view\n(Rotate with arrow keys)",
+    "tooltip.underhaul.sfrs.are.solid.fueled.fission.reactors.in.nuclearcraft": "Underhaul SFRs are Solid-Fueled Fission reactors in NuclearCraft",
+    "tooltip.underhaul.sfrs.are.solid.fueled.fission.reactors.in.nuclearcraft.if": "Underhaul SFRs are Solid-Fueled Fission reactors in NuclearCraft\nIf you have blocks called \"Heat Sink\" instead of \"Cooler\", you are playing Overhaul"
+  },
+  "needsReview": [
+    {
+      "source": "Nuclearcraft Plannerator",
+      "translation": "核工艺规划器",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "DSSL Editor",
+      "translation": "DSSL 编辑器",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Click or drop files to change ",
+      "translation": "单击或拖入文件以更换",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": " texture\nOr right click to generate a texture",
+      "translation": "纹理\n右键单击可生成纹理",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Import all multiblocks from a saved file",
+      "translation": "从已保存的文件导入全部多方块结构",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Export the selected multiblock to a file",
+      "translation": "将选中的多方块结构导出到文件",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Save all multiblocks to a file",
+      "translation": "将全部多方块结构保存到文件",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Modify the multiblock metadata",
+      "translation": "修改多方块结构元数据",
+      "reason": "no-rule"
+    },
+    {
+      "source": "View a parts list for this multiblock",
+      "translation": "查看此多方块结构的部件清单",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Perform one step of calculation",
+      "translation": "执行一步计算",
+      "reason": "no-rule"
+    },
+    {
+      "source": "CURSOR CALIBRATION",
+      "translation": "光标校准",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "No lite model exists for ",
+      "translation": "不存在轻量模型：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Failed to load last configuration: ",
+      "translation": "加载上次的配置失败：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Failed to load internal texture for MSR Block: ",
+      "translation": "加载熔盐堆方块的内部纹理失败：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "File ",
+      "translation": "文件 ",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": " already exists!\nOverwrite?",
+      "translation": " 已存在！\n是否覆盖？",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Saved as ",
+      "translation": "已保存为 ",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Invalid filename: ",
+      "translation": "无效的文件名：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Running Benchmark: ",
+      "translation": "正在运行基准测试：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Consolidating suggestions",
+      "translation": "正在合并建议",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Pruning Suggestions",
+      "translation": "正在筛选建议",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Propogating Neutron Flux",
+      "translation": "正在传播中子通量",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Re-propogating Neutron Flux",
+      "translation": "正在重新传播中子通量",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Performing Post-Flux Calculations",
+      "translation": "正在执行通量后计算",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Preloading settings...",
+      "translation": "正在预加载设置…",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Adjusting MSR block textures...",
+      "translation": "正在调整熔盐堆方块纹理…",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Thank you to my patrons:",
+      "translation": "感谢以下赞助者：",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Join my discord server:",
+      "translation": "加入 Discord 服务器：",
+      "reason": "no-rule"
+    },
+    {
+      "source": "NuclearCraft Planner File",
+      "translation": "核工艺规划器文件",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Internal Configurations",
+      "translation": "内置配置",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "External Configurations",
+      "translation": "外部配置",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Current Configuration",
+      "translation": "当前配置",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Current Configuration: ",
+      "translation": "当前配置：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Show 3D view on the Main Menu",
+      "translation": "在主菜单显示 3D 视图",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Replace the current configuration with ",
+      "translation": "使用以下配置替换当前配置：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "\nAll multiblocks will be converted to the new configuration",
+      "translation": "\n所有多方块结构将转换为新配置",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Failed to read external configuration ",
+      "translation": "读取外部配置失败：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Finish generation and return to the editor",
+      "translation": "完成生成并返回编辑器",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Generator Presets",
+      "translation": "生成器预设",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Generator Parameters",
+      "translation": "生成器参数",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Mutator Settings",
+      "translation": "变异器设置",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Post-Processing Mutators",
+      "translation": "后处理变异器",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Stage Transitions",
+      "translation": "阶段转换",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Insert a blank layer",
+      "translation": "插入空白层",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Automatic Add String",
+      "translation": "自动添加字符串",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Change Target",
+      "translation": "更改目标",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "New version available!\n(Version ",
+      "translation": "有新版本可用！\n（版本 ",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": ")\nWould you like to update now?",
+      "translation": "）\n是否立即更新？",
+      "reason": "fragment-continuation"
+    },
+    {
+      "source": "Block Recipe",
+      "translation": "方块配方",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Actual Expansion",
+      "translation": "实际膨胀率",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Queue Actions",
+      "translation": "操作入队",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Main Menu",
+      "translation": "主菜单",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Multiblocks",
+      "translation": "多方块结构",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Multiblock",
+      "translation": "多方块结构",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Configurations",
+      "translation": "配置",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Configuration",
+      "translation": "配置",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Display Name",
+      "translation": "显示名称",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Metadata",
+      "translation": "元数据",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Blockstate",
+      "translation": "方块状态",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Placement Rules",
+      "translation": "放置规则",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Other Modules",
+      "translation": "其他模块",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Element Stack",
+      "translation": "元素堆栈",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Modify Rule",
+      "translation": "修改规则",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Parts List",
+      "translation": "部件清单",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "3D View",
+      "translation": "3D 视图",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Save as...",
+      "translation": "另存为…",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Don't Save",
+      "translation": "不保存",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Category",
+      "translation": "分类",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Tutorials",
+      "translation": "教程",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Tutorial",
+      "translation": "教程",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Addons",
+      "translation": "附加组件",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Addon",
+      "translation": "附加组件",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Version",
+      "translation": "版本",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Automatic",
+      "translation": "自动",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Target",
+      "translation": "目标",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "String",
+      "translation": "字符串",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "V-Sync",
+      "translation": "垂直同步",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Internal",
+      "translation": "内部",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "External",
+      "translation": "外部",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Selected",
+      "translation": "所选",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Invert",
+      "translation": "反转",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Auto-build",
+      "translation": "自动构建",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Casings",
+      "translation": "外壳",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Remember",
+      "translation": "记住",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Change",
+      "translation": "更改",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Generator",
+      "translation": "生成器",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Preset",
+      "translation": "预设",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Customize",
+      "translation": "自定义",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Parameters",
+      "translation": "参数",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Parameter",
+      "translation": "参数",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Mutators",
+      "translation": "变异器",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Mutator",
+      "translation": "变异器",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Post-Processing",
+      "translation": "后处理",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Priorities",
+      "translation": "优先级",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Priority",
+      "translation": "优先级",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Transitions",
+      "translation": "转换",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Transition",
+      "translation": "转换",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Conditions",
+      "translation": "条件",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Condition",
+      "translation": "条件",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Stage",
+      "translation": "阶段",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Thread",
+      "translation": "线程",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Threads",
+      "translation": "线程",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Start",
+      "translation": "开始",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Volume",
+      "translation": "体积",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Ideal Expansion",
+      "translation": "理想膨胀率",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Themes",
+      "translation": "主题",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Modules",
+      "translation": "模块",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Overlays",
+      "translation": "叠加层",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Symmetry",
+      "translation": "对称",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Resize",
+      "translation": "调整尺寸",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Generate",
+      "translation": "生成",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Recalculate",
+      "translation": "重新计算",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Calculate",
+      "translation": "计算",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Debug",
+      "translation": "调试",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Step",
+      "translation": "单步",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Halt",
+      "translation": "停止",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Saved",
+      "translation": "已保存",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Discard",
+      "translation": "丢弃",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Filename",
+      "translation": "文件名",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "File",
+      "translation": "文件",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Key",
+      "translation": "键",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Value",
+      "translation": "值",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Name",
+      "translation": "名称",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Author",
+      "translation": "作者",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Description",
+      "translation": "描述",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Credits",
+      "translation": "致谢",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Changelog",
+      "translation": "更新日志",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Supporters",
+      "translation": "支持者",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Active",
+      "translation": "已启用",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Inactive",
+      "translation": "未启用",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "On",
+      "translation": "开",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Off",
+      "translation": "关",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Warning",
+      "translation": "警告",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Error",
+      "translation": "错误",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Loading",
+      "translation": "正在加载",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Initializing",
+      "translation": "正在初始化",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Failed",
+      "translation": "失败",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Unknown",
+      "translation": "未知",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Light",
+      "translation": "浅色",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "General",
+      "translation": "通用",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Materials",
+      "translation": "材料",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Obsidian",
+      "translation": "黑曜石",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Lead",
+      "translation": "铅",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Boron",
+      "translation": "硼",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Lithium",
+      "translation": "锂",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Silver",
+      "translation": "银",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Fluorite",
+      "translation": "萤石",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Helium",
+      "translation": "氦",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Enderium",
+      "translation": "末影合金",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "(a fork of Simplelibrary by computerneek)",
+      "translation": "（Simplelibrary 的 computerneek 分支）",
+      "reason": "no-rule"
+    },
+    {
+      "source": "JDA (when running as discord bot)",
+      "translation": "JDA（作为 Discord 机器人运行时）",
+      "reason": "no-rule"
+    },
+    {
+      "source": "by Gliese 832 c",
+      "translation": "作者：Gliese 832 c",
+      "reason": "no-rule"
+    },
+    {
+      "source": "by tomdodd4598",
+      "translation": "作者：tomdodd4598",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "by dtinth",
+      "translation": "作者：dtinth",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Color (decimal; prefix with # for hex)",
+      "translation": "颜色（十进制；十六进制请加 # 前缀）",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Configurations (Modpacks)",
+      "translation": "配置（整合包）",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Add Parent ",
+      "translation": "添加父项 ",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Critical Error: ",
+      "translation": "严重错误：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Fusion test blanket textures",
+      "translation": "聚变测试包层纹理",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Lining Thickness",
+      "translation": "内衬厚度",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Modify multiblock",
+      "translation": "修改多方块结构",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Modify Block (Overhaul SFR)",
+      "translation": "修改方块（改版固体燃料堆）",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Placement Rule",
+      "translation": "放置规则",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "System File Chooser",
+      "translation": "系统文件选择器",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Hot NaK",
+      "translation": "高温钠钾合金",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Inner Radius",
+      "translation": "内半径",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Core Size",
+      "translation": "核心尺寸",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Toroid Width",
+      "translation": "环宽",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Light, but darker",
+      "translation": "浅色（较暗）",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Made by ThizThizzyDizzy",
+      "translation": "由 ThizThizzyDizzy 制作",
+      "reason": "no-rule"
+    },
+    {
+      "source": " made by ",
+      "translation": "，作者：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Texture",
+      "translation": "纹理",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Amount",
+      "translation": "数量",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Change Theme",
+      "translation": "更换主题",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Designs:",
+      "translation": "设计：",
+      "reason": "label-prefix"
+    },
+    {
+      "source": "Early Concept Art",
+      "translation": "早期概念美术",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Hut images",
+      "translation": "小屋图像",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Libraries",
+      "translation": "库",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Legacy Name",
+      "translation": "旧名称",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Modify",
+      "translation": "修改",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Modify addon",
+      "translation": "修改附加组件",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Standard",
+      "translation": "标准",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Different",
+      "translation": "另类",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "IDLE",
+      "translation": "空闲",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Del",
+      "translation": "删除",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Set",
+      "translation": "设置",
+      "reason": "fragment-word"
+    },
+    {
+      "source": " value: ",
+      "translation": " 值：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "X Mirror",
+      "translation": "X 轴镜像",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Y Mirror",
+      "translation": "Y 轴镜像",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Z Mirror",
+      "translation": "Z 轴镜像",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "180 X Rotational",
+      "translation": "180 度 X 轴旋转",
+      "reason": "no-rule"
+    },
+    {
+      "source": "180 Y Rotational",
+      "translation": "180 度 Y 轴旋转",
+      "reason": "no-rule"
+    },
+    {
+      "source": "180 Z Rotational",
+      "translation": "180 度 Z 轴旋转",
+      "reason": "no-rule"
+    },
+    {
+      "source": "X Multiplier: ",
+      "translation": "X 倍率：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Y Multiplier: ",
+      "translation": "Y 倍率：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "X Offset: ",
+      "translation": "X 偏移：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Y Offset: ",
+      "translation": "Y 偏移：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "All the base NuclearCraft: Overhauled multiblocks",
+      "translation": "全部核工艺：改版基础多方块结构",
+      "reason": "no-rule"
+    },
+    {
+      "source": "All the base NuclearCraft multiblocks",
+      "translation": "全部核工艺基础多方块结构",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Contains general features appliccable to all multiblocks",
+      "translation": "包含适用于全部多方块结构的通用功能",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Choose element for tag or oredict:\n",
+      "translation": "为标签或矿辞典选择元素：\n",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Casing incomplete! (Missing ",
+      "translation": "外壳不完整！（缺少 ",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": " input ports:",
+      "translation": " 个输入端口：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": " input port:",
+      "translation": " 个输入端口：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": " output ports:",
+      "translation": " 个输出端口：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": " output port:",
+      "translation": " 个输出端口：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Missing ",
+      "translation": "缺少 ",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Bearing Diameter: ",
+      "translation": "轴承直径：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Blade Suggestor",
+      "translation": "叶片建议器",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Heatsink Suggestor",
+      "translation": "散热器建议器",
+      "reason": "fragment-short"
+    },
+    {
+      "source": " similar clusters:",
+      "translation": " 个相似簇：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": " incomplete!",
+      "translation": " 不完整！",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": " mb/t of whatever ",
+      "translation": " mb/t 的 ",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": " mb/t of ",
+      "translation": " mb/t 的 ",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": " gets turned into",
+      "translation": "转化而成",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Input: ",
+      "translation": "输入：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Power Efficiency: ",
+      "translation": "发电效率：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Total Efficiency: ",
+      "translation": "总效率：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Rotor Efficiency: ",
+      "translation": "转子效率：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Coil Efficiency: ",
+      "translation": "线圈效率：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Throughput Efficiency: ",
+      "translation": "吞吐效率：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Ideality Multiplier: ",
+      "translation": "理想度倍率：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Total Heat: ",
+      "translation": "总热量：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Total Cooling: ",
+      "translation": "总冷却量：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Net Heat: ",
+      "translation": "净热量：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Overall Efficiency: ",
+      "translation": "总体效率：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Overall Heat Multiplier: ",
+      "translation": "总体热量倍率：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Sparsity Penalty Multiplier: ",
+      "translation": "稀疏惩罚倍率：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Shieldiness Factor: ",
+      "translation": "屏蔽因子：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Clusters: ",
+      "translation": "簇：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Total Irradiation: ",
+      "translation": "总辐照量：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Shutdown Factor: ",
+      "translation": "停堆系数：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Total Heating: ",
+      "translation": "总产热：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Net Heating: ",
+      "translation": "净产热：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Heat Multiplier: ",
+      "translation": "热量倍率：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Cooling penalty mult: ",
+      "translation": "冷却惩罚倍率：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Efficiency: ",
+      "translation": "效率：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Total Output",
+      "translation": "总产出",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Total Efficiency",
+      "translation": "总效率",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Total Heat",
+      "translation": "总热量",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Total Cooling",
+      "translation": "总冷却量",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Net Heat",
+      "translation": "净热量",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Heat Multiplier",
+      "translation": "热量倍率",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Vessel Group ",
+      "translation": "燃料容器组 ",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Vessel Group Primed",
+      "translation": "燃料容器组已引燃",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Vessels",
+      "translation": "个燃料容器",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Primed",
+      "translation": "已引燃",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Self",
+      "translation": "自身",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Augmented",
+      "translation": "已增强",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Adjacent moderator lines: ",
+      "translation": "相邻慢化剂线：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Open Faces: ",
+      "translation": "开放面：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Bunching Factor: ",
+      "translation": "聚集系数：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Surface Factor: ",
+      "translation": "表面积系数：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Heat Produced: ",
+      "translation": "产生热量：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Positional Efficiency: ",
+      "translation": "位置效率：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Total Neutron Flux: ",
+      "translation": "总中子通量：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Criticality Factor: ",
+      "translation": "临界系数：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Flux Factor: ",
+      "translation": "通量系数：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Efficiency Factor: ",
+      "translation": "效率系数：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Efficiency multiplier: ",
+      "translation": "效率倍率：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Reflectivity: ",
+      "translation": "反射率：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Total flux: ",
+      "translation": "总通量：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Heat per flux: ",
+      "translation": "每通量热量：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Irradiator flux: ",
+      "translation": "辐照器通量：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Efficiency bonus: ",
+      "translation": "效率加成：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Neutron source: ",
+      "translation": "中子源：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Neutron Sources: ",
+      "translation": "中子源数量：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Heating Blanket ",
+      "translation": "加热包层 ",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Breeding Blanket ",
+      "translation": "增殖包层 ",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Liquid Distributor",
+      "translation": "液体分配器",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Constants and Operators",
+      "translation": "常量与运算符",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Constant",
+      "translation": "常量",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Block is valid",
+      "translation": "方块有效",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Decrase Core Size",
+      "translation": "减小核心尺寸",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Breeding Blanket Recipe",
+      "translation": "增殖包层配方",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Breeding Blanket Stats",
+      "translation": "增殖包层属性",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Coolant Recipe Stats",
+      "translation": "冷却剂配方属性",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Irradiator Recipe Stats",
+      "translation": "辐照器配方属性",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Active Cooler Recipe",
+      "translation": "主动冷却器配方",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Fuel Stats",
+      "translation": "燃料属性",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Heater Recipe",
+      "translation": "加热器配方",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Heater Stats",
+      "translation": "加热器属性",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Irradiator Recipe",
+      "translation": "辐照器配方",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Irradiator Stats",
+      "translation": "辐照器属性",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Coolant Recipe",
+      "translation": "冷却剂配方",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Coolant Vent",
+      "translation": "冷却剂排气口",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Breeding Blanket",
+      "translation": "增殖包层",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Heating Blanket",
+      "translation": "加热包层",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Block Tag",
+      "translation": "方块标签",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Fluid Tag",
+      "translation": "流体标签",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Item Tag",
+      "translation": "物品标签",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Greater or Equal",
+      "translation": "大于或等于",
+      "reason": "no-rule"
+    },
+    {
+      "source": "NuclearCraft: Overhauled",
+      "translation": "核工艺：改版",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Fusion Test",
+      "translation": "聚变测试",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Prime Fuel",
+      "translation": "质数燃料",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Next prime: ",
+      "translation": "下一个质数：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Axial pairs of ",
+      "translation": "轴向配对数：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": " at the same vertex",
+      "translation": " 位于同一顶点",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": " at the same edge",
+      "translation": " 位于同一边",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Requires ",
+      "translation": "需要",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "At least ",
+      "translation": "至少 ",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Exactly ",
+      "translation": "恰好 ",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Between ",
+      "translation": "介于 ",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": " AND ",
+      "translation": "且",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": " OR ",
+      "translation": "或",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": " Heat Sink",
+      "translation": "散热器",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Cell flux: ",
+      "translation": "燃料单元中子通量：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": " flux ",
+      "translation": " 通量 ",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": ", Eff: ",
+      "translation": "，效率：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Cooling: ",
+      "translation": "冷却：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Durability: ",
+      "translation": "耐久度：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Iterations",
+      "translation": "迭代次数",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "per second",
+      "translation": "每秒",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Recipe",
+      "translation": "配方",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Stats",
+      "translation": "属性",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Module",
+      "translation": "模块",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Block",
+      "translation": "方块",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Cell",
+      "translation": "单元",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Vessel",
+      "translation": "容器",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Heater",
+      "translation": "加热器",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Heatsink",
+      "translation": "散热器",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Cooler",
+      "translation": "冷却器",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Controller",
+      "translation": "控制器",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Connector",
+      "translation": "连接器",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Reflector",
+      "translation": "反射器",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Shield",
+      "translation": "屏蔽器",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Irradiator",
+      "translation": "辐照器",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Vent",
+      "translation": "排气口",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Port",
+      "translation": "端口",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Rotor",
+      "translation": "转子",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Blade",
+      "translation": "叶片",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Stator",
+      "translation": "定子",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Bearing",
+      "translation": "轴承",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Shaft",
+      "translation": "轴",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Coil",
+      "translation": "线圈",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Glass",
+      "translation": "玻璃",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Heating",
+      "translation": "加热",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Cooling",
+      "translation": "冷却",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Valid",
+      "translation": "有效",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Invalid",
+      "translation": "无效",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Cluster",
+      "translation": "簇",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Axial",
+      "translation": "轴向",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Depleted",
+      "translation": "贫化",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Enriched",
+      "translation": "浓缩",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Oxide",
+      "translation": "氧化物",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Nitride",
+      "translation": "氮化物",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Fluoride",
+      "translation": "氟化物",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Alloy",
+      "translation": "合金",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Uranium",
+      "translation": "铀",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Thorium",
+      "translation": "钍",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Plutonium",
+      "translation": "钚",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Neptunium",
+      "translation": "镎",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Americium",
+      "translation": "镅",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Curium",
+      "translation": "锔",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Berkelium",
+      "translation": "锫",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Californium",
+      "translation": "锎",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Bismuth",
+      "translation": "铋",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Zirconium",
+      "translation": "锆",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Manganese",
+      "translation": "锰",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Nickel",
+      "translation": "镍",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Cobalt",
+      "translation": "钴",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Aluminum",
+      "translation": "铝",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Coolant Heater Port",
+      "translation": "冷却剂加热器端口",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Coolant Cooler Port",
+      "translation": "冷却剂冷却器端口",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Coolant Heater",
+      "translation": "冷却剂加热器",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Coolant Cooler",
+      "translation": "冷却剂冷却器",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Fission Heat Sink",
+      "translation": "裂变散热器",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Turbine Dynamo Coil",
+      "translation": "涡轮发电线圈",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Turbine Rotor Blade",
+      "translation": "涡轮转子叶片",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Turbine Rotor Stator",
+      "translation": "涡轮转子定子",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Turbine Rotor Shaft",
+      "translation": "涡轮转子轴",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Induction Turbine Magnet",
+      "translation": "感应涡轮磁体",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Redstone Field Stabilizer",
+      "translation": "红石场稳定器",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Redstone Field Converter",
+      "translation": "红石场转换器",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Energy Extractor",
+      "translation": "能量提取器",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Fuel Pellet",
+      "translation": "燃料芯块",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Fuel Pebble",
+      "translation": "燃料球",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Fuel Bundle",
+      "translation": "燃料组件",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Carbon Dioxide",
+      "translation": "二氧化碳",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Carbon Monoxide",
+      "translation": "一氧化碳",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Activated Carbon",
+      "translation": "活性炭",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Cold Eutectic NaK-Corium Mixture",
+      "translation": "低温共晶钠钾合金-堆芯熔融物混合物",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Critical Exhaust Carbon Dioxide",
+      "translation": "临界排气二氧化碳",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Compressed Carbon Dioxide",
+      "translation": "压缩二氧化碳",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Actinium",
+      "translation": "锕",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Aluminium",
+      "translation": "铝",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Antimony",
+      "translation": "锑",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Argon",
+      "translation": "氩",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Arsenic",
+      "translation": "砷",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Barium",
+      "translation": "钡",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Calcium",
+      "translation": "钙",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Carbon",
+      "translation": "碳",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Cerium",
+      "translation": "铈",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Chromium",
+      "translation": "铬",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Darmstadtium",
+      "translation": "达姆施塔特",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Einsteinium",
+      "translation": "锿",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Europium",
+      "translation": "铕",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Fermium",
+      "translation": "镄",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Francium",
+      "translation": "钫",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Gadolinium",
+      "translation": "钆",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Gallium",
+      "translation": "镓",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Germanium",
+      "translation": "锗",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Hafnium",
+      "translation": "铪",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Holmium",
+      "translation": "钬",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Indium",
+      "translation": "铟",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Iodine",
+      "translation": "碘",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Iridium",
+      "translation": "铱",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Krypton",
+      "translation": "氪",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Lanthanum",
+      "translation": "镧",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Lawrencium",
+      "translation": "铹",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Lutetium",
+      "translation": "镥",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Mendelevium",
+      "translation": "钔",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Mercury",
+      "translation": "汞",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Molybdenum",
+      "translation": "钼",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Neodymium",
+      "translation": "钕",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Neon",
+      "translation": "氖",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Niobium",
+      "translation": "铌",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Nitrogen",
+      "translation": "氮",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Nobelium",
+      "translation": "锘",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Osmium",
+      "translation": "锇",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Oxygen",
+      "translation": "氧",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Palladium",
+      "translation": "钯",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Phosphorus",
+      "translation": "磷",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Platinum",
+      "translation": "铂",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Polonium",
+      "translation": "钋",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Potassium",
+      "translation": "钾",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Praseodymium",
+      "translation": "镨",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Promethium",
+      "translation": "钷",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Protactinium",
+      "translation": "镤",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Radium",
+      "translation": "镭",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Radon",
+      "translation": "氡",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Rhenium",
+      "translation": "铼",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Rhodium",
+      "translation": "铑",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Rubidium",
+      "translation": "铷",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Ruthenium",
+      "translation": "钌",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Samarium",
+      "translation": "钐",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Scandium",
+      "translation": "钪",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Selenium",
+      "translation": "硒",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Silicon",
+      "translation": "硅",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Sodium",
+      "translation": "钠",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Strontium",
+      "translation": "锶",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Sulfur",
+      "translation": "硫",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Tantalum",
+      "translation": "钽",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Technetium",
+      "translation": "锝",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Tellurium",
+      "translation": "碲",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Terbium",
+      "translation": "铽",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Thallium",
+      "translation": "铊",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Thulium",
+      "translation": "铥",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Titanium",
+      "translation": "钛",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Tungsten",
+      "translation": "钨",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Vanadium",
+      "translation": "钒",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Xenon",
+      "translation": "氙",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Ytterbium",
+      "translation": "镱",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Yttrium",
+      "translation": "钇",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Zinc",
+      "translation": "锌",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Dynamo Coil",
+      "translation": "发电线圈",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Field Stabilizer",
+      "translation": "场稳定器",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Field Converter",
+      "translation": "场转换器",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Sodium-bonded",
+      "translation": "钠键合",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Dioxide",
+      "translation": "二氧化物",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Disilicide",
+      "translation": "二硅化物",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Tempered",
+      "translation": "回火",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Dynamo",
+      "translation": "发电机",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Extractor",
+      "translation": "提取器",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Stabilizer",
+      "translation": "稳定器",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Converter",
+      "translation": "转换器",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Magnet",
+      "translation": "磁体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Pellet",
+      "translation": "芯块",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Pebble",
+      "translation": "燃料球",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Bundle",
+      "translation": "组件",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Ingot",
+      "translation": "锭",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Dust",
+      "translation": "粉末",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Ore",
+      "translation": "矿石",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Sapling",
+      "translation": "树苗",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Acacia",
+      "translation": "金合欢",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Birch",
+      "translation": "白桦",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Dark Oak",
+      "translation": "深色橡木",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Cobblestone",
+      "translation": "圆石",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Coal",
+      "translation": "煤",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Brick",
+      "translation": "砖",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Bone",
+      "translation": "骨",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Cake",
+      "translation": "蛋糕",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Caramel",
+      "translation": "焦糖",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Buttermilk",
+      "translation": "酪乳",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Bronze",
+      "translation": "青铜",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Brass",
+      "translation": "黄铜",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Constantan",
+      "translation": "康铜",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Certus",
+      "translation": "赛特斯",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Crap Steam",
+      "translation": "劣质蒸汽",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Anti-Deuterium",
+      "translation": "反氘",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Anti-Helium",
+      "translation": "反氦",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Anti-Tritium",
+      "translation": "反氚",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Zirconium Alloy",
+      "translation": "锆合金",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Molybdenum Alloy",
+      "translation": "钼合金",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Boron Arsenide",
+      "translation": "砷化硼",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Carbon Arsenide",
+      "translation": "砷化碳",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Barium Nitrate",
+      "translation": "硝酸钡",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Nitrate",
+      "translation": "硝酸盐",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Arsenide",
+      "translation": "砷化物",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Aerotheum",
+      "translation": "气凝质",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Baratol",
+      "translation": "巴拉托炸药",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Billon",
+      "translation": "比隆合金",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Blutonium",
+      "translation": "蓝钚",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Caesium",
+      "translation": "铯",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Carobbiite",
+      "translation": "卡罗比石",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Corium",
+      "translation": "堆芯熔融物",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Cryo-stablized",
+      "translation": "低温稳定",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Basic",
+      "translation": "基础",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Liquid",
+      "translation": "液体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Hot",
+      "translation": "高温",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Cold",
+      "translation": "低温",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Critical",
+      "translation": "临界",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Exhaust",
+      "translation": "排气",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Compressed",
+      "translation": "压缩",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Temperature",
+      "translation": "温度",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Pressure",
+      "translation": "压力",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "NAK",
+      "translation": "钠钾合金",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Eutectic",
+      "translation": "共晶",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Mixture",
+      "translation": "混合物",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "TRISO",
+      "translation": "三结构各向同性燃料",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "FLiBe",
+      "translation": "氟锂铍盐",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "MOX",
+      "translation": "混合氧化物燃料",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Molten",
+      "translation": "熔融",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Salt",
+      "translation": "盐",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Solution",
+      "translation": "溶液",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Sink",
+      "translation": "散热器",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Neutron",
+      "translation": "中子",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Field",
+      "translation": "场",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Metallic",
+      "translation": "金属",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Pit",
+      "translation": "燃料芯块",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Steel",
+      "translation": "钢",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Source",
+      "translation": "源",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Stone",
+      "translation": "石",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "FUEL",
+      "translation": "燃料",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Irradiated",
+      "translation": "辐照",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Prismarine",
+      "translation": "海晶石",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Purpur",
+      "translation": "紫珀",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Nether",
+      "translation": "下界",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Slime",
+      "translation": "史莱姆",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "End",
+      "translation": "末地",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Energy",
+      "translation": "能量",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Pumpkin",
+      "translation": "南瓜",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Electrum",
+      "translation": "琥珀金",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Milk",
+      "translation": "牛奶",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Crystal",
+      "translation": "水晶",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Carbide",
+      "translation": "碳化物",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Fluix",
+      "translation": "福鲁伊克斯",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Fluxed",
+      "translation": "注能",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Extreme",
+      "translation": "极致",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Doped",
+      "translation": "掺杂",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Wafer",
+      "translation": "晶圆",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Type",
+      "translation": "类型",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Manager",
+      "translation": "管理器",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Pressurized",
+      "translation": "加压",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Thermoconducting",
+      "translation": "导热",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Tough",
+      "translation": "坚韧",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Hard",
+      "translation": "坚硬",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Diboride",
+      "translation": "二硼化物",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Zircaloy",
+      "translation": "锆合金",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Ferroboron",
+      "translation": "硼铁",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Rhodochrosite",
+      "translation": "菱锰矿",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Egg",
+      "translation": "鸡蛋",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Wheat",
+      "translation": "小麦",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Chocolate",
+      "translation": "巧克力",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Lumium",
+      "translation": "流明",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Pie",
+      "translation": "派",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Marshmallow",
+      "translation": "棉花糖",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Pancake",
+      "translation": "煎饼",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Sugar",
+      "translation": "糖",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Computer",
+      "translation": "计算机",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Nitinol",
+      "translation": "镍钛合金",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Lava",
+      "translation": "熔岩",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Invar",
+      "translation": "因瓦合金",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Lantern",
+      "translation": "灯笼",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Sponge",
+      "translation": "海绵",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Mana",
+      "translation": "魔力",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Petrotheum",
+      "translation": "岩浆质",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Glowshroom",
+      "translation": "荧光蘑菇",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Mysterious",
+      "translation": "神秘",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Mithril",
+      "translation": "秘银",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Flerovium",
+      "translation": "鈇",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Magma",
+      "translation": "岩浆",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Cream",
+      "translation": "奶油",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Pyrotheum",
+      "translation": "炽焱",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Ferrochrome",
+      "translation": "铬铁",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Elektron",
+      "translation": "电子合金",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Magnalium",
+      "translation": "镁铝合金",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Hydronalium",
+      "translation": "氢铝合金",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Monitor",
+      "translation": "监视器",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Low",
+      "translation": "低",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "High",
+      "translation": "高",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Ultra",
+      "translation": "超",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Heavy",
+      "translation": "重",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Radioactive",
+      "translation": "放射性",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "bonded",
+      "translation": "键合",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Tritium",
+      "translation": "氚",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "COOLANT",
+      "translation": "冷却剂",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Anti",
+      "translation": "反",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Signalum",
+      "translation": "信素",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Cracker",
+      "translation": "脆饼",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Villiaumite",
+      "translation": "氟化钠矿",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Rutherfordium",
+      "translation": "鑪",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Supercritical",
+      "translation": "超临界",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Syrup",
+      "translation": "糖浆",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Eggnog",
+      "translation": "蛋奶酒",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Ice",
+      "translation": "冰",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Sand",
+      "translation": "沙",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Maple",
+      "translation": "枫木",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Oak",
+      "translation": "橡木",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Potato",
+      "translation": "马铃薯",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Golden",
+      "translation": "金质",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Prometheum",
+      "translation": "普罗米修斯金属",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Yellorium",
+      "translation": "黄素",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Trinitite",
+      "translation": "三位一体矿",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Witherite",
+      "translation": "毒重石",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Magnox",
+      "translation": "镁诺克斯",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Inlet",
+      "translation": "入口",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Outlet",
+      "translation": "出口",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Preheated",
+      "translation": "预热",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Solid",
+      "translation": "固体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Quality",
+      "translation": "品质",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Matrix",
+      "translation": "矩阵",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Transparent",
+      "translation": "透明",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Multiplier",
+      "translation": "倍率",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Gasoline",
+      "translation": "汽油",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Diesel",
+      "translation": "柴油",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Activated",
+      "translation": "活性",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Nugget",
+      "translation": "粒",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Dirt",
+      "translation": "泥土",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Pulverized",
+      "translation": "粉碎",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Superalloyed",
+      "translation": "高温合金",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Packed",
+      "translation": "压实",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "covered",
+      "translation": "包覆",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "S'more",
+      "translation": "烤棉花糖夹心饼",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "S'meutectic",
+      "translation": "棉花糖共晶",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "S'molten",
+      "translation": "棉花糖熔融",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "S'moil",
+      "translation": "棉花糖油",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "S'Mingot",
+      "translation": "棉花糖锭",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Th'morium",
+      "translation": "棉钍",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Sea Lantern",
+      "translation": "海晶灯",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "End Stone",
+      "translation": "末地石",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Endstone",
+      "translation": "末地石",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Nether Brick",
+      "translation": "下界砖",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Netherbrick",
+      "translation": "下界砖",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Graham Cracker",
+      "translation": "全麦脆饼",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Synthesis Gas",
+      "translation": "合成气",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Fuel Oil",
+      "translation": "燃料油",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Anti-Hydrogen",
+      "translation": "反氢",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Hydride",
+      "translation": "氢化物",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Hydrocarbon",
+      "translation": "碳氢化合物",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Deuteride",
+      "translation": "氘化物",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Ceramic Matrix",
+      "translation": "陶瓷基体",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Matrix-Legierung",
+      "translation": "基质合金",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Elektronlegierung",
+      "translation": "电子合金",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Elektron60-Alloy",
+      "translation": "电子合金 60",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Elektron192",
+      "translation": "电子合金 192",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Elektron231",
+      "translation": "电子合金 231",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Elektron90",
+      "translation": "电子合金 90",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Edelstahl",
+      "translation": "不锈钢",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Edle",
+      "translation": "优质",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Copernicum",
+      "translation": "鿔",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "HSLA Steel",
+      "translation": "高强度低合金钢",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Ultra Light",
+      "translation": "超轻",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Unwieldy",
+      "translation": "笨重",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Super",
+      "translation": "超级",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Jungle",
+      "translation": "丛林",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Kerosene",
+      "translation": "煤油",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "LPG",
+      "translation": "液化石油气",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Schmeared",
+      "translation": "涂布",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Spruce",
+      "translation": "云杉",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Wasteland",
+      "translation": "荒地",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Erbium",
+      "translation": "铒",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Extremecake",
+      "translation": "极致蛋糕",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Gelid",
+      "translation": "凝胶态",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Lukewarm",
+      "translation": "温热",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Methane",
+      "translation": "甲烷",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Nichrome",
+      "translation": "镍铬合金",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Osmiridium",
+      "translation": "锇铱合金",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Slimy",
+      "translation": "黏液",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Steelcake",
+      "translation": "钢蛋糕",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Unfinished",
+      "translation": "未完成",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Well",
+      "translation": "井",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Earth",
+      "translation": "土",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "SiC",
+      "translation": "碳化硅",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "CMC",
+      "translation": "陶瓷基复合材料",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Bronzemagnet",
+      "translation": "青铜磁体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Chromiumagnet",
+      "translation": "铬磁体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Constantanmagnet",
+      "translation": "康铜磁体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Ferroboronmagnet",
+      "translation": "硼铁磁体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Invarmagnet",
+      "translation": "因瓦合金磁体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Iridiumagnet",
+      "translation": "铱磁体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Ironmagnet",
+      "translation": "铁磁体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Leadmagnet",
+      "translation": "铅磁体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Lithiumagnet",
+      "translation": "锂磁体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Manganesemagnet",
+      "translation": "锰磁体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Neodymiumagnet",
+      "translation": "钕磁体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Nickelmagnet",
+      "translation": "镍磁体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Osmiumagnet",
+      "translation": "锇磁体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Potassiumagnet",
+      "translation": "钾磁体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Samariumagnet",
+      "translation": "钐磁体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Siliconcarbidemagnet",
+      "translation": "碳化硅磁体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Steelmagnet",
+      "translation": "钢磁体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Tinmagnet",
+      "translation": "锡磁体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Tungstenmagnet",
+      "translation": "钨磁体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Zincmagnet",
+      "translation": "锌磁体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "TODO tooltip",
+      "translation": "功能开发中",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Overhaul Fusion Reactor",
+      "translation": "改版聚变反应堆",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Fusion Reactor",
+      "translation": "聚变反应堆",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Overhaul Turbine",
+      "translation": "改版涡轮机",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Overhaul Distiller",
+      "translation": "改版蒸馏器",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Distiller",
+      "translation": "蒸馏器",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Operator",
+      "translation": "运算符",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "And",
+      "translation": "且",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Greater",
+      "translation": "大于",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Equal",
+      "translation": "等于",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Less",
+      "translation": "小于",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Not",
+      "translation": "非",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "floor",
+      "translation": "向下取整",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "random",
+      "translation": "随机",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "int",
+      "translation": "整数",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "float",
+      "translation": "浮点数",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "null",
+      "translation": "空值",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "byte",
+      "translation": "字节",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "short",
+      "translation": "短整数",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "long",
+      "translation": "长整数",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "double",
+      "translation": "双精度浮点数",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "bool",
+      "translation": "布尔值",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "boolean",
+      "translation": "布尔值",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "str",
+      "translation": "字符串",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "True",
+      "translation": "真",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "False",
+      "translation": "假",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Core",
+      "translation": "核心",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Overhaul Turbines are Turbines in NuclearCraft: Overhauled",
+      "translation": "改版涡轮机是核工艺：改版中的涡轮机",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Suggests adding Fuel cells to increase output",
+      "translation": "建议添加燃料单元以提高产出",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Suggests adding Moderator blocks to increase efficiency",
+      "translation": "建议添加慢化剂方块以提高效率",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Adjacent moderator line (",
+      "translation": "相邻慢化剂线（",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Adjacent to fuel cell (",
+      "translation": "与燃料单元相邻（",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Has neutron source (",
+      "translation": "具有中子源（",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Neutron source path (",
+      "translation": "中子源路径（",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Targeted block (",
+      "translation": "目标方块（",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Valid moderator line (",
+      "translation": "有效慢化剂线（",
+      "reason": "no-rule"
+    },
+    {
+      "source": "NCPF Element",
+      "translation": "NCPF 元素",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Legacy Names",
+      "translation": "旧名称",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Legacy Block",
+      "translation": "旧版方块",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Legacy Fluid",
+      "translation": "旧版流体",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Legacy Item",
+      "translation": "旧版物品",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Legacy Recipe",
+      "translation": "旧版配方",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Liquid Distributer",
+      "translation": "液体分配器",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Poloidal Electromagnet",
+      "translation": "极向电磁体",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Toroidal Electromagnet",
+      "translation": "环向电磁体",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Process Port",
+      "translation": "处理端口",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Recipe Ports",
+      "translation": "配方端口",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Reboiling Unit",
+      "translation": "再沸器",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Reflux Unit",
+      "translation": "回流器",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Reservoir Port",
+      "translation": "储液端口",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Sieve Assembly",
+      "translation": "筛板组件",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Sieve Tray",
+      "translation": "筛盘",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Neutron Shield",
+      "translation": "中子屏蔽器",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Neutron Source",
+      "translation": "中子源",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Power Generation: ",
+      "translation": "发电量：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Total output: ",
+      "translation": "总产出：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Prime Fuels",
+      "translation": "质数燃料",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Previous Prime: ",
+      "translation": "上一个质数：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Rainbow Score: ",
+      "translation": "彩虹评分：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Rainbow Factor",
+      "translation": "彩虹因子",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Quantum Traversed Efficiency Score",
+      "translation": "量子传输效率评分",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Quantum Traversed Efficiency: ",
+      "translation": "量子传输效率：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Random Coolant Recipe Mutator",
+      "translation": "随机冷却剂配方变异器",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Random Quantity Mutator",
+      "translation": "随机数量变异器",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Random Block Mutator",
+      "translation": "随机方块变异器",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Random Cell Mutator",
+      "translation": "随机单元变异器",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Random Fuel Mutator",
+      "translation": "随机燃料变异器",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Single Mutator",
+      "translation": "单次变异器",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Mutator Quantity",
+      "translation": "变异器数量",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Runs once per iteration",
+      "translation": "每次迭代运行一次",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Less or Equal",
+      "translation": "小于或等于",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Not Equal",
+      "translation": "不等于",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Overhaul MSR",
+      "translation": "改版熔盐堆",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Overhaul SFR",
+      "translation": "改版固体燃料堆",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Underhaul SFR",
+      "translation": "旧版固体燃料堆",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Heat Sink",
+      "translation": "散热器",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Passive Cooler",
+      "translation": "被动冷却器",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Fuels: ",
+      "translation": "燃料：",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": " (Prime)",
+      "translation": "（质数）",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Tinker's tools, (not multiblocks)",
+      "translation": "匠魂工具（不是多方块结构）",
+      "reason": "no-rule"
+    },
+    {
+      "source": "Tinker's Construct",
+      "translation": "匠魂",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Tinker Tool",
+      "translation": "匠魂工具",
+      "reason": "fragment-short"
+    },
+    {
+      "source": "Two ",
+      "translation": "两个 ",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Three ",
+      "translation": "三个 ",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Legacy",
+      "translation": "旧版",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Fluid",
+      "translation": "流体",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Item",
+      "translation": "物品",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Names",
+      "translation": "名称",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Quantity",
+      "translation": "数量",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Single",
+      "translation": "单次",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Prime",
+      "translation": "质数",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Aye",
+      "translation": "是",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Alright",
+      "translation": "好的",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Awknowledged",
+      "translation": "已知悉",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Skip",
+      "translation": "跳过",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Thanks",
+      "translation": "谢谢",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Yep",
+      "translation": "是",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Power",
+      "translation": "功率",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Heat",
+      "translation": "热量",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Efficiency",
+      "translation": "效率",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Output",
+      "translation": "产出",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Input",
+      "translation": "输入",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Reactor",
+      "translation": "反应堆",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Turbine",
+      "translation": "涡轮机",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Fusion",
+      "translation": "聚变",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Fission",
+      "translation": "裂变",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Overhaul",
+      "translation": "改版",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Underhaul",
+      "translation": "旧版",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Functions",
+      "translation": "功能",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Elements",
+      "translation": "元素",
+      "reason": "fragment-word"
+    },
+    {
+      "source": "Add ",
+      "translation": "添加 ",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Delete ",
+      "translation": "删除 ",
+      "reason": "fragment-padded"
+    },
+    {
+      "source": "Modify ",
+      "translation": "修改 ",
+      "reason": "fragment-padded"
+    }
+  ]
+}
