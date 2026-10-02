@@ -29,7 +29,7 @@ import {
  */
 
 const CONFIG = fileURLToPath(
-  new URL('../../../src/configurations/nuclearcraft.ncpf.json', import.meta.url),
+  new URL('../../../datasets/configurations/nuclearcraft.ncpf.json', import.meta.url),
 );
 
 const project = loadProjectFile(CONFIG);

@@ -22,7 +22,7 @@ import {
  * Skipped unless `NCPL_ULP_CENSUS` is set.
  */
 const ROOT = new URL('../../../', import.meta.url);
-const CONFIG = fileURLToPath(new URL('src/configurations/nuclearcraft.ncpf.json', ROOT));
+const CONFIG = fileURLToPath(new URL('datasets/configurations/nuclearcraft.ncpf.json', ROOT));
 
 const ENABLED = process.env['NCPL_ULP_CENSUS'] === '1';
 

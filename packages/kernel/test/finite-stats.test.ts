@@ -27,7 +27,7 @@ import {
  */
 
 const ROOT = new URL('../../../', import.meta.url);
-const CONFIG = fileURLToPath(new URL('src/configurations/nuclearcraft.ncpf.json', ROOT));
+const CONFIG = fileURLToPath(new URL('datasets/configurations/nuclearcraft.ncpf.json', ROOT));
 
 const sfr = loadShippedSfrConfig(CONFIG);
 const usfr = loadShippedUsfrConfig(CONFIG);

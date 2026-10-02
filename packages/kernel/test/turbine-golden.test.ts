@@ -22,7 +22,7 @@ import {
  */
 
 const ROOT = new URL('../../../', import.meta.url);
-const CONFIG_PATH = fileURLToPath(new URL('src/configurations/nuclearcraft.ncpf.json', ROOT));
+const CONFIG_PATH = fileURLToPath(new URL('datasets/configurations/nuclearcraft.ncpf.json', ROOT));
 /** The dataset may be delivered plain (`datasetVersion 3`) or gzipped. */
 const DATASET_PATH = fileURLToPath(
   existsSync(new URL('datasets/golden/turbine-cases.jsonl.gz', ROOT))

@@ -51,7 +51,7 @@
  * configuration — Java's `Project.convertToObject` resolves against
  * `Core.project` whenever the file's own configuration is empty
  * (`Project.java:36`). TS therefore resolves names against the same shipped
- * configuration (`src/configurations/nuclearcraft.ncpf.json`, i.e.
+ * configuration (`datasets/configurations/nuclearcraft.ncpf.json`, i.e.
  * `Configuration.initNuclearcraftConfiguration`), which is what makes
  * `datasets/fixtures/historical/underhaul.json` reproduce its golden byte for
  * byte.
@@ -468,13 +468,13 @@ export interface HellrageReaderOptions {
   /**
    * NCPF JSON tree of the app's active configuration — the TS equivalent of
    * Java's `Core.project` (`Configuration.NUCLEARCRAFT`). Defaults to the shipped
-   * `src/configurations/nuclearcraft.ncpf.json`; inject it to read against a
+   * `datasets/configurations/nuclearcraft.ncpf.json`; inject it to read against a
    * different (e.g. addon-extended) configuration.
    */
   readonly root?: JsonObject;
 }
 
-const DEFAULT_ROOT_URL = new URL('../../../../src/configurations/nuclearcraft.ncpf.json', import.meta.url);
+const DEFAULT_ROOT_URL = new URL('../../../../datasets/configurations/nuclearcraft.ncpf.json', import.meta.url);
 
 let cachedDefaultRoot: JsonObject | null = null;
 

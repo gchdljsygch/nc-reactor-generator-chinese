@@ -520,7 +520,7 @@ export interface HellrageWriteOptions {
    * The app's active configuration — the TS equivalent of Java's `Core.project`
    * (`Configuration.NUCLEARCRAFT`), used for every configuration id the project
    * does not itself declare (`Project.java:36`). Defaults to the shipped
-   * `src/configurations/nuclearcraft.ncpf.json`.
+   * `datasets/configurations/nuclearcraft.ncpf.json`.
    */
   readonly root?: JsonObject;
   /** Container label used in diagnostics (`<hellrage-write>` by default). */

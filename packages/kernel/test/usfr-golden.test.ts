@@ -18,7 +18,7 @@ import {
  */
 
 const ROOT = new URL('../../../', import.meta.url);
-const CONFIG_PATH = fileURLToPath(new URL('src/configurations/nuclearcraft.ncpf.json', ROOT));
+const CONFIG_PATH = fileURLToPath(new URL('datasets/configurations/nuclearcraft.ncpf.json', ROOT));
 const DATASET_PATH = fileURLToPath(new URL('datasets/golden/usfr-cases.jsonl.gz', ROOT));
 
 const MODE = process.env['NCPL_GOLDEN'] ?? 'sample';

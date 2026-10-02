@@ -10,7 +10,7 @@
 | 数据集版本 | `datasetVersion 3` |
 | 生成器 | `GoldenGen`（`tools/golden/src/net/ncplanner/plannerator/tools/GoldenGen.java`） |
 | 引擎 | `java-final`（工作区冻结源码 + D1-B 的辐照器 null guard，见 `docs/r1/d1-decision.md`） |
-| 配置 | `src/configurations/nuclearcraft.ncpf.json`（NuclearCraft 1.12.2-2o.9.3 / underhaul 2.19a） |
+| 配置 | `datasets/configurations/nuclearcraft.ncpf.json`（NuclearCraft 1.12.2-2o.9.3 / underhaul 2.19a） |
 | 种子 / 参数 | `--seed 20260101 --min-size 3 --max-size 14` |
 | 统计口径 | 反射取全部数值字段（含 private），排除 `calcStep`/`calcSubstep`/`lastChangeTime`/`x`/`y`/`z` |
 | 模板与配方命名 | `NCPFElementDefinition.toString()`（单射；见 `docs/r1/r1.0-dataset-naming.md`） |

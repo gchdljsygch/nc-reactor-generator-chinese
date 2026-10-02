@@ -22,7 +22,7 @@ import {
  * (operators hold two `SettingVariable`s, a `SettingVariable` holds an operator).
  *
  * The serialized shape is Java's, verified against the four shipped presets in
- * `src/configurations/generators/**`:
+ * `datasets/configurations/generators/**`:
  *
  * ```json
  * { "type": "operator", "operator": "subtract",

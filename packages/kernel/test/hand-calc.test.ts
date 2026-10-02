@@ -50,7 +50,7 @@ import {
 
 const ROOT = new URL('../../../', import.meta.url);
 const config: SfrConfig = loadShippedSfrConfig(
-  fileURLToPath(new URL('src/configurations/nuclearcraft.ncpf.json', ROOT)),
+  fileURLToPath(new URL('datasets/configurations/nuclearcraft.ncpf.json', ROOT)),
 );
 
 const FUEL = 'ingotHECf249ZA';

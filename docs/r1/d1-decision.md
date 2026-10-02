@@ -144,7 +144,7 @@ java.lang.ClassCastException: class net.ncplanner.plannerator.ncpf.element.NCPFL
 复核命令：
 
 ```powershell
-node -e "const j=require('./src/configurations/nuclearcraft.ncpf.json'); ..."   # 见 §6.4
+node -e "const j=require('./datasets/configurations/nuclearcraft.ncpf.json'); ..."   # 见 §6.4
 # → heater recipes: legacy_fluid 32 legacy_recipe 0
 ```
 

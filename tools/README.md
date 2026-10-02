@@ -162,12 +162,12 @@ pwsh -File tools/i18n/classify-translations.ps1
 
 ### 3.4 NCPF 格式往返测试（R0.4）
 
-对仓库里 **38 个生产配置**（`src/configurations/**/*.ncpf.json`，18.7 MB）做
+对仓库里 **38 个生产配置**（`datasets/configurations/**/*.ncpf.json`，18.7 MB）做
 read → write → read → 比对结构指纹。
 
 ```powershell
 java -cp "<appClasses>;<toolClasses>;src;<jars>" `
-     net.ncplanner.plannerator.tools.RoundTrip src/configurations docs/r0/format-roundtrip.md
+     net.ncplanner.plannerator.tools.RoundTrip datasets/configurations docs/r0/format-roundtrip.md
 ```
 
 实测结果：**生产保存路径（`NCPFFileWriter`）38/38 指纹完全一致**。

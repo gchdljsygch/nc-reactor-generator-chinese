@@ -46,10 +46,10 @@ describe('R1.4a read: 38 production configurations', () => {
   }
 
   it('keeps unknown modules and unknown fields verbatim', () => {
-    // `src/configurations/internal.ncpf.json` ships "settings only" elements with
+    // `datasets/configurations/internal.ncpf.json` ships "settings only" elements with
     // no `type` at all (Java reads them as UnknownNCPFElement) — the strongest
     // available probe that nothing is normalized away on read.
-    const document = project('src/configurations/internal.ncpf.json');
+    const document = project('datasets/configurations/internal.ncpf.json');
     expect(document.issues).toEqual([]);
     const sfr = document.getConfiguration('nuclearcraft:overhaul_sfr');
     expect(sfr).toBeDefined();

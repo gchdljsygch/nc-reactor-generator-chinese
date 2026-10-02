@@ -29,7 +29,7 @@ const INDEX = process.env['NCPL_DUMP_INDEX'];
 const DATASET = process.env['NCPL_DUMP_DATASET'] ?? 'datasets/golden/sfr-cases.jsonl.gz';
 const TYPE = process.env['NCPL_DUMP_TYPE'] ?? inferType(DATASET);
 const ROOT = new URL('../../../', import.meta.url);
-const CONFIG_PATH = fileURLToPath(new URL('src/configurations/nuclearcraft.ncpf.json', ROOT));
+const CONFIG_PATH = fileURLToPath(new URL('datasets/configurations/nuclearcraft.ncpf.json', ROOT));
 
 function inferType(dataset: string): string {
   if (dataset.includes('msr')) return 'msr';

@@ -29,8 +29,8 @@ import {
  */
 
 const ROOT = new URL('../../../', import.meta.url);
-const CONFIG_PATH = fileURLToPath(new URL('src/configurations/nuclearcraft.ncpf.json', ROOT));
-const PRESET_DIR = fileURLToPath(new URL('src/configurations/generators/', ROOT));
+const CONFIG_PATH = fileURLToPath(new URL('datasets/configurations/nuclearcraft.ncpf.json', ROOT));
+const PRESET_DIR = fileURLToPath(new URL('datasets/configurations/generators/', ROOT));
 
 const PRESETS = [
   { name: 'overhaul_sfr/efficiency', kind: 'sfr' as const },

@@ -18,7 +18,7 @@ import { SettingsStore } from '../src/settings.js';
 import { AppDocument } from '../src/model/document.js';
 import { PlannerApp } from '../src/ui/app.js';
 import { readAnyProjectText } from '@ncplanner/formats';
-import nuclearcraft from '../../../src/configurations/nuclearcraft.ncpf.json';
+import nuclearcraft from '../../../datasets/configurations/nuclearcraft.ncpf.json';
 import enMessages from '../../../lang/en_US.messages.json';
 import enApp from '../../../lang/en_US.app.json';
 import zhMessages from '../../../lang/zh_CN.messages.json';

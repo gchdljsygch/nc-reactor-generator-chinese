@@ -29,7 +29,7 @@ export interface FingerprintBaseline {
 
 export const R0_BASELINE: readonly FingerprintBaseline[] = [
   {
-    path: "src/configurations/addons/alloy_heat_sinks.ncpf.json",
+    path: "datasets/configurations/addons/alloy_heat_sinks.ncpf.json",
     fingerprint: "0b2d27b9a8ff39bf25c92ad9#988",
     elements: 983,
     displays: 0,
@@ -38,7 +38,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 328.7,
   },
   {
-    path: "src/configurations/addons/alternative_ore_processing.ncpf.json",
+    path: "datasets/configurations/addons/alternative_ore_processing.ncpf.json",
     fingerprint: "6a98cfdec3829d5367084d45#1023",
     elements: 1018,
     displays: 0,
@@ -47,7 +47,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 393.1,
   },
   {
-    path: "src/configurations/addons/binarys_extra_stuff.ncpf.json",
+    path: "datasets/configurations/addons/binarys_extra_stuff.ncpf.json",
     fingerprint: "bda9c016f6f651e682b1fbf3#957",
     elements: 952,
     displays: 0,
@@ -56,7 +56,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 282.6,
   },
   {
-    path: "src/configurations/addons/crazy_ore_processing.ncpf.json",
+    path: "datasets/configurations/addons/crazy_ore_processing.ncpf.json",
     fingerprint: "309291c03fcd0289dfb1b6dc#957",
     elements: 952,
     displays: 0,
@@ -65,7 +65,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 279.1,
   },
   {
-    path: "src/configurations/addons/extreme_reactors.ncpf.json",
+    path: "datasets/configurations/addons/extreme_reactors.ncpf.json",
     fingerprint: "206f2edc5e1f6774ff01a367#954",
     elements: 949,
     displays: 0,
@@ -74,7 +74,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 1039.7,
   },
   {
-    path: "src/configurations/addons/ic2.ncpf.json",
+    path: "datasets/configurations/addons/ic2.ncpf.json",
     fingerprint: "e9622dc202b44b62d622608b#958",
     elements: 953,
     displays: 0,
@@ -83,7 +83,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 286.1,
   },
   {
-    path: "src/configurations/addons/inert_matrix_fuels.ncpf.json",
+    path: "datasets/configurations/addons/inert_matrix_fuels.ncpf.json",
     fingerprint: "bb7e7338289972768919534e#990",
     elements: 985,
     displays: 0,
@@ -92,7 +92,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 319.8,
   },
   {
-    path: "src/configurations/addons/moar_fuels.ncpf.json",
+    path: "datasets/configurations/addons/moar_fuels.ncpf.json",
     fingerprint: "76debc0a08496e58110a2f7f#1483",
     elements: 1478,
     displays: 0,
@@ -101,7 +101,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 1390,
   },
   {
-    path: "src/configurations/addons/moar_fuels_lite.ncpf.json",
+    path: "datasets/configurations/addons/moar_fuels_lite.ncpf.json",
     fingerprint: "0b64fb0710980a2a68d8439b#1259",
     elements: 1254,
     displays: 0,
@@ -110,7 +110,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 918.3,
   },
   {
-    path: "src/configurations/addons/moar_fuels_lite_mrf.ncpf.json",
+    path: "datasets/configurations/addons/moar_fuels_lite_mrf.ncpf.json",
     fingerprint: "f31e1e48c45d78b317a71f9d#1015",
     elements: 1010,
     displays: 0,
@@ -119,7 +119,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 416.8,
   },
   {
-    path: "src/configurations/addons/moar_fuels_mrf.ncpf.json",
+    path: "datasets/configurations/addons/moar_fuels_mrf.ncpf.json",
     fingerprint: "b1788bd89d2d718563575ad9#1071",
     elements: 1066,
     displays: 0,
@@ -128,7 +128,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 545.7,
   },
   {
-    path: "src/configurations/addons/moar_fuels_ultra_lite.ncpf.json",
+    path: "datasets/configurations/addons/moar_fuels_ultra_lite.ncpf.json",
     fingerprint: "1edb3e07b1ec8a8067eca2f9#1091",
     elements: 1086,
     displays: 0,
@@ -137,7 +137,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 565,
   },
   {
-    path: "src/configurations/addons/moar_fuels_ultra_lite_mrf.ncpf.json",
+    path: "datasets/configurations/addons/moar_fuels_ultra_lite_mrf.ncpf.json",
     fingerprint: "b5ccf09a062c0ff392aae79f#973",
     elements: 968,
     displays: 0,
@@ -146,7 +146,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 320.2,
   },
   {
-    path: "src/configurations/addons/moar_heat_sinks.ncpf.json",
+    path: "datasets/configurations/addons/moar_heat_sinks.ncpf.json",
     fingerprint: "024ca381318b1789bdcf622b#1202",
     elements: 1197,
     displays: 0,
@@ -155,7 +155,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 692.2,
   },
   {
-    path: "src/configurations/addons/moar_reactor_components.ncpf.json",
+    path: "datasets/configurations/addons/moar_reactor_components.ncpf.json",
     fingerprint: "1b19c17f64e6dfd75ddad470#987",
     elements: 982,
     displays: 0,
@@ -164,7 +164,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 313.1,
   },
   {
-    path: "src/configurations/addons/moar_reactor_functionality.ncpf.json",
+    path: "datasets/configurations/addons/moar_reactor_functionality.ncpf.json",
     fingerprint: "abf577c2f5d4c642422f1f74#1084",
     elements: 1079,
     displays: 0,
@@ -173,7 +173,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 449.4,
   },
   {
-    path: "src/configurations/addons/ncouto.ncpf.json",
+    path: "datasets/configurations/addons/ncouto.ncpf.json",
     fingerprint: "1ad04b6597eba7682d9c1534#1035",
     elements: 1030,
     displays: 0,
@@ -182,7 +182,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 373.2,
   },
   {
-    path: "src/configurations/addons/nco_confectionery.ncpf.json",
+    path: "datasets/configurations/addons/nco_confectionery.ncpf.json",
     fingerprint: "18e23d35248d3a364d4e3064#1070",
     elements: 1065,
     displays: 0,
@@ -191,7 +191,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 458.3,
   },
   {
-    path: "src/configurations/addons/new_turbine_parts.ncpf.json",
+    path: "datasets/configurations/addons/new_turbine_parts.ncpf.json",
     fingerprint: "a3fedee6b9a01225d216dd5e#1083",
     elements: 1078,
     displays: 0,
@@ -200,7 +200,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 452,
   },
   {
-    path: "src/configurations/addons/nuclear_additions.ncpf.json",
+    path: "datasets/configurations/addons/nuclear_additions.ncpf.json",
     fingerprint: "7b204ba8fe5f74205c8dd4b2#1161",
     elements: 1156,
     displays: 0,
@@ -209,7 +209,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 1906.3,
   },
   {
-    path: "src/configurations/addons/nuclear_oil_refining.ncpf.json",
+    path: "datasets/configurations/addons/nuclear_oil_refining.ncpf.json",
     fingerprint: "f3951625db893526069e968f#967",
     elements: 962,
     displays: 0,
@@ -218,7 +218,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 291.1,
   },
   {
-    path: "src/configurations/addons/nuclear_tree_factory.ncpf.json",
+    path: "datasets/configurations/addons/nuclear_tree_factory.ncpf.json",
     fingerprint: "2a61b04310ec8440560d1645#972",
     elements: 967,
     displays: 0,
@@ -227,7 +227,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 292.8,
   },
   {
-    path: "src/configurations/addons/qmd.ncpf.json",
+    path: "datasets/configurations/addons/qmd.ncpf.json",
     fingerprint: "fb6e15a71c8bfcde18bb1135#895",
     elements: 891,
     displays: 0,
@@ -236,7 +236,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 1024.8,
   },
   {
-    path: "src/configurations/addons/spicy_heat_sinks_stable.ncpf.json",
+    path: "datasets/configurations/addons/spicy_heat_sinks_stable.ncpf.json",
     fingerprint: "4ba05ade8e91b51ef0d5f69a#1052",
     elements: 1047,
     displays: 0,
@@ -245,7 +245,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 424,
   },
   {
-    path: "src/configurations/addons/spicy_heat_sinks_unstable.ncpf.json",
+    path: "datasets/configurations/addons/spicy_heat_sinks_unstable.ncpf.json",
     fingerprint: "21fe72b6b8a3034c59cc7d96#1113",
     elements: 1108,
     displays: 0,
@@ -254,7 +254,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 518.7,
   },
   {
-    path: "src/configurations/addons/thorium_mixed_fuels.ncpf.json",
+    path: "datasets/configurations/addons/thorium_mixed_fuels.ncpf.json",
     fingerprint: "c6369656648742dab5b486d4#1062",
     elements: 1057,
     displays: 0,
@@ -263,7 +263,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 407.6,
   },
   {
-    path: "src/configurations/addons/trinity.ncpf.json",
+    path: "datasets/configurations/addons/trinity.ncpf.json",
     fingerprint: "37514409668b9a6d36a39622#961",
     elements: 956,
     displays: 0,
@@ -272,7 +272,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 280.8,
   },
   {
-    path: "src/configurations/enigmatica_2_expert.ncpf.json",
+    path: "datasets/configurations/enigmatica_2_expert.ncpf.json",
     fingerprint: "3aa572228107228be3d3ff4f#98",
     elements: 95,
     displays: 90,
@@ -281,7 +281,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 154.9,
   },
   {
-    path: "src/configurations/enigmatica_2_expert_extended.ncpf.json",
+    path: "datasets/configurations/enigmatica_2_expert_extended.ncpf.json",
     fingerprint: "dcd4dd3a10fe3daa7ac3d6a9#914",
     elements: 908,
     displays: 854,
@@ -290,7 +290,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 1159.9,
   },
   {
-    path: "src/configurations/fusion_test.ncpf.json",
+    path: "datasets/configurations/fusion_test.ncpf.json",
     fingerprint: "59711021e838de99a6a15e17#47",
     elements: 46,
     displays: 0,
@@ -299,7 +299,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 52.8,
   },
   {
-    path: "src/configurations/generators/overhaul_sfr/efficiency.ncpf.json",
+    path: "datasets/configurations/generators/overhaul_sfr/efficiency.ncpf.json",
     fingerprint: "3a005241e5d6b00ce066b423#30",
     elements: 26,
     displays: 26,
@@ -308,7 +308,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 62.2,
   },
   {
-    path: "src/configurations/generators/overhaul_sfr/output.ncpf.json",
+    path: "datasets/configurations/generators/overhaul_sfr/output.ncpf.json",
     fingerprint: "3a005241e5d6b00ce066b423#30",
     elements: 26,
     displays: 26,
@@ -317,7 +317,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 58.9,
   },
   {
-    path: "src/configurations/generators/underhaul_sfr/efficiency.ncpf.json",
+    path: "datasets/configurations/generators/underhaul_sfr/efficiency.ncpf.json",
     fingerprint: "3a005241e5d6b00ce066b423#30",
     elements: 26,
     displays: 26,
@@ -326,7 +326,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 59.8,
   },
   {
-    path: "src/configurations/generators/underhaul_sfr/output.ncpf.json",
+    path: "datasets/configurations/generators/underhaul_sfr/output.ncpf.json",
     fingerprint: "3a005241e5d6b00ce066b423#30",
     elements: 26,
     displays: 26,
@@ -335,7 +335,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 56.5,
   },
   {
-    path: "src/configurations/internal.ncpf.json",
+    path: "datasets/configurations/internal.ncpf.json",
     fingerprint: "3a005241e5d6b00ce066b423#30",
     elements: 26,
     displays: 26,
@@ -344,7 +344,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 16.7,
   },
   {
-    path: "src/configurations/nuclearcraft.ncpf.json",
+    path: "datasets/configurations/nuclearcraft.ncpf.json",
     fingerprint: "988ffaf95975044b42bc472b#952",
     elements: 948,
     displays: 948,
@@ -353,7 +353,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 1232.2,
   },
   {
-    path: "src/configurations/project_ozone_3.ncpf.json",
+    path: "datasets/configurations/project_ozone_3.ncpf.json",
     fingerprint: "26fc3aae66d8f911b2627d2d#95",
     elements: 93,
     displays: 90,
@@ -362,7 +362,7 @@ export const R0_BASELINE: readonly FingerprintBaseline[] = [
     docSizeKb: 153.3,
   },
   {
-    path: "src/configurations/quanta.ncpf.json",
+    path: "datasets/configurations/quanta.ncpf.json",
     fingerprint: "bc91149f9b4dae22ccfbb84f#904",
     elements: 899,
     displays: 854,

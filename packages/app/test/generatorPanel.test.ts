@@ -26,7 +26,7 @@ import { registerAllMutators } from '@ncplanner/generator';
  */
 
 const ROOT = new URL('../../../', import.meta.url);
-const CONFIG_PATH = fileURLToPath(new URL('src/configurations/nuclearcraft.ncpf.json', ROOT));
+const CONFIG_PATH = fileURLToPath(new URL('datasets/configurations/nuclearcraft.ncpf.json', ROOT));
 
 /** `Water Heat Sink` in the shipped overhaul configuration's block list. */
 const WATER_HEAT_SINK = 12;
@@ -37,7 +37,7 @@ function presetDocuments(): Record<string, unknown> {
   const read = (name: string): unknown =>
     JSON.parse(
       readFileSync(
-        fileURLToPath(new URL(`src/configurations/generators/${name}.ncpf.json`, ROOT)),
+        fileURLToPath(new URL(`datasets/configurations/generators/${name}.ncpf.json`, ROOT)),
         'utf8',
       ),
     ) as unknown;

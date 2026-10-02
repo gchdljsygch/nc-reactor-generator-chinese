@@ -306,7 +306,7 @@ productive      : 483   (96.6%)   ← editor.totalOutput != 0
   `b.heaterRecipe.getRecipeDefinition().outputs`。
 - 根因：`HeaterRecipe extends LegacyRecipeElement`，而
   `LegacyRecipeElement.getRecipeDefinition()` **无条件**强转成 `NCPFLegacyRecipeElement`；
-  但 `src/configurations/nuclearcraft.ncpf.json` 把 MSR 的 96 条加热器配方声明为
+  但 `datasets/configurations/nuclearcraft.ncpf.json` 把 MSR 的 96 条加热器配方声明为
   `"type":"legacy_fluid"`（只有 `heater_stats.cooling`，没有 inputs/outputs）。
   对照：SFR 的 2 条 coolant recipe、SFR/MSR 的辐照器配方**都是正确的 `legacy_recipe`**，
   所以 SFR 数据集从未踩到它。

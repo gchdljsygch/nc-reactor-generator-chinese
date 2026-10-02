@@ -23,7 +23,7 @@ import { loadShippedSfrConfig, readGoldenDataset, rebuildSfr } from '@ncplanner/
 
 const ROOT = new URL('../../../', import.meta.url);
 const config = loadShippedSfrConfig(
-  fileURLToPath(new URL('src/configurations/nuclearcraft.ncpf.json', ROOT)),
+  fileURLToPath(new URL('datasets/configurations/nuclearcraft.ncpf.json', ROOT)),
 );
 
 function ambiguityOf(datasetPath: string, limit: number) {

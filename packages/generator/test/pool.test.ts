@@ -24,9 +24,9 @@ import {
  */
 
 const ROOT = new URL('../../../', import.meta.url);
-const CONFIG_PATH = fileURLToPath(new URL('src/configurations/nuclearcraft.ncpf.json', ROOT));
+const CONFIG_PATH = fileURLToPath(new URL('datasets/configurations/nuclearcraft.ncpf.json', ROOT));
 const PRESET_PATH = fileURLToPath(
-  new URL('src/configurations/generators/overhaul_sfr/output.ncpf.json', ROOT),
+  new URL('datasets/configurations/generators/overhaul_sfr/output.ncpf.json', ROOT),
 );
 
 const sfrConfig = loadShippedSfrConfig(CONFIG_PATH);

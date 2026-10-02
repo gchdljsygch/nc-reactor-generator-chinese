@@ -157,7 +157,7 @@ describe('R1.4c export: structure retained, plannerator:* stripped', () => {
   });
 
   it('exports a design-less project to an empty configuration set (Java behavior)', () => {
-    const document = project('src/configurations/internal.ncpf.json');
+    const document = project('datasets/configurations/internal.ncpf.json');
     const exported = writeNcpfExport(document);
     expect(exported.configuration).toEqual({});
     expect(exported.designs).toEqual([]);
