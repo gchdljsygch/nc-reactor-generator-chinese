@@ -13,12 +13,14 @@ const r = (path: string) => fileURLToPath(new URL(path, import.meta.url));
  *    `src/shims/node.ts` — see that file for why, and note that the shims throw,
  *    so a browser code path that really needs `fs` fails loudly.
  *
- * The object is exported **without** importing `vite`'s `defineConfig`: `vite` is
- * not a declared dependency (it arrives transitively through `vitest`), so under
- * pnpm's strict layout there is no `node_modules/vite` for the config file itself
- * to resolve — only the `.bin/vite` shim. `defineConfig` is a type-only identity
- * helper, so dropping it changes nothing at runtime and keeps
- * `pnpm install --frozen-lockfile` valid.
+ * The object is exported **without** importing `vite`'s `defineConfig`: the config
+ * is plain data, so the file stays readable without resolving the `vite` package
+ * from its own directory. `vite` **is** a declared root devDependency
+ * (`package.json`), because `build:app` runs its binary: trusting the copy that
+ * arrives transitively through `vitest` left `node_modules/.bin/vite` missing
+ * after `pnpm install --frozen-lockfile`, so `pnpm build:app` died with
+ * `'vite' is not recognized` on a clean checkout (CI) while passing on a machine
+ * whose `node_modules` predated the pnpm 11 install.
  */
 export default {
   root: r('.'),
