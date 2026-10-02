@@ -72,6 +72,13 @@
 //   Files are sorted by their normalised POSIX relative path; JSON keys are emitted in a fixed
 //   order; no timestamp, hostname or absolute path is written. Re-running on the same tree prints
 //   the same `contentSha256` (sha256 of the canonical JSON payload, hash field itself excluded).
+//
+// CI GATE (java-exit-plan §P0)
+//   `EXPECTED_SHA` below pins the frozen Java baseline. `--summary` / `--report` compare the hash of
+//   the scanned tree against it and `exit 1` on mismatch, so a silent edit to a `*.java` file fails
+//   CI instead of merely printing a new number. `--json` deliberately stays ungated: refreshing the
+//   snapshot is `--json <file>`, then bump `EXPECTED_SHA` and the totals in
+//   `docs/r0/port-audit.md` / `docs/r1/port-audit-file-level.md`.
 // ---------------------------------------------------------------------------------------------
 
 import { createHash } from 'node:crypto';
@@ -80,6 +87,10 @@ import { dirname, join, relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export const RULE_VERSION = 1;
+
+// Frozen Java baseline (java-exit-plan §P0). See the CI GATE note in the header: the scan must
+// reproduce exactly this hash, otherwise the tree drifted away from the audited baseline.
+export const EXPECTED_SHA = '7e36b9a5c7c9de15382259418b0941b8ae6cffb47c543946889c9f788beda6a4';
 
 // ---------------------------------------------------------------------------------------------
 // Argument parsing
@@ -912,6 +923,23 @@ function main() {
   }
   if (args.report) console.log(renderReport(result));
   else if (args.summary) console.log(renderSummary(result));
+
+  // ---- CI gate: the scanned tree must reproduce the frozen baseline hash.
+  if ((args.summary || args.report) && result.contentSha256 !== EXPECTED_SHA) {
+    console.error('');
+    console.error(`[port-audit] contentSha256 mismatch: expected ${EXPECTED_SHA}`);
+    console.error(`[port-audit]                        got      ${result.contentSha256}`);
+    for (const m of (result.r0?.mismatches ?? []).slice(0, 20)) {
+      console.error(m.issue === 'line-metric-mismatch'
+        ? `  line-metric-mismatch: ${m.path} (r0=${m.r0} now=${m.mine})`
+        : `  ${m.issue}: ${m.path}`);
+    }
+    console.error('  If the change is intentional, refresh the snapshot first:');
+    console.error('    node tools/ts/port-audit.mjs --json docs/r1/port-audit-file-level.json');
+    console.error('  then update EXPECTED_SHA in tools/ts/port-audit.mjs plus the totals/hash in');
+    console.error('  docs/r0/port-audit.md and docs/r1/port-audit-file-level.md.');
+    process.exit(1);
+  }
 }
 
 // Only run the CLI when this file is the entry point; importing it must be side-effect free.

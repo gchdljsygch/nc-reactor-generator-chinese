@@ -7,29 +7,29 @@
  },
  "totals": {
   "files": 831,
-  "rawLines": 77825,
-  "codeLines": 76578
+  "rawLines": 77840,
+  "codeLines": 76579
  },
  "mustBuild": {
   "files": 431,
-  "rawLines": 38545,
-  "codeLines": 38025
+  "rawLines": 38560,
+  "codeLines": 38026
  },
  "r1MustBuild": {
   "files": 280,
-  "rawLines": 25807,
-  "codeLines": 25364
+  "rawLines": 25822,
+  "codeLines": 25365
  },
  "r1RewriteAttribution": {
-  "phys": 4156,
+  "phys": 4157,
   "both": 0,
   "ui": 528,
   "other": 8583
  },
  "simulatorAttribution": {
   "files": 16,
-  "codeLines": 9935,
-  "phys": 4143,
+  "codeLines": 9936,
+  "phys": 4144,
   "both": 0,
   "ui": 177,
   "other": 5615
@@ -38,9 +38,9 @@
   {
    "tag": "sfr",
    "files": 4,
-   "rawLines": 3629,
-   "codeLines": 3504,
-   "phys": 1895,
+   "rawLines": 3635,
+   "codeLines": 3505,
+   "phys": 1896,
    "both": 0,
    "ui": 54,
    "other": 1555
@@ -58,7 +58,7 @@
   {
    "tag": "msr",
    "files": 2,
-   "rawLines": 2559,
+   "rawLines": 2568,
    "codeLines": 2523,
    "phys": 1426,
    "both": 0,
@@ -109,8 +109,8 @@
    {
     "pkg": "multiblock/overhaul",
     "files": 5,
-    "rawLines": 5925,
-    "codeLines": 5838
+    "rawLines": 5940,
+    "codeLines": 5839
    },
    {
     "pkg": "multiblock/tinkers",
@@ -151,8 +151,8 @@
   },
   "REWRITE": {
    "files": 115,
-   "rawLines": 13494,
-   "codeLines": 13267
+   "rawLines": 13509,
+   "codeLines": 13268
   },
   "VERIFY": {
    "files": 6,
@@ -163,8 +163,8 @@
  "tags": {
   "sfr": {
    "files": 34,
-   "rawLines": 4980,
-   "codeLines": 4851
+   "rawLines": 4986,
+   "codeLines": 4852
   },
   "underhaul": {
    "files": 27,
@@ -173,7 +173,7 @@
   },
   "msr": {
    "files": 27,
-   "rawLines": 3473,
+   "rawLines": 3482,
    "codeLines": 3437
   },
   "turbine": {
@@ -230,12 +230,12 @@
   },
   "r1-kernel-sfr": {
    "files": 20,
-   "rawLines": 5711,
-   "codeLines": 5571
+   "rawLines": 5717,
+   "codeLines": 5572
   },
   "r1-kernel-misc": {
    "files": 8,
-   "rawLines": 5046,
+   "rawLines": 5055,
    "codeLines": 4968
   },
   "r1-infra": {
@@ -358,8 +358,8 @@
    "bucket": "REWRITE",
    "tag": "sfr",
    "files": 21,
-   "rawLines": 3998,
-   "codeLines": 3873
+   "rawLines": 4004,
+   "codeLines": 3874
   },
   {
    "bucket": "REWRITE",
@@ -372,7 +372,7 @@
    "bucket": "REWRITE",
    "tag": "msr",
    "files": 18,
-   "rawLines": 2883,
+   "rawLines": 2892,
    "codeLines": 2847
   },
   {
@@ -464,8 +464,8 @@
   {
    "pkg": "multiblock/overhaul",
    "files": 10,
-   "rawLines": 7331,
-   "codeLines": 7223
+   "rawLines": 7346,
+   "codeLines": 7224
   },
   {
    "pkg": "multiblock/symmetry",
@@ -569,7 +569,7 @@
    "path": "net/ncplanner/plannerator/multiblock/overhaul/fissionmsr/OverhaulMSR.java",
    "bucket": "REWRITE",
    "scope": "r1-kernel-misc",
-   "rawLines": 2117,
+   "rawLines": 2126,
    "codeLines": 2089,
    "seam": {
     "phys": 1300,
@@ -598,10 +598,10 @@
    "path": "net/ncplanner/plannerator/multiblock/overhaul/fissionsfr/OverhaulSFR.java",
    "bucket": "REWRITE",
    "scope": "r1-kernel-sfr",
-   "rawLines": 1878,
-   "codeLines": 1855,
+   "rawLines": 1884,
+   "codeLines": 1856,
    "seam": {
-    "phys": 1158,
+    "phys": 1159,
     "ui": 0,
     "both": 0,
     "other": 697
@@ -834,7 +834,7 @@
    "path": "net/ncplanner/plannerator/multiblock/overhaul/fissionmsr/OverhaulMSR.java",
    "bucket": "REWRITE",
    "scope": "r1-kernel-misc",
-   "rawLines": 2117,
+   "rawLines": 2126,
    "codeLines": 2089,
    "seam": {
     "phys": 1300,
@@ -863,10 +863,10 @@
    "path": "net/ncplanner/plannerator/multiblock/overhaul/fissionsfr/OverhaulSFR.java",
    "bucket": "REWRITE",
    "scope": "r1-kernel-sfr",
-   "rawLines": 1878,
-   "codeLines": 1855,
+   "rawLines": 1884,
+   "codeLines": 1856,
    "seam": {
-    "phys": 1158,
+    "phys": 1159,
     "ui": 0,
     "both": 0,
     "other": 697
@@ -1284,8 +1284,21 @@
   },
   "parsedRawLines": 77825,
   "r0MustBuildLines": 33973,
-  "linesMatched": 77825,
-  "mismatches": [],
+  "linesMatched": 73830,
+  "mismatches": [
+   {
+    "path": "net/ncplanner/plannerator/multiblock/overhaul/fissionmsr/OverhaulMSR.java",
+    "issue": "line-metric-mismatch",
+    "r0": 2117,
+    "mine": 2126
+   },
+   {
+    "path": "net/ncplanner/plannerator/multiblock/overhaul/fissionsfr/OverhaulSFR.java",
+    "issue": "line-metric-mismatch",
+    "r0": 1878,
+    "mine": 1884
+   }
+  ],
   "directory": [
    {
     "pkg": "planner",
@@ -1373,11 +1386,11 @@
     "pkg": "multiblock/overhaul",
     "files": 10,
     "r0Lines": 7331,
-    "myRawLines": 7331,
+    "myRawLines": 7346,
     "r0Must": 7083,
-    "myMust": 7331,
+    "myMust": 7346,
     "byBucket": {
-     "REWRITE": 7331
+     "REWRITE": 7346
     },
     "r0Classes": {
      "REWRITE": 248,
@@ -1385,7 +1398,7 @@
      "SPLIT-PHYSICS-UI": 6030,
      "PORT-PHYSICS": 841
     },
-    "deltaMust": 248
+    "deltaMust": 263
    },
    {
     "pkg": "planner/file",
@@ -1683,7 +1696,7 @@
     "to": "REWRITE",
     "files": 9,
     "rawLines": 7214,
-    "codeLines": 7116
+    "codeLines": 7117
    },
    {
     "from": "PORT-UI-LOGIC",
@@ -8035,7 +8048,7 @@
    "reason": "rewrite-tree:net/ncplanner/plannerator/multiblock/overhaul/ (duplicated editor simulator (R1.5: single kernel))",
    "tag": "msr",
    "scope": "r1-kernel-misc",
-   "rawLines": 2117,
+   "rawLines": 2126,
    "codeLines": 2089,
    "flags": [
     "physics",
@@ -8098,8 +8111,8 @@
    "reason": "rewrite-tree:net/ncplanner/plannerator/multiblock/overhaul/ (duplicated editor simulator (R1.5: single kernel))",
    "tag": "sfr",
    "scope": "r1-kernel-sfr",
-   "rawLines": 1878,
-   "codeLines": 1855,
+   "rawLines": 1884,
+   "codeLines": 1856,
    "flags": [
     "physics",
     "r0-false-mixed",
@@ -8107,7 +8120,7 @@
     "r0-mixed-9"
    ],
    "seam": {
-    "phys": 1158,
+    "phys": 1159,
     "ui": 0,
     "both": 0,
     "other": 697
@@ -24091,5 +24104,5 @@
    "r0Lines": 71
   }
  ],
- "contentSha256": "e6b2f5203e5c48c2690d4e80ec5c1fd3caf1d794349a429cb8304394f4f1735b"
+ "contentSha256": "7e36b9a5c7c9de15382259418b0941b8ae6cffb47c543946889c9f788beda6a4"
 }

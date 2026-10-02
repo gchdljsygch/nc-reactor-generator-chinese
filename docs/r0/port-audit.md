@@ -904,7 +904,10 @@ node tools/ts/port-audit.mjs --json docs/r1/port-audit-file-level.json
 node tools/ts/port-audit.mjs --report
 ```
 
-`contentSha256 = e6b2f5203e5c48c2690d4e80ec5c1fd3caf1d794349a429cb8304394f4f1735b`
+`contentSha256 = 7e36b9a5c7c9de15382259418b0941b8ae6cffb47c543946889c9f788beda6a4`（2026-10 刷新；旧值
+`e6b2f520…` 是 R0 时点的快照。该哈希现在是 CI 门禁：`tools/ts/port-audit.mjs` 内置 `EXPECTED_SHA`，
+`--summary` / `--report` 哈希不符即 `exit 1`；实测值一律以 `docs/r1/port-audit-file-level.json` 的
+`contentSha256` 为准。）
 
 ## A. 为什么要做这一步
 
@@ -920,11 +923,11 @@ node tools/ts/port-audit.mjs --report
 | 项 | 上文（包级规则） | R1.0d（逐文件） |
 |---|---:|---:|
 | 文件数 | 831 | 831 |
-| 行数（同一指标） | 77,825 | 77,825（逐文件 100% 一致，0 处不一致） |
-| 「必须实现」行数 | 33,973 | **38,545（+4,572，+13.5%）** |
+| 行数（同一指标） | 77,825 | 77,840（逐文件比对 829 / 831 一致，2 处不一致：中文化冻结提交 `4fad557f` 使 `OverhaulMSR.java` +9、`OverhaulSFR.java` +6） |
+| 「必须实现」行数 | 33,973 | **38,560（+4,587，+13.5%）** |
 | 「必须实现」文件数 | 425（PORT-* + SPLIT） | **431**（`PORT` 310 + `REWRITE` 115 + `VERIFY` 6） |
-| 非空非注释行（R1.0d 口径） | — | 76,578（其中必须实现 38,025） |
-| R1 范围内的必须实现 | — | **280 文件 / 25,807 raw / 25,364 code** |
+| 非空非注释行（R1.0d 口径） | — | 76,579（其中必须实现 38,026） |
+| R1 范围内的必须实现 | — | **280 文件 / 25,822 raw / 25,365 code** |
 | `DROP` | 354 文件 / 35,274 行 | 400 文件 / 39,280 行（多丢 config2 / tutorial / render decal / overlay / TextureManager / 桌面更新器 / PNG 写出） |
 
 R1.0d 的 bucket：`PORT`（可 1:1 翻译）、`DROP`（不移植）、`REWRITE`（必须存在但机制不同：反射注册、120 个手写模块类、两套重复模拟器）、
@@ -934,19 +937,19 @@ R1.0d 的 bucket：`PORT`（可 1:1 翻译）、`DROP`（不移植）、`REWRITE
 
 1. **§3「9 文件 / 7,214 行物理与渲染同居」不准确。** 逐文件数渲染调用后：
    只有 **4 个 `Block.java`（1,319 行）**真的有 `Renderer`/`draw*` 调用；
-   另外 **5 文件 / 5,895 行**（`OverhaulMSR`、`OverhaulSFR`、`OverhaulTurbine`、`UnderhaulSFR`、
+   另外 **5 文件 / 5,910 行**（`OverhaulMSR`、`OverhaulSFR`、`OverhaulTurbine`、`UnderhaulSFR`、
    `CompiledOverhaulSFRConfiguration`）只是命中了 `getTexture(...)`——那是元素纹理访问器。
    → 「没有安全切口」对那 4 个大反应堆不成立，它们物理与渲染**并未同居**；真正要先拆的是 4 个 `Block.java`。
 2. **§1/§2 的「需要移植」口径偏低。** 上文把 `REWRITE`（5,745 行）与 `REVIEW`（2,833 行）排除在「需要移植」之外，
    但其中 **5,643 行**在 R1.0d 里属于必须实现（`REWRITE→PORT` 1,527 + `REWRITE→REWRITE` 1,933 + `REVIEW→PORT` 2,183；
    其中 2,177 行来自 `planner/` 根：`Core.java` 883、`Main.java` 545、`MathUtil.java` 220…）。
    同时 R1.0d 把 1,071 行（`PORT-UI-LOGIC→DROP` 857 + `PORT-FORMAT→DROP` 214）从必须实现里剔除。
-   净差 = 5,643 − 1,071 = **+4,572 行**，这就是「实测比上文高 4,572 行」的完整来源。
+   净差 = 5,643 − 1,071 + 15（中文化冻结提交带来的树漂移）= **+4,587 行**，这就是「实测比上文高 4,587 行」的完整来源。
 
 ## D. 修正后的 R1 工期
 
 - 方案 §4.1–4.7 的子任务预算之和 = 34.5–54 人日 = **6.9–10.8 周**，与标题「R1 — 5–7 周」已经矛盾；
-- 逐文件实测 R1 范围必须实现 25,364 非空非注释行；在 5–7 周内（扣掉 R1.0–R1.2 的 9–14 人日后只剩 11–26 人日）
+- 逐文件实测 R1 范围必须实现 25,365 非空非注释行；在 5–7 周内（扣掉 R1.0–R1.2 的 9–14 人日后只剩 11–26 人日）
   需要 **976–2,306 行/天**，是方案自己给物理/格式工作流隐含速率（264–743 行/天）的 1.3–8.7 倍；
 - **结论：R1 的 5–7 周不成立，建议改为 8–10 周**（逐项：R1.0 4d + R1.1 2.5d + R1.2 5d + R1.3 9d + R1.4 4d + R1.5 10d + R1.6 10d = 44.5 人日 ≈ 8.9 周）。
   若按 §5.4 砍掉 Fusion / Distiller，可回到约 7 周。M1 闸门不变。
