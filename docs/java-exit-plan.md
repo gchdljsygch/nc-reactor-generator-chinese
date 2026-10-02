@@ -382,3 +382,33 @@ pnpm verify:full                              # 绿
 >
 > **未完成项**：`ci.yml` / `release.yml` 的远端执行结果无法在本地验证（需要 GitHub Actions），
 > 本地只能确认这两个 workflow 内所有命令在等价环境下 exit 0。首次推送后请在 Actions 页复核。
+
+### 9.1 CI 首次真实运行的实测结果（2026-10-02）
+
+推送 `63ad00be` 后两个 workflow 都失败，日志（`logs_100179160017.zip` / `logs_100179160101.zip`）
+显示失败点**不在测试，而在第 3 步 `pnpm/action-setup@v4`**：
+
+```
+Error: Multiple versions of pnpm specified:
+  - version 11 in the GitHub Action config with the key "version"
+  - version pnpm@11.5.1 in the package.json with the key "packageManager"
+(ERR_PNPM_BAD_PM_VERSION)
+```
+
+即 action 的 `with.version` 与 `package.json` 的 `packageManager` **不能同时存在**。
+这是 Java 退出之前就存在的问题，与本计划的改动无关——但它意味着
+**CI 从来没有真正跑过测试套件**：`pnpm install` 之后的每一步（typecheck / lint / test /
+port audit / r2:coverage / i18n / build / size）在此之前都是空转，
+`ci.yml` 顶部那句「测试门禁」的承诺从未被执行过。
+
+修复提交 `e4554022`：版本只在 workflow 里 pin 一次。
+`{ci,release}.yml` 改为 `version: 11.5.1`（与本地实测版本一致），
+`package.json` 删除 `"packageManager"` 字段，并在两个 workflow 里写明
+「版本只在这里 pin」。本地等价验证：`pnpm install --frozen-lockfile` exit 0、
+`pnpm verify:full` exit 0。
+
+> **这条修复对本计划的意义**：§P0 说「CI 的 Port audit 步骤只打印不比对，因此 +15 行漂移
+> 静默通过」——实际情况比那更严重，**整个 CI 从未运行到那一步**。P0 加的 `EXPECTED_SHA`
+> 门禁与 P5 加的两道门禁，只有在这次修复之后才第一次真正生效。推送 `e4554022` 后
+> 必须在 Actions 页确认 `verify` 与 `Verify and build the static site` 两个 job 全绿，
+> 才能说本计划的 CI 验收完成。
