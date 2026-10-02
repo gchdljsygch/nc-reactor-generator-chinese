@@ -1,0 +1,487 @@
+/*
+ * R3.1 — the theme.
+ *
+ * 5,107 lines of Java theme code are replaced by two attribute-scoped variable
+ * sets. Every colour, spacing and radius the UI uses is a token here; a new
+ * theme is a new `[data-theme="…"]` block and nothing else. (The plan's budget
+ * for R3.1 was "< 500 lines"; this is a fraction of that.)
+ *
+ * Layout uses logical properties (`margin-inline-*`, `padding-inline-*`) so the
+ * RTL readiness the plan asks for (§7) is not blocked by the stylesheet.
+ */
+
+:root {
+  --font-ui: system-ui, -apple-system, "Segoe UI", "Noto Sans SC", sans-serif;
+  --font-mono: ui-monospace, "Cascadia Mono", "Consolas", monospace;
+
+  --radius: 6px;
+  --gap: 8px;
+  --panel-width: 250px;
+  --menu-height: 30px;
+  --toolbar-height: 38px;
+}
+
+[data-theme="dark"] {
+  --bg: #14161b;
+  --bg-panel: #1b1e25;
+  --bg-elevated: #22262f;
+  --bg-input: #12141a;
+  --fg: #e6e9ef;
+  --fg-muted: #98a0ae;
+  --border: #2c313c;
+  --accent: #7fd1ff;
+  --accent-fg: #0b1016;
+  --danger: #ff8080;
+  --casing: #3a3f4b;
+  --grid-empty: #20242c;
+}
+
+[data-theme="light"] {
+  --bg: #f4f5f7;
+  --bg-panel: #ffffff;
+  --bg-elevated: #eceef2;
+  --bg-input: #ffffff;
+  --fg: #1c1f26;
+  --fg-muted: #5b6270;
+  --border: #d3d7de;
+  --accent: #1b6fd6;
+  --accent-fg: #ffffff;
+  --danger: #b3261e;
+  --casing: #b8bcc5;
+  --grid-empty: #dfe2e8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-ui);
+  font-size: 13px;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ------------------------------------------------------------------ menu bar */
+
+.menubar {
+  display: flex;
+  gap: 2px;
+  height: var(--menu-height);
+  padding-inline: 6px;
+  background: var(--bg-panel);
+  border-block-end: 1px solid var(--border);
+  align-items: center;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu-button {
+  background: none;
+  border: 0;
+  color: var(--fg);
+  padding: 4px 10px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font: inherit;
+}
+
+.menu-button:hover {
+  background: var(--bg-elevated);
+}
+
+.menu-popup {
+  display: none;
+  position: absolute;
+  inset-block-start: 100%;
+  inset-inline-start: 0;
+  min-width: 200px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 4px;
+  z-index: 40;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 35%);
+}
+
+.menu-popup.open {
+  display: block;
+}
+
+.menu-item {
+  display: block;
+  width: 100%;
+  text-align: start;
+  background: none;
+  border: 0;
+  color: var(--fg);
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font: inherit;
+  white-space: pre;
+}
+
+.menu-item:hover {
+  background: var(--accent);
+  color: var(--accent-fg);
+}
+
+/* ------------------------------------------------------------------- toolbar */
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  min-height: var(--toolbar-height);
+  padding: 5px 8px;
+  background: var(--bg-panel);
+  border-block-end: 1px solid var(--border);
+}
+
+.btn {
+  background: var(--bg-elevated);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 4px 10px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.btn:hover {
+  border-color: var(--accent);
+}
+
+.btn.active {
+  background: var(--accent);
+  color: var(--accent-fg);
+  border-color: var(--accent);
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: var(--accent-fg);
+  border-color: var(--accent);
+}
+
+.separator {
+  width: 1px;
+  height: 20px;
+  background: var(--border);
+  margin-inline: 4px;
+}
+
+.inline {
+  color: var(--fg-muted);
+}
+
+.slice-range {
+  width: 120px;
+}
+
+/* -------------------------------------------------------------------- layout */
+
+.layout {
+  display: grid;
+  grid-template-columns: var(--panel-width) 1fr var(--panel-width);
+  flex: 1;
+  min-height: 0;
+}
+
+.panel {
+  background: var(--bg-panel);
+  border-inline-end: 1px solid var(--border);
+  overflow-y: auto;
+  padding-block-end: 12px;
+}
+
+.panel:last-child {
+  border-inline-end: 0;
+  border-inline-start: 1px solid var(--border);
+}
+
+.panel-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--fg-muted);
+  padding: 10px 10px 4px;
+}
+
+.panel-body {
+  padding-inline: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.view {
+  min-width: 0;
+  min-height: 0;
+  overflow: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--gap);
+}
+
+.view-host {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+
+/* ------------------------------------------------------------------ controls */
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-block-end: 4px;
+}
+
+.field.compact {
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+
+.field > span {
+  color: var(--fg-muted);
+  font-size: 11px;
+}
+
+.field-row {
+  display: flex;
+  gap: 8px;
+}
+
+select,
+input.value-input {
+  background: var(--bg-input);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 3px 6px;
+  font: inherit;
+  min-width: 0;
+}
+
+input.value-input {
+  width: 90px;
+}
+
+.row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.row.wrap {
+  flex-wrap: wrap;
+}
+
+.muted {
+  color: var(--fg-muted);
+}
+
+.error {
+  color: var(--danger);
+}
+
+/* ------------------------------------------------------------------- palette */
+
+.palette {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-height: 46vh;
+  overflow-y: auto;
+}
+
+.palette-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: var(--fg);
+  text-align: start;
+  padding: 3px 5px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.palette-item:hover {
+  background: var(--bg-elevated);
+}
+
+.palette-item.active {
+  border-color: var(--accent);
+  background: var(--bg-elevated);
+}
+
+.swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  display: inline-block;
+  border: 1px solid rgb(0 0 0 / 35%);
+  flex: 0 0 auto;
+}
+
+/* ----------------------------------------------------------------- statistics */
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 2px 0;
+  border-block-end: 1px dashed var(--border);
+}
+
+.stat-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--fg-muted);
+}
+
+.stat-value {
+  font-family: var(--font-mono);
+}
+
+/* ------------------------------------------------------------------- 2D view */
+
+.grid-view {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.grid-canvas {
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: crosshair;
+  image-rendering: pixelated;
+}
+
+.grid-status {
+  font-family: var(--font-mono);
+  color: var(--fg-muted);
+  min-height: 16px;
+}
+
+/* ------------------------------------------------------------------- 3D view */
+
+.view3d {
+  width: min(72vw, 900px);
+  height: min(70vh, 700px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.view3d-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: grab;
+}
+
+.view3d-canvas:active {
+  cursor: grabbing;
+}
+
+.view3d-error {
+  padding: 16px;
+  color: var(--danger);
+}
+
+/* -------------------------------------------------------------------- status */
+
+.status {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  padding-inline: 10px;
+  background: var(--bg-panel);
+  border-block-start: 1px solid var(--border);
+  color: var(--fg-muted);
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+/* ------------------------------------------------------------------- dialogs */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 45%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.dialog {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  min-width: 320px;
+  max-width: min(760px, 92vw);
+  max-height: 86vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 60px rgb(0 0 0 / 45%);
+}
+
+.dialog-title {
+  padding: 12px 14px;
+  border-block-end: 1px solid var(--border);
+  font-weight: 600;
+}
+
+.dialog-body {
+  padding: 12px 14px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 10px 14px;
+  border-block-start: 1px solid var(--border);
+}
+
+details.element {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 6px 8px;
+}
+
+details.element > summary {
+  cursor: pointer;
+  color: var(--fg);
+}

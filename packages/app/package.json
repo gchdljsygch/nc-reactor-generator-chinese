@@ -1,0 +1,14 @@
+{
+  "name": "@ncplanner/app",
+  "version": "0.0.0-r1",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./settings": "./src/settings.ts",
+    "./i18n": "./src/i18n.ts",
+    "./model/*": "./src/model/*",
+    "./ui/*": "./src/ui/*"
+  }
+}
