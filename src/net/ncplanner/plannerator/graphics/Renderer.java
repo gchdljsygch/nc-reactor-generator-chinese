@@ -12,6 +12,7 @@ import net.ncplanner.plannerator.multiblock.configuration.TextureManager;
 import net.ncplanner.plannerator.planner.Core;
 import net.ncplanner.plannerator.planner.FormattedText;
 import net.ncplanner.plannerator.planner.MathUtil;
+import net.ncplanner.plannerator.planner.localization.Localization;
 import org.joml.Matrix4f;
 import org.joml.Matrix4fStack;
 import org.joml.Vector2f;
@@ -983,6 +984,7 @@ public class Renderer{
         }
     }
     public void drawText(float x, float y, String text, float height){
+        text = Localization.localize(text);
         if(height<0)return;
         bindTexture(font.texture);
         for(int i = 0; i<text.length(); i++){
@@ -1004,6 +1006,7 @@ public class Renderer{
         resetModelMatrix();
     }
     public void drawCenteredText(float left, float top, float right, float bottom, String text){
+        text = Localization.localize(text);
         float width = font.getStringWidth(text, bottom-top);
         while(width>right-left&&!text.isEmpty()){
             text = text.substring(0, text.length()-1);
@@ -1012,6 +1015,7 @@ public class Renderer{
         drawText((left+right)/2-width/2, top, text, bottom-top);
     }
     public void drawText(float left, float top, float right, float bottom, String text){
+        text = Localization.localize(text);
         float width = font.getStringWidth(text, bottom-top);
         while(width>right-left&&!text.isEmpty()){
             text = text.substring(0, text.length()-1);
@@ -1020,6 +1024,7 @@ public class Renderer{
         drawText(left, top, text, bottom-top);
     }
     public void drawItalicText(float left, float top, float right, float bottom, String text){
+        text = Localization.localize(text);
         float width = font.getStringWidth(text, bottom-top);
         while(width>right-left&&!text.isEmpty()){
             text = text.substring(0, text.length()-1);
@@ -1640,7 +1645,7 @@ public class Renderer{
         redrawStencil();
     }
     public float getStringWidth(String text, float height){
-        return font.getStringWidth(text, height);
+        return font.getStringWidth(Localization.localize(text), height);
     }
     public void drawGear(float x, float y, float holeRad, int teeth, float averageRadius, float toothSize, float rot){
         int resolution = (int)(2*Math.PI*averageRadius*2/teeth);//an extra *2 to account for wavy surface?

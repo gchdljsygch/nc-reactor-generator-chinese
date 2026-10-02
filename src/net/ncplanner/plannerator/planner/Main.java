@@ -137,7 +137,9 @@ public class Main{
             System.err.println("OpenVR is not supported on arm! Excluding OpenVR libraries.");
             novr = true;
         }
-        if(args.length<1||!args[0].equals("Skip Dependencies")){
+        boolean skipDependencyDownload = args.length>0&&("Skip Dependencies".equals(args[0])
+                ||args.length>1&&"Skip".equals(args[0])&&"Dependencies".equals(args[1]));
+        if(!skipDependencyDownload){
             addRequiredLibrary("https://github.com/ThizThizzyDizzy/nc-reactor-generator/raw/overhaul/libraries/lwjgl-3.3.3-assimp.jar", "lwjgl-3.3.3-assimp.jar");
             addRequiredLibrary("https://github.com/ThizThizzyDizzy/nc-reactor-generator/raw/overhaul/libraries/lwjgl-3.3.3-glfw.jar", "lwjgl-3.3.3-glfw.jar");
             addRequiredLibrary("https://github.com/ThizThizzyDizzy/nc-reactor-generator/raw/overhaul/libraries/lwjgl-3.3.3-openal.jar", "lwjgl-3.3.3-openal.jar");

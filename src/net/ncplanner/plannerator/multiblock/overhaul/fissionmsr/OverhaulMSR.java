@@ -470,7 +470,11 @@ public class OverhaulMSR extends CuboidalMultiblock<Block>{
                             Block b = c.blocks.get(j);
                             if(b.template.heater!=null&&b.heaterRecipe!=null){
                                 float out = c.efficiency*sparsityMult;
-                                for(NCPFElementStack output : b.heaterRecipe.getRecipeDefinition().outputs){
+                                // Heater recipes may be declared as a plain legacy fluid
+                                // (no in/out stacks) rather than as a legacy recipe; in
+                                // that case there is nothing to accumulate into
+                                // totalOutput, only the throughput counted below.
+                                if(b.heaterRecipe.definition instanceof net.ncplanner.plannerator.ncpf.element.NCPFLegacyRecipeElement)for(NCPFElementStack output : b.heaterRecipe.getRecipeDefinition().outputs){
                                     boolean found = false;
                                     for(NCPFElementStack stack : totalOutput){
                                         if(stack.definition.matches(output.definition)){
@@ -742,7 +746,8 @@ public class OverhaulMSR extends CuboidalMultiblock<Block>{
                             Block b = c.blocks.get(j);
                             if(b.template.heater!=null&&b.heaterRecipe!=null){
                                 float out = c.efficiency*sparsityMult;
-                                for(NCPFElementStack output : b.heaterRecipe.getRecipeDefinition().outputs){
+                                // same legacy-fluid guard as the base calculation above
+                                if(b.heaterRecipe.definition instanceof net.ncplanner.plannerator.ncpf.element.NCPFLegacyRecipeElement)for(NCPFElementStack output : b.heaterRecipe.getRecipeDefinition().outputs){
                                     boolean found = false;
                                     for(NCPFElementStack stack : totalOutput){
                                         if(stack.definition.matches(output.definition)){
@@ -1034,7 +1039,11 @@ public class OverhaulMSR extends CuboidalMultiblock<Block>{
                             Block b = c.blocks.get(j);
                             if(b.template.heater!=null&&b.heaterRecipe!=null){
                                 float out = c.efficiency*sparsityMult;
-                                for(NCPFElementStack output : b.heaterRecipe.getRecipeDefinition().outputs){
+                                // Heater recipes may be declared as a plain legacy fluid
+                                // (no in/out stacks) rather than as a legacy recipe; in
+                                // that case there is nothing to accumulate into
+                                // totalOutput, only the throughput counted below.
+                                if(b.heaterRecipe.definition instanceof net.ncplanner.plannerator.ncpf.element.NCPFLegacyRecipeElement)for(NCPFElementStack output : b.heaterRecipe.getRecipeDefinition().outputs){
                                     boolean found = false;
                                     for(NCPFElementStack stack : totalOutput){
                                         if(stack.definition.matches(output.definition)){

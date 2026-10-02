@@ -1021,7 +1021,13 @@ public class OverhaulSFR extends CuboidalMultiblock<Block>{
                     if(flux>0)that.positionalEfficiency += efficiency/length*block.irradiatorRecipe.stats.efficiency;
                     int f = 0;
                     for(int j = 1; j<i; j++){
-                        f += getBlock(that.pos.offset(d,j)).template.moderator.flux;
+                        // R1 D1-B: same guard as the reflector branch above. The
+                        // frozen engine dereferenced `moderator` unconditionally
+                        // here, which threw an NPE whenever a shield (or any other
+                        // non-moderator) sat between the cell and the irradiator
+                        // (277/5000 generated cases).
+                        Block b = getBlock(that.pos.offset(d,j));
+                        if(b.template.moderator!=null)f += b.template.moderator.flux;
                         fluxDecals.enqueue(new OverhaulModeratorLineDecal(that.pos.offset(d,j), d, f, efficiency/length));
                     }
                     fluxDecals.enqueue(new AdjacentModeratorLineDecal(that.pos, d, efficiency/length));

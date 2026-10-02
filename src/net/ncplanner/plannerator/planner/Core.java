@@ -41,6 +41,7 @@ import net.ncplanner.plannerator.planner.gui.menu.dialog.MenuDialog;
 import net.ncplanner.plannerator.planner.gui.menu.dialog.MenuError;
 import net.ncplanner.plannerator.planner.gui.menu.dialog.MenuUnsavedChanges;
 import net.ncplanner.plannerator.planner.gui.menu.dialog.MenuWarningMessage;
+import net.ncplanner.plannerator.planner.localization.Localization;
 import net.ncplanner.plannerator.planner.module.Module;
 import net.ncplanner.plannerator.planner.ncpf.Configuration;
 import net.ncplanner.plannerator.planner.ncpf.Project;
@@ -160,7 +161,7 @@ public class Core{
         glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GLFW_TRUE);
         if(Main.headless)glfwWindowHint(GLFW_VISIBLE, GLFW_FALSE);
         System.out.println("Creating window");
-        window = glfwCreateWindow(1200, 700, "Nuclearcraft Plannerator "+VersionManager.currentVersion, 0, 0);
+        window = glfwCreateWindow(1200, 700, Localization.localize("Nuclearcraft Plannerator "+VersionManager.currentVersion), 0, 0);
         if(window==0){
             glfwTerminate();
             throw new RuntimeException("Failed to create GLFW window!");
@@ -227,10 +228,10 @@ public class Core{
             glCallback = GLUtil.setupDebugMessageCallback();
         }
         System.out.println("Loading fonts");
-        FONT_20 = Font.loadFont("standard");
-        FONT_40 = Font.loadFont("high_resolution");
-        FONT_10 = Font.loadFont("small");
-        FONT_MONO_20 = Font.loadFont("monospaced");
+        FONT_20 = Font.loadFont("NotoSansSC-VF");
+        FONT_40 = FONT_20;
+        FONT_10 = FONT_20;
+        FONT_MONO_20 = FONT_20;
         System.out.println("Initializing elements");
         Renderer.initElements();
         System.out.println("Initializing GUI");
@@ -669,10 +670,10 @@ public class Core{
         return s;
     }
     public static void setWindowTitle(String title){
-        glfwSetWindowTitle(window, title);
+        glfwSetWindowTitle(window, Localization.localize(title));
     }
     public static void resetWindowTitle(){
-        glfwSetWindowTitle(window, "Nuclearcraft Plannerator "+VersionManager.currentVersion);
+        glfwSetWindowTitle(window, Localization.localize("Nuclearcraft Plannerator "+VersionManager.currentVersion));
     }
     public static void setVsync(boolean vs){
         if(vsync!=vs)glfwSwapInterval(vs?1:0);
@@ -816,11 +817,11 @@ public class Core{
     }
     public static ByteBuffer loadData(InputStream input){
         try(ByteArrayOutputStream output = new ByteArrayOutputStream()){
-            int b;
-            while((b = input.read())!=-1){
-                output.write(b);
+            byte[] chunk = new byte[8192];
+            int read;
+            while((read = input.read(chunk))!=-1){
+                output.write(chunk, 0, read);
             }
-            output.close();
             byte[] data = output.toByteArray();
             ByteBuffer buffer = BufferUtils.createByteBuffer(data.length);
             buffer.put(data);
